@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSTEP LISTENING</title>
+    <meta name="description" content="Trang web luyện nghe VSTEP chuyên nghiệp và tương tác với lời thoại song ngữ, từ vựng hữu ích và giải thích chi tiết.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- App Container -->
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="app-sidebar">
+            <div class="sidebar-header">
+                <div class="logo-area">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" fill="currentColor" fill-opacity="0.2"/>
+                        <path d="M19 10v1a7 7 0 0 1-14 0v-1M12 19v4M8 23h8"/>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="logo-title">VSTEP</span>
+                        <span class="logo-subtitle">LISTENING</span>
+                    </div>
+                </div>
+                <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Đóng menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+            
+            <!-- Sidebar Brand Banner -->
+            <div class="sidebar-brand-banner">
+                <a href="https://www.facebook.com/anhnguRiverCT" target="_blank" class="brand-promotion">RIVER ENGLISH CENTER</a>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="#dashboard" class="menu-item active" data-view="dashboard">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/>
+                        <rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/>
+                    </svg>
+                    <span>HOME PAGE</span>
+                </a>
+                
+                <div class="menu-section-label">Nội dung học tập</div>
+                
+                <a href="#part1" class="menu-item" data-view="part1">
+                    <div class="menu-item-badge">P1</div>
+                    <span>PART 01: SHORT TALKS/CONVERSATIONS</span>
+                </a>
+                
+                <a href="#part2" class="menu-item" data-view="part2">
+                    <div class="menu-item-badge">P2</div>
+                    <span>PART 02: LONG CONVERSATIONS</span>
+                </a>
+                
+                <a href="#part3" class="menu-item" data-view="part3">
+                    <div class="menu-item-badge">P3</div>
+                    <span>PART 03: LONG TALKS</span>
+                </a>
+                
+                <div class="menu-section-label">Tiện ích</div>
+                
+                <a href="#statistics" class="menu-item" data-view="statistics">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/>
+                    </svg>
+                    <span>Tiến độ học tập</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-badge">
+                    <div class="avatar" id="user-avatar-char">V</div>
+                    <div class="user-info">
+                        <div class="user-name-wrapper">
+                            <span class="user-name" id="sidebar-user-name">Học viên VSTEP</span>
+                            <button class="edit-name-btn" id="edit-name-btn" title="Chỉnh sửa tên">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                            </button>
+                        </div>
+                        <span class="user-level">B1/B2/C1 Goal</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Wrapper -->
+        <div class="main-wrapper">
+            
+            <!-- Topbar Header -->
+            <header class="topbar">
+                <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Mở menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+                
+                <div class="topbar-breadcrumb">
+                    <span class="parent-bc" id="parent-bc">Học nghe VSTEP</span>
+                    <span class="separator">/</span>
+                    <span class="current-bc" id="current-bc">HOME PAGE</span>
+                </div>
+                
+                <!-- Center Brand Banner -->
+                <div class="topbar-brand-wrapper">
+                    <a href="https://www.facebook.com/anhnguRiverCT" target="_blank" class="brand-promotion">ENGLISH WITH MISS NGUYET</a>
+                </div>
+                
+                <div class="topbar-actions">
+                    <!-- Dark/Light Theme Toggle -->
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Đổi chủ đề">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Progress Card Quick-View -->
+                    <div class="header-progress">
+                        <span class="progress-label">Tiến độ tổng:</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="overall-progress-bar" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-value" id="overall-progress-text">0%</span>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Dynamic Main Content -->
+            <main class="main-content" id="main-content-panel">
+                
+                <!-- 1. DASHBOARD VIEW -->
+                <section class="view-panel active" id="view-dashboard">
+                    <div class="dashboard-hero">
+                        <div class="hero-content">
+                            <h1>IMPROVE YOUR VSTEP LISTENING SKILLS</h1>
+                            <p>Luyện tập kỹ năng nghe theo từng phần trong đề thi.</p>
+                            <div class="hero-buttons">
+                                <button class="btn btn-primary" onclick="app.switchView('part1')">Bắt đầu học ngay</button>
+                                <button class="btn btn-secondary" onclick="app.switchView('statistics')">Xem tiến độ học tập</button>
+                            </div>
+                        </div>
+                        <div class="hero-image-placeholder">
+                            <img src="cat-typing.gif" alt="Cat typing on computer" class="floating-illustration" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                    </div>
+                    
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-icon purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="stats-theory-done">0 / 6</span>
+                                <span class="stat-label">Dạng bài Lý thuyết đã học</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon blue">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="stats-tests-done">0 / 17</span>
+                                <span class="stat-label">Bài Luyện tập đã hoàn thành</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="stats-accuracy">0%</span>
+                                <span class="stat-label">Tỷ lệ trả lời chính xác</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="section-title">Chọn Phần Nghe Để Luyện Tập</h2>
+                    <div class="parts-grid">
+                        
+                        <!-- Part 1 Card -->
+                        <div class="part-card" onclick="app.switchView('part1')">
+                            <div class="part-card-header bg-purple">
+                                <span class="part-badge">PART 01</span>
+                                <h3>SHORT TALKS/CONVERSATIONS</h3>
+                            </div>
+                            <div class="part-card-body">
+                                <p>Gồm 8 câu hỏi ngắn đơn lẻ. Thử thách khả năng bắt từ khóa chính xác, số liệu, thời gian và địa điểm.</p>
+                                <div class="part-stats">
+                                    <span>LÝ THUYẾT: <strong>6 DẠNG BÀI</strong></span>
+                                    <span>BÀI LUYỆN TẬP: <strong>4 BÀI</strong></span>
+                                </div>
+                                <div class="card-action-btn">
+                                    <span>Bắt đầu học</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Part 2 Card -->
+                        <div class="part-card" data-view="part2" onclick="app.switchView('part2')">
+                            <div class="part-card-header bg-blue">
+                                <span class="part-badge">PART 02</span>
+                                <h3>LONG CONVERSATIONS</h3>
+                            </div>
+                            <div class="part-card-body">
+                                <p>Gồm 3 bài hội thoại lớn, mỗi bài 4 câu hỏi. Luyện khả năng theo dõi tiến trình đối thoại giữa 2 người nói.</p>
+                                <div class="part-stats">
+                                    <span>LÝ THUYẾT: <strong>SẴN SÀNG</strong></span>
+                                    <span>BÀI LUYỆN TẬP: <strong>8 BÀI</strong></span>
+                                </div>
+                                <div class="card-action-btn">
+                                    <span>Bắt đầu học</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Part 3 Card -->
+                        <div class="part-card" data-view="part3" onclick="app.switchView('part3')">
+                            <div class="part-card-header bg-green">
+                                <span class="part-badge">PART 03</span>
+                                <h3>LONG TALKS</h3>
+                            </div>
+                            <div class="part-card-body">
+                                <p>Gồm 3 bài thuyết trình/bài giảng, mỗi bài 5 câu hỏi. Thử thách nghe hiểu học thuật, ý kiến và suy luận chuyên sâu.</p>
+                                <div class="part-stats">
+                                    <span>LÝ THUYẾT: <strong>SẴN SÀNG</strong></span>
+                                    <span>BÀI LUYỆN TẬP: <strong>5 BÀI</strong></span>
+                                </div>
+                                <div class="card-action-btn">
+                                    <span>Bắt đầu học</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <!-- 2. PART 01 VIEW -->
+                <section class="view-panel" id="view-part1">
+                    <div class="tab-container">
+                        <div class="tab-header">
+                            <button class="tab-btn active" data-tab="p1-theory">Luyện tập theo Dạng bài (Lý thuyết)</button>
+                            <button class="tab-btn" data-tab="p1-practice">Đề luyện tập tổng hợp (PART 01)</button>
+                        </div>
+                        
+                        <div class="tab-body">
+                            <!-- Tab: Theory -->
+                            <div class="tab-pane active" id="tab-p1-theory">
+                                <p class="tab-description">VSTEP Listening Part 1 thường chia thành các dạng câu hỏi đặc thù. Học theo từng dạng bài dưới đây giúp bạn làm quen với cấu trúc và từ vựng của dạng đó.</p>
+                                <div class="list-grid" id="p1-theory-list">
+                                    <!-- Dynamic loading of Dạng bài -->
+                                </div>
+                            </div>
+                            <!-- Tab: Practice -->
+                            <div class="tab-pane" id="tab-p1-practice">
+                                <p class="tab-description">Mỗi đề luyện tập gồm 8 đoạn thông báo ngắn tương ứng với 8 câu hỏi, mô phỏng chính xác bài thi Part 1 thực tế.</p>
+                                <div class="list-grid" id="p1-practice-list">
+                                    <!-- Dynamic loading of Practice tests -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. PART 02 VIEW -->
+                <section class="view-panel" id="view-part2">
+                    <p class="section-description">Mỗi đề luyện tập Part 2 gồm 1 cuộc hội thoại dài giữa 2 người (thường là sinh viên và giáo viên, hoặc các đồng nghiệp) kèm theo 4 câu hỏi trắc nghiệm.</p>
+                    <div class="list-grid" id="p2-practice-list">
+                        <!-- Dynamic loading of Part 2 Practices -->
+                    </div>
+                </section>
+
+                <!-- 4. PART 03 VIEW -->
+                <section class="view-panel" id="view-part3">
+                    <p class="section-description">Mỗi đề luyện tập Part 3 gồm 1 bài nói/bài giảng học thuật đơn thoại dài kèm theo 5 câu hỏi trắc nghiệm học thuật sâu rộng.</p>
+                    <div class="list-grid" id="p3-practice-list">
+                        <!-- Dynamic loading of Part 3 Practices -->
+                    </div>
+                </section>
+
+                <!-- 5. STATISTICS VIEW -->
+                <section class="view-panel" id="view-statistics">
+                    <div class="glass-card">
+                        <h3>Tiến độ học tập của bạn</h3>
+                        <p>Thông tin ghi nhận chi tiết tiến độ và kết quả luyện tập của bạn.</p>
+                        <div class="stats-table-wrapper">
+                            <table class="stats-table">
+                                <thead>
+                                    <tr>
+                                        <th>Thời gian</th>
+                                        <th>Phần nghe</th>
+                                        <th>Đề bài</th>
+                                        <th>Kết quả</th>
+                                        <th>Tỷ lệ đúng</th>
+                                        <th>Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="stats-table-body">
+                                    <tr>
+                                        <td colspan="6" class="empty-state">Chưa có dữ liệu tiến độ làm bài nào được lưu. Hãy làm một bài nghe để bắt đầu ghi nhận!</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="stats-actions" style="display: flex; gap: 12px; margin-top: 20px;">
+                            <button class="btn btn-primary" id="export-cumulative-report-btn" style="padding: 10px 20px; font-weight: 700; width: auto;">Xuất báo cáo tổng hợp</button>
+                            <button class="btn btn-secondary" id="clear-stats-btn" style="padding: 10px 20px; width: auto;">Xóa lịch sử học tập</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. ACTIVE PRACTICE RUN VIEW -->
+                <section class="view-panel" id="view-practice-run">
+                    <div class="practice-run-layout">
+                        <!-- Left Panel: Audio Player & Quiz Questions -->
+                        <div class="practice-main-panel">
+                            <!-- LƯU Ý BÀI NGHE -->
+                            <div class="glass-card instruction-card">
+                                <div class="instruction-header">
+                                    <svg class="instruction-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                                        <line x1="12" y1="9" x2="12" y2="13"/>
+                                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                                    </svg>
+                                    <h4>LƯU Ý:</h4>
+                                </div>
+                                <ul class="instruction-list">
+                                    <li><strong>Trước khi nghe:</strong> Đọc câu hỏi và các phương án trả lời, lưu ý từ khoá. Tuyệt đối không sử dụng từ điển hay bất kì công cụ dịch nào.</li>
+                                    <li><strong>Trong khi nghe:</strong> Không bấm dừng, không tua, không chỉnh tốc độ.</li>
+                                    <li><strong>Sau khi hoàn thành bạn nghe:</strong> Xem ĐÁP ÁN & GIẢI THÍCH, ghi chú từ vựng và câu chứa đáp án. Có thể nghe đi nghe lại nhiều lần ở bước này.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Custom Audio Player Card -->
+                            <div class="glass-card player-card" id="main-player-card">
+                                <div class="player-info">
+                                    <div class="audio-badge" id="player-part-badge">PART 01</div>
+                                    <h3 id="player-title">Practice 01</h3>
+                                </div>
+                                
+                                <div class="audio-controls-row">
+                                    <!-- Play/Pause Button -->
+                                    <button class="play-pause-btn" id="audio-play-btn" aria-label="Phát/Dừng">
+                                        <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                        <svg class="icon-pause hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                                    </button>
+                                    
+                                    <!-- Progress bar slider -->
+                                    <div class="timeline-container">
+                                        <span class="time-text" id="audio-current-time">0:00</span>
+                                        <div class="progress-bar-slider" id="audio-progress-slider">
+                                            <div class="progress-slider-fill" id="audio-progress-fill" style="width: 0%"></div>
+                                            <div class="progress-slider-handle" id="audio-progress-handle" style="left: 0%"></div>
+                                        </div>
+                                        <span class="time-text" id="audio-total-time">0:00</span>
+                                    </div>
+                                    
+                                    <!-- Speed Control -->
+                                    <div class="speed-selector-container">
+                                        <button class="speed-btn" id="audio-speed-btn">1.0x</button>
+                                        <div class="speed-dropdown hidden" id="audio-speed-dropdown">
+                                            <div class="speed-option" data-speed="0.75">0.75x</div>
+                                            <div class="speed-option active" data-speed="1.0">1.0x (Chuẩn)</div>
+                                            <div class="speed-option" data-speed="1.25">1.25x</div>
+                                            <div class="speed-option" data-speed="1.5">1.5x</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <audio id="native-audio" preload="auto"></audio>
+                            </div>
+                            
+                            <!-- Question Cards Container -->
+                            <div class="questions-container" id="practice-questions-list">
+                                <!-- Dynamic rendering of quiz questions -->
+                            </div>
+                            
+                            <!-- Report Area -->
+                            <div class="glass-card result-report-card hidden" id="practice-report-card" style="margin-top: 24px;">
+                                <div class="report-header">
+                                    <svg class="report-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14 2 14 8 20 8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <polyline points="10 9 9 9 8 9"/>
+                                    </svg>
+                                    <h3>BÁO CÁO KẾT QUẢ BÀI LÀM</h3>
+                                </div>
+                                <div class="report-grid">
+                                    <div class="report-item">
+                                        <span class="report-label">Học viên & Lớp:</span>
+                                        <span class="report-value" id="report-student-name">-</span>
+                                    </div>
+                                    <div class="report-item">
+                                        <span class="report-label">Bài luyện tập:</span>
+                                        <span class="report-value" id="report-test-title">-</span>
+                                    </div>
+                                    <div class="report-item">
+                                        <span class="report-label">Kết quả:</span>
+                                        <span class="report-value" id="report-score">-</span>
+                                    </div>
+                                    <div class="report-item">
+                                        <span class="report-label">Tỷ lệ chính xác:</span>
+                                        <span class="report-value" id="report-accuracy">-</span>
+                                    </div>
+                                </div>
+                                <div class="report-actions">
+                                    <button class="btn btn-primary" onclick="app.sendReportToTeacher()" style="padding: 12px 24px; font-weight: 700; width: auto; max-width: 100%;">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;margin-right:8px; display: inline-block; vertical-align: middle;"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+                                        GỬI BÁO CÁO QUA FACEBOOK CHAT
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Bottom control bar -->
+                            <div class="practice-footer-bar">
+                                <button class="btn btn-secondary" onclick="app.exitPractice()">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;margin-right:8px;"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                                    Thoát luyện tập
+                                </button>
+                                <button class="btn btn-primary" id="submit-practice-btn">ĐÁP ÁN & GIẢI THÍCH</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
+            
+            <footer class="footer">
+                <p>LISTENING VSTEP - Designed by Miss Nguyet</p>
+            </footer>
+        </div>
+    </div>
+    
+    <!-- Welcome Register Name Modal -->
+    <div class="modal-overlay" id="welcome-modal">
+        <div class="modal-card">
+            <div class="modal-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" fill="currentColor" fill-opacity="0.2"/>
+                    <path d="M19 10v1a7 7 0 0 1-14 0v-1M12 19v4M8 23h8"/>
+                </svg>
+            </div>
+            <h2>CHÀO MỪNG BẠN ĐẾN VỚI LỚP HỌC CỦA MISS NGUYET</h2>
+            <p>Vui lòng điền Họ tên và Lớp học của bạn để bắt đầu học. Kết quả luyện tập sẽ được ghi nhận và gửi báo cáo cho giáo viên.</p>
+            <form id="welcome-form" onsubmit="event.preventDefault(); app.saveStudentName();">
+                <div class="input-group" style="margin-bottom: 16px;">
+                    <input type="text" id="student-name-input" placeholder="Họ và tên (Ví dụ: Phạm Minh Nguyệt)" required autocomplete="off" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-size: 0.95rem;">
+                </div>
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <input type="text" id="student-class-input" placeholder="Lớp học (Ví dụ: ONB103)" required autocomplete="off" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-size: 0.95rem;">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" style="width: 100%; padding: 12px; font-weight: 700; border-radius: 8px;">BẮT ĐẦU HỌC NGAY</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
