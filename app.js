@@ -314,7 +314,7 @@ class VstepApp {
         this.elements.p1PracticeList.innerHTML = this.data.part1.practice.map(p => {
             const score = this.progress.completedTests[p.id];
             const isCompleted = score !== undefined;
-            const isLocked = false; // Always unlocked for Part 1
+            const isLocked = !unlocked;
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
                      ${isLocked ? 'onclick="app.promptUnlock()"' : `onclick="app.startPractice(1, '${p.id}', false)"`}>
@@ -618,7 +618,7 @@ class VstepApp {
 
     /* --- PRACTICE RUN ENGINE --- */
     startPractice(partNum, id, isTheory = false) {
-        const isLockedPart1 = isTheory && (id === 'p1_type_05' || id === 'p1_type_06');
+        const isLockedPart1 = !isTheory || (isTheory && (id === 'p1_type_05' || id === 'p1_type_06'));
         if ((partNum !== 1 || isLockedPart1) && !this.isUnlocked()) {
             this.promptUnlock();
             return;
