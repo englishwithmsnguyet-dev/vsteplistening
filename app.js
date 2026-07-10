@@ -46,6 +46,7 @@ class VstepApp {
         try {
             await this.loadData();
             this.renderLists();
+            this.renderVocab();
             this.applyLocks();
             this.updateStats();
         } catch (err) {
@@ -150,6 +151,17 @@ class VstepApp {
                 // Toggle active panes
                 container.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
                 container.querySelector(`#tab-${tabId}`).classList.add('active');
+                
+                // Reset search when switching vocabulary tabs
+                if (tabId.startsWith('vocab-cat-')) {
+                    const searchInput = document.getElementById('vocab-search');
+                    if (searchInput) {
+                        searchInput.value = '';
+                        document.querySelectorAll('.vocab-topic-block, .vocab-card').forEach(el => {
+                            el.style.display = '';
+                        });
+                    }
+                }
             });
         });
         
@@ -368,7 +380,7 @@ class VstepApp {
     /* --- APPLICATION ROUTING --- */
     handleRouting() {
         const hash = window.location.hash.replace('#', '') || 'dashboard';
-        const validViews = ['dashboard', 'part1', 'part2', 'part3', 'statistics', 'practice-run'];
+        const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part3', 'statistics', 'practice-run'];
         
         if (!this.isUnlocked() && (hash === 'part2' || hash === 'part3')) {
             this.promptUnlock();
@@ -492,6 +504,7 @@ class VstepApp {
         const viewTitles = {
             'dashboard': { parent: 'Học nghe VSTEP', current: 'HOME PAGE' },
             'part1': { parent: 'Luyện tập', current: 'PART 01: SHORT TALKS/CONVERSATIONS' },
+            'part1-vocab': { parent: 'Từ vựng', current: 'Từ vựng PART 01' },
             'part2': { parent: 'Luyện tập', current: 'PART 02: LONG CONVERSATIONS' },
             'part3': { parent: 'Luyện tập', current: 'PART 03: LONG TALKS' },
             'statistics': { parent: 'Tiện ích', current: 'Tiến độ học tập' },
@@ -504,6 +517,103 @@ class VstepApp {
         
         // Scroll to top of panel
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    renderVocab() {
+        if (!window.VSTEP_VOCAB_DATA) return;
+        
+        window.VSTEP_VOCAB_DATA.forEach((cat, cIdx) => {
+            const container = document.getElementById(`tab-vocab-cat-${cIdx}`);
+            if (!container) return;
+            
+            let html = '';
+            cat.topics.forEach(topic => {
+                let emoji = "📝";
+                const nameUpper = topic.name.toUpperCase();
+                if (nameUpper.includes("GIÁO DỤC")) emoji = "🏫";
+                else if (nameUpper.includes("KHOA HỌC")) emoji = "🧪";
+                else if (nameUpper.includes("Y TẾ") || nameUpper.includes("MEDICAL")) emoji = "🏥";
+                else if (nameUpper.includes("KINH DOANH") || nameUpper.includes("OFFICE")) emoji = "🏢";
+                else if (nameUpper.includes("XÂY DỰNG") || nameUpper.includes("WAREHOUSE")) emoji = "🏗️";
+                else if (nameUpper.includes("NGHỆ THUẬT") || nameUpper.includes("THEATER")) emoji = "🎭";
+                else if (nameUpper.includes("LUẬT")) emoji = "⚖️";
+                else if (nameUpper.includes("THỦ CÔNG")) emoji = "🛠️";
+                else if (nameUpper.includes("LOGISTICS") || nameUpper.includes("KHO VẬN")) emoji = "📦";
+                else if (nameUpper.includes("RESTAURANT") || nameUpper.includes("SHOP")) emoji = "🛍️";
+                else if (nameUpper.includes("HOTEL")) emoji = "🏨";
+                else if (nameUpper.includes("BANK")) emoji = "🏦";
+                else if (nameUpper.includes("POST OFFICE")) emoji = "📮";
+                else if (nameUpper.includes("AIRPORT")) emoji = "✈️";
+                else if (nameUpper.includes("REAL ESTATE")) emoji = "🏠";
+                else if (nameUpper.includes("TRAIN") || nameUpper.includes("STATION")) emoji = "🚆";
+                else if (nameUpper.includes("SỰ KIỆN")) emoji = "🎉";
+                
+                html += `
+                    <div class="vocab-topic-block">
+                        <h3 class="vocab-topic-title">${emoji} ${topic.name}</h3>
+                        <div class="vocab-grid">
+                `;
+                
+                topic.words.forEach(w => {
+                    const wordClean = w.word.replace(/'/g, "\\'");
+                    html += `
+                        <div class="vocab-card" data-word="${w.word.toLowerCase()}" data-meaning="${w.meaning.toLowerCase()}">
+                            <div class="vocab-header-row">
+                                <span class="vocab-word">${w.word}</span>
+                                <button class="btn-speak-vocab" onclick="window.speakWord('${wordClean}')" title="Nghe đọc mẫu">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                        <path d="M12 3L6.5 8H2V16H6.5L12 21V3ZM16.5 12C16.5 10.23 15.48 8.71 14 8V16C15.48 15.29 16.5 13.77 16.5 12ZM14 3.23V5.29C16.89 6.15 19 8.83 19 12C19 15.17 16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12C21 7.72 18.01 4.14 14 3.23Z"/>
+                                    </svg>
+                                </button>
+                                ${w.pos ? `<span class="vocab-pos">${w.pos}</span>` : ''}
+                            </div>
+                            ${w.ipa ? `<div class="vocab-ipa">${w.ipa}</div>` : ''}
+                            <div class="vocab-meaning">${w.meaning}</div>
+                        </div>
+                    `;
+                });
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        });
+        
+        // Set up search filter listener
+        const searchInput = document.getElementById('vocab-search');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                const activePane = document.querySelector('#vocab-tab-body .tab-pane.active');
+                if (!activePane) return;
+                
+                const topicBlocks = activePane.querySelectorAll('.vocab-topic-block');
+                topicBlocks.forEach(block => {
+                    const cards = block.querySelectorAll('.vocab-card');
+                    let visibleCount = 0;
+                    
+                    cards.forEach(card => {
+                        const word = card.getAttribute('data-word') || '';
+                        const meaning = card.getAttribute('data-meaning') || '';
+                        if (word.includes(query) || meaning.includes(query)) {
+                            card.style.display = 'flex';
+                            visibleCount++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    
+                    if (visibleCount > 0 || query === '') {
+                        block.style.display = 'block';
+                    } else {
+                        block.style.display = 'none';
+                    }
+                });
+            });
+        }
     }
 
     /* --- PRACTICE RUN ENGINE --- */
@@ -1257,3 +1367,20 @@ String.prototype.strip = function() {
 };
 
 const app = new VstepApp();
+
+window.speakWord = (word) => {
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        let cleanWord = word.split('/')[0].split(',')[0].trim();
+        cleanWord = cleanWord.replace(/\([^)]*\)/g, '').trim();
+        cleanWord = cleanWord.replace(/[^\w\s\-]/g, '').trim();
+        
+        const utterance = new SpeechSynthesisUtterance(cleanWord);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.85;
+        window.speechSynthesis.speak(utterance);
+    } else {
+        alert("Trình duyệt của bạn không hỗ trợ tính năng phát âm.");
+    }
+};
+

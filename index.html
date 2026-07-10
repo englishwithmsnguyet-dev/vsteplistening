@@ -54,6 +54,11 @@
                     <span>PART 01: SHORT TALKS/CONVERSATIONS</span>
                 </a>
                 
+                <a href="#part1-vocab" class="menu-item" data-view="part1-vocab" style="padding-left: 28px;">
+                    <div class="menu-item-badge">V1</div>
+                    <span>Từ vựng PART 01</span>
+                </a>
+                
                 <a href="#part2" class="menu-item" data-view="part2">
                     <div class="menu-item-badge">P2</div>
                     <span>PART 02: LONG CONVERSATIONS</span>
@@ -271,6 +276,30 @@
                     </div>
                 </section>
 
+                <!-- 2.5. PART 01 VOCABULARY VIEW -->
+                <section class="view-panel" id="view-part1-vocab">
+                    <div class="tab-container">
+                        <div class="tab-header" id="vocab-tab-header">
+                            <button class="tab-btn active" data-tab="vocab-cat-0">💼 Nghề nghiệp & Chức vụ</button>
+                            <button class="tab-btn" data-tab="vocab-cat-1">📍 Địa điểm & Bối cảnh</button>
+                            <button class="tab-btn" data-tab="vocab-cat-2">🎉 Các sự kiện hay gặp</button>
+                        </div>
+                        
+                        <div class="search-box-wrapper" style="margin: 20px 0; display: flex; gap: 12px; align-items: center;">
+                            <div style="position: relative; flex: 1;">
+                                <input type="text" id="vocab-search" placeholder="🔍 Nhập từ vựng hoặc nghĩa tiếng Việt để tìm kiếm nhanh..." style="width: 100%; padding: 12px 40px 12px 16px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-size: 0.95rem;">
+                            </div>
+                        </div>
+
+                        <div class="tab-body" id="vocab-tab-body">
+                            <!-- Dynamic loading of subtopics and words -->
+                            <div class="tab-pane active" id="tab-vocab-cat-0"></div>
+                            <div class="tab-pane" id="tab-vocab-cat-1"></div>
+                            <div class="tab-pane" id="tab-vocab-cat-2"></div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- 3. PART 02 VIEW -->
                 <section class="view-panel" id="view-part2">
                     <p class="section-description">Mỗi đề luyện tập Part 2 gồm 1 cuộc hội thoại dài giữa 2 người (thường là sinh viên và giáo viên, hoặc các đồng nghiệp) kèm theo 4 câu hỏi trắc nghiệm.</p>
@@ -466,6 +495,7 @@
 
     <!-- Scripts -->
     <script src="data.js"></script>
+    <script src="vocab_data.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
