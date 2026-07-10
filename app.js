@@ -1377,7 +1377,31 @@ window.speakWord = (word) => {
         
         const utterance = new SpeechSynthesisUtterance(cleanWord);
         utterance.lang = 'en-US';
-        utterance.rate = 0.85;
+        
+        // Prioritize natural-sounding, younger conversational US voices
+        const voices = window.speechSynthesis.getVoices();
+        const priorities = ["Google US English", "Ava", "Allison", "Siri", "Samantha", "Victoria"];
+        let selectedVoice = null;
+        
+        for (const name of priorities) {
+            const found = voices.find(v => v.name.includes(name) && v.lang.startsWith('en'));
+            if (found) {
+                selectedVoice = found;
+                break;
+            }
+        }
+        
+        if (!selectedVoice) {
+            selectedVoice = voices.find(v => v.lang === 'en-US' || v.lang === 'en_US') || 
+                            voices.find(v => v.lang.startsWith('en'));
+        }
+        
+        if (selectedVoice) {
+            utterance.voice = selectedVoice;
+        }
+        
+        utterance.pitch = 1.05; // Slightly higher pitch for a younger, friendlier voice
+        utterance.rate = 0.92;  // Natural conversational speed (not robotic or excessively slow)
         window.speechSynthesis.speak(utterance);
     } else {
         alert("Trình duyệt của bạn không hỗ trợ tính năng phát âm.");
