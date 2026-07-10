@@ -291,7 +291,7 @@ class VstepApp {
         // Part 1 Theory List
         this.elements.p1TheoryList.innerHTML = this.data.part1.theory.map(t => {
             const isCompleted = this.progress.completedTheory[t.id];
-            const isLocked = false; // Always unlocked for Part 1
+            const isLocked = !unlocked && (t.id === 'p1_type_05' || t.id === 'p1_type_06');
             
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
@@ -618,7 +618,8 @@ class VstepApp {
 
     /* --- PRACTICE RUN ENGINE --- */
     startPractice(partNum, id, isTheory = false) {
-        if (partNum !== 1 && !this.isUnlocked()) {
+        const isLockedPart1 = isTheory && (id === 'p1_type_05' || id === 'p1_type_06');
+        if ((partNum !== 1 || isLockedPart1) && !this.isUnlocked()) {
             this.promptUnlock();
             return;
         }
