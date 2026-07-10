@@ -1408,3 +1408,437 @@ window.speakWord = (word) => {
     }
 };
 
+// ==========================================================
+// VOCABULARY REVIEW GAMES SYSTEM
+// ==========================================================
+
+let audioCtx = null;
+function playTone(freq, type, duration) {
+    try {
+        const AC = window.AudioContext || window.webkitAudioContext;
+        if (!AC) return;
+        if (!audioCtx) {
+            audioCtx = new AC();
+        }
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+    } catch (e) {
+        console.error("sfx error:", e);
+    }
+}
+
+const sfx = {
+    flip: () => playTone(300, 'sine', 0.1),
+    correct: () => {
+        playTone(600, 'sine', 0.1);
+        setTimeout(() => playTone(800, 'sine', 0.15), 100);
+    },
+    wrong: () => {
+        playTone(250, 'sawtooth', 0.2);
+        setTimeout(() => playTone(200, 'sawtooth', 0.25), 100);
+    },
+    win: () => {
+        playTone(400, 'sine', 0.1);
+        setTimeout(() => playTone(500, 'sine', 0.1), 100);
+        setTimeout(() => playTone(600, 'sine', 0.1), 200);
+        setTimeout(() => playTone(800, 'sine', 0.4), 300);
+    }
+};
+
+function shootConfetti() {
+    if (typeof confetti === 'function') {
+        const duration = 2500;
+        const end = Date.now() + duration;
+        (function frame() {
+            confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 }, colors: ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'], zIndex: 9999 });
+            confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 }, colors: ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'], zIndex: 9999 });
+            if (Date.now() < end) requestAnimationFrame(frame);
+        }());
+    }
+}
+
+window.startReviewGame = (type) => {
+    const activeBtn = document.querySelector('#vocab-tab-header .tab-btn.active');
+    if (!activeBtn) return;
+    const tabId = activeBtn.getAttribute('data-tab');
+    const catIdx = parseInt(tabId.split('-')[2]);
+    
+    if (!window.VSTEP_VOCAB_DATA || !window.VSTEP_VOCAB_DATA[catIdx]) {
+        alert("Không tìm thấy dữ liệu từ vựng cho phần này!");
+        return;
+    }
+    
+    const catData = window.VSTEP_VOCAB_DATA[catIdx];
+    const gameWords = [];
+    catData.topics.forEach(topic => {
+        topic.words.forEach(w => {
+            gameWords.push({
+                en: w.word.trim(),
+                vn: w.meaning.trim()
+            });
+        });
+    });
+    
+    if (gameWords.length === 0) {
+        alert("Chưa có từ vựng nào trong danh mục này để chơi!");
+        return;
+    }
+    
+    const placeholder = document.getElementById('game-placeholder');
+    const content = document.getElementById('game-content');
+    
+    if (placeholder) placeholder.style.display = 'none';
+    if (content) {
+        content.style.display = 'block';
+        content.innerHTML = '';
+    }
+    
+    if (type === 'flashcards') {
+        initFlashcards(gameWords, content);
+    } else if (type === 'matching') {
+        initMatchingGame(gameWords, content);
+    } else if (type === 'quiz') {
+        initQuizGame(gameWords, content);
+    } else if (type === 'spelling') {
+        initSpellingGame(gameWords, content);
+    }
+};
+
+function initFlashcards(allWords, container) {
+    let words = [...allWords].sort(() => 0.5 - Math.random());
+    let currentIndex = 0;
+    
+    function renderCard() {
+        if (currentIndex >= words.length) {
+            sfx.win();
+            shootConfetti();
+            container.innerHTML = `
+                <div style="text-align:center; padding: 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                    <div style="font-size: 4rem; margin-bottom: 16px;">🏆</div>
+                    <h3 style="font-size:1.4rem; margin-bottom:16px; font-weight:800; color: var(--color-primary);">Tuyệt vời! Bạn đã hoàn thành tất cả các thẻ.</h3>
+                    <button class="btn btn-primary" onclick="window.startReviewGame('flashcards')">🔄 Ôn tập lại</button>
+                </div>
+            `;
+            return;
+        }
+        
+        const word = words[currentIndex];
+        const cleanWord = word.en.replace(/'/g, "\\'");
+        
+        container.innerHTML = `
+            <div style="display:flex; flex-direction:column; align-items:center; width:100%; justify-content:center;">
+                <div style="margin-bottom:12px; font-weight:bold; color:var(--text-muted);">Thẻ ${currentIndex + 1} / ${words.length}</div>
+                <div class="flashcard-container" onclick="
+                    const card = this.querySelector('.flashcard');
+                    if (!card.classList.contains('flipped')) {
+                        sfx.flip();
+                        card.classList.add('flipped');
+                        window.speakWord('${cleanWord}');
+                    } else {
+                        card.classList.remove('flipped');
+                    }
+                ">
+                    <div class="flashcard">
+                        <div class="flashcard-face flashcard-front">
+                            <div class="fc-word">${word.en}</div>
+                            <div class="fc-hint">👆 Nhấp để xem nghĩa tiếng Việt</div>
+                        </div>
+                        <div class="flashcard-face flashcard-back">
+                            <div class="fc-word">${word.vn}</div>
+                            <div class="fc-hint">🔊 Nhấp để nghe lại phát âm</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display:flex; gap:16px; margin-top:8px; flex-wrap:wrap; justify-content:center; width:100%;">
+                    <button class="btn" style="background:#fef2f2; color:#991b1b; border:1px solid #fecaca; box-shadow:none; padding:10px 20px;" id="fc-btn-review">❌ Cần ôn lại</button>
+                    <button class="btn" style="background:#ecfdf5; color:#065f46; border:1px solid #a7f3d0; box-shadow:none; padding:10px 20px;" id="fc-btn-gotit">✅ Đã thuộc</button>
+                </div>
+            </div>
+        `;
+        
+        document.getElementById('fc-btn-review').onclick = (e) => {
+            e.stopPropagation();
+            words.push(word);
+            currentIndex++;
+            renderCard();
+        };
+        
+        document.getElementById('fc-btn-gotit').onclick = (e) => {
+            e.stopPropagation();
+            currentIndex++;
+            renderCard();
+        };
+    }
+    
+    renderCard();
+}
+
+function initMatchingGame(allWords, container) {
+    let pool = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 6);
+    let items = [];
+    pool.forEach((w, i) => {
+        items.push({ id: i, text: w.en, type: 'en', word: w });
+        items.push({ id: i, text: w.vn, type: 'vn', word: w });
+    });
+    items.sort(() => 0.5 - Math.random());
+    
+    container.innerHTML = `
+        <div style="display:flex; justify-content:space-between; margin-bottom:20px; align-items:center; flex-wrap:wrap; gap:12px; width:100%;">
+            <div style="font-weight:bold; color:var(--text-primary); font-size:1.05rem;">🔗 Ghép các cặp từ tương ứng:</div>
+            <button class="btn btn-secondary" onclick="window.startReviewGame('matching')" style="padding: 6px 12px; font-size: 0.85rem;">🔄 Bài mới</button>
+        </div>
+        <div class="matching-grid" id="match-grid"></div>
+    `;
+    
+    const grid = document.getElementById('match-grid');
+    let selectedItem = null;
+    let matchedCount = 0;
+    let animating = false;
+    
+    items.forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = 'match-card';
+        card.textContent = item.text;
+        
+        card.onclick = () => {
+            if (animating || card.classList.contains('matched') || card.classList.contains('selected')) return;
+            
+            if (!selectedItem) {
+                card.classList.add('selected');
+                selectedItem = { el: card, data: item };
+                if (item.type === 'en') window.speakWord(item.text);
+            } else {
+                animating = true;
+                if (selectedItem.data.id === item.id && selectedItem.data.type !== item.type) {
+                    card.classList.add('selected');
+                    sfx.correct();
+                    if (item.type === 'en') window.speakWord(item.text);
+                    
+                    setTimeout(() => {
+                        card.classList.remove('selected');
+                        card.classList.add('matched');
+                        selectedItem.el.classList.remove('selected');
+                        selectedItem.el.classList.add('matched');
+                        selectedItem = null;
+                        matchedCount++;
+                        animating = false;
+                        
+                        if (matchedCount === 6) {
+                            sfx.win();
+                            shootConfetti();
+                            setTimeout(() => {
+                                container.innerHTML = `
+                                    <div style="text-align:center; padding: 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                                        <div style="font-size: 4rem; margin-bottom: 16px;">🌟</div>
+                                        <h3 style="font-size:1.4rem; margin-bottom:16px; font-weight:800; color: var(--color-primary);">Hoàn thành xuất sắc!</h3>
+                                        <button class="btn btn-primary" onclick="window.startReviewGame('matching')">▶️ Chơi tiếp</button>
+                                    </div>
+                                `;
+                            }, 300);
+                        }
+                    }, 400);
+                } else {
+                    card.classList.add('error');
+                    selectedItem.el.classList.remove('selected');
+                    selectedItem.el.classList.add('error');
+                    sfx.wrong();
+                    if (item.type === 'en') window.speakWord(item.text);
+                    
+                    setTimeout(() => {
+                        card.classList.remove('error');
+                        selectedItem.el.classList.remove('error');
+                        selectedItem = null;
+                        animating = false;
+                    }, 500);
+                }
+            }
+        };
+        grid.appendChild(card);
+    });
+}
+
+function initQuizGame(allWords, container) {
+    let words = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 10);
+    let currentIndex = 0;
+    let score = 0;
+    
+    function renderQuiz() {
+        if (currentIndex >= words.length) {
+            sfx.win();
+            shootConfetti();
+            container.innerHTML = `
+                <div style="text-align:center; padding: 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                    <div style="font-size: 4rem; margin-bottom: 16px;">🏅</div>
+                    <h3 style="font-size:1.4rem; margin-bottom:8px; font-weight:800; color: var(--color-primary);">Hoàn thành Trắc nghiệm!</h3>
+                    <p style="font-size:1.15rem; margin-bottom:16px; color: var(--text-secondary);">Bạn đạt <strong style="color:var(--color-primary); font-size:1.4rem;">${score} / ${words.length}</strong> điểm.</p>
+                    <button class="btn btn-primary" onclick="window.startReviewGame('quiz')">🔄 Làm lại</button>
+                </div>
+            `;
+            return;
+        }
+        
+        const currentWord = words[currentIndex];
+        let options = [currentWord];
+        let distractors = [...allWords].filter(w => w.en !== currentWord.en).sort(() => 0.5 - Math.random()).slice(0, 3);
+        options = [...options, ...distractors].sort(() => 0.5 - Math.random());
+        
+        container.innerHTML = `
+            <div class="quiz-container">
+                <div style="display:flex; justify-content:space-between; margin-bottom:16px; color:var(--text-muted); font-weight:600;">
+                    <div>Câu hỏi: <span style="color:var(--text-primary);">${currentIndex + 1} / ${words.length}</span></div>
+                    <div>Điểm số: <span style="color:var(--color-primary);">${score}</span></div>
+                </div>
+                <div class="quiz-question">
+                    Nghĩa tiếng Anh của từ:<br>
+                    <span style="color:var(--text-primary); font-size:1.5rem; display:block; margin-top:8px; font-weight:800;">"${currentWord.vn}"</span>
+                </div>
+                <div class="quiz-options">
+                    ${options.map((opt, i) => `
+                        <div class="quiz-option" data-ans="${opt.en === currentWord.en}">
+                            <div style="background:var(--border-color); border-radius:50%; width:28px; height:28px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:0.85rem; font-weight:800; color:var(--text-secondary);">${['A', 'B', 'C', 'D'][i]}</div>
+                            <div>${opt.en}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+        
+        const opts = container.querySelectorAll('.quiz-option');
+        let answered = false;
+        opts.forEach(opt => {
+            opt.onclick = () => {
+                if (answered) return;
+                answered = true;
+                const isCorrect = opt.getAttribute('data-ans') === 'true';
+                window.speakWord(opt.querySelector('div:nth-child(2)').textContent);
+                
+                if (isCorrect) {
+                    opt.classList.add('correct');
+                    sfx.correct();
+                    score++;
+                } else {
+                    opt.classList.add('wrong');
+                    sfx.wrong();
+                    opts.forEach(o => {
+                        if (o.getAttribute('data-ans') === 'true') o.classList.add('correct');
+                    });
+                }
+                
+                setTimeout(() => {
+                    currentIndex++;
+                    renderQuiz();
+                }, 1500);
+            };
+        });
+    }
+    
+    renderQuiz();
+}
+
+function initSpellingGame(allWords, container) {
+    let words = [...allWords].sort(() => 0.5 - Math.random()).slice(0, 10);
+    let currentIndex = 0;
+    let score = 0;
+    
+    function renderSpelling() {
+        if (currentIndex >= words.length) {
+            sfx.win();
+            shootConfetti();
+            container.innerHTML = `
+                <div style="text-align:center; padding: 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                    <div style="font-size: 4rem; margin-bottom: 16px;">⌨️</div>
+                    <h3 style="font-size:1.4rem; margin-bottom:8px; font-weight:800; color: var(--color-primary);">Hoàn thành Thử thách gõ từ!</h3>
+                    <p style="font-size:1.15rem; margin-bottom:16px; color: var(--text-secondary);">Bạn gõ đúng <strong style="color:var(--color-primary); font-size:1.4rem;">${score} / ${words.length}</strong> từ.</p>
+                    <button class="btn btn-primary" onclick="window.startReviewGame('spelling')">🔄 Làm lại</button>
+                </div>
+            `;
+            return;
+        }
+        
+        const currentWord = words[currentIndex];
+        const cleanWord = currentWord.en.replace(/'/g, "\\'");
+        
+        container.innerHTML = `
+            <div class="quiz-container" style="max-width: 480px;">
+                <div style="display:flex; justify-content:space-between; margin-bottom:16px; color:var(--text-muted); font-weight:600;">
+                    <div>Câu hỏi: <span style="color:var(--text-primary);">${currentIndex + 1} / ${words.length}</span></div>
+                    <div>Điểm số: <span style="color:var(--color-primary);">${score}</span></div>
+                </div>
+                <div class="quiz-question" style="margin-bottom:24px; position:relative; display:flex; flex-direction:column; align-items:center; gap:8px;">
+                    <div style="color:var(--text-muted); font-size:0.9rem; font-weight:500;">Nghĩa tiếng Việt:</div>
+                    <div style="color:var(--text-primary); font-size:1.5rem; font-weight:800;">"${currentWord.vn}"</div>
+                    <button class="btn-speak-vocab" onclick="window.speakWord('${cleanWord}')" style="margin-top:12px; width:40px; height:40px;" title="Nghe gợi ý phát âm">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M12 3L6.5 8H2V16H6.5L12 21V3ZM16.5 12C16.5 10.23 15.48 8.71 14 8V16C15.48 15.29 16.5 13.77 16.5 12ZM14 3.23V5.29C16.89 6.15 19 8.83 19 12C19 15.17 16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12C21 7.72 18.01 4.14 14 3.23Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:12px; width:100%;">
+                    <input type="text" id="spell-input" placeholder="Gõ từ tiếng Anh tương ứng..." autocomplete="off" spellcheck="false" 
+                           style="width:100%; padding:14px 20px; font-size:1.15rem; border-radius:10px; border:2px solid var(--border-color); background:var(--bg-card); color:var(--text-primary); outline:none; transition:border-color 0.2s;">
+                    <div id="spell-error" style="color:#ef4444; font-size:0.85rem; font-weight:600; display:none; text-align:center;">Chưa chính xác, thử lại nhé!</div>
+                    <button class="btn btn-primary" id="spell-btn" style="width:100%; padding:12px; font-size:1.05rem; font-weight:700; background:linear-gradient(135deg, #ec4899, #be185d); border:none; color:white;">🔍 Kiểm tra</button>
+                </div>
+            </div>
+        `;
+        
+        const input = document.getElementById('spell-input');
+        const btn = document.getElementById('spell-btn');
+        const errorText = document.getElementById('spell-error');
+        
+        setTimeout(() => input.focus(), 100);
+        let attempts = 0;
+        
+        function checkAnswer() {
+            const val = input.value.trim().toLowerCase();
+            const correctVal = currentWord.en.split('/')[0].split(',')[0].replace(/\([^)]*\)/g, '').trim().toLowerCase();
+            
+            if (val === correctVal || val === currentWord.en.toLowerCase()) {
+                sfx.correct();
+                window.speakWord(currentWord.en);
+                input.style.borderColor = '#22c55e';
+                input.style.backgroundColor = 'rgba(34, 197, 94, 0.1)';
+                input.style.color = '#166534';
+                btn.disabled = true;
+                if (attempts === 0) score++;
+                
+                setTimeout(() => {
+                    currentIndex++;
+                    renderSpelling();
+                }, 1500);
+            } else {
+                sfx.wrong();
+                attempts++;
+                input.style.borderColor = '#ef4444';
+                input.classList.add('error');
+                errorText.style.display = 'block';
+                input.value = '';
+                
+                if (attempts >= 3) {
+                    errorText.innerHTML = `Gợi ý đáp án đúng: <strong style="color:var(--text-primary);">${currentWord.en}</strong>`;
+                }
+                
+                setTimeout(() => {
+                    input.classList.remove('error');
+                }, 500);
+            }
+        }
+        
+        btn.onclick = checkAnswer;
+        input.onkeypress = (e) => {
+            if (e.key === 'Enter') checkAnswer();
+        };
+    }
+    
+    renderSpelling();
+}
+
