@@ -291,7 +291,7 @@ class VstepApp {
         // Part 1 Theory List
         this.elements.p1TheoryList.innerHTML = this.data.part1.theory.map(t => {
             const isCompleted = this.progress.completedTheory[t.id];
-            const isLocked = !unlocked && (t.id === 'p1_type_05' || t.id === 'p1_type_06');
+            const isLocked = !unlocked && (t.id === 'p1_type_04' || t.id === 'p1_type_05' || t.id === 'p1_type_06');
             
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
@@ -404,12 +404,18 @@ class VstepApp {
     }
 
     promptUnlock() {
-        const pwd = prompt("Vui lòng nhập mật khẩu để mở khóa tất cả các phần học:");
-        if (pwd === 'missnguyet2026') {
-            sessionStorage.setItem('vstep_unlocked', 'true');
-            alert("Mở khóa thành công!");
-            window.location.reload();
-        } else if (pwd !== null) {
+        const pwd = prompt("Vui lòng nhập mật khẩu để mở khóa các phần học:");
+        if (pwd) {
+            const cleanPwd = pwd.trim();
+            const allowed = ['ONB103', 'CB206', 'CB210', 'CB211', 'missnguyet2026'];
+            if (allowed.includes(cleanPwd)) {
+                sessionStorage.setItem('vstep_unlocked', 'true');
+                alert("Mở khóa thành công!");
+                window.location.reload();
+                return;
+            }
+        }
+        if (pwd !== null) {
             alert("Mật khẩu không chính xác!");
         }
     }
@@ -618,7 +624,7 @@ class VstepApp {
 
     /* --- PRACTICE RUN ENGINE --- */
     startPractice(partNum, id, isTheory = false) {
-        const isLockedPart1 = !isTheory || (isTheory && (id === 'p1_type_05' || id === 'p1_type_06'));
+        const isLockedPart1 = !isTheory || (isTheory && (id === 'p1_type_04' || id === 'p1_type_05' || id === 'p1_type_06'));
         if ((partNum !== 1 || isLockedPart1) && !this.isUnlocked()) {
             this.promptUnlock();
             return;
