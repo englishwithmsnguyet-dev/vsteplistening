@@ -6,6 +6,7 @@ class VstepApp {
     constructor() {
         this.data = null;
         this.studentName = ""; // Session-based student name (resets on load/refresh)
+        this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212'];
         this.progress = {
             completedTests: {}, // testId -> score
             completedTheory: {}, // theoryId -> true
@@ -1223,7 +1224,15 @@ class VstepApp {
     checkStudentName() {
         const studentName = this.studentName;
         // Validate if the stored name contains a hyphen separating Name and Class
-        const hasValidFormat = studentName && studentName.includes(' - ') && studentName.trim() !== "Học viên VSTEP";
+        let hasValidFormat = studentName && studentName.includes(' - ') && studentName.trim() !== "Học viên VSTEP";
+        
+        if (hasValidFormat) {
+            const parts = studentName.split(' - ');
+            const studentClass = parts[1] ? parts[1].trim().toUpperCase() : '';
+            if (!this.allowedClasses.includes(studentClass)) {
+                hasValidFormat = false;
+            }
+        }
         
         if (!studentName || !hasValidFormat) {
             if (this.elements.studentNameInput) this.elements.studentNameInput.value = "";
@@ -1237,7 +1246,13 @@ class VstepApp {
 
     saveStudentName() {
         const inputName = this.elements.studentNameInput.value.trim();
-        const inputClass = this.elements.studentClassInput.value.trim();
+        const inputClass = this.elements.studentClassInput.value.trim().toUpperCase();
+        
+        if (!this.allowedClasses.includes(inputClass)) {
+            alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212)`);
+            return;
+        }
+        
         if (inputName && inputClass) {
             const combined = `${inputName} - ${inputClass}`;
             this.studentName = combined;
@@ -1258,7 +1273,13 @@ class VstepApp {
         if (newClass === null) return;
         
         const nameVal = newName.trim();
-        const classVal = newClass.trim();
+        const classVal = newClass.trim().toUpperCase();
+        
+        if (!this.allowedClasses.includes(classVal)) {
+            alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212)`);
+            return;
+        }
+        
         if (nameVal && classVal) {
             const combined = `${nameVal} - ${classVal}`;
             this.studentName = combined;
