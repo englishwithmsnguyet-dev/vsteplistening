@@ -5,7 +5,7 @@
 class VstepApp {
     constructor() {
         this.data = null;
-        this.studentName = ""; // Session-based student name (resets on load/refresh)
+        this.studentName = sessionStorage.getItem('vstep_student_name') || ""; // Session-based student name (resets when closing tab/browser)
         this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212'];
         this.progress = {
             completedTests: {}, // testId -> score
@@ -296,7 +296,7 @@ class VstepApp {
             
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
-                     ${isLocked ? 'onclick="app.promptUnlock()"' : `onclick="app.startPractice(1, '${t.id}', true)"`}>
+                     ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(1, '${t.id}', true))"` : `onclick="app.startPractice(1, '${t.id}', true)"`}>
                     <div class="card-title-row">
                         <h4>${t.title}</h4>
                         ${isCompleted ? '<span class="completed-badge">Đã học</span>' : ''}
@@ -318,7 +318,7 @@ class VstepApp {
             const isLocked = !unlocked;
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
-                     ${isLocked ? 'onclick="app.promptUnlock()"' : `onclick="app.startPractice(1, '${p.id}', false)"`}>
+                     ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(1, '${p.id}', false))"` : `onclick="app.startPractice(1, '${p.id}', false)"`}>
                     <div class="card-title-row">
                         <h4>${p.title}</h4>
                         ${isCompleted ? `<span class="completed-badge">${score}/8 Câu</span>` : ''}
@@ -340,7 +340,7 @@ class VstepApp {
             const isLocked = !unlocked;
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
-                     ${isLocked ? 'onclick="app.promptUnlock()"' : `onclick="app.startPractice(2, '${p.id}', false)"`}>
+                     ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(2, '${p.id}', false))"` : `onclick="app.startPractice(2, '${p.id}', false)"`}>
                     <div class="card-title-row">
                         <h4>${p.title}</h4>
                         ${isCompleted ? `<span class="completed-badge">${score}/4 Câu</span>` : ''}
@@ -362,7 +362,7 @@ class VstepApp {
             const isLocked = !unlocked;
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
-                     ${isLocked ? 'onclick="app.promptUnlock()"' : `onclick="app.startPractice(3, '${p.id}', false)"`}>
+                     ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(3, '${p.id}', false))"` : `onclick="app.startPractice(3, '${p.id}', false)"`}>
                     <div class="card-title-row">
                         <h4>${p.title}</h4>
                         ${isCompleted ? `<span class="completed-badge">${score}/5 Câu</span>` : ''}
@@ -384,7 +384,9 @@ class VstepApp {
         const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part3', 'statistics', 'practice-run'];
         
         if (!this.isUnlocked() && (hash === 'part2' || hash === 'part3')) {
-            this.promptUnlock();
+            this.promptUnlock(() => {
+                window.location.hash = '#' + hash;
+            });
             window.location.hash = '#dashboard';
             return;
         }
@@ -404,7 +406,7 @@ class VstepApp {
         return sessionStorage.getItem('vstep_unlocked') === 'true';
     }
 
-    promptUnlock() {
+    promptUnlock(successCallback) {
         const pwd = prompt("Vui lòng nhập mật khẩu để mở khóa các phần học:");
         if (pwd) {
             const cleanPwd = pwd.trim();
@@ -412,7 +414,11 @@ class VstepApp {
             if (allowed.includes(cleanPwd)) {
                 sessionStorage.setItem('vstep_unlocked', 'true');
                 alert("Mở khóa thành công!");
-                window.location.reload();
+                this.applyLocks();
+                this.renderLists();
+                if (typeof successCallback === 'function') {
+                    successCallback();
+                }
                 return;
             }
         }
@@ -434,7 +440,14 @@ class VstepApp {
                 p2MenuItem.onclick = (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    this.promptUnlock();
+                    this.promptUnlock(() => {
+                        this.switchView('part2');
+                        const menuBtn = document.querySelector('.menu-item[data-view="part2"]');
+                        if (menuBtn) {
+                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                            menuBtn.classList.add('active');
+                        }
+                    });
                 };
             }
             if (p3MenuItem) {
@@ -442,8 +455,24 @@ class VstepApp {
                 p3MenuItem.onclick = (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    this.promptUnlock();
+                    this.promptUnlock(() => {
+                        this.switchView('part3');
+                        const menuBtn = document.querySelector('.menu-item[data-view="part3"]');
+                        if (menuBtn) {
+                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                            menuBtn.classList.add('active');
+                        }
+                    });
                 };
+            }
+        } else {
+            if (p2MenuItem) {
+                p2MenuItem.classList.remove('locked');
+                p2MenuItem.onclick = null;
+            }
+            if (p3MenuItem) {
+                p3MenuItem.classList.remove('locked');
+                p3MenuItem.onclick = null;
             }
         }
         
@@ -452,21 +481,60 @@ class VstepApp {
         const p3Card = document.querySelector('.part-card[data-view="part3"]');
         
         if (!unlocked) {
-            [p2Card, p3Card].forEach(card => {
+            if (p2Card) {
+                p2Card.classList.add('locked');
+                p2Card.onclick = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.promptUnlock(() => {
+                        this.switchView('part2');
+                        const menuBtn = document.querySelector('.menu-item[data-view="part2"]');
+                        if (menuBtn) {
+                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                            menuBtn.classList.add('active');
+                        }
+                    });
+                };
+                const btn = p2Card.querySelector('.card-action-btn');
+                if (btn) {
+                    btn.innerHTML = `
+                        <span>Đang khóa</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    `;
+                }
+            }
+            if (p3Card) {
+                p3Card.classList.add('locked');
+                p3Card.onclick = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.promptUnlock(() => {
+                        this.switchView('part3');
+                        const menuBtn = document.querySelector('.menu-item[data-view="part3"]');
+                        if (menuBtn) {
+                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                            menuBtn.classList.add('active');
+                        }
+                    });
+                };
+                const btn = p3Card.querySelector('.card-action-btn');
+                if (btn) {
+                    btn.innerHTML = `
+                        <span>Đang khóa</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    `;
+                }
+            }
+        } else {
+            [p2Card, p3Card].forEach((card, idx) => {
                 if (card) {
-                    card.classList.add('locked');
-                    // Override onclick to show password prompt
-                    card.onclick = (e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        this.promptUnlock();
-                    };
-                    
+                    card.classList.remove('locked');
+                    card.onclick = null;
                     const btn = card.querySelector('.card-action-btn');
                     if (btn) {
                         btn.innerHTML = `
-                            <span>Đang khóa</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <span>Bắt đầu ôn tập</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         `;
                     }
                 }
@@ -1256,6 +1324,7 @@ class VstepApp {
         if (inputName && inputClass) {
             const combined = `${inputName} - ${inputClass}`;
             this.studentName = combined;
+            sessionStorage.setItem('vstep_student_name', combined);
             this.checkStudentName();
             this.submitToGoogleForm(combined);
         }
@@ -1283,6 +1352,7 @@ class VstepApp {
         if (nameVal && classVal) {
             const combined = `${nameVal} - ${classVal}`;
             this.studentName = combined;
+            sessionStorage.setItem('vstep_student_name', combined);
             this.updateSidebarUser(combined);
             this.submitToGoogleForm(combined);
             alert("Đã cập nhật thông tin học viên!");
