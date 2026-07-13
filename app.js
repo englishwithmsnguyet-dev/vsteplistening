@@ -1237,7 +1237,16 @@ class VstepApp {
     loadProgress() {
         const savedProgress = localStorage.getItem('vstep-listening-progress');
         if (savedProgress) {
-            this.progress = JSON.parse(savedProgress);
+            try {
+                const parsed = JSON.parse(savedProgress);
+                this.progress = {
+                    completedTests: parsed.completedTests || {},
+                    completedTheory: parsed.completedTheory || {},
+                    history: parsed.history || []
+                };
+            } catch (e) {
+                console.error("Error parsing saved progress:", e);
+            }
         }
         this.renderHistory();
     }
