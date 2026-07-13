@@ -383,8 +383,8 @@ class VstepApp {
         const hash = window.location.hash.replace('#', '') || 'dashboard';
         const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part3', 'statistics', 'practice-run'];
         
-        if (!this.isUnlocked() && (hash === 'part2' || hash === 'part3')) {
-            this.promptUnlock(() => {
+        if ((hash === 'part2' || hash === 'part3') && !this.isItemUnlocked(hash === 'part2' ? 2 : 3, '', false)) {
+            this.promptUnlock(hash === 'part2' ? 2 : 3, '', false, () => {
                 window.location.hash = '#' + hash;
             });
             window.location.hash = '#dashboard';
@@ -402,17 +402,41 @@ class VstepApp {
         }
     }
 
-    isUnlocked() {
-        return sessionStorage.getItem('vstep_unlocked') === 'true';
+    getAllowedPasswords(partNum, id, isTheory = false) {
+        if (partNum === 1 && isTheory) {
+            if (id === 'p1_type_02' || id === 'p1_type_03') {
+                return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
+            }
+            if (id === 'p1_type_04' || id === 'p1_type_05') {
+                return ['CB206', 'CB210', 'CB211'];
+            }
+            if (id === 'p1_type_06') {
+                return ['CB206', 'CB210'];
+            }
+        }
+        return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
     }
 
-    promptUnlock(successCallback) {
-        const pwd = prompt("Vui lòng nhập mật khẩu để mở khóa các phần học:");
+    isItemUnlocked(partNum, id, isTheory = false) {
+        if (sessionStorage.getItem('vstep_unlocked') === 'true') {
+            return true;
+        }
+        if (partNum === 1 && isTheory && id === 'p1_type_01') {
+            return true;
+        }
+        const pwd = sessionStorage.getItem('vstep_unlock_password');
+        if (!pwd) return false;
+        const allowed = this.getAllowedPasswords(partNum, id, isTheory);
+        return allowed.includes(pwd);
+    }
+
+    promptUnlock(partNum, id, isTheory, successCallback) {
+        const allowed = this.getAllowedPasswords(partNum, id, isTheory);
+        const pwd = prompt("Vui lòng nhập mật khẩu mở khóa phần này:");
         if (pwd) {
             const cleanPwd = pwd.trim();
-            const allowed = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
             if (allowed.includes(cleanPwd)) {
-                sessionStorage.setItem('vstep_unlocked', 'true');
+                sessionStorage.setItem('vstep_unlock_password', cleanPwd);
                 alert("Mở khóa thành công!");
                 this.applyLocks();
                 this.renderLists();
@@ -423,41 +447,27 @@ class VstepApp {
             }
         }
         if (pwd !== null) {
-            alert("Mật khẩu không chính xác!");
+            alert("Mật khẩu không chính xác hoặc lớp của bạn chưa được cấp quyền truy cập mục này!");
         }
     }
 
     applyLocks() {
-        const unlocked = this.isUnlocked();
+        const unlockedP2 = this.isItemUnlocked(2, '', false);
+        const unlockedP3 = this.isItemUnlocked(3, '', false);
         
         // Update Sidebar menu items
         const p2MenuItem = document.querySelector('.menu-item[data-view="part2"]');
         const p3MenuItem = document.querySelector('.menu-item[data-view="part3"]');
         
-        if (!unlocked) {
+        if (!unlockedP2) {
             if (p2MenuItem) {
                 p2MenuItem.classList.add('locked');
                 p2MenuItem.onclick = (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    this.promptUnlock(() => {
+                    this.promptUnlock(2, '', false, () => {
                         this.switchView('part2');
                         const menuBtn = document.querySelector('.menu-item[data-view="part2"]');
-                        if (menuBtn) {
-                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
-                            menuBtn.classList.add('active');
-                        }
-                    });
-                };
-            }
-            if (p3MenuItem) {
-                p3MenuItem.classList.add('locked');
-                p3MenuItem.onclick = (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.promptUnlock(() => {
-                        this.switchView('part3');
-                        const menuBtn = document.querySelector('.menu-item[data-view="part3"]');
                         if (menuBtn) {
                             document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
                             menuBtn.classList.add('active');
@@ -470,6 +480,25 @@ class VstepApp {
                 p2MenuItem.classList.remove('locked');
                 p2MenuItem.onclick = null;
             }
+        }
+        
+        if (!unlockedP3) {
+            if (p3MenuItem) {
+                p3MenuItem.classList.add('locked');
+                p3MenuItem.onclick = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.promptUnlock(3, '', false, () => {
+                        this.switchView('part3');
+                        const menuBtn = document.querySelector('.menu-item[data-view="part3"]');
+                        if (menuBtn) {
+                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                            menuBtn.classList.add('active');
+                        }
+                    });
+                };
+            }
+        } else {
             if (p3MenuItem) {
                 p3MenuItem.classList.remove('locked');
                 p3MenuItem.onclick = null;
@@ -480,13 +509,13 @@ class VstepApp {
         const p2Card = document.querySelector('.part-card[data-view="part2"]');
         const p3Card = document.querySelector('.part-card[data-view="part3"]');
         
-        if (!unlocked) {
+        if (!unlockedP2) {
             if (p2Card) {
                 p2Card.classList.add('locked');
                 p2Card.onclick = (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    this.promptUnlock(() => {
+                    this.promptUnlock(2, '', false, () => {
                         this.switchView('part2');
                         const menuBtn = document.querySelector('.menu-item[data-view="part2"]');
                         if (menuBtn) {
@@ -503,12 +532,27 @@ class VstepApp {
                     `;
                 }
             }
+        } else {
+            if (p2Card) {
+                p2Card.classList.remove('locked');
+                p2Card.onclick = null;
+                const btn = p2Card.querySelector('.card-action-btn');
+                if (btn) {
+                    btn.innerHTML = `
+                        <span>Bắt đầu ôn tập</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    `;
+                }
+            }
+        }
+        
+        if (!unlockedP3) {
             if (p3Card) {
                 p3Card.classList.add('locked');
                 p3Card.onclick = (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    this.promptUnlock(() => {
+                    this.promptUnlock(3, '', false, () => {
                         this.switchView('part3');
                         const menuBtn = document.querySelector('.menu-item[data-view="part3"]');
                         if (menuBtn) {
@@ -526,25 +570,25 @@ class VstepApp {
                 }
             }
         } else {
-            [p2Card, p3Card].forEach((card, idx) => {
-                if (card) {
-                    card.classList.remove('locked');
-                    card.onclick = null;
-                    const btn = card.querySelector('.card-action-btn');
-                    if (btn) {
-                        btn.innerHTML = `
-                            <span>Bắt đầu ôn tập</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        `;
-                    }
+            if (p3Card) {
+                p3Card.classList.remove('locked');
+                p3Card.onclick = null;
+                const btn = p3Card.querySelector('.card-action-btn');
+                if (btn) {
+                    btn.innerHTML = `
+                        <span>Bắt đầu ôn tập</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    `;
                 }
-            });
+            }
         }
     }
 
     switchView(viewName) {
-        if (!this.isUnlocked() && (viewName === 'part2' || viewName === 'part3')) {
-            this.promptUnlock();
+        if ((viewName === 'part2' || viewName === 'part3') && !this.isItemUnlocked(viewName === 'part2' ? 2 : 3, '', false)) {
+            this.promptUnlock(viewName === 'part2' ? 2 : 3, '', false, () => {
+                this.switchView(viewName);
+            });
             return;
         }
 
@@ -693,9 +737,10 @@ class VstepApp {
 
     /* --- PRACTICE RUN ENGINE --- */
     startPractice(partNum, id, isTheory = false) {
-        const isLockedPart1 = !isTheory || (isTheory && id !== 'p1_type_01');
-        if ((partNum !== 1 || isLockedPart1) && !this.isUnlocked()) {
-            this.promptUnlock();
+        if (!this.isItemUnlocked(partNum, id, isTheory)) {
+            this.promptUnlock(partNum, id, isTheory, () => {
+                this.startPractice(partNum, id, isTheory);
+            });
             return;
         }
 
