@@ -287,12 +287,10 @@ class VstepApp {
     }
 
     renderLists() {
-        const unlocked = this.isUnlocked();
-
         // Part 1 Theory List
         this.elements.p1TheoryList.innerHTML = this.data.part1.theory.map(t => {
             const isCompleted = this.progress.completedTheory[t.id];
-            const isLocked = !unlocked && (t.id !== 'p1_type_01');
+            const isLocked = !this.isItemUnlocked(1, t.id, true);
             
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
@@ -315,7 +313,7 @@ class VstepApp {
         this.elements.p1PracticeList.innerHTML = this.data.part1.practice.map(p => {
             const score = this.progress.completedTests[p.id];
             const isCompleted = score !== undefined;
-            const isLocked = !unlocked;
+            const isLocked = !this.isItemUnlocked(1, p.id, false);
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
                      ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(1, '${p.id}', false))"` : `onclick="app.startPractice(1, '${p.id}', false)"`}>
@@ -337,7 +335,7 @@ class VstepApp {
         this.elements.p2PracticeList.innerHTML = this.data.part2.practice.map(p => {
             const score = this.progress.completedTests[p.id];
             const isCompleted = score !== undefined;
-            const isLocked = !unlocked;
+            const isLocked = !this.isItemUnlocked(2, p.id, false);
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
                      ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(2, '${p.id}', false))"` : `onclick="app.startPractice(2, '${p.id}', false)"`}>
@@ -359,7 +357,7 @@ class VstepApp {
         this.elements.p3PracticeList.innerHTML = this.data.part3.practice.map(p => {
             const score = this.progress.completedTests[p.id];
             const isCompleted = score !== undefined;
-            const isLocked = !unlocked;
+            const isLocked = !this.isItemUnlocked(3, p.id, false);
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
                      ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(3, '${p.id}', false))"` : `onclick="app.startPractice(3, '${p.id}', false)"`}>
