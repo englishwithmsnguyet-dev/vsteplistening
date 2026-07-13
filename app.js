@@ -403,16 +403,24 @@ class VstepApp {
     }
 
     getAllowedPasswords(partNum, id, isTheory = false) {
-        if (partNum === 1 && isTheory) {
-            if (id === 'p1_type_02' || id === 'p1_type_03') {
-                return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
-            }
-            if (id === 'p1_type_04' || id === 'p1_type_05') {
-                return ['CB206', 'CB210', 'CB211'];
-            }
-            if (id === 'p1_type_06') {
+        if (partNum === 1) {
+            if (isTheory) {
+                if (id === 'p1_type_02' || id === 'p1_type_03') {
+                    return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
+                }
+                if (id === 'p1_type_04' || id === 'p1_type_05') {
+                    return ['CB206', 'CB210', 'CB211'];
+                }
+                if (id === 'p1_type_06') {
+                    return ['CB206', 'CB210'];
+                }
+            } else {
+                // Đề Practice Part 1
                 return ['CB206', 'CB210'];
             }
+        } else if (partNum === 2 || partNum === 3) {
+            // Part 2 và Part 3
+            return ['CB206'];
         }
         return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
     }
