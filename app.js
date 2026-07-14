@@ -416,8 +416,11 @@ class VstepApp {
                 // Đề Practice Part 1
                 return ['CB206', 'CB210'];
             }
-        } else if (partNum === 2 || partNum === 3) {
-            // Part 2 và Part 3
+        } else if (partNum === 2) {
+            // Part 2
+            return ['CB206', 'CB210'];
+        } else if (partNum === 3) {
+            // Part 3
             return ['CB206'];
         }
         return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
