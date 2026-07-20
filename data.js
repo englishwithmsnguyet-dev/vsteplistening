@@ -569,10 +569,10 @@ window.VSTEP_DATA = {
             ],
             "correct": "B",
             "en_transcript": [
-              "<span class=\"highlight\">W: </span><span class=\"highlight\">Hi, Mr. Lin, I'm calling from Central Dentistry. You have an appointment with Dr. Sumner on June eighth at two P.M. </span>I was wondering if we'd be able to move your appointment to three o'clock. <span class=\"highlight\">M: </span>Well, I have a sales call scheduled that morning, but I think three o'clock would be all right."
+              "<span class=\"highlight\">W: </span><span class=\"highlight\">Hi, Mr. Lin, I'm calling from Central Dentistry. You have an appointment with Dr. Sumner on June eighth at two P.M. </span>I was wondering if we'd be able to move your appointment to three o'clock.<br><span class=\"highlight\">M: </span>Well, I have a sales call scheduled that morning, but I think three o'clock would be all right."
             ],
             "vi_transcript": [
-              "<span class=\"highlight\">Nữ:</span> <span class=\"highlight\">Chào ông Lin, tôi đang gọi từ phòng khám nha khoa Central Dentistry. Ông có một cuộc hẹn với bác sĩ Sumner vào ngày 8 tháng 6 lúc 2 giờ chiều. </span>Tôi muốn hỏi liệu chúng tôi có thể dời cuộc hẹn của ông sang 3 giờ được không? <span class=\"highlight\">Nam:</span> À, tôi có một cuộc gọi bán hàng vào buổi sáng hôm đó, nhưng tôi nghĩ 3 giờ thì ổn."
+              "<span class=\"highlight\">Nữ:</span> <span class=\"highlight\">Chào ông Lin, tôi đang gọi từ phòng khám nha khoa Central Dentistry. Ông có một cuộc hẹn với bác sĩ Sumner vào ngày 8 tháng 6 lúc 2 giờ chiều. </span>Tôi muốn hỏi liệu chúng tôi có thể dời cuộc hẹn của ông sang 3 giờ được không?<br><span class=\"highlight\">Nam:</span> À, tôi có một cuộc gọi bán hàng vào buổi sáng hôm đó, nhưng tôi nghĩ 3 giờ thì ổn."
             ],
             "vocabulary": [],
             "audio": "PART 01/AUDIO/4_Cau_hoi_danh_tinh/Example 02.mp3"
@@ -737,10 +737,10 @@ window.VSTEP_DATA = {
             ],
             "correct": "D",
             "en_transcript": [
-              "<span class=\"highlight\">M: </span>Excuse me. My mobile phone is out of power. <span class=\"highlight\">Are there any tables here at the café that are near a wall socket, so I can charge my phone while I have some coffee?</span> <span class=\"highlight\">W: </span>Well, we only have a few outlets. And it looks like all the tables<span class=\"highlight\"> </span>near them are occupied. I'm sorry about that."
+              "<span class=\"highlight\">M: </span>Excuse me. My mobile phone is out of power. <span class=\"highlight\">Are there any tables here at the café that are near a wall socket, so I can charge my phone while I have some coffee?</span><br><span class=\"highlight\">W: </span>Well, we only have a few outlets. And it looks like all the tables<span class=\"highlight\"> </span>near them are occupied. I'm sorry about that."
             ],
             "vi_transcript": [
-              "Nam: Xin lỗi. Điện thoại di động của tôi hết pin. <span class=\"highlight\">Ở đây có bàn nào gần ổ cắm điện không, để tôi có thể sạc điện thoại trong lúc uống cà phê?</span> Nữ: À, chúng tôi chỉ có một vài ổ cắm thôi. Và có vẻ như tất cả các bàn gần đó đều đã có người ngồi rồi. Tôi rất tiếc về điều đó."
+              "Nam: Xin lỗi. Điện thoại di động của tôi hết pin. <span class=\"highlight\">Ở đây có bàn nào gần ổ cắm điện không, để tôi có thể sạc điện thoại trong lúc uống cà phê?</span><br>Nữ: À, chúng tôi chỉ có một vài ổ cắm thôi. Và có vẻ như tất cả các bàn gần đó đều đã có người ngồi rồi. Tôi rất tiếc về điều đó."
             ],
             "vocabulary": [
               "train station /treɪn ˈsteɪʃən/ (n): ga tàu",
