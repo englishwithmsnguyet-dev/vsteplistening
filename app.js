@@ -852,6 +852,38 @@ class VstepApp {
                 </div>
             ` : '';
             
+            // Generate Useful Vocabulary HTML if available
+            let usefulVocabHtml = '';
+            if (item.vocabulary && item.vocabulary.length > 0) {
+                const vocabListItems = item.vocabulary.map(v => {
+                    const match = v.match(/^([^/(:]+)(.*)$/);
+                    if (match) {
+                        const wordPart = match[1].trim();
+                        const restPart = match[2] || '';
+                        return `
+                            <div style="margin-bottom: 8px; display: flex; align-items: flex-start;">
+                                <button class="btn-speak-vocab" onclick="window.speakWord('${wordPart.replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); font-size: 1.1rem; padding: 0; margin-right: 8px; transform: translateY(2px);" title="Nghe đọc mẫu">
+                                    <i class="fas fa-volume-up"></i>
+                                </button>
+                                <div>
+                                    - <strong>${wordPart}</strong> ${restPart}
+                                </div>
+                            </div>
+                        `;
+                    }
+                    return `<div style="margin-bottom: 8px;">- ${v}</div>`;
+                }).join('');
+                
+                usefulVocabHtml = `
+                    <div class="useful-vocab-section" style="margin-top: 24px; padding-top: 16px; border-top: 1px dashed var(--color-primary-light);">
+                        <h4 style="margin-bottom: 12px; font-size: 0.95rem; font-weight: bold; color: var(--color-primary);">TỪ VỰNG HỮU ÍCH</h4>
+                        <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color);">
+                            ${vocabListItems}
+                        </div>
+                    </div>
+                `;
+            }
+
             // Inline Explanation Panel HTML
             const explanationHtml = `
                 <div class="practice-explanation-panel collapsed" id="inline-explanation-${item.number || index + 1}">
@@ -871,6 +903,7 @@ class VstepApp {
                                     <div class="transcript-content text-vi" id="inline-vi-${item.number || index + 1}" style="font-size: 0.9rem;"></div>
                                 </div>
                             </div>
+                            ${usefulVocabHtml}
                         </div>
                         <div class="drawer-pane" data-pane="vocabulary">
                             <div class="vocab-cards" id="inline-vocab-${item.number || index + 1}"></div>
