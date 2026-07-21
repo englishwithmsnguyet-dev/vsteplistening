@@ -248,7 +248,19 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Cảm ơn bạn đã theo dõi chương trình sức khỏe ngày hôm nay. Tôi có một câu hỏi dành cho thính giả của tôi. Bạn đang muốn giảm lượng đường nhưng không thể cưỡng lại món ăn nhẹ ngọt ngào ở quán cà phê địa phương? <span class=\"highlight\">Hôm nay, tôi sẽ dạy bạn về một chương trình ăn uống giúp bạn vĩnh viễn chấm dứt cơn thèm ăn</span>. Tôi đã sử dụng chương trình này để giảm lượng đường nạp vào và nó đã có hiệu quả! Trên thực tế, chương trình này có thể giúp bạn thay đổi bất kỳ hành vi ăn uống nào trong một tháng. Đó không phải là nhiều thời gian! Bước đầu tiên là thiết lập mục tiêu. Vì vậy, hãy lấy một tờ giấy ra và viết ra ba thói quen ăn uống mà bạn muốn thay đổi."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "health show /ˈhelθ ʃoʊ/ (n): chương trình sức khỏe",
+              "listener /ˈlɪsənər/ (n): thính giả",
+              "lower /ˈloʊər/ (v): giảm",
+              "sugar intake /ˈʃʊɡər ˈɪnteɪk/ (n): lượng đường nạp vào",
+              "resist /rɪˈzɪst/ (v): cưỡng lại",
+              "sweet snack /swiːt snæk/ (n): món ăn nhẹ có vị ngọt",
+              "eating program /ˈiːtɪŋ ˈproʊɡræm/ (n): chương trình ăn uống",
+              "craving /ˈkreɪvɪŋ/ (n): cơn thèm ăn",
+              "permanently /ˈpɜːrmənəntli/ (adv): vĩnh viễn",
+              "behavior /bɪˈheɪvjər/ (n): hành vi",
+              "habit /ˈhæbɪt/ (n): thói quen"
+            ],
             "audio": "PART 01/AUDIO/2_Cau_hoi_y_chinh/Example 01.mp3"
           },
           {
@@ -285,7 +297,17 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Bạn đang nghĩ đến việc ra mắt trang web kinh doanh của riêng mình? Tại sao phải thuê một nhà thiết kế đồ họa khi bạn có thể tự làm điều đó? <span class=\"highlight\">Với công cụ tạo trang Web của Zonhop, bạn sẽ ngạc nhiên về việc xây dựng và quản lý trang Web của riêng mình lại đơn giản đến thế nào.</span><span class=\"highlight\"> </span>Chúng tôi có hàng trăm mẫu để lựa chọn, tất cả đều được thiết kế dành cho người dùng lần đầu. Các mẫu của chúng tôi bao gồm các hướng dẫn dễ thực hiện nên bạn có thể tạo chính xác những gì mình muốn chỉ bằng vài cú nhấp chuột đơn giản. Vẫn không chắc chắn? Đăng ký dùng thử miễn phí hai tháng tại www.Zonhop.com."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "launch /lɔːntʃ/ (v): ra mắt, khởi chạy",
+              "business /ˈbɪznəs/ (n): doanh nghiệp, việc kinh doanh",
+              "graphic designer /ˈɡræfɪk dɪˈzaɪnər/ (n): nhà thiết kế đồ họa",
+              "builder /ˈbɪldər/ (n): công cụ tạo/xây dựng",
+              "manage /ˈmænɪdʒ/ (v): quản lý",
+              "template /ˈtempleɪt/ (n): mẫu (thiết kế sẵn)",
+              "first-time user /fɜːrst taɪm ˈjuːzər/ (n): người dùng lần đầu",
+              "instruction /ɪnˈstrʌkʃn/ (n): hướng dẫn",
+              "trial /ˈtraɪəl/ (n): dùng thử"
+            ],
             "audio": "PART 01/AUDIO/2_Cau_hoi_y_chinh/Example 02.mp3"
           },
           {
@@ -322,7 +344,16 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "<span class=\"highlight\">Đây là Health on the Go, chương trình phát sóng hàng tuần cung cấp cho bạn lời khuyên về thói quen ăn uống của mình.</span><span class=\"highlight\"> </span>Hôm nay chúng ta đang nói về muối. Ai đã nghe nói rằng muối không tốt cho bạn? Chà... quan điểm tiêu cực này về muối thật đáng ngạc nhiên vì đơn giản là nó không đúng. Bạn thực sự cần một chút muối trong chế độ ăn uống để duy trì sức khỏe. Nhưng hãy nhớ. Muối xuất hiện tự nhiên trong hầu hết các loại thực phẩm, vì vậy bạn không cần bổ sung thêm muối vào chế độ ăn. Trên thực tế, ngay cả trái cây và rau quả cũng chứa muối. Tôi biết tất cả các bạn đều quan tâm đến việc thử thêm nhiều công thức nấu ăn sử dụng trái cây và rau quả. Chúng ta sẽ nói về điều đó trong chương trình phát sóng tuần tới."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "broadcast /ˈbrɔːdkæst/ (n): chương trình phát sóng",
+              "salt /sɔːlt/ (n): muối",
+              "negative view /ˈneɡətɪv vjuː/ (n): quan điểm tiêu cực",
+              "diet /ˈdaɪət/ (n): chế độ ăn uống",
+              "occur naturally /əˈkɜːr ˈnætʃrəli/ (v): xuất hiện tự nhiên",
+              "add /æd/ (v): thêm vào",
+              "contain /kənˈteɪn/ (v): chứa",
+              "recipe /ˈresəpi/ (n): công thức nấu ăn"
+            ],
             "audio": "PART 01/AUDIO/2_Cau_hoi_y_chinh/Example 03.mp3"
           },
           {
@@ -359,7 +390,17 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Xin chào mọi người. Tôi là Raul Bautista và đây là chương trình Lịch sử cùng Raul – podcast hàng tuần nơi chúng tôi khám phá những sự kiện lịch sử ít được biết đến nhưng có ảnh hưởng lớn đến thế giới ngày nay. Tuần này, chúng ta sẽ thảo luận về một chủ đề thuộc lịch sử nghệ thuật. <span class=\"highlight\">Chúng ta sẽ nghe về</span><span class=\"highlight\"> </span><span class=\"highlight\">vụ biến mất bí ẩn của một số bức tranh tại một bảo tàng ở châu Âu vào thế kỷ 17</span><span class=\"highlight\">. </span>Giáo sư Ignacio Ortega từ Đại học Westland sẽ giải thích điều gì đã xảy ra. Nhưng trước khi đến với giáo sư Ortega – xin nhớ rằng chương trình này chỉ thực hiện được nhờ sự tài trợ tài chính từ các thành viên. Hãy truy cập historywithraul.org hôm nay nhé."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "podcast /ˈpɑːdkæst/ (n): chương trình phát thanh (podcast)",
+              "investigate /ɪnˈvestɪɡeɪt/ (v): điều tra, khám phá",
+              "little-known /ˌlɪtl ˈnoʊn/ (adj): ít được biết đến",
+              "historical fact /hɪˈstɔːrɪkl fækt/ (n): sự kiện/sự thật lịch sử",
+              "impact /ˈɪmpækt/ (n): tác động, ảnh hưởng",
+              "mysterious /mɪˈstɪriəs/ (adj): bí ẩn",
+              "disappearance /ˌdɪsəˈpɪrəns/ (n): sự biến mất",
+              "painting /ˈpeɪntɪŋ/ (n): bức tranh",
+              "financial support /faɪˈnænʃl səˈpɔːrt/ (n): hỗ trợ tài chính"
+            ],
             "audio": "PART 01/AUDIO/2_Cau_hoi_y_chinh/Example 04.mp3"
           }
         ]
