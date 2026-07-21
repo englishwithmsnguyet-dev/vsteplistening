@@ -149,7 +149,17 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Chào buổi tối mọi người. <span class=\"highlight\">Chúng ta có mặt ở đây hôm nay để tri ân bà Antonia Grimaldi, người sẽ nghỉ hưu sau 30 năm làm việc tại công ty. </span>Bà Grimaldi bắt đầu công việc tại Khách sạn Grand Imperial với vai trò lễ tân và đã trở thành giám đốc của chúng ta trong 10 năm qua. Bà được nhớ đến vì sự tử tế và chăm chỉ. Chúng tôi sẽ rất nhớ khi không còn được làm việc cùng bà và rất biết ơn vì 30 năm cống hiến của bà cho công ty. Bây giờ, bà Grimaldi sẽ phát biểu đôi lời trước khi bữa tối được phục vụ."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "gather /ˈɡæðər/ (v): tập hợp, tụ tập",
+              "honor /ˈɑːnər/ (v): tri ân, vinh danh",
+              "retire /rɪˈtaɪər/ (v): nghỉ hưu",
+              "service /ˈsɜːrvɪs/ (n): sự phục vụ, làm việc",
+              "receptionist /rɪˈsepʃənɪst/ (n): nhân viên lễ tân",
+              "director /dəˈrektər/ (n): giám đốc",
+              "kindness /ˈkaɪndnəs/ (n): sự tử tế",
+              "dedication /ˌdedɪˈkeɪʃn/ (n): sự cống hiến",
+              "serve /sɜːrv/ (v): phục vụ"
+            ],
             "audio": "PART 01/AUDIO/1_Cau_hoi_muc_dich_giao_tiep/Example 03.mp3"
           },
           {
@@ -186,7 +196,16 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Chào buổi chiều. Cảm ơn mọi người đã đến cuộc họp sáng nay. Tôi có vài thông báo: Thứ nhất, giám đốc sẽ đi Berlin vào ngày mai và sẽ không quay lại cho đến thứ Ba tuần sau.<span class=\"highlight\"> </span>Dự án của chúng ta đang vượt tiến độ gần hai tuần – nhờ sự nỗ lực của mọi người. Vẫn còn nhiều việc phải làm, nhưng tôi rất hài lòng với tiến độ hiện tại. <span class=\"highlight\">Cuối cùng, hãy nghĩ ra một vài ý tưởng cho bài thuyết trình tháng tới. Chúng ta sẽ gặp nhau vào tuần sau để cùng thảo luận.</span>"
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "announcement /əˈnaʊnsmənt/ (n): thông báo",
+              "leave /liːv/ (v): rời đi",
+              "project /ˈprɑːdʒekt/ (n): dự án",
+              "ahead of schedule /əˈhed əv ˈskedʒuːl/ (exp): vượt tiến độ",
+              "pleased /pliːzd/ (adj): hài lòng",
+              "progress /ˈprɑːɡres/ (n): tiến độ",
+              "presentation /ˌpreznˈteɪʃn/ (n): bài thuyết trình",
+              "discuss /dɪˈskʌs/ (v): thảo luận"
+            ],
             "audio": "PART 01/AUDIO/1_Cau_hoi_muc_dich_giao_tiep/Example 04.mp3"
           }
         ]
