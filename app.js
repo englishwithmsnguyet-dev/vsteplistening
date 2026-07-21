@@ -862,8 +862,10 @@ class VstepApp {
                         const restPart = match[2] || '';
                         return `
                             <div style="margin-bottom: 8px; display: flex; align-items: flex-start;">
-                                <button class="btn-speak-vocab" onclick="window.speakWord('${wordPart.replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); font-size: 1.1rem; padding: 0; margin-right: 8px; transform: translateY(2px);" title="Nghe đọc mẫu">
-                                    <i class="fas fa-volume-up"></i>
+                                <button class="btn-speak-vocab" onclick="window.speakWord('${wordPart.replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0; margin-right: 8px; transform: translateY(1px);" title="Nghe đọc mẫu">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                        <path d="M12 3L6.5 8H2V16H6.5L12 21V3ZM16.5 12C16.5 10.23 15.48 8.71 14 8V16C15.48 15.29 16.5 13.77 16.5 12ZM14 3.23V5.29C16.89 6.15 19 8.83 19 12C19 15.17 16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12C21 7.72 18.01 4.14 14 3.23Z"/>
+                                    </svg>
                                 </button>
                                 <div>
                                     - <strong>${wordPart}</strong> ${restPart}
