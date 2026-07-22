@@ -443,7 +443,15 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Xin chào. Tôi đang gọi về một chiếc bàn chải đánh răng điện mà tôi đã đặt mua từ công ty của bạn. Tôi đang gặp sự cố với nó, và tôi hy vọng bạn có thể giúp tôi. Khi tôi nhấn nút nguồn, bàn chải không hoạt động. Tôi không biết tại sao nó lại không hoạt động vì pin đã được sạc đầy. Tuần sau tôi sẽ đi một chuyến dài, và tôi thực sự không muốn đi mà không có chiếc bàn chải này. <span class=\"highlight\">Làm ơn gọi lại cho tôi theo số 555-0137. </span>Cảm ơn."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "electric toothbrush /ɪˈlektrɪk ˈtuːθbrʌʃ/ (n): bàn chải đánh răng điện",
+              "order /ˈɔːrdər/ (v): đặt mua, đặt hàng",
+              "power button /ˈpaʊər ˈbʌtn/ (n): nút nguồn",
+              "battery /ˈbætəri/ (n): pin",
+              "fully charged /ˈfʊli tʃɑːrdʒd/ (adj): được sạc đầy",
+              "go away /ɡoʊ əˈweɪ/ (v): đi xa",
+              "call back /kɔːl bæk/ (v): gọi lại"
+            ],
             "audio": "PART 01/AUDIO/3_Cau_hoi_thong_tin_chi_tiet/Example 01.mp3"
           },
           {
@@ -480,7 +488,19 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Xin chào, tôi là Jackie Gross từ phòng Nhân sự. Chúc mừng bạn được thăng chức làm quản lý văn phòng của chúng ta tại Thái Lan! Tôi gọi vì tôi được giao nhiệm vụ hỗ trợ bạn trong việc chuyển nhà ra nước ngoài. <span class=\"highlight\">Việc đầu tiên tôi sẽ làm là liên lạc với một công ty vận chuyển để ước tính chi phí cho việc chuyển nhà.</span><span class=\"highlight\"> </span>Tôi cũng cần xác nhận số hộ chiếu của bạn để làm thị thực lao động; tôi muốn đảm bảo rằng các giấy tờ của bạn được hoàn tất càng sớm càng tốt. Vui lòng gọi lại cho tôi khi bạn thuận tiện nhé.."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "Human Resources /ˈhjuːmən rɪˈsɔːrsɪz/ (n): phòng Nhân sự",
+              "congratulations /kənˌɡrætʃəˈleɪʃnz/ (n): chúc mừng",
+              "promotion /prəˈmoʊʃn/ (n): sự thăng chức",
+              "manager /ˈmænɪdʒər/ (n): quản lý",
+              "assist /əˈsɪst/ (v): hỗ trợ",
+              "overseas /ˌoʊvərˈsiːz/ (adv): ở nước ngoài, ra nước ngoài",
+              "get in touch with /ɡet ɪn tʌtʃ wɪð/ (exp): liên lạc với",
+              "estimate /ˈestɪmeɪt/ (v): ước tính",
+              "confirm /kənˈfɜːrm/ (v): xác nhận",
+              "paperwork /ˈpeɪpərwɜːrk/ (n): giấy tờ, thủ tục",
+              "at your earliest convenience /ət jɔːr ˈɜːrliɪst kənˈviːniəns/ (exp): ngay khi bạn thuận tiện (càng sớm càng tốt)"
+            ],
             "audio": "PART 01/AUDIO/3_Cau_hoi_thong_tin_chi_tiet/Example 02.mp3"
           },
           {
@@ -517,7 +537,17 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Trước khi kết thúc cuộc họp này, <span class=\"highlight\">tôi muốn cảm ơn mọi người vì những giờ làm thêm mà các bạn đã bỏ ra để giúp dòng sản phẩm phụ kiện máy ảnh mới của chúng ta sẵn sàng ra mắt thị trường</span>. Nhờ sự sẵn lòng làm việc ngoài giờ của các bạn, các sản phẩm mới sẽ kịp ra mắt tại hội chợ thương mại diễn ra vào tháng tới ở Thượng Hải. Đây là những sản phẩm bổ sung cho các phụ kiện mà chúng ta vẫn trưng bày hàng năm, nhưng điều đó sẽ không thành vấn đề. Chúng ta đã đặt trước một gian hàng ở phía trước của khu triển lãm năm nay, và đó là một không gian lớn."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "extra hours /ˈekstrə ˈaʊərz/ (n): giờ làm thêm",
+              "put in /pʊt ɪn/ (v): bỏ ra (thời gian, công sức)",
+              "accessory /əkˈsesəri/ (n): phụ kiện",
+              "willingness /ˈwɪlɪŋnəs/ (n): sự sẵn lòng",
+              "overtime /ˈoʊvərtaɪm/ (adv): làm thêm giờ",
+              "trade show /ˈtreɪd ʃoʊ/ (n): hội chợ thương mại",
+              "in addition to /ɪn əˈdɪʃn tə/ (exp): ngoài ra, thêm vào",
+              "display /dɪˈspleɪ/ (v): trưng bày",
+              "exhibition hall /ˌeksɪˈbɪʃn hɔːl/ (n): khu triển lãm"
+            ],
             "audio": "PART 01/AUDIO/3_Cau_hoi_thong_tin_chi_tiet/Example 03.mp3"
           },
           {
@@ -554,7 +584,20 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Để bắt đầu cuộc họp nhân viên hôm nay, tôi rất vui được thông báo rằng kế hoạch tạo ra một khu vực làm việc ngoài trời của chúng ta đã được hoàn tất. Khi dự án hoàn thành, sẽ có các bàn làm việc cá nhân và bàn cho các cuộc họp nhóm nhỏ. Nếu bạn muốn xem không gian đó sẽ trông như thế nào, có một bản sơ đồ kiến trúc được đăng trên trang chủ của công ty chúng ta. Hãy chắc chắn cho chúng tôi biết nếu bạn có bất kỳ câu hỏi hoặc mối quan tâm nào. <span class=\"highlight\">Một số bạn đã bày tỏ lo ngại về việc truy cập Internet ở bên ngoài.</span> Tôi có thể đảm bảo rằng sẽ có kết nối Internet không dây."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "staff meeting /stæf ˈmiːtɪŋ/ (n): cuộc họp nhân viên",
+              "announce /əˈnaʊns/ (v): thông báo",
+              "outdoor /ˈaʊtdɔːr/ (adj): ngoài trời",
+              "finalize /ˈfaɪnəlaɪz/ (v): hoàn tất, chốt lại",
+              "complete /kəmˈpliːt/ (v): hoàn thành",
+              "workstation /ˈwɜːrksteɪʃn/ (n): không gian/bàn làm việc",
+              "architectural layout /ˌɑːrkɪˈtektʃərəl ˈleɪaʊt/ (n): sơ đồ kiến trúc",
+              "express concern /ɪkˈspres kənˈsɜːrn/ (exp): bày tỏ sự lo ngại",
+              "access /ˈækses/ (v): truy cập",
+              "assure /əˈʃʊr/ (v): đảm bảo",
+              "wireless /ˈwaɪərləs/ (adj): không dây",
+              "connectivity /ˌkɑːnekˈtɪvəti/ (n): khả năng kết nối"
+            ],
             "audio": "PART 01/AUDIO/3_Cau_hoi_thong_tin_chi_tiet/Example 04.mp3"
           }
         ]
