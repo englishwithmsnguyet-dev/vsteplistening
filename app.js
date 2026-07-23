@@ -403,7 +403,10 @@ class VstepApp {
     getAllowedPasswords(partNum, id, isTheory = false) {
         if (partNum === 1) {
             if (isTheory) {
-                if (id === 'p1_type_02' || id === 'p1_type_03') {
+                if (id === 'p1_type_01' || id === 'p1_type_02') {
+                    return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'missnguyet2026'];
+                }
+                if (id === 'p1_type_03') {
                     return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
                 }
                 if (id === 'p1_type_04' || id === 'p1_type_05') {
@@ -423,14 +426,11 @@ class VstepApp {
             // Part 3
             return ['CB206'];
         }
-        return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
+        return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'missnguyet2026'];
     }
 
     isItemUnlocked(partNum, id, isTheory = false) {
         if (sessionStorage.getItem('vstep_unlocked') === 'true') {
-            return true;
-        }
-        if (partNum === 1 && isTheory && id === 'p1_type_01') {
             return true;
         }
         const pwd = sessionStorage.getItem('vstep_unlock_password');
