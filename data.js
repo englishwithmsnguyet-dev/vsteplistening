@@ -2614,7 +2614,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "What is the man looking for?",
+            "question": "<span class=\"highlight\">What</span> is the man <span class=\"highlight\">looking for</span>?",
             "question_vi": "Người đàn ông đang tìm gì?",
             "options": [
               {
@@ -2642,7 +2642,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "What is true about the Art Department?",
+            "question": "<span class=\"highlight\">What is true</span> about the <span class=\"highlight\">Art Department</span>?",
             "question_vi": "Điều nào đúng về Khoa Mỹ thuật?",
             "options": [
               {
@@ -2670,7 +2670,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "The easiest thing is to go ____________ the building to get to the place he wants.",
+            "question": "The <span class=\"highlight\">easiest thing</span> is to go ____________ the building to get to the place he wants.",
             "question_vi": "Cách dễ nhất là đi ____________ tòa nhà để đến nơi anh ấy muốn.",
             "options": [
               {
@@ -2698,7 +2698,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "Where is the building the man is looking for?",
+            "question": "<span class=\"highlight\">Where</span> is the building the man is <span class=\"highlight\">looking for</span>?",
             "question_vi": "Tòa nhà mà người đàn ông đang tìm nằm ở đâu?",
             "options": [
               {
@@ -2766,7 +2766,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "What problem is the woman having?",
+            "question": "<span class=\"highlight\">What problem</span> is the <span class=\"highlight\">woman having</span>?",
             "question_vi": "Người phụ nữ đang gặp vấn đề gì?",
             "options": [
               {
@@ -2794,7 +2794,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "The professor's name is ____________.",
+            "question": "The <span class=\"highlight\">professor's name</span> is ____________.",
             "question_vi": "Tên của vị giáo sư là gì?",
             "options": [
               {
@@ -2822,7 +2822,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "Lectures are held _______________.",
+            "question": "<span class=\"highlight\">Lectures</span> are held _______________.",
             "question_vi": "Các buổi học được tổ chức khi nào?",
             "options": [
               {
@@ -2850,7 +2850,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "The professor is ___________.",
+            "question": "The <span class=\"highlight\">professor</span> is ___________.",
             "question_vi": "Vị giáo sư này như thế nào?",
             "options": [
               {
@@ -2914,7 +2914,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "The online MBA course is _________________________.",
+            "question": "The <span class=\"highlight\">online MBA course</span> is _________________________.",
             "question_vi": "Khóa học MBA (thạc sĩ quản trị kinh doanh) trực tuyến có mức học phí như thế nào?",
             "options": [
               {
@@ -2942,7 +2942,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "Which course is the man particularly interested in?",
+            "question": "<span class=\"highlight\">Which course</span> is the man <span class=\"highlight\">particularly interested in</span>?",
             "question_vi": "Người đàn ông đặc biệt quan tâm đến khóa học nào?",
             "options": [
               {
@@ -2970,7 +2970,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "How long does the course last?",
+            "question": "<span class=\"highlight\">How long</span> does the course <span class=\"highlight\">last</span>?",
             "question_vi": "Khóa học kéo dài bao lâu?",
             "options": [
               {
@@ -2998,7 +2998,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "Prospective students _________________.",
+            "question": "<span class=\"highlight\">Prospective students</span> _________________.",
             "question_vi": "Học viên tiềm năng cần có điều kiện gì?",
             "options": [
               {
@@ -3080,7 +3080,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "What does the dining hall not serve?",
+            "question": "<span class=\"highlight\">What</span> does the dining hall <span class=\"highlight\">not serve</span>?",
             "question_vi": "Nhà ăn không phục vụ món gì?",
             "options": [
               {
@@ -3108,7 +3108,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "Every time the female student eats something, _______________________.",
+            "question": "Every time the female student <span class=\"highlight\">eats something</span>, _______________________.",
             "question_vi": "Mỗi lần cô sinh viên ăn gì đó thì điều gì xảy ra?",
             "options": [
               {
@@ -3136,7 +3136,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "Which of the following is her eating habit?",
+            "question": "<span class=\"highlight\">Which</span> of the following is her <span class=\"highlight\">eating habit</span>?",
             "question_vi": "Thói quen ăn uống của cô ấy là gì?",
             "options": [
               {
@@ -3164,7 +3164,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "What does the man suggest?",
+            "question": "<span class=\"highlight\">What</span> does the man <span class=\"highlight\">suggest</span>?",
             "question_vi": "Chàng trai đề xuất điều gì?",
             "options": [
               {
@@ -3242,7 +3242,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "What must you be if you want to apply for the Camp?",
+            "question": "<span class=\"highlight\">What must you be</span> if you want to <span class=\"highlight\">apply for the Camp</span>?",
             "question_vi": "Muốn đăng ký tham gia Trại hè, bạn phải là người như thế nào?",
             "options": [
               {
@@ -3270,7 +3270,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "What can you expect in a camp tent?",
+            "question": "<span class=\"highlight\">What</span> can you <span class=\"highlight\">expect</span> in a <span class=\"highlight\">camp tent</span>?",
             "question_vi": "Bạn có thể mong đợi điều gì khi ở trong lều trại?",
             "options": [
               {
@@ -3298,7 +3298,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "What do you NOT have to take to the Camp?",
+            "question": "<span class=\"highlight\">What</span> do you <span class=\"highlight\">NOT have to take</span> to the Camp?",
             "question_vi": "Bạn KHÔNG cần mang gì đến Trại hè?",
             "options": [
               {
@@ -3326,7 +3326,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "How must the Camp fees be paid?",
+            "question": "<span class=\"highlight\">How</span> must the <span class=\"highlight\">Camp fees</span> be paid?",
             "question_vi": "Lệ phí trại hè phải được thanh toán như thế nào?",
             "options": [
               {
@@ -3390,7 +3390,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "According to the speaker, what is the best way of travelling to Waterside?",
+            "question": "According to the speaker, <span class=\"highlight\">what is the best way</span> of <span class=\"highlight\">travelling to Waterside</span>?",
             "question_vi": "Theo người nói, cách tốt nhất để đến Waterside là gì?",
             "options": [
               {
@@ -3418,7 +3418,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "On Fridays, what time are the shops open from?",
+            "question": "On <span class=\"highlight\">Fridays</span>, <span class=\"highlight\">what time</span> are the <span class=\"highlight\">shops open from</span>?",
             "question_vi": "Vào thứ Sáu, các cửa hàng mở cửa lúc mấy giờ?",
             "options": [
               {
@@ -3446,7 +3446,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "What can you NOT do at Waterside?",
+            "question": "<span class=\"highlight\">What</span> can you <span class=\"highlight\">NOT do</span> at <span class=\"highlight\">Waterside</span>?",
             "question_vi": "Bạn KHÔNG thể làm điều gì tại Waterside?",
             "options": [
               {
@@ -3474,7 +3474,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "What does the speaker complain about?",
+            "question": "<span class=\"highlight\">What</span> does the speaker <span class=\"highlight\">complain about</span>?",
             "question_vi": "Người nói phàn nàn về điều gì?",
             "options": [
               {
@@ -3534,7 +3534,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "What does Angela say about her life now?",
+            "question": "<span class=\"highlight\">What</span> does <span class=\"highlight\">Angela say</span> about her <span class=\"highlight\">life now</span>?",
             "question_vi": "Angela nói gì về cuộc sống hiện tại của mình?",
             "options": [
               {
@@ -3562,7 +3562,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "What is true about Angela’s flying lessons?",
+            "question": "<span class=\"highlight\">What is true</span> about <span class=\"highlight\">Angela’s flying lessons</span>?",
             "question_vi": "Điều nào đúng về các buổi học lái máy bay của Angela?",
             "options": [
               {
@@ -3590,7 +3590,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "What did Angela enjoy most about the trip?",
+            "question": "<span class=\"highlight\">What</span> did <span class=\"highlight\">Angela enjoy most</span> about the trip?",
             "question_vi": "Angela thích điều gì nhất trong chuyến đi?",
             "options": [
               {
@@ -3618,7 +3618,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "What did Angela miss most while she was away?",
+            "question": "<span class=\"highlight\">What</span> did <span class=\"highlight\">Angela miss most</span> while she was away?",
             "question_vi": "Angela nhớ điều gì nhất khi đi xa?",
             "options": [
               {
@@ -3682,7 +3682,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "How long has Britta lived in Berlin?",
+            "question": "<span class=\"highlight\">How long</span> has <span class=\"highlight\">Britta lived in Berlin</span>?",
             "question_vi": "Britta đã sống ở Berlin bao lâu?",
             "options": [
               {
@@ -3710,7 +3710,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "What does Britta say about living in Berlin?",
+            "question": "<span class=\"highlight\">What</span> does <span class=\"highlight\">Britta say</span> about <span class=\"highlight\">living in Berlin</span>?",
             "question_vi": "Britta nói gì về cuộc sống ở Berlin?",
             "options": [
               {
@@ -3738,7 +3738,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "How does Britta usually travel around in Berlin?",
+            "question": "<span class=\"highlight\">How</span> does <span class=\"highlight\">Britta usually travel around</span> in Berlin?",
             "question_vi": "Britta thường di chuyển bằng phương tiện gì ở Berlin?",
             "options": [
               {
@@ -3766,7 +3766,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "What is true about Britta’s friends?",
+            "question": "<span class=\"highlight\">What is true</span> about <span class=\"highlight\">Britta’s friends</span>?",
             "question_vi": "Điều nào đúng về bạn bè của Britta?",
             "options": [
               {
@@ -3836,7 +3836,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "The prerequisite for administration is ___________.",
+            "question": "The <span class=\"highlight\">prerequisite for administration</span> is ___________.",
             "question_vi": "Điều kiện tiên quyết để tuyển sinh vào là ___________.",
             "options": [
               {
@@ -3864,7 +3864,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "Applying to Cambridge is ________________________________.",
+            "question": "<span class=\"highlight\">Applying</span> to Cambridge is ________________________________.",
             "question_vi": "Ứng tuyển vào Cambridge thì _______________________.",
             "options": [
               {
@@ -3892,7 +3892,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "How many essential forms are students required to fill out?",
+            "question": "<span class=\"highlight\">How many essential forms</span> are students required to <span class=\"highlight\">fill out</span>?",
             "question_vi": "Học sinh phải điền bao nhiêu mẫu đơn cần thiết?",
             "options": [
               {
@@ -3920,7 +3920,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "British undergraduate degrees are _____________________.",
+            "question": "<span class=\"highlight\">British undergraduate degrees</span> are _____________________.",
             "question_vi": "Bằng đại học của Anh thì __________________________.",
             "options": [
               {
@@ -3948,7 +3948,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 5,
-            "question": "Cambridge University chooses students who _____________.",
+            "question": "Cambridge University <span class=\"highlight\">chooses students who</span> _____________.",
             "question_vi": "Đại học Cambridge chọn những sinh viên ______________.",
             "options": [
               {
@@ -3994,7 +3994,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "How do students get the membership card of the Sports Centre?",
+            "question": "<span class=\"highlight\">How</span> do students <span class=\"highlight\">get the membership card</span> of the Sports Centre?",
             "question_vi": "Học viên làm thế nào để có được thẻ thành viên của Trung tâm Thể thao?",
             "options": [
               {
@@ -4022,7 +4022,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "What thing do students NOT need to bring when registering for membership?",
+            "question": "<span class=\"highlight\">What thing</span> do students <span class=\"highlight\">NOT need to bring</span> when <span class=\"highlight\">registering</span> for membership?",
             "question_vi": "Học viên KHÔNG cần mang theo những gì khi đăng ký thành viên?",
             "options": [
               {
@@ -4050,7 +4050,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "What benefits does the sports card offer students?",
+            "question": "<span class=\"highlight\">What benefits</span> does the <span class=\"highlight\">sports card offer</span> students?",
             "question_vi": "Thẻ thể thao mang lại lợi ích gì cho học sinh?",
             "options": [
               {
@@ -4078,7 +4078,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "What time is the Sports Center open on weekdays this year?",
+            "question": "<span class=\"highlight\">What time</span> is the Sports Center <span class=\"highlight\">open on weekdays</span> this year?",
             "question_vi": "Năm nay Trung tâm Thể thao mở cửa vào mấy giờ các ngày trong tuần?",
             "options": [
               {
@@ -4106,7 +4106,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 5,
-            "question": "How much is the morning discount this year?",
+            "question": "<span class=\"highlight\">How much</span> is the <span class=\"highlight\">morning discount</span> this year?",
             "question_vi": "Giảm giá buổi sáng năm nay là bao nhiêu?",
             "options": [
               {
@@ -4154,7 +4154,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "According to the speaker, who are interested in fashion?",
+            "question": "According to the speaker, <span class=\"highlight\">who</span> are <span class=\"highlight\">interested in fashion</span>?",
             "question_vi": "Theo diễn giả, ai là người quan tâm đến thời trang?",
             "options": [
               {
@@ -4182,7 +4182,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "How were fashion clothes before the 1900s?",
+            "question": "<span class=\"highlight\">How</span> were <span class=\"highlight\">fashion clothes</span> before the 1900s?",
             "question_vi": "Quần áo thời trang trước những năm 1900 như thế nào?",
             "options": [
               {
@@ -4210,7 +4210,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "What is true about Coco Chanel?",
+            "question": "<span class=\"highlight\">What is true</span> about <span class=\"highlight\">Coco Chanel</span>?",
             "question_vi": "Điều gì là đúng về Coco Chanel?",
             "options": [
               {
@@ -4238,7 +4238,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "How was the fashion in the 1920s?",
+            "question": "<span class=\"highlight\">How was the fashion</span> in the 1920s?",
             "question_vi": "Thời trang những năm 1920 như thế nào?",
             "options": [
               {
@@ -4266,7 +4266,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 5,
-            "question": "Which of these was part of the ‘New Look’?",
+            "question": "<span class=\"highlight\">Which</span> of these was part of the <span class=\"highlight\">‘New Look’</span>?",
             "question_vi": "Cái nào trong số này là một phần của 'Giao diện mới'?",
             "options": [
               {
@@ -4320,7 +4320,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "Which tickets are still available?",
+            "question": "<span class=\"highlight\">Which tickets</span> are <span class=\"highlight\">still available</span>?",
             "question_vi": "Vé nào còn trống?",
             "options": [
               {
@@ -4348,7 +4348,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "Which exhibition do visitors have to pay a fee?",
+            "question": "<span class=\"highlight\">Which exhibition</span> do visitors have to <span class=\"highlight\">pay a fee</span>?",
             "question_vi": "Triển lãm nào du khách phải trả phí?",
             "options": [
               {
@@ -4376,7 +4376,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "Where can you buy clothes?",
+            "question": "<span class=\"highlight\">Where</span> can you <span class=\"highlight\">buy clothes</span>?",
             "question_vi": "Bạn có thể mua quần áo ở đâu?",
             "options": [
               {
@@ -4404,7 +4404,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "Where can you enjoy cakes?",
+            "question": "<span class=\"highlight\">Where</span> can you <span class=\"highlight\">enjoy cakes</span>?",
             "question_vi": "Bạn có thể thưởng thức bánh ở đâu?",
             "options": [
               {
@@ -4432,7 +4432,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 5,
-            "question": "What time does the concert end?",
+            "question": "<span class=\"highlight\">What time</span> does the <span class=\"highlight\">concert end</span>?",
             "question_vi": "Buổi hòa nhạc kết thúc lúc mấy giờ?",
             "options": [
               {
@@ -4480,7 +4480,7 @@ window.VSTEP_DATA = {
         "questions": [
           {
             "number": 1,
-            "question": "How often does Sarah paint now?",
+            "question": "<span class=\"highlight\">How often</span> does <span class=\"highlight\">Sarah paint now</span>?",
             "question_vi": "Bây giờ Sarah vẽ tranh bao lâu một lần?",
             "options": [
               {
@@ -4508,7 +4508,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 2,
-            "question": "How does Sarah use money from her painting?",
+            "question": "<span class=\"highlight\">How</span> does <span class=\"highlight\">Sarah use money</span> from her painting?",
             "question_vi": "Sarah sử dụng tiền từ bức tranh của mình như thế nào?",
             "options": [
               {
@@ -4536,7 +4536,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 3,
-            "question": "What did she learn when she was at primary school?",
+            "question": "<span class=\"highlight\">What did she learn</span> when she was at <span class=\"highlight\">primary school</span>?",
             "question_vi": "Cô ấy đã học được gì khi còn học tiểu học?",
             "options": [
               {
@@ -4564,7 +4564,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 4,
-            "question": "What pleased Sarah most about her painting holidays?",
+            "question": "<span class=\"highlight\">What pleased Sarah most</span> about her painting holidays?",
             "question_vi": "Điều gì làm Sarah hài lòng nhất trong những ngày nghỉ vẽ tranh của cô?",
             "options": [
               {
@@ -4592,7 +4592,7 @@ window.VSTEP_DATA = {
           },
           {
             "number": 5,
-            "question": "What will the audience NOT do after watching Sarah’s video?",
+            "question": "<span class=\"highlight\">What</span> will the audience <span class=\"highlight\">NOT do</span> after watching Sarah’s video?",
             "question_vi": "Khán giả sẽ KHÔNG làm gì sau khi xem xong đoạn phim của Sarah?",
             "options": [
               {
