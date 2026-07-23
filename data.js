@@ -714,7 +714,18 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Chào mọi người. Tôi là Raul Bautista, và đây là chương trình Lịch sử cùng Raul, podcast hàng tuần nơi chúng ta khám phá những sự kiện lịch sử ít được biết đến nhưng có ảnh hưởng lớn đến thế giới ngày nay. Hôm nay, chúng ta sẽ bàn về một chủ đề trong lịch sử nghệ thuật. Chúng ta sẽ nghe về sự biến mất bí ẩn của một số bức tranh tại một bảo tàng ở châu Âu thế kỷ XVII. <span class=\"highlight\">Giáo sư Ignacio Ortega từ Đại học Westland sẽ giải thích chuyện gì đã xảy ra. </span>Nhưng trước khi chúng ta trò chuyện với Giáo sư Ortega – xin hãy nhớ rằng chương trình này chỉ có thể thực hiện được nhờ sự hỗ trợ tài chính từ các thành viên. Hãy truy cập trang web historywithraul.org hôm nay nhé."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "investigate /ɪnˈvestɪɡeɪt/ (v): điều tra, khám phá",
+              "little-known /ˌlɪtl ˈnoʊn/ (adj): ít được biết đến",
+              "historical fact /hɪˈstɔːrɪkl fækt/ (n): sự kiện lịch sử",
+              "impact /ˈɪmpækt/ (n): ảnh hưởng, tác động",
+              "discuss /dɪˈskʌs/ (v): thảo luận",
+              "mysterious /mɪˈstɪriəs/ (adj): bí ẩn",
+              "disappearance /ˌdɪsəˈpɪrəns/ (n): sự biến mất",
+              "painting /ˈpeɪntɪŋ/ (n): bức tranh",
+              "explain /ɪkˈspleɪn/ (v): giải thích",
+              "financial support /faɪˈnænʃl səˈpɔːrt/ (n): sự hỗ trợ tài chính"
+            ],
             "audio": "PART 01/AUDIO/4_Cau_hoi_danh_tinh/Example 03.mp3"
           },
           {
@@ -751,7 +762,19 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "<span class=\"highlight\">Và sau đây là tin tức giải trí hôm nay... </span>Hãng phim nổi tiếng Dougherty Films vừa thông báo rằng họ sẽ quay một bộ phim ngay tại Brayville. Thực tế, đoàn làm phim đang tìm thuê một căn hộ đã được trang bị nội thất để quay một số cảnh chính. Trong phim, căn hộ được chọn sẽ thuộc về nhân vật của nam diễn viên từng đoạt giải Santiago Diaz. Nếu là người khác thì có thể bạn sẽ không hứng thú mấy với việc để cả đoàn phim vào nhà mình trong vài tuần. Nhưng đây là Santiago Diaz mà chúng ta đang nói đến đấy! Nếu bạn muốn căn hộ của mình được xem xét cho bộ phim, hãy điền vào mẫu đăng ký trên trang web của Dougherty Films."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "entertainment news /ˌentərˈteɪnmənt nuːz/ (n): tin tức giải trí",
+              "renowned /rɪˈnaʊnd/ (adj): nổi tiếng",
+              "film crew /ˈfɪlm kruː/ (n): đoàn làm phim",
+              "lease /liːs/ (v): thuê",
+              "furnished apartment /ˈfɜːrnɪʃt əˈpɑːrtmənt/ (n): căn hộ có sẵn nội thất",
+              "main scene /meɪn siːn/ (n): cảnh quay chính",
+              "award-winning /əˈwɔːrd ˈwɪnɪŋ/ (adj): từng đoạt giải thưởng",
+              "character /ˈkærəktər/ (n): nhân vật",
+              "enthusiastic /ɪnˌθuːziˈæstɪk/ (adj): nhiệt tình, hào hứng",
+              "consider /kənˈsɪdər/ (v): xem xét",
+              "application /ˌæplɪˈkeɪʃn/ (n): đơn đăng ký"
+            ],
             "audio": "PART 01/AUDIO/4_Cau_hoi_danh_tinh/Example 04.mp3"
           }
         ]
@@ -944,9 +967,27 @@ window.VSTEP_DATA = {
               "<span class=\"highlight\">Good afternoon shoppers and thank you for choosing Doyle's Market for all your food shopping needs.</span> To help you prepare for the upcoming national holiday, Doyle's will be staying open later than usual this weekend - until ten P.M. Looking for a bargain? Check out our Web site for discount coupons for many snacks, beverages, and other products. Click on \"Special Deals\" to find a list of weekly coupons."
             ],
             "vi_transcript": [
-              "<span class=\"highlight\">Chúc buổi chiều tốt lành đến quý khách hàng, và cảm ơn quý vị đã chọn Doyle’s Market cho mọi nhu cầu mua sắm thực phẩm.</span> Để giúp quý vị chuẩn bị cho kỳ nghỉ lễ quốc gia sắp tới, Doyle’s sẽ mở cửa muộn hơn bình thường vào cuối tuần này – đến 10 giờ tối. Muốn săn ưu đãi? Hãy truy cập trang web của chúng tôi để lấy phiếu giảm giá cho nhiều món ăn vặt, đồ uống và các sản phẩm khác. Nhấp vào “Ưu đãi đặc biệt” để xem danh sách phiếu giảm giá trong tuần. <span class=\"highlight\">PRACTICE 04</span> <span class=\"highlight\">warehouse</span> /ˈwerhaʊs/ (n): nhà kho  <span class=\"highlight\">food market</span> /fuːd ˈmɑːrkɪt/ (n): chợ/cửa hàng thực phẩm  <span class=\"highlight\">choose</span> /tʃuːz/ (v): lựa chọn  <span class=\"highlight\">food shopping needs</span> /fuːd ˈʃɑːpɪŋ niːdz/ (n): nhu cầu mua sắm thực phẩm  <span class=\"highlight\">prepare for</span> /prɪˈper fɔːr/ (v): chuẩn bị cho  <span class=\"highlight\">upcoming</span> /ˈʌpkʌmɪŋ/ (adj): sắp tới  <span class=\"highlight\">national holiday</span> /ˈnæʃnəl ˈhɑːlədeɪ/ (n): ngày lễ quốc gia  <span class=\"highlight\">stay open later than usual</span> /steɪ ˈoʊpən ˈleɪtər ðæn ˈjuːʒuəl/ (v): mở cửa muộn hơn thường lệ  <span class=\"highlight\">bargain</span> /ˈbɑːrɡən/ (n): món hời  <span class=\"highlight\">check out</span> /tʃek aʊt/ (v): xem, kiểm tra  <span class=\"highlight\">website</span> /ˈwebsaɪt/ (n): trang web  <span class=\"highlight\">discount coupon</span> /ˈdɪskaʊnt ˈkuːpɑːn/ (n): phiếu giảm giá  <span class=\"highlight\">snack</span> /snæk/ (n): đồ ăn vặt  <span class=\"highlight\">beverage</span> /ˈbevərɪdʒ/ (n): đồ uống  <span class=\"highlight\">product</span> /ˈprɑːdʌkt/ (n): sản phẩm  <span class=\"highlight\">special deal</span> /ˈspeʃl diːl/ (n): ưu đãi đặc biệt  <span class=\"highlight\">weekly coupon</span> /ˈwiːkli ˈkuːpɑːn/ (n): phiếu giảm giá hằng tuần"
+              "<span class=\"highlight\">Chúc buổi chiều tốt lành đến quý khách hàng, và cảm ơn quý vị đã chọn Doyle’s Market cho mọi nhu cầu mua sắm thực phẩm.</span> Để giúp quý vị chuẩn bị cho kỳ nghỉ lễ quốc gia sắp tới, Doyle’s sẽ mở cửa muộn hơn bình thường vào cuối tuần này – đến 10 giờ tối. Muốn săn ưu đãi? Hãy truy cập trang web của chúng tôi để lấy phiếu giảm giá cho nhiều món ăn vặt, đồ uống và các sản phẩm khác. Nhấp vào “Ưu đãi đặc biệt” để xem danh sách phiếu giảm giá trong tuần."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "warehouse /ˈwerhaʊs/ (n): nhà kho",
+              "food market /fuːd ˈmɑːrkɪt/ (n): chợ/cửa hàng thực phẩm",
+              "choose /tʃuːz/ (v): lựa chọn",
+              "food shopping needs /fuːd ˈʃɑːpɪŋ niːdz/ (n): nhu cầu mua sắm thực phẩm",
+              "prepare for /prɪˈper fɔːr/ (v): chuẩn bị cho",
+              "upcoming /ˈʌpkʌmɪŋ/ (adj): sắp tới",
+              "national holiday /ˈnæʃnəl ˈhɑːlədeɪ/ (n): ngày lễ quốc gia",
+              "stay open later than usual /steɪ ˈoʊpən ˈleɪtər ðæn ˈjuːʒuəl/ (v): mở cửa muộn hơn thường lệ",
+              "bargain /ˈbɑːrɡən/ (n): món hời",
+              "check out /tʃek aʊt/ (v): xem, kiểm tra",
+              "website /ˈwebsaɪt/ (n): trang web",
+              "discount coupon /ˈdɪskaʊnt ˈkuːpɑːn/ (n): phiếu giảm giá",
+              "snack /snæk/ (n): đồ ăn vặt",
+              "beverage /ˈbevərɪdʒ/ (n): đồ uống",
+              "product /ˈprɑːdʌkt/ (n): sản phẩm",
+              "special deal /ˈspeʃl diːl/ (n): ưu đãi đặc biệt",
+              "weekly coupon /ˈwiːkli ˈkuːpɑːn/ (n): phiếu giảm giá hằng tuần"
+            ],
             "audio": "PART 01/AUDIO/5_Cau_hoi_dia_diem_boi_canh/Example 04.mp3"
           }
         ]
@@ -1037,9 +1078,20 @@ window.VSTEP_DATA = {
               "Welcome to the Temasek Bird Park. <span class=\"highlight\">Today, we're going to see birds that have been collected from all over the world.</span> Because it's hot outside, you should bring a bottle of water with you. The tour will be 3 hours, including a short break."
             ],
             "vi_transcript": [
-              "Chào mừng quý vị đến với Công viên chim Temasek. <span class=\"highlight\">Hôm nay, chúng ta sẽ được chiêm ngưỡng những loài chim được sưu tầm từ khắp nơi trên thế giới.</span> Vì thời tiết bên ngoài khá nóng, quý vị nên mang theo một chai nước. Chuyến tham quan sẽ kéo dài 3 giờ, bao gồm một khoảng nghỉ ngắn. <span class=\"highlight\">EXAMPLE 02</span> <span class=\"highlight\">tour</span> /tʊr/ (n): chuyến tham quan  <span class=\"highlight\">collect</span> /kəˈlekt/ (v): thu thập  <span class=\"highlight\">bring</span> /brɪŋ/ (v): mang theo  <span class=\"highlight\">bottle of water</span> /ˈbɑːtl əv ˈwɔːtər/ (n): chai nước  <span class=\"highlight\">last</span> /læst/ (v): kéo dài  <span class=\"highlight\">including</span> /ɪnˈkluːdɪŋ/ (prep): bao gồm  <span class=\"highlight\">short break</span> /ʃɔːrt breɪk/ (n): giờ nghỉ ngắn  <span class=\"highlight\">possible</span> /ˈpɑːsəbl/ (adj): có thể  <span class=\"highlight\">cycle</span> /ˈsaɪkl/ (v): đạp xe  <span class=\"highlight\">provide </span>/prəˈvaɪd/ (v): cung cấp"
+              "Chào mừng quý vị đến với Công viên chim Temasek. <span class=\"highlight\">Hôm nay, chúng ta sẽ được chiêm ngưỡng những loài chim được sưu tầm từ khắp nơi trên thế giới.</span> Vì thời tiết bên ngoài khá nóng, quý vị nên mang theo một chai nước. Chuyến tham quan sẽ kéo dài 3 giờ, bao gồm một khoảng nghỉ ngắn."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "tour /tʊr/ (n): chuyến tham quan",
+              "collect /kəˈlekt/ (v): thu thập",
+              "bring /brɪŋ/ (v): mang theo",
+              "bottle of water /ˈbɑːtl əv ˈwɔːtər/ (n): chai nước",
+              "last /læst/ (v): kéo dài",
+              "including /ɪnˈkluːdɪŋ/ (prep): bao gồm",
+              "short break /ʃɔːrt breɪk/ (n): giờ nghỉ ngắn",
+              "possible /ˈpɑːsəbl/ (adj): có thể",
+              "cycle /ˈsaɪkl/ (v): đạp xe",
+              "provide /prəˈvaɪd/ (v): cung cấp"
+            ],
             "audio": "PART 01/AUDIO/6_Cau_hoi_suy_luan_ham_y/Example 02.mp3"
           },
           {
