@@ -294,7 +294,7 @@ class VstepApp {
             
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
-                     ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(1, '${t.id}', true))"` : `onclick="app.startPractice(1, '${t.id}', true)"`}>
+                     ${isLocked ? `onclick="app.promptUnlock(1, '${t.id}', true, () => app.startPractice(1, '${t.id}', true))"` : `onclick="app.startPractice(1, '${t.id}', true)"`}>
                     <div class="card-title-row">
                         <h4>${t.title}</h4>
                         ${isCompleted ? '<span class="completed-badge">Đã học</span>' : ''}
@@ -316,7 +316,7 @@ class VstepApp {
             const isLocked = !this.isItemUnlocked(1, p.id, false);
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
-                     ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(1, '${p.id}', false))"` : `onclick="app.startPractice(1, '${p.id}', false)"`}>
+                     ${isLocked ? `onclick="app.promptUnlock(1, '${p.id}', false, () => app.startPractice(1, '${p.id}', false))"` : `onclick="app.startPractice(1, '${p.id}', false)"`}>
                     <div class="card-title-row">
                         <h4>${p.title}</h4>
                         ${isCompleted ? `<span class="completed-badge">${score}/8 Câu</span>` : ''}
@@ -429,14 +429,30 @@ class VstepApp {
         return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'missnguyet2026'];
     }
 
+    getUnlockedItems() {
+        try {
+            return JSON.parse(sessionStorage.getItem('vstep_unlocked_items') || '[]');
+        } catch (e) {
+            return [];
+        }
+    }
+
+    addUnlockedItem(id) {
+        const items = this.getUnlockedItems();
+        if (!items.includes(id)) {
+            items.push(id);
+            sessionStorage.setItem('vstep_unlocked_items', JSON.stringify(items));
+        }
+    }
+
     isItemUnlocked(partNum, id, isTheory = false) {
         if (sessionStorage.getItem('vstep_unlocked') === 'true') {
             return true;
         }
-        const pwd = sessionStorage.getItem('vstep_unlock_password');
-        if (!pwd) return false;
-        const allowed = this.getAllowedPasswords(partNum, id, isTheory);
-        return allowed.includes(pwd);
+        
+        const lockKey = isTheory ? `theory_${partNum}_${id}` : `practice_${partNum}_${id}`;
+        const items = this.getUnlockedItems();
+        return items.includes(lockKey);
     }
 
     promptUnlock(partNum, id, isTheory, successCallback) {
@@ -445,7 +461,13 @@ class VstepApp {
         if (pwd) {
             const cleanPwd = pwd.trim();
             if (allowed.includes(cleanPwd)) {
-                sessionStorage.setItem('vstep_unlock_password', cleanPwd);
+                if (cleanPwd === 'missnguyet2026') {
+                    sessionStorage.setItem('vstep_unlocked', 'true');
+                } else {
+                    const lockKey = isTheory ? `theory_${partNum}_${id}` : `practice_${partNum}_${id}`;
+                    this.addUnlockedItem(lockKey);
+                }
+                
                 alert("Mở khóa thành công!");
                 this.applyLocks();
                 this.renderLists();
