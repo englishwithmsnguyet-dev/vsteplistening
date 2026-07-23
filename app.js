@@ -338,7 +338,7 @@ class VstepApp {
             const isLocked = !this.isItemUnlocked(2, p.id, false);
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
-                     ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(2, '${p.id}', false))"` : `onclick="app.startPractice(2, '${p.id}', false)"`}>
+                     ${isLocked ? `onclick="app.promptUnlock(2, '${p.id}', false, () => app.startPractice(2, '${p.id}', false))"` : `onclick="app.startPractice(2, '${p.id}', false)"`}>
                     <div class="card-title-row">
                         <h4>${p.title}</h4>
                         ${isCompleted ? `<span class="completed-badge">${score}/4 Câu</span>` : ''}
@@ -360,7 +360,7 @@ class VstepApp {
             const isLocked = !this.isItemUnlocked(3, p.id, false);
             return `
                 <div class="list-item-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}" 
-                     ${isLocked ? `onclick="app.promptUnlock(() => app.startPractice(3, '${p.id}', false))"` : `onclick="app.startPractice(3, '${p.id}', false)"`}>
+                     ${isLocked ? `onclick="app.promptUnlock(3, '${p.id}', false, () => app.startPractice(3, '${p.id}', false))"` : `onclick="app.startPractice(3, '${p.id}', false)"`}>
                     <div class="card-title-row">
                         <h4>${p.title}</h4>
                         ${isCompleted ? `<span class="completed-badge">${score}/5 Câu</span>` : ''}
