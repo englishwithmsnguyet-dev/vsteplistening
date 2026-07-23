@@ -417,7 +417,7 @@ class VstepApp {
                 }
             } else {
                 // Đề Practice Part 1
-                return ['CB206', 'CB210'];
+                return ['CB206', 'CB210', 'CB211'];
             }
         } else if (partNum === 2) {
             // Part 2
