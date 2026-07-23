@@ -409,11 +409,11 @@ class VstepApp {
                 if (id === 'p1_type_03') {
                     return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'missnguyet2026'];
                 }
-                if (id === 'p1_type_04' || id === 'p1_type_05') {
-                    return ['CB206', 'CB210', 'CB211'];
+                if (id === 'p1_type_04') {
+                    return ['CB206', 'CB210', 'CB211', 'CB213'];
                 }
-                if (id === 'p1_type_06') {
-                    return ['CB206', 'CB210'];
+                if (id === 'p1_type_05' || id === 'p1_type_06') {
+                    return ['CB206', 'CB210', 'CB211'];
                 }
             } else {
                 // Đề Practice Part 1
