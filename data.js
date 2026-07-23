@@ -640,7 +640,22 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "Chào buổi chiều. <span class=\"highlight\">Tin nhắn này gửi đến chủ cửa hàng Fresh and Healthy Market. </span><span class=\"highlight\">Tôi tên là Kerry Yamada, và tôi đã ghé thăm cửa hàng của bạn lần đầu tiên vào tuần trước.</span> Tôi sở hữu một vườn cây ăn quả – chúng tôi chủ yếu trồng táo và lê. Trang trại của tôi nằm gần đây, trên đường State Route 25. Dù sao thì, khi tôi đến cửa hàng bạn, tôi thấy không có nhiều táo.Vì vậy... tôi tự hỏi... bạn có bán trái cây địa phương không? Nếu bạn quan tâm, tôi có thể mang đến một vài mẫu thử của các loại trái cây khác nhau để bạn nếm thử. Ngày mai tôi sẽ quay lại thị trấn. Số của tôi là 555-0132."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "owner /ˈoʊnər/ (n): chủ sở hữu",
+              "orchard /ˈɔːrtʃərd/ (n): vườn cây ăn quả",
+              "grow /ɡroʊ/ (v): trồng",
+              "mainly /ˈmeɪnli/ (adv): chủ yếu",
+              "pear /per/ (n): quả lê",
+              "locate /loʊˈkeɪt/ (v): nằm ở, tọa lạc",
+              "nearby /ˌnɪrˈbaɪ/ (adv): gần đây",
+              "supply /səˈplaɪ/ (n): nguồn cung cấp",
+              "carry /ˈkæri/ (v): bán, cung cấp",
+              "local /ˈloʊkl/ (adj): địa phương",
+              "drop off /drɑːp ɔːf/ (v): mang đến, giao",
+              "sample /ˈsæmpl/ (n): mẫu thử",
+              "variety /vəˈraɪəti/ (n): loại, giống",
+              "taste /teɪst/ (v): nếm thử"
+            ],
             "audio": "PART 01/AUDIO/4_Cau_hoi_danh_tinh/Example 01.mp3"
           },
           {
@@ -677,7 +692,13 @@ window.VSTEP_DATA = {
             "vi_transcript": [
               "<span class=\"highlight\">Nữ:</span> <span class=\"highlight\">Chào ông Lin, tôi đang gọi từ phòng khám nha khoa Central Dentistry. Ông có một cuộc hẹn với bác sĩ Sumner vào ngày 8 tháng 6 lúc 2 giờ chiều. </span>Tôi muốn hỏi liệu chúng tôi có thể dời cuộc hẹn của ông sang 3 giờ được không?<br><span class=\"highlight\">Nam:</span> À, tôi có một cuộc gọi bán hàng vào buổi sáng hôm đó, nhưng tôi nghĩ 3 giờ thì ổn."
             ],
-            "vocabulary": [],
+            "vocabulary": [
+              "dentistry /ˈdentɪstri/ (n): nha khoa",
+              "appointment /əˈpɔɪntmənt/ (n): cuộc hẹn",
+              "move /muːv/ (v): dời, chuyển",
+              "sales call /seɪlz kɔːl/ (n): cuộc gọi bán hàng",
+              "schedule /ˈskedʒuːl/ (v): lên lịch"
+            ],
             "audio": "PART 01/AUDIO/4_Cau_hoi_danh_tinh/Example 02.mp3"
           },
           {
