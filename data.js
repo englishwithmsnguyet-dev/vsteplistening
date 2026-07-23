@@ -609,7 +609,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_04_ex_01",
             "number": 1,
-            "question": "Who is the telephone message for?",
+            "question": "<span class=\"highlight\">Who</span> is the telephone <span class=\"highlight\">message for</span>?",
             "question_vi": "Tin nhắn điện thoại này dành cho ai?",
             "options": [
               {
@@ -646,7 +646,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_04_ex_02",
             "number": 2,
-            "question": "What most likely is the woman's job?",
+            "question": "<span class=\"highlight\">What</span> most likely is the <span class=\"highlight\">woman's job</span>?",
             "question_vi": "Công việc của người phụ nữ có khả năng cao là gì?",
             "options": [
               {
@@ -683,7 +683,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_04_ex_03",
             "number": 3,
-            "question": "Who is the guest on this week's podcast?",
+            "question": "<span class=\"highlight\">Who</span> is the <span class=\"highlight\">guest</span> on this week's podcast?",
             "question_vi": "Ai là khách mời trong podcast tuần này?",
             "options": [
               {
@@ -731,7 +731,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_04_ex_04",
             "number": 4,
-            "question": "Who most likely is the speaker?",
+            "question": "<span class=\"highlight\">Who</span> most likely is the <span class=\"highlight\">speaker</span>?",
             "question_vi": "Người nói có khả năng cao là ai?",
             "options": [
               {
@@ -786,7 +786,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_05_ex_01",
             "number": 1,
-            "question": "Where does the speaker most likely work?",
+            "question": "<span class=\"highlight\">Where</span> does the speaker most likely <span class=\"highlight\">work</span>?",
             "question_vi": "Người nói rất có thể làm việc ở đâu?",
             "options": [
               {
@@ -837,7 +837,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_05_ex_02",
             "number": 2,
-            "question": ": Where are the speakers?",
+            "question": "<span class=\"highlight\">Where</span> are the <span class=\"highlight\">speakers</span>?",
             "question_vi": "Những người nói đang ở đâu?",
             "options": [
               {
@@ -883,7 +883,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_05_ex_03",
             "number": 3,
-            "question": "Where does the announcement most likely take place?",
+            "question": "<span class=\"highlight\">Where</span> does the announcement most likely <span class=\"highlight\">take place</span>?",
             "question_vi": "Thông báo này rất có thể được phát ở đâu?",
             "options": [
               {
@@ -938,7 +938,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_05_ex_04",
             "number": 4,
-            "question": "Where most likely are the listeners?",
+            "question": "<span class=\"highlight\">Where</span> most likely are the <span class=\"highlight\">listeners</span>?",
             "question_vi": "Người nghe có khả năng đang ở đâu?",
             "options": [
               {
@@ -999,7 +999,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_06_ex_01",
             "number": 1,
-            "question": "What is it true about Georgina Curry?",
+            "question": "<span class=\"highlight\">What is true</span> about <span class=\"highlight\">Georgina Curry</span>?",
             "question_vi": "Điều gì đúng về Georgina Curry?",
             "options": [
               {
@@ -1049,7 +1049,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_06_ex_02",
             "number": 2,
-            "question": "What is true about the tour?",
+            "question": "<span class=\"highlight\">What is true</span> about the <span class=\"highlight\">tour</span>?",
             "question_vi": "Điều gì đúng về chuyến tham quan?",
             "options": [
               {
@@ -1097,7 +1097,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_06_ex_03",
             "number": 3,
-            "question": "What does the speaker suggest doing?",
+            "question": "<span class=\"highlight\">What</span> does the speaker <span class=\"highlight\">suggest doing</span>?",
             "question_vi": "Người nói gợi ý làm gì?",
             "options": [
               {
@@ -1156,7 +1156,7 @@ window.VSTEP_DATA = {
           {
             "id": "p1_type_06_ex_04",
             "number": 4,
-            "question": "What does the speaker imply when he says, \"this is a priority\"?",
+            "question": "<span class=\"highlight\">What</span> does the speaker <span class=\"highlight\">imply</span> when he says, \"this is a priority\"?",
             "question_vi": "Người nói ngụ ý gì khi nói “đây là ưu tiên”?",
             "options": [
               {
