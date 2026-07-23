@@ -456,12 +456,12 @@ class VstepApp {
     }
 
     promptUnlock(partNum, id, isTheory, successCallback) {
-        const allowed = this.getAllowedPasswords(partNum, id, isTheory);
+        const allowed = this.getAllowedPasswords(partNum, id, isTheory).map(p => p.toUpperCase());
         const pwd = prompt("Vui lòng nhập mật khẩu mở khóa phần này:");
         if (pwd) {
-            const cleanPwd = pwd.trim();
+            const cleanPwd = pwd.trim().toUpperCase();
             if (allowed.includes(cleanPwd)) {
-                if (cleanPwd === 'missnguyet2026') {
+                if (cleanPwd === 'MISSNGUYET2026') {
                     sessionStorage.setItem('vstep_unlocked', 'true');
                 } else {
                     const lockKey = isTheory ? `theory_${partNum}_${id}` : `practice_${partNum}_${id}`;
