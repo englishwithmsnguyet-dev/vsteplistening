@@ -424,7 +424,7 @@ class VstepApp {
             }
         } else if (partNum === 2) {
             // Part 2
-            return ['CB206', 'CB210'];
+            return ['CB206', 'CB210', 'CB211'];
         } else if (partNum === 3) {
             // Part 3
             return ['CB206'];
