@@ -1513,6 +1513,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "Where is the talk probably being given?",
             "question_vi": "Bài nói chuyện có thể diễn ra ở đâu?",
+            "vocabulary": ["be interested in /bi ˈɪntrəstɪd ɪn/ (v): quan tâm đến", "offer /ˈɔːfər/ (v/n): cung cấp; lời đề nghị/sản phẩm được cung cấp", "business traveler /ˈbɪznəs ˈtrævələr/ (n): người đi công tác", "university student /ˌjuːnɪˈvɜːrsəti ˈstuːdnt/ (n): sinh viên đại học", "language teacher /ˈlæŋɡwɪdʒ ˈtiːtʃər/ (n): giáo viên ngôn ngữ", "international tourist /ˌɪntərˈnæʃənl ˈtʊrɪst/ (n): khách du lịch quốc tế", "frustrated /ˈfrʌstreɪtɪd/ (adj): bực bội, nản lòng", "take classes /teɪk ˈklæsɪz/ (v.phr): tham gia lớp học", "order /ˈɔːrdər/ (v): đặt mua", "language kit /ˈlæŋɡwɪdʒ kɪt/ (n): bộ học ngôn ngữ", "in the comfort of your home /ɪn ðə ˈkʌmfərt əv jɔːr hoʊm/ (exp): ngay tại nhà một cách thoải mái", "natural way /ˈnætʃrəl weɪ/ (n): cách tự nhiên", "native speaker /ˈneɪtɪv ˈspiːkər/ (n): người bản xứ", "business situation /ˈbɪznəs ˌsɪtʃuˈeɪʃən/ (n): tình huống công việc/kinh doanh", "respond to /rɪˈspɑːnd tuː/ (v): phản hồi, đáp lại", "in your own words /ɪn jɔːr oʊn wɜːrdz/ (exp): bằng lời của chính bạn", "course /kɔːrs/ (n): khóa học", "available /əˈveɪləbl/ (adj): có sẵn", "in the next few months /ɪn ðə nekst fjuː mʌnθs/ (exp): trong vài tháng tới", "contain /kənˈteɪn/ (v): bao gồm, chứa", "workbook /ˈwɜːrkbʊk/ (n): sách bài tập"],
             "options": [
               {
                 "letter": "A",
@@ -1547,6 +1548,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "Who would be most interested in what is being offered in this talk?",
             "question_vi": "Ai sẽ quan tâm nhất đến những gì được đưa ra trong bài nói chuyện này?",
+            "vocabulary": ["announcement /əˈnaʊnsmənt/ (n): thông báo", "aircraft /ˈerkræft/ (n): máy bay = plane = airplane", "airport /ˈerpɔːrt/ (n): sân bay", "shuttle bus /ˈʃʌtl bʌs/ (n): xe buýt đưa đón, trung chuyển", "page /peɪdʒ/ (v): gọi tên/thông báo tìm ai qua loa", "passenger /ˈpæsɪndʒər/ (n): hành khách", "ticket counter /ˈtɪkɪt ˈkaʊntər/ (n): quầy vé", "international /ˌɪntərˈnæʃənl/ (adj): quốc tế", "pick up /pɪk ʌp/ (v): nhấc máy, cầm lấy", "located throughout the airport /loʊˈkeɪtɪd θruːˈaʊt ði ˈerpɔːrt/ (adj): được đặt khắp sân bay", "receive a message /rɪˈsiːv ə ˈmesɪdʒ/ (v): nhận tin nhắn"],
             "options": [
               {
                 "letter": "A",
@@ -1581,6 +1583,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "Where is this announcement being made?",
             "question_vi": "Thông báo này được đưa ra ở đâu?",
+            "vocabulary": ["audience /ˈɔːdiəns/ (n): người nghe, khán giả", "talk /tɔːk/ (n): bài nói, thông báo", "cafeteria /ˌkæfəˈtɪriə/ (n): căn tin, quán cà phê tự phục vụ", "shopper /ˈʃɑːpər/ (n): người mua sắm", "grocery store /ˈɡroʊsəri stɔːr/ (n): cửa hàng tạp hóa/thực phẩm", "guest /ɡest/ (n): khách mời", "go fishing /ɡoʊ ˈfɪʃɪŋ/ (v): đi câu cá", "attention /əˈtenʃən/ (n): sự chú ý", "seafood /ˈsiːfuːd / (n): thng hải sản", "stop by /stɑːp baɪ/ (v): ghé qua", "fresh seafood department /freʃ ˈsiːfuːd dɪˈpɑːrtmənt/ (n): khu hải sản tươi sống", "catch of the day /kætʃ əv ðə deɪ/ (n): món hải sản đánh bắt trong ngày", "delicious /dɪˈlɪʃəs/ (adj): ngon", "salmon steak /ˈsæmən steɪk/ (n): miếng cá hồi", "perfect for /ˈpɜːrfɪkt fɔːr/ (adj): hoàn hảo/phù hợp cho", "grill /ɡrɪl/ (v): nướng", "charcoal /ˈtʃɑːrkoʊl/ (n): than củi", "two for the price of one /tuː fɔːr ðə praɪs əv wʌn/ (exp): mua một tặng một", "while you’re at it /waɪl jʊr æt ɪt/ (exp): nhân tiện", "bakery /ˈbeɪkəri/ (n): khu bán bánh / tiệm bánh", "French bread /frentʃ bred/ (n): bánh mì Pháp", "warm from the oven /wɔːrm frʌm ði ˈʌvn/ (adj): còn nóng từ lò nướng"],
             "options": [
               {
                 "letter": "A",
@@ -1615,6 +1618,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "Who is the audience for this talk?",
             "question_vi": "Khán giả của bài nói chuyện này là ai?",
+            "vocabulary": ["announcement /əˈnaʊnsmənt/ (n): thông báo", "airplane /ˈerpleɪn/ (n): máy bay = plane = aircraft", "shopping center /ˈʃɑːpɪŋ ˈsentər/ (n): trung tâm mua sắm", "ship /ʃɪp/ (n): tàu thủy", "seaside restaurant /ˈsiːsaɪd ˈrestərɑːnt/ (n): nhà hàng ven biển", "passenger /ˈpæsɪndʒər/ (n): hành khách", "captain /ˈkæptɪn/ (n): thuyền trưởng/cơ trưởng", "become separated from /bɪˈkʌm ˈsepəreɪtɪd frʌm/ (v): bị tách khỏi, bị lạc khỏi", "mother and father /ˈmʌðər ænd ˈfɑːðər/ (n): bố mẹ", "snack bar /snæk bɑːr/ (n): quầy ăn nhẹ", "deck /dek/ (n): boong/tầng trên tàu", "wait for /weɪt fɔːr/ (v): chờ đợi", "parent /ˈperənt/ (n): bố/mẹ", "purser’s office /ˈpɜːrsərz ˈɔːfɪs/ (n): văn phòng quản lý hành khách trên tàu", "dock /dɑːk/ (v): cập bến", "despite /dɪˈspaɪt/ (prep): mặc dù", "rough seas /rʌf siːz/ (n): biển động, sóng lớn"],
             "options": [
               {
                 "letter": "A",
@@ -1649,6 +1653,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "Where is this announcement being made?",
             "question_vi": "Thông báo này được đưa ra ở đâu?",
+            "vocabulary": ["purpose /ˈpɜːrpəs/ (n): mục đích", "balloon /bəˈluːn/ (n): bóng bay", "invite /ɪnˈvaɪt/ (v): mời", "special event /ˈspeʃl ɪˈvent/ (n): sự kiện đặc biệt", "potential danger /pəˈtenʃl ˈdeɪndʒər/ (n): mối nguy hiểm tiềm ẩn", "introduce /ˌɪntrəˈduːs/ (v): giới thiệu", "consider /kənˈsɪdər/ (v): xem là, cho rằng", "toy /tɔɪ/ (n): đồ chơi", "handle with special care /ˈhændl wɪð ˈspeʃl ker/ (v): xử lý/cầm nắm cẩn thận đặc biệt", "childhood occasion /ˈtʃaɪldhʊd əˈkeɪʒən/ (n): dịp thời thơ ấu", "risk /rɪsk/ (n): rủi ro, nguy cơ", "overlook /ˌoʊvərˈlʊk/ (v): bỏ qua, không chú ý đến", "uninflated balloon /ˌʌnɪnˈfleɪtɪd bəˈluːn/ (n): bóng bay chưa được thổi phồng", "popped balloon /pɑːpt bəˈluːn/ (n): bóng bay đã nổ", "lodge in /lɑːdʒ ɪn/ (v): mắc kẹt trong", "throat /θroʊt/ (n): cổ họng", "swallow /ˈswɑːloʊ/ (v): nuốt", "choking /ˈtʃoʊkɪŋ/ (n): nghẹt thở do tắc đường thở", "suffocation /ˌsʌfəˈkeɪʃən/ (n): sự ngạt thở", "inflate /ɪnˈfleɪt/ (v): thổi phồng", "supervise /ˈsuːpərvaɪz/ (v): giám sát Top of Form"],
             "options": [
               {
                 "letter": "A",
@@ -1683,6 +1688,7 @@ window.VSTEP_DATA = {
             "number": 6,
             "question": "What is the purpose of this talk?",
             "question_vi": "Mục đích của bài nói chuyện này là gì?",
+            "vocabulary": ["propose changes /prəˈpoʊz ˈtʃeɪndʒɪz/ (v): đề xuất thay đổi", "schedule /ˈskedʒuːl/ (n): lịch trình", "welcome visitors /ˈwelkəm ˈvɪzɪtərz/ (v): chào đón khách tham quan/khách đến thăm", "technical matter /ˈteknɪkl ˈmætər/ (n): vấn đề kỹ thuật", "introduce /ˌɪntrəˈduːs/ (v): giới thiệu", "board /bɔːrd/ (n): ban quản trị, hội đồng quản trị", "extend a warm hello /ɪkˈstend ə wɔːrm heˈloʊ/ (v): gửi lời chào nồng nhiệt", "colleague /ˈkɑːliːɡ/ (n): đồng nghiệp", "branch /bræntʃ/ (n): chi nhánh", "corporation /ˌkɔːrpəˈreɪʃən/ (n): tập đoàn", "have a busy day /hæv ə ˈbɪzi deɪ/ (v): có một ngày bận rộn", "have a chance to /hæv ə tʃæns tuː/ (v): có cơ hội làm gì", "tour a plant /tʊr ə plænt/ (v): tham quan nhà máy", "plant /plænt/ (n): nhà máy = factory", "executive board /ɪɡˈzekjətɪv bɔːrd/ (n): ban điều hành", "engineering team /ˌendʒɪˈnɪrɪŋ tiːm/ (n): đội kỹ thuật", "the day after tomorrow /ðə deɪ ˈæftər təˈmɑːroʊ/ (exp): ngày kia", "charter a boat /ˈtʃɑːrtər ə boʊt/ (v): thuê riêng một chiếc thuyền", "skyline /ˈskaɪlaɪn/ (n): đường chân trời/đường nét các tòa nhà của thành phố", "harbour /ˈhɑːrbər/ (n): bến cảng", "incredible /ɪnˈkredəbl/ (adj): tuyệt vời, khó tin"],
             "options": [
               {
                 "letter": "A",
@@ -1717,6 +1723,7 @@ window.VSTEP_DATA = {
             "number": 7,
             "question": "What is the speaker's purpose?",
             "question_vi": "Mục đích của người nói là gì?",
+            "vocabulary": ["visitor /ˈvɪzɪtər/ (n): khách tham quan", "amusement park /əˈmjuːzmənt pɑːrk/ (n): công viên giải trí", "train /treɪn/ (n): tàu hỏa", "tourist /ˈtʊrɪst/ (n): khách du lịch", "national park /ˈnæʃnəl pɑːrk/ (n): công viên quốc gia", "ride /raɪd/ (n): trò chơi/công trình giải trí", "rider /ˈraɪdər/ (n): người chơi/người ngồi trên trò chơi", "pull down /pʊl daʊn/ (v): kéo xuống", "safety bar /ˈseɪfti bɑːr/ (n): thanh an toàn", "engage automatically /ɪnˈɡeɪdʒ ˌɔːtəˈmætɪkli/ (v): tự động khóa/cài vào", "avoid injury /əˈvɔɪd ˈɪndʒəri/ (v): tránh chấn thương", "attempt to /əˈtempt tuː/ (v): cố gắng làm gì", "stand up /stænd ʌp/ (v): đứng lên", "put one’s arms outside /pʊt wʌnz ɑːrmz ˌaʊtˈsaɪd/ (v): đưa tay ra ngoài", "roller coaster car /ˈroʊlər ˈkoʊstər kɑːr/ (n): toa tàu lượn siêu tốc", "in case of an emergency /ɪn keɪs əv ən ɪˈmɜːrdʒənsi/ (exp): trong trường hợp khẩn cấp", "leave the car /liːv ðə kɑːr/ (v): rời khỏi toa", "stay seated /steɪ ˈsiːtɪd/ (v): ngồi yên", "park personnel /pɑːrk ˌpɜːrsəˈnel/ (n): nhân viên công viên", "assist /əˈsɪst/ (v): hỗ trợ", "come to a complete stop /kʌm tuː ə kəmˈpliːt stɑːp/ (v): dừng hẳn", "disengage /ˌdɪsɪnˈɡeɪdʒ/ (v): mở khóa, nhả ra"],
             "options": [
               {
                 "letter": "A",
