@@ -1800,6 +1800,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "What are sidewalk users asked NOT to do?",
             "question_vi": "Người sử dụng băng chuyền di chuyển [trong ngữ cảnh sân bay] được yêu cầu KHÔNG làm gì?",
+            "vocabulary": ["sidewalk /ˈsaɪdwɔːk/ (n): vỉa hè, lối đi bộ", "do exercises /duː ˈeksərsaɪzɪz/ (v.phr): tập thể dục", "handrail /ˈhændreɪl/ (n): tay vịn", "stand to the right /stænd tuː ðə raɪt/ (v.phr): đứng về phía bên phải"],
             "options": [
               {
                 "letter": "A",
@@ -1834,6 +1835,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "When can members of the audience ask questions?",
             "question_vi": "Khi nào khán giả có thể đặt câu hỏi?",
+            "vocabulary": ["audience /ˈɔːdiəns/ (n): khán giả", "moderator /ˈmɑːdəreɪtər/ (n): người điều hành, người chủ trì", "speech /spiːtʃ/ (n): bài phát biểu", "submit /səbˈmɪt/ (v): nộp, gửi", "written /ˈrɪtn/ (adj): bằng văn bản"],
             "options": [
               {
                 "letter": "A",
@@ -1868,6 +1870,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "How can people buy these products?",
             "question_vi": "Mọi người có thể mua những sản phẩm này bằng cách nào?",
+            "vocabulary": ["product /ˈprɑːdʌkt/ (n): sản phẩm", "catalog /ˈkætəlɔːɡ/ (n): danh mục sản phẩm", "over the telephone /ˈoʊvər ðə ˈtelɪfoʊn/ (exp): qua điện thoại"],
             "options": [
               {
                 "letter": "A",
@@ -1902,6 +1905,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "What should drivers do to get into the business district?",
             "question_vi": "Lái xe phải làm gì để vào được khu thương mại?",
+            "vocabulary": ["business district /ˈbɪznəs ˈdɪstrɪkt/ (n): khu thương mại", "route /ruːt/ (n): tuyến đường", "subway /ˈsʌbweɪ/ (n): tàu điện ngầm"],
             "options": [
               {
                 "letter": "A",
@@ -1936,6 +1940,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "When was Madison House built?",
             "question_vi": "Ngôi nhà Madison được xây dựng khi nào?",
+            "vocabulary": ["build /bɪld/ (v): xây dựng"],
             "options": [
               {
                 "letter": "A",
@@ -1970,6 +1975,7 @@ window.VSTEP_DATA = {
             "number": 6,
             "question": "What will the weather be like this weekend?",
             "question_vi": "Thời tiết cuối tuần này sẽ như thế nào?",
+            "vocabulary": ["weather /ˈweðər/ (n): thời tiết", "weekend /ˈwiːkend/ (n): cuối tuần", "sunny /ˈsʌni/ (adj): có nắng", "windy /ˈwɪndi/ (adj): có gió", "rainy /ˈreɪni/ (adj): có mưa", "snowy /ˈsnoʊi/ (adj): có tuyết"],
             "options": [
               {
                 "letter": "A",
@@ -2004,6 +2010,7 @@ window.VSTEP_DATA = {
             "number": 7,
             "question": "What is the announcement about?",
             "question_vi": "Thông báo nói về điều gì?",
+            "vocabulary": ["announcement /əˈnaʊnsmənt/ (n): thông báo", "ticket sales /ˈtɪkɪt seɪlz/ (n): việc bán vé", "observation window /ˌɑːbzərˈveɪʃn ˈwɪndoʊ/ (n): cửa sổ quan sát", "station stop /ˈsteɪʃn stɑːp/ (n): điểm dừng ở nhà ga"],
             "options": [
               {
                 "letter": "A",
@@ -2038,6 +2045,7 @@ window.VSTEP_DATA = {
             "number": 8,
             "question": "What is more important to customers than price?",
             "question_vi": "Đối với khách hàng điều gì quan trọng hơn giá cả?",
+            "vocabulary": ["repair service /rɪˈper ˈsɜːrvɪs/ (n): dịch vụ sửa chữa", "politeness /pəˈlaɪtnəs/ (n): sự lịch sự", "location /loʊˈkeɪʃn/ (n): vị trí", "advertisement /ˌædvərˈtaɪzmənt/ (n): quảng cáo"],
             "options": [
               {
                 "letter": "A",
@@ -2080,6 +2088,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "How long has Carol Draper held her current position?",
             "question_vi": "Carol Draper đã giữ chức vụ hiện tại được bao lâu?",
+            "vocabulary": ["hold a position /hoʊld ə pəˈzɪʃn/ (v.phr): giữ chức vụ", "current /ˈkɜːrənt/ (adj): hiện tại"],
             "options": [
               {
                 "letter": "A",
@@ -2114,6 +2123,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "Which of the following times is the office NOT open?",
             "question_vi": "Thời gian nào sau đây văn phòng KHÔNG mở cửa?",
+            "vocabulary": ["open /ˈoʊpən/ (adj/v): mở cửa", "weekday /ˈwiːkdeɪ/ (n): ngày trong tuần (thứ 2 - thứ 6)", "weekend /ˈwiːkend/ (n): cuối tuần (thứ 7, CN)"],
             "options": [
               {
                 "letter": "A",
@@ -2148,6 +2158,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "Why is a section of the library being closed early?",
             "question_vi": "Tại sao một phần thư viện lại đóng cửa sớm?",
+            "vocabulary": ["section /ˈsekʃn/ (n): khu vực, phần", "library /ˈlaɪbreri/ (n): thư viện", "medical emergency /ˈmedɪkl ɪˈmɜːrdʒənsi/ (n): trường hợp khẩn cấp về y tế", "maintenance problem /ˈmeɪntənəns ˈprɑːbləm/ (n): vấn đề bảo trì", "annual meeting /ˈænjuəl ˈmiːtɪŋ/ (n): cuộc họp thường niên"],
             "options": [
               {
                 "letter": "A",
@@ -2182,6 +2193,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "What is being specially discounted?",
             "question_vi": "Điều gì đang được giảm giá đặc biệt?",
+            "vocabulary": ["specially discounted /ˈspeʃəli dɪsˈkaʊntɪd/ (adj): được giảm giá đặc biệt", "flashlight /ˈflæʃlaɪt/ (n): đèn pin", "battery /ˈbætəri/ (n): pin", "smoke detector /smoʊk dɪˈtektər/ (n): máy báo khói"],
             "options": [
               {
                 "letter": "A",
@@ -2216,6 +2228,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "What is probably the topic of the talk?",
             "question_vi": "Chủ đề của bài nói có lẽ là gì?",
+            "vocabulary": ["hourly /ˈaʊərli/ (adj/adv): hàng giờ", "victim /ˈvɪktɪm/ (n): nạn nhân", "tornado /tɔːrˈneɪdoʊ/ (n): lốc xoáy", "natural disaster /ˈnætʃrəl dɪˈzæstər/ (n): thảm họa thiên nhiên", "warning /ˈwɔːrnɪŋ/ (n): lời cảnh báo"],
             "options": [
               {
                 "letter": "A",
@@ -2250,6 +2263,7 @@ window.VSTEP_DATA = {
             "number": 6,
             "question": "Who is this announcement intended for?",
             "question_vi": "Thông báo này dành cho ai?",
+            "vocabulary": ["intended for /ɪnˈtendɪd fɔːr/ (adj): dành cho (ai)", "employee /ɪmˈplɔɪiː/ (n): nhân viên", "tow truck owner /toʊ trʌk ˈoʊnər/ (n): chủ xe cứu hộ"],
             "options": [
               {
                 "letter": "A",
@@ -2284,6 +2298,7 @@ window.VSTEP_DATA = {
             "number": 7,
             "question": "How long is the trip to Washington on the Capital Express?",
             "question_vi": "Chuyến đi tới Washington trên tàu Capital Express kéo dài bao lâu?",
+            "vocabulary": ["trip /trɪp/ (n): chuyến đi", "around /əˈraʊnd/ (prep/adv): khoảng chừng"],
             "options": [
               {
                 "letter": "A",
@@ -2318,6 +2333,7 @@ window.VSTEP_DATA = {
             "number": 8,
             "question": "What is available for Larry to eat for dinner?",
             "question_vi": "Bữa tối Larry ăn gì?",
+            "vocabulary": ["available /əˈveɪləbl/ (adj): có sẵn", "vegetable /ˈvedʒtəbl/ (n): rau củ"],
             "options": [
               {
                 "letter": "A",
@@ -2360,6 +2376,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "Which part(s) of England will have the heaviest rainfall?",
             "question_vi": "Phần nào của nước Anh sẽ có lượng mưa lớn nhất?",
+            "vocabulary": ["heaviest /ˈheviɪst/ (adj): nặng nhất", "rainfall /ˈreɪnfɔːl/ (n): lượng mưa", "mainland /ˈmeɪnlænd/ (n): đất liền"],
             "options": [
               {
                 "letter": "A",
@@ -2394,6 +2411,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "What should you do in case of losing money?",
             "question_vi": "Bạn nên làm gì khi bị mất tiền?",
+            "vocabulary": ["in case of /ɪn keɪs əv/ (exp): trong trường hợp", "property office /ˈprɑːpərti ˈɔːfɪs/ (n): văn phòng tài sản", "make a statement /meɪk ə ˈsteɪtmənt/ (v.phr): đưa ra lời khai", "immediately /ɪˈmiːdiətli/ (adv): ngay lập tức"],
             "options": [
               {
                 "letter": "A",
@@ -2428,6 +2446,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "Why can’t she be at the meeting?",
             "question_vi": "Tại sao cô ấy không thể có mặt tại cuộc họp?",
+            "vocabulary": ["delay /dɪˈleɪ/ (v): trì hoãn", "unwell /ʌnˈwel/ (adj): không khỏe", "break down /breɪk daʊn/ (v.phr): bị hỏng"],
             "options": [
               {
                 "letter": "A",
@@ -2462,6 +2481,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "What was stolen in the burglary?",
             "question_vi": "Cái gì đã bị đánh cắp trong vụ trộm?",
+            "vocabulary": ["stolen /ˈstoʊlən/ (adj): bị đánh cắp", "burglary /ˈbɜːrɡləri/ (n): vụ trộm", "statue /ˈstætʃuː/ (n): bức tượng", "jewel /ˈdʒuːəl/ (n): viên ngọc", "antique /ænˈtiːk/ (n): đồ cổ"],
             "options": [
               {
                 "letter": "A",
@@ -2496,6 +2516,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "What are the instructions about?",
             "question_vi": "Hướng dẫn về nội dung gì?",
+            "vocabulary": ["instruction /ɪnˈstrʌkʃn/ (n): lời hướng dẫn", "hazard lights /ˈhæzərd laɪts/ (n): đèn cảnh báo nguy hiểm", "flat tire /flæt ˈtaɪər/ (n): lốp xịt hơi"],
             "options": [
               {
                 "letter": "A",
@@ -2530,6 +2551,7 @@ window.VSTEP_DATA = {
             "number": 6,
             "question": "Which prizes are mentioned?",
             "question_vi": "Những giải thưởng nào được nhắc tới?",
+            "vocabulary": ["prize /praɪz/ (n): giải thưởng", "holiday /ˈhɑːlədeɪ/ (n): kỳ nghỉ"],
             "options": [
               {
                 "letter": "A",
@@ -2564,6 +2586,7 @@ window.VSTEP_DATA = {
             "number": 7,
             "question": "How much would five tickets cost?",
             "question_vi": "Năm vé có giá bao nhiêu?",
+            "vocabulary": ["cost /kɔːst/ (v): có giá trị, tốn (tiền)"],
             "options": [
               {
                 "letter": "A",
@@ -2598,6 +2621,7 @@ window.VSTEP_DATA = {
             "number": 8,
             "question": "What time will the flight now be leaving at?",
             "question_vi": "Chuyến bay sẽ khởi hành lúc mấy giờ?",
+            "vocabulary": ["leave /liːv/ (v): rời đi"],
             "options": [
               {
                 "letter": "A",
