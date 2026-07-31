@@ -413,7 +413,7 @@ class VstepApp {
                     return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213'];
                 }
                 if (id === 'p1_type_05') {
-                    return ['ONB103', 'CB206', 'CB210', 'CB211'];
+                    return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213'];
                 }
                 if (id === 'p1_type_06') {
                     return ['CB206', 'CB210', 'CB211'];
