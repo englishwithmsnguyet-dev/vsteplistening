@@ -2668,6 +2668,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">What</span> is the man <span class=\"highlight\">looking for</span>?",
             "question_vi": "Người đàn ông đang tìm gì?",
+            "vocabulary": ["admission /ədˈmɪʃn/ (n): sự nhận vào, tuyển sinh", "office /ˈɔːfɪs/ (n): văn phòng", "look for /lʊk fɔːr/ (v): tìm kiếm", "admission office /ədˈmɪʃn ˈɔːfɪs/ (n): phòng tuyển sinh"],
             "options": [
               {
                 "letter": "A",
@@ -2696,6 +2697,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">What is true</span> about the <span class=\"highlight\">Art Department</span>?",
             "question_vi": "Điều nào đúng về Khoa Mỹ thuật?",
+            "vocabulary": ["department /dɪˈpɑːrtmənt/ (n): phòng ban, khoa", "art /ɑːrt/ (n): nghệ thuật, mỹ thuật", "double door /ˈdʌbl dɔːr/ (n): cửa đôi", "sign /saɪn/ (n): biển báo"],
             "options": [
               {
                 "letter": "A",
@@ -2724,6 +2726,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "The <span class=\"highlight\">easiest thing</span> is to go ____________ the building to get to the place he wants.",
             "question_vi": "Cách dễ nhất là đi ____________ tòa nhà để đến nơi anh ấy muốn.",
+            "vocabulary": ["straight /streɪt/ (adv): thẳng", "through /θruː/ (prep): xuyên qua", "easiest /ˈiːziɪst/ (adj): dễ nhất", "dining hall /ˈdaɪnɪŋ hɔːl/ (n): nhà ăn"],
             "options": [
               {
                 "letter": "A",
@@ -2752,6 +2755,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">Where</span> is the building the man is <span class=\"highlight\">looking for</span>?",
             "question_vi": "Tòa nhà mà người đàn ông đang tìm nằm ở đâu?",
+            "vocabulary": ["science /ˈsaɪəns/ (n): khoa học", "tall /tɔːl/ (adj): cao", "floor /flɔːr/ (n): tầng", "crossroads /ˈkrɔːsroʊdz/ (n): ngã tư"],
             "options": [
               {
                 "letter": "A",
@@ -2820,6 +2824,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">What problem</span> is the <span class=\"highlight\">woman having</span>?",
             "question_vi": "Người phụ nữ đang gặp vấn đề gì?",
+            "vocabulary": ["orient /ˈɔːrient/ (v): định hướng", "difficulty /ˈdɪfɪkəlti/ (n): sự khó khăn", "map /mæp/ (n): bản đồ", "convenient /kənˈviːniənt/ (adj): thuận tiện"],
             "options": [
               {
                 "letter": "A",
@@ -2848,6 +2853,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "The <span class=\"highlight\">professor's name</span> is ____________.",
             "question_vi": "Tên của vị giáo sư là gì?",
+            "vocabulary": ["professor /prəˈfesər/ (n): giáo sư", "popular /ˈpɑːpjələr/ (adj): nổi tiếng, phổ biến", "cinema /ˈsɪnəmə/ (n): điện ảnh, rạp chiếu phim", "course /kɔːrs/ (n): khóa học"],
             "options": [
               {
                 "letter": "A",
@@ -2876,6 +2882,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">Lectures</span> are held _______________.",
             "question_vi": "Các buổi học được tổ chức khi nào?",
+            "vocabulary": ["lecture /ˈlektʃər/ (n): bài giảng", "hold /hoʊld/ (v): tổ chức", "schedule /ˈskedʒuːl/ (n): thời khóa biểu", "get a move on /ɡet ə muːv ɑːn/ (exp): nhanh lên"],
             "options": [
               {
                 "letter": "A",
@@ -2904,6 +2911,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "The <span class=\"highlight\">professor</span> is ___________.",
             "question_vi": "Vị giáo sư này như thế nào?",
+            "vocabulary": ["strict /strɪkt/ (adj): nghiêm khắc", "on time /ɑːn taɪm/ (exp): đúng giờ", "purchase /ˈpɜːrtʃəs/ (v): mua", "textbook /ˈtekstbʊk/ (n): sách giáo khoa"],
             "options": [
               {
                 "letter": "A",
@@ -2968,6 +2976,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "The <span class=\"highlight\">online MBA course</span> is _________________________.",
             "question_vi": "Khóa học MBA (thạc sĩ quản trị kinh doanh) trực tuyến có mức học phí như thế nào?",
+            "vocabulary": ["register /ˈredʒɪstər/ (v): đăng ký", "offer /ˈɔːfər/ (v): cung cấp", "cheap /tʃiːp/ (adj): rẻ", "fee /fiː/ (n): phí"],
             "options": [
               {
                 "letter": "A",
@@ -2996,6 +3005,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">Which course</span> is the man <span class=\"highlight\">particularly interested in</span>?",
             "question_vi": "Người đàn ông đặc biệt quan tâm đến khóa học nào?",
+            "vocabulary": ["particularly /pərˈtɪkjələrli/ (adv): đặc biệt", "project management /ˈprɑːdʒekt ˈmænɪdʒmənt/ (n): quản lý dự án", "core /kɔːr/ (adj): cốt lõi, bắt buộc", "elective /ɪˈlektɪv/ (adj): tự chọn"],
             "options": [
               {
                 "letter": "A",
@@ -3024,6 +3034,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">How long</span> does the course <span class=\"highlight\">last</span>?",
             "question_vi": "Khóa học kéo dài bao lâu?",
+            "vocabulary": ["last /læst/ (v): kéo dài", "academic year /ˌækəˈdemɪk jɪr/ (n): năm học", "calendar year /ˈkælɪndər jɪr/ (n): năm dương lịch", "end /end/ (v): kết thúc"],
             "options": [
               {
                 "letter": "A",
@@ -3052,6 +3063,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">Prospective students</span> _________________.",
             "question_vi": "Học viên tiềm năng cần có điều kiện gì?",
+            "vocabulary": ["prospective /prəˈspektɪv/ (adj): tiềm năng", "requirement /rɪˈkwaɪərmənt/ (n): yêu cầu", "undergraduate /ˌʌndərˈɡrædʒuət/ (adj): bậc đại học", "experience /ɪkˈspɪriəns/ (n): kinh nghiệm"],
             "options": [
               {
                 "letter": "A",
@@ -3134,6 +3146,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">What</span> does the dining hall <span class=\"highlight\">not serve</span>?",
             "question_vi": "Nhà ăn không phục vụ món gì?",
+            "vocabulary": ["serve /sɜːrv/ (v): phục vụ", "vegetable /ˈvedʒtəbl/ (n): rau củ", "unhealthy /ʌnˈhelθi/ (adj): không lành mạnh", "matter /ˈmætər/ (v): quan trọng"],
             "options": [
               {
                 "letter": "A",
@@ -3162,6 +3175,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "Every time the female student <span class=\"highlight\">eats something</span>, _______________________.",
             "question_vi": "Mỗi lần cô sinh viên ăn gì đó thì điều gì xảy ra?",
+            "vocabulary": ["sick /sɪk/ (adj): ốm, bệnh", "pain /peɪn/ (n): cơn đau", "stomach /ˈstʌmək/ (n): dạ dày", "vomit /ˈvɑːmɪt/ (v): nôn mửa"],
             "options": [
               {
                 "letter": "A",
@@ -3190,6 +3204,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">Which</span> of the following is her <span class=\"highlight\">eating habit</span>?",
             "question_vi": "Thói quen ăn uống của cô ấy là gì?",
+            "vocabulary": ["habit /ˈhæbɪt/ (n): thói quen", "busy /ˈbɪzi/ (adj): bận rộn", "quickly /ˈkwɪkli/ (adv): một cách nhanh chóng", "instead /ɪnˈsted/ (adv): thay vào đó"],
             "options": [
               {
                 "letter": "A",
@@ -3218,6 +3233,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">What</span> does the man <span class=\"highlight\">suggest</span>?",
             "question_vi": "Chàng trai đề xuất điều gì?",
+            "vocabulary": ["suggest /səɡˈdʒest/ (v): đề xuất", "important /ɪmˈpɔːrtnt/ (adj): quan trọng", "evening /ˈiːvnɪŋ/ (n): buổi tối", "especially /ɪˈspeʃəli/ (adv): đặc biệt là"],
             "options": [
               {
                 "letter": "A",
@@ -3296,6 +3312,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">What must you be</span> if you want to <span class=\"highlight\">apply for the Camp</span>?",
             "question_vi": "Muốn đăng ký tham gia Trại hè, bạn phải là người như thế nào?",
+            "vocabulary": ["apply /əˈplaɪ/ (v): đăng ký, ứng tuyển", "camp /kæmp/ (n): trại hè", "employ /ɪmˈplɔɪ/ (v): thuê, mướn", "foreign language /ˈfɒrɪn ˈlæŋɡwɪdʒ/ (n): ngoại ngữ"],
             "options": [
               {
                 "letter": "A",
@@ -3324,6 +3341,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">What</span> can you <span class=\"highlight\">expect</span> in a <span class=\"highlight\">camp tent</span>?",
             "question_vi": "Bạn có thể mong đợi điều gì khi ở trong lều trại?",
+            "vocabulary": ["expect /ɪkˈspekt/ (v): mong đợi, kỳ vọng", "tent /tent/ (n): lều", "nationality /ˌnæʃəˈnæləti/ (n): quốc tịch", "share /ʃeə(r)/ (v): chia sẻ, ở chung"],
             "options": [
               {
                 "letter": "A",
@@ -3352,6 +3370,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">What</span> do you <span class=\"highlight\">NOT have to take</span> to the Camp?",
             "question_vi": "Bạn KHÔNG cần mang gì đến Trại hè?",
+            "vocabulary": ["take /teɪk/ (v): mang theo", "provide /prəˈvaɪd/ (v): cung cấp", "custom /ˈkʌstəm/ (n): phong tục", "exhibition /ˌeksɪˈbɪʃn/ (n): cuộc triển lãm"],
             "options": [
               {
                 "letter": "A",
@@ -3380,6 +3399,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">How</span> must the <span class=\"highlight\">Camp fees</span> be paid?",
             "question_vi": "Lệ phí trại hè phải được thanh toán như thế nào?",
+            "vocabulary": ["fee /fiː/ (n): lệ phí", "currency /ˈkʌrənsi/ (n): tiền tệ", "charge /tʃɑːdʒ/ (n): phí tổn", "full cost /fʊl kɒst/ (n): toàn bộ chi phí"],
             "options": [
               {
                 "letter": "A",
@@ -3444,6 +3464,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "According to the speaker, <span class=\"highlight\">what is the best way</span> of <span class=\"highlight\">travelling to Waterside</span>?",
             "question_vi": "Theo người nói, cách tốt nhất để đến Waterside là gì?",
+            "vocabulary": ["recommend /ˌrekəˈmend/ (v): giới thiệu, khuyên", "coach /kəʊtʃ/ (n): xe khách, xe buýt đường dài", "crowded /ˈkraʊdɪd/ (adj): đông đúc", "facility /fəˈsɪləti/ (n): cơ sở vật chất"],
             "options": [
               {
                 "letter": "A",
@@ -3472,6 +3493,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "On <span class=\"highlight\">Fridays</span>, <span class=\"highlight\">what time</span> are the <span class=\"highlight\">shops open from</span>?",
             "question_vi": "Vào thứ Sáu, các cửa hàng mở cửa lúc mấy giờ?",
+            "vocabulary": ["open /ˈəʊpən/ (v): mở cửa", "close /kləʊz/ (v): đóng cửa", "except /ɪkˈsept/ (prep): ngoại trừ", "weekday /ˈwiːkdeɪ/ (n): ngày thường"],
             "options": [
               {
                 "letter": "A",
@@ -3500,6 +3522,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">What</span> can you <span class=\"highlight\">NOT do</span> at <span class=\"highlight\">Waterside</span>?",
             "question_vi": "Bạn KHÔNG thể làm điều gì tại Waterside?",
+            "vocabulary": ["feed /fiːd/ (v): cho ăn", "sailing /ˈseɪlɪŋ/ (n): chèo thuyền", "wind-surfing /ˈwɪnd sɜːfɪŋ/ (n): lướt ván buồm", "rest /rest/ (v): nghỉ ngơi"],
             "options": [
               {
                 "letter": "A",
@@ -3528,6 +3551,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">What</span> does the speaker <span class=\"highlight\">complain about</span>?",
             "question_vi": "Người nói phàn nàn về điều gì?",
+            "vocabulary": ["complain /kəmˈpleɪn/ (v): phàn nàn", "rubbish /ˈrʌbɪʃ/ (n): rác", "disappointing /ˌdɪsəˈpɔɪntɪŋ/ (adj): đáng thất vọng", "silly /ˈsɪli/ (adj): ngớ ngẩn"],
             "options": [
               {
                 "letter": "A",
@@ -3588,6 +3612,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">What</span> does <span class=\"highlight\">Angela say</span> about her <span class=\"highlight\">life now</span>?",
             "question_vi": "Angela nói gì về cuộc sống hiện tại của mình?",
+            "vocabulary": ["active /ˈæktɪv/ (adj): năng động", "grown up /ˌɡrəʊn ˈʌp/ (adj): trưởng thành", "healthy /ˈhelθi/ (adj): khỏe mạnh", "experience /ɪkˈspɪəriəns/ (n): trải nghiệm"],
             "options": [
               {
                 "letter": "A",
@@ -3616,6 +3641,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">What is true</span> about <span class=\"highlight\">Angela’s flying lessons</span>?",
             "question_vi": "Điều nào đúng về các buổi học lái máy bay của Angela?",
+            "vocabulary": ["prepare /prɪˈpeə(r)/ (v): chuẩn bị", "pass /pɑːs/ (v): vượt qua", "lesson /ˈlesn/ (n): bài học", "teacher /ˈtiːtʃə(r)/ (n): giáo viên"],
             "options": [
               {
                 "letter": "A",
@@ -3644,6 +3670,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">What</span> did <span class=\"highlight\">Angela enjoy most</span> about the trip?",
             "question_vi": "Angela thích điều gì nhất trong chuyến đi?",
+            "vocabulary": ["scenery /ˈsiːnəri/ (n): phong cảnh", "ocean /ˈəʊʃn/ (n): đại dương", "frightening /ˈfraɪtnɪŋ/ (adj): đáng sợ", "desert /ˈdezət/ (n): sa mạc"],
             "options": [
               {
                 "letter": "A",
@@ -3672,6 +3699,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">What</span> did <span class=\"highlight\">Angela miss most</span> while she was away?",
             "question_vi": "Angela nhớ điều gì nhất khi đi xa?",
+            "vocabulary": ["miss /mɪs/ (v): nhớ", "sit still /sɪt stɪl/ (v): ngồi yên", "unfit /ʌnˈfɪt/ (adj): không khỏe, ì ạch", "proper /ˈprɒpə(r)/ (adj): đúng đắn, tử tế"],
             "options": [
               {
                 "letter": "A",
@@ -3736,6 +3764,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">How long</span> has <span class=\"highlight\">Britta lived in Berlin</span>?",
             "question_vi": "Britta đã sống ở Berlin bao lâu?",
+            "vocabulary": ["journalist /ˈdʒɜːnəlɪst/ (n): nhà báo", "move /muːv/ (v): di chuyển, chuyển đến", "past /pɑːst/ (adj): qua, đã qua", "born /bɔːn/ (v): sinh ra"],
             "options": [
               {
                 "letter": "A",
@@ -3764,6 +3793,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">What</span> does <span class=\"highlight\">Britta say</span> about <span class=\"highlight\">living in Berlin</span>?",
             "question_vi": "Britta nói gì về cuộc sống ở Berlin?",
+            "vocabulary": ["traffic /ˈtræfɪk/ (n): giao thông", "atmosphere /ˈætməsfɪə(r)/ (n): bầu không khí", "busy /ˈbɪzi/ (adj): nhộn nhịp, bận rộn", "noisy /ˈnɔɪzi/ (adj): ồn ào"],
             "options": [
               {
                 "letter": "A",
@@ -3792,6 +3822,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">How</span> does <span class=\"highlight\">Britta usually travel around</span> in Berlin?",
             "question_vi": "Britta thường di chuyển bằng phương tiện gì ở Berlin?",
+            "vocabulary": ["transport /ˈtrænspɔːt/ (n): giao thông, phương tiện đi lại", "tram /træm/ (n): xe điện", "cycle /ˈsaɪkl/ (v): đi xe đạp", "cheap /tʃiːp/ (adj): rẻ"],
             "options": [
               {
                 "letter": "A",
@@ -3820,6 +3851,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">What is true</span> about <span class=\"highlight\">Britta’s friends</span>?",
             "question_vi": "Điều nào đúng về bạn bè của Britta?",
+            "vocabulary": ["colleague /ˈkɒliːɡ/ (n): đồng nghiệp", "socially /ˈsəʊʃəli/ (adv): về mặt xã hội, ngoài công việc", "friendly /ˈfrendli/ (adj): thân thiện", "meet /miːt/ (v): gặp gỡ"],
             "options": [
               {
                 "letter": "A",
@@ -3890,6 +3922,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "The <span class=\"highlight\">prerequisite for administration</span> is ___________.",
             "question_vi": "Điều kiện tiên quyết để tuyển sinh vào là ___________.",
+            "vocabulary": ["prerequisite /ˌpriːˈrekwəzɪt/ (n): điều kiện tiên quyết", "administration /ədˌmɪnɪˈstreɪʃn/ (n): sự quản lý, tuyển sinh", "prospective /prəˈspektɪv/ (adj): tương lai, triển vọng"],
             "options": [
               {
                 "letter": "A",
@@ -3918,6 +3951,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">Applying</span> to Cambridge is ________________________________.",
             "question_vi": "Ứng tuyển vào Cambridge thì _______________________.",
+            "vocabulary": ["applicable /ˈæplɪkəbl/ (adj): có thể áp dụng", "collectively /kəˈlektɪvli/ (adv): chung, tập thể", "differ /ˈdɪfər/ (v): khác biệt"],
             "options": [
               {
                 "letter": "A",
@@ -3946,6 +3980,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">How many essential forms</span> are students required to <span class=\"highlight\">fill out</span>?",
             "question_vi": "Học sinh phải điền bao nhiêu mẫu đơn cần thiết?",
+            "vocabulary": ["essential /ɪˈsenʃl/ (adj): cần thiết, thiết yếu", "undergraduate /ˌʌndərˈɡrædʒuət/ (n): sinh viên chưa tốt nghiệp", "preference /ˈprefrəns/ (n): sự ưu tiên, sở thích", "over-subscribed /ˌoʊvərsəbˈskraɪbd/ (adj): đăng ký quá số lượng"],
             "options": [
               {
                 "letter": "A",
@@ -3974,6 +4009,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">British undergraduate degrees</span> are _____________________.",
             "question_vi": "Bằng đại học của Anh thì __________________________.",
+            "vocabulary": ["specialize /ˈspeʃəlaɪz/ (v): chuyên môn hóa", "consequently /ˈkɑːnsɪkwentli/ (adv): do đó, hậu quả là", "world-renowned /ˌwɜːrld rɪˈnaʊnd/ (adj): nổi tiếng thế giới"],
             "options": [
               {
                 "letter": "A",
@@ -4002,6 +4038,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "Cambridge University <span class=\"highlight\">chooses students who</span> _____________.",
             "question_vi": "Đại học Cambridge chọn những sinh viên ______________.",
+            "vocabulary": ["caliber /ˈkæləbər/ (n): chất lượng, khả năng", "scholarship /ˈskɑːlərʃɪp/ (n): học bổng", "bursary /ˈbɜːrsəri/ (n): học bổng, trợ cấp", "extra-curricular /ˌekstrə kəˈrɪkjələr/ (adj): ngoại khóa"],
             "options": [
               {
                 "letter": "A",
@@ -4048,6 +4085,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">How</span> do students <span class=\"highlight\">get the membership card</span> of the Sports Centre?",
             "question_vi": "Học viên làm thế nào để có được thẻ thành viên của Trung tâm Thể thao?",
+            "vocabulary": ["annual /ˈænjuəl/ (adj): hàng năm", "receptionist /rɪˈsepʃənɪst/ (n): nhân viên tiếp tân", "entitled /ɪnˈtaɪtld/ (adj): có quyền", "register /ˈredʒɪstər/ (v): đăng ký"],
             "options": [
               {
                 "letter": "A",
@@ -4076,6 +4114,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">What thing</span> do students <span class=\"highlight\">NOT need to bring</span> when <span class=\"highlight\">registering</span> for membership?",
             "question_vi": "Học viên KHÔNG cần mang theo những gì khi đăng ký thành viên?",
+            "vocabulary": ["union /ˈjuːniən/ (n): công đoàn, hiệp hội", "passport-sized /ˈpæspɔːrt saɪzd/ (adj): cỡ hộ chiếu", "issue /ˈɪʃuː/ (v): phát hành, cấp"],
             "options": [
               {
                 "letter": "A",
@@ -4104,6 +4143,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">What benefits</span> does the <span class=\"highlight\">sports card offer</span> students?",
             "question_vi": "Thẻ thể thao mang lại lợi ích gì cho học sinh?",
+            "vocabulary": ["facility /fəˈsɪləti/ (n): cơ sở vật chất", "session /ˈseʃn/ (n): buổi, phiên", "professional /prəˈfeʃənl/ (adj): chuyên nghiệp"],
             "options": [
               {
                 "letter": "A",
@@ -4132,6 +4172,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">What time</span> is the Sports Center <span class=\"highlight\">open on weekdays</span> this year?",
             "question_vi": "Năm nay Trung tâm Thể thao mở cửa vào mấy giờ các ngày trong tuần?",
+            "vocabulary": ["weekday /ˈwiːkdeɪ/ (n): ngày trong tuần", "in person /ɪn ˈpɜːrsn/ (idiom): đích thân, trực tiếp", "discount /ˈdɪskaʊnt/ (n): sự giảm giá"],
             "options": [
               {
                 "letter": "A",
@@ -4160,6 +4201,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "<span class=\"highlight\">How much</span> is the <span class=\"highlight\">morning discount</span> this year?",
             "question_vi": "Giảm giá buổi sáng năm nay là bao nhiêu?",
+            "vocabulary": ["discount /ˈdɪskaʊnt/ (n): sự giảm giá", "under-used /ˌʌndərˈjuːzd/ (adj): ít được sử dụng", "introduce /ˌɪntrəˈduːs/ (v): giới thiệu"],
             "options": [
               {
                 "letter": "A",
@@ -4208,6 +4250,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "According to the speaker, <span class=\"highlight\">who</span> are <span class=\"highlight\">interested in fashion</span>?",
             "question_vi": "Theo diễn giả, ai là người quan tâm đến thời trang?",
+            "vocabulary": ["fashionable /ˈfæʃnəbl/ (adj): hợp thời trang", "income /ˈɪnkʌm/ (n): thu nhập", "afford /əˈfɔːrd/ (v): có khả năng chi trả"],
             "options": [
               {
                 "letter": "A",
@@ -4236,6 +4279,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">How</span> were <span class=\"highlight\">fashion clothes</span> before the 1900s?",
             "question_vi": "Quần áo thời trang trước những năm 1900 như thế nào?",
+            "vocabulary": ["individually /ˌɪndɪˈvɪdʒuəli/ (adv): cá nhân, riêng lẻ", "loose-fitting /luːs ˈfɪtɪŋ/ (adj): rộng rãi", "tight-fitting /taɪt ˈfɪtɪŋ/ (adj): bó sát", "material /məˈtɪriəl/ (n): vật liệu, chất liệu"],
             "options": [
               {
                 "letter": "A",
@@ -4264,6 +4308,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">What is true</span> about <span class=\"highlight\">Coco Chanel</span>?",
             "question_vi": "Điều gì là đúng về Coco Chanel?",
+            "vocabulary": ["influence /ˈɪnfluəns/ (n): sự ảnh hưởng", "admire /ədˈmaɪər/ (v): ngưỡng mộ", "smart /smɑːrt/ (adj): bảnh bao, gọn gàng"],
             "options": [
               {
                 "letter": "A",
@@ -4292,6 +4337,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">How was the fashion</span> in the 1920s?",
             "question_vi": "Thời trang những năm 1920 như thế nào?",
+            "vocabulary": ["designer /dɪˈzaɪnər/ (n): nhà thiết kế", "cheaply /ˈtʃiːpli/ (adv): một cách rẻ tiền", "popular /ˈpɑːpjələr/ (adj): phổ biến"],
             "options": [
               {
                 "letter": "A",
@@ -4320,6 +4366,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "<span class=\"highlight\">Which</span> of these was part of the <span class=\"highlight\">‘New Look’</span>?",
             "question_vi": "Cái nào trong số này là một phần của 'Giao diện mới'?",
+            "vocabulary": ["available /əˈveɪləbl/ (adj): có sẵn", "shiny /ˈʃaɪni/ (adj): sáng bóng", "exhibition /ˌeksɪˈbɪʃn/ (n): cuộc triển lãm"],
             "options": [
               {
                 "letter": "A",
@@ -4374,6 +4421,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">Which tickets</span> are <span class=\"highlight\">still available</span>?",
             "question_vi": "Vé nào còn trống?",
+            "vocabulary": ["available /əˈveɪləbl/ (adj): có sẵn", "comedy /ˈkɑːmədi/ (n): hài kịch", "coach /koʊtʃ/ (n): xe khách"],
             "options": [
               {
                 "letter": "A",
@@ -4402,6 +4450,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">Which exhibition</span> do visitors have to <span class=\"highlight\">pay a fee</span>?",
             "question_vi": "Triển lãm nào du khách phải trả phí?",
+            "vocabulary": ["gallery /ˈɡæləri/ (n): phòng trưng bày", "jewelry /ˈdʒuːəlri/ (n): đồ trang sức", "charge /tʃɑːrdʒ/ (n): phí tổn"],
             "options": [
               {
                 "letter": "A",
@@ -4430,6 +4479,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">Where</span> can you <span class=\"highlight\">buy clothes</span>?",
             "question_vi": "Bạn có thể mua quần áo ở đâu?",
+            "vocabulary": ["souvenir /ˌsuːvəˈnɪr/ (n): đồ lưu niệm", "theatre /ˈθiːətər/ (n): nhà hát", "shopping centre /ˈʃɑːpɪŋ sentər/ (n): trung tâm mua sắm"],
             "options": [
               {
                 "letter": "A",
@@ -4458,6 +4508,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">Where</span> can you <span class=\"highlight\">enjoy cakes</span>?",
             "question_vi": "Bạn có thể thưởng thức bánh ở đâu?",
+            "vocabulary": ["kiosk /ˈkiːɑːsk/ (n): quầy hàng", "range /reɪndʒ/ (n): phạm vi, sự đa dạng", "value /ˈvæljuː/ (n): giá trị"],
             "options": [
               {
                 "letter": "A",
@@ -4486,6 +4537,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "<span class=\"highlight\">What time</span> does the <span class=\"highlight\">concert end</span>?",
             "question_vi": "Buổi hòa nhạc kết thúc lúc mấy giờ?",
+            "vocabulary": ["exit /ˈeksɪt/ (n): lối ra", "concert-goer /ˈkɑːnsərt ɡoʊər/ (n): người đi xem hòa nhạc", "wait /weɪt/ (v): chờ đợi"],
             "options": [
               {
                 "letter": "A",
@@ -4534,6 +4586,7 @@ window.VSTEP_DATA = {
             "number": 1,
             "question": "<span class=\"highlight\">How often</span> does <span class=\"highlight\">Sarah paint now</span>?",
             "question_vi": "Bây giờ Sarah vẽ tranh bao lâu một lần?",
+            "vocabulary": ["hobby /ˈhɑːbi/ (n): sở thích", "exhibition /ˌeksɪˈbɪʃn/ (n): cuộc triển lãm", "earn /ɜːrn/ (v): kiếm được"],
             "options": [
               {
                 "letter": "A",
@@ -4562,6 +4615,7 @@ window.VSTEP_DATA = {
             "number": 2,
             "question": "<span class=\"highlight\">How</span> does <span class=\"highlight\">Sarah use money</span> from her painting?",
             "question_vi": "Sarah sử dụng tiền từ bức tranh của mình như thế nào?",
+            "vocabulary": ["computing /kəmˈpjuːtɪŋ/ (n): công việc máy tính, tính toán", "material /məˈtɪriəl/ (n): vật liệu", "rent /rent/ (n): tiền thuê nhà"],
             "options": [
               {
                 "letter": "A",
@@ -4590,6 +4644,7 @@ window.VSTEP_DATA = {
             "number": 3,
             "question": "<span class=\"highlight\">What did she learn</span> when she was at <span class=\"highlight\">primary school</span>?",
             "question_vi": "Cô ấy đã học được gì khi còn học tiểu học?",
+            "vocabulary": ["primary /ˈpraɪməri/ (adj): tiểu học", "chalk /tʃɔːk/ (n): phấn", "secondary /ˈsekəndəri/ (adj): trung học"],
             "options": [
               {
                 "letter": "A",
@@ -4618,6 +4673,7 @@ window.VSTEP_DATA = {
             "number": 4,
             "question": "<span class=\"highlight\">What pleased Sarah most</span> about her painting holidays?",
             "question_vi": "Điều gì làm Sarah hài lòng nhất trong những ngày nghỉ vẽ tranh của cô?",
+            "vocabulary": ["scenery /ˈsiːnəri/ (n): phong cảnh", "attend /əˈtend/ (v): tham dự", "discuss /dɪˈskʌs/ (v): thảo luận"],
             "options": [
               {
                 "letter": "A",
@@ -4646,6 +4702,7 @@ window.VSTEP_DATA = {
             "number": 5,
             "question": "<span class=\"highlight\">What</span> will the audience <span class=\"highlight\">NOT do</span> after watching Sarah’s video?",
             "question_vi": "Khán giả sẽ KHÔNG làm gì sau khi xem xong đoạn phim của Sarah?",
+            "vocabulary": ["audience /ˈɔːdiəns/ (n): khán giả", "sunrise /ˈsʌnraɪz/ (n): bình minh", "relax /rɪˈlæks/ (v): thư giãn"],
             "options": [
               {
                 "letter": "A",
