@@ -1076,6 +1076,42 @@ class VstepApp {
         
         // Populate and show inline explanations
         this.populateInlineExplanations(dataObj);
+        
+        // Append Full Transcript drawer if applicable
+        const isRootTranscript = !this.activeSession.isTheory && (this.activeSession.part === 2 || this.activeSession.part === 3);
+        if (isRootTranscript) {
+            const listContainer = this.elements.questionsList;
+            
+            let fullEnHtml = dataObj.en_transcript ? dataObj.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line)}</p>`).join('') : '<p>Chưa có dữ liệu lời thoại gốc.</p>';
+            let fullViHtml = dataObj.vi_transcript ? dataObj.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line)}</p>`).join('') : '<p>Chưa có dữ liệu lời thoại dịch.</p>';
+            
+            const fullTranscriptCard = document.createElement('div');
+            fullTranscriptCard.className = 'question-card glass-card';
+            fullTranscriptCard.style.marginTop = '30px';
+            fullTranscriptCard.style.border = '2px solid var(--color-primary)';
+            fullTranscriptCard.innerHTML = `
+                <div style="text-align: center; margin-bottom: 16px;">
+                    <h3 style="color: var(--color-primary); font-weight: bold; margin: 0;">TOÀN BỘ LỜI THOẠI SONG NGỮ</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 4px;">(FULL TRANSCRIPT)</p>
+                </div>
+                <div class="transcript-layout">
+                    <div class="transcript-column">
+                        <h4 class="column-title" style="margin-bottom: 8px; font-size: 0.9rem; font-weight: bold; color: var(--color-primary);">Tiếng Anh</h4>
+                        <div class="transcript-content text-en" style="font-size: 0.9rem;">
+                            ${fullEnHtml}
+                        </div>
+                    </div>
+                    <div class="transcript-column">
+                        <h4 class="column-title" style="margin-bottom: 8px; font-size: 0.9rem; font-weight: bold; color: var(--color-secondary);">Tiếng Việt</h4>
+                        <div class="transcript-content text-vi" style="font-size: 0.9rem;">
+                            ${fullViHtml}
+                        </div>
+                    </div>
+                </div>
+            `;
+            listContainer.appendChild(fullTranscriptCard);
+        }
+
         this.updateStats();
     }
     
@@ -1181,14 +1217,8 @@ class VstepApp {
         // If Part 2 or 3 Practice, transcript and vocab are at the root level
         const isRootTranscript = !this.activeSession.isTheory && (this.activeSession.part === 2 || this.activeSession.part === 3);
         
-        let rootEnHtml = "";
-        let rootViHtml = "";
-        let rootVocabList = [];
-        
         if (isRootTranscript) {
-            if (dataObj.en_transcript) rootEnHtml = dataObj.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line)}</p>`).join('');
-            if (dataObj.vi_transcript) rootViHtml = dataObj.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line)}</p>`).join('');
-            if (dataObj.vocabulary) rootVocabList = dataObj.vocabulary;
+            // We no longer build rootEnHtml here because we want to filter per question.
         }
         
         items.forEach((item, index) => {
@@ -1202,9 +1232,29 @@ class VstepApp {
             let vocabList = [];
             
             if (isRootTranscript) {
-                enHtml = rootEnHtml;
-                viHtml = rootViHtml;
-                vocabList = rootVocabList;
+                // Find all lines containing `(${qNum})`
+                let enLines = [];
+                if (dataObj.en_transcript) {
+                    enLines = dataObj.en_transcript.filter(line => line.includes(`(${qNum})`));
+                }
+                let viLines = [];
+                if (dataObj.vi_transcript) {
+                    viLines = dataObj.vi_transcript.filter(line => line.includes(`(${qNum})`));
+                }
+                
+                if (enLines.length === 0) {
+                    enHtml = '<p class="text-secondary" style="font-size: 0.9rem; font-style: italic;">Không có trích đoạn cụ thể cho câu hỏi này. Vui lòng xem ở phần <b>FULL TRANSCRIPT</b> cuối bài.</p>';
+                } else {
+                    enHtml = enLines.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line)}</p>`).join('');
+                }
+                
+                if (viLines.length === 0) {
+                    viHtml = '<p class="text-secondary" style="font-size: 0.9rem; font-style: italic;">Không có trích đoạn cụ thể cho câu hỏi này. Vui lòng xem ở phần <b>FULL TRANSCRIPT</b> cuối bài.</p>';
+                } else {
+                    viHtml = viLines.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line)}</p>`).join('');
+                }
+                
+                if (item.vocabulary) vocabList = item.vocabulary;
             } else {
                 if (item.en_transcript) enHtml = item.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line)}</p>`).join('');
                 if (item.vi_transcript) viHtml = item.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line)}</p>`).join('');
