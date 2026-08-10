@@ -1193,12 +1193,17 @@ class VstepApp {
         `;
     }
 
-    cleanTranscriptLine(line) {
+    cleanTranscriptLine(line, targetQNum = null) {
         if (!line) return "";
         
-        // Auto-add highlight span for anything starting with (Number) up to the end of the line
-        if (!line.includes('<span class="highlight">') && line.match(/\(\d+\)/)) {
-            line = line.replace(/(\(\d+\).*)$/, '<span class="highlight">$1</span>');
+        // Auto-add highlight span for anything starting with (Number) up to the next (Number) or end of the line
+        if (!line.includes('<span class="highlight">')) {
+            if (targetQNum !== null) {
+                const regex = new RegExp(`(\\(${targetQNum}\\)[\\s\\S]*?)(?=\\(\\d+\\)|$)`, 'g');
+                line = line.replace(regex, '<span class="highlight">$1</span>');
+            } else if (line.match(/\(\d+\)/)) {
+                line = line.replace(/(\(\d+\)[\s\S]*?)(?=\(\d+\)|$)/g, '<span class="highlight">$1</span>');
+            }
         }
         
         // 1. Extract speakers/numbers from the START of a highlight span
@@ -1250,19 +1255,19 @@ class VstepApp {
                 if (enLines.length === 0) {
                     enHtml = '<p class="text-secondary" style="font-size: 0.9rem; font-style: italic;">Không có trích đoạn cụ thể cho câu hỏi này. Vui lòng xem ở phần <b>FULL TRANSCRIPT</b> cuối bài.</p>';
                 } else {
-                    enHtml = enLines.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line)}</p>`).join('');
+                    enHtml = enLines.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line, qNum)}</p>`).join('');
                 }
                 
                 if (viLines.length === 0) {
                     viHtml = '<p class="text-secondary" style="font-size: 0.9rem; font-style: italic;">Không có trích đoạn cụ thể cho câu hỏi này. Vui lòng xem ở phần <b>FULL TRANSCRIPT</b> cuối bài.</p>';
                 } else {
-                    viHtml = viLines.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line)}</p>`).join('');
+                    viHtml = viLines.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line, qNum)}</p>`).join('');
                 }
                 
                 if (item.vocabulary) vocabList = item.vocabulary;
             } else {
-                if (item.en_transcript) enHtml = item.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line)}</p>`).join('');
-                if (item.vi_transcript) viHtml = item.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line)}</p>`).join('');
+                if (item.en_transcript) enHtml = item.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line, qNum)}</p>`).join('');
+                if (item.vi_transcript) viHtml = item.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line, qNum)}</p>`).join('');
                 if (item.vocabulary) vocabList = item.vocabulary;
             }
             
