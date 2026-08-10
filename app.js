@@ -1196,6 +1196,10 @@ class VstepApp {
     cleanTranscriptLine(line, targetQNum = null, extractOnly = false) {
         if (!line) return "";
         
+        // Strip existing highlight tags so we can re-apply them correctly and cleanly
+        line = line.replace(/<span class="highlight">/g, '');
+        line = line.replace(/<\/span>/g, '');
+        
         // If extractOnly is true, we strip away all text except the speaker prefix (if any) and the target snippet
         if (extractOnly && targetQNum !== null) {
             const regex = new RegExp(`(\\(${targetQNum}\\)[\\s\\S]*?)(?=\\(\\d+\\)|$)`, 'i');
@@ -1211,13 +1215,11 @@ class VstepApp {
         }
         
         // Auto-add highlight span for anything starting with (Number) up to the next (Number) or end of the line
-        if (!line.includes('<span class="highlight">')) {
-            if (targetQNum !== null) {
-                const regex = new RegExp(`(\\(${targetQNum}\\)[\\s\\S]*?)(?=\\(\\d+\\)|$)`, 'g');
-                line = line.replace(regex, '<span class="highlight">$1</span>');
-            } else if (line.match(/\(\d+\)/)) {
-                line = line.replace(/(\(\d+\)[\s\S]*?)(?=\(\d+\)|$)/g, '<span class="highlight">$1</span>');
-            }
+        if (targetQNum !== null) {
+            const regex = new RegExp(`(\\(${targetQNum}\\)[\\s\\S]*?)(?=\\(\\d+\\)|$)`, 'g');
+            line = line.replace(regex, '<span class="highlight">$1</span>');
+        } else if (line.match(/\(\d+\)/)) {
+            line = line.replace(/(\(\d+\)[\s\S]*?)(?=\(\d+\)|$)/g, '<span class="highlight">$1</span>');
         }
         
         // 1. Extract speakers/numbers from the START of a highlight span
