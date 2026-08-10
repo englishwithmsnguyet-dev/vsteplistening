@@ -1082,8 +1082,8 @@ class VstepApp {
         if (isRootTranscript) {
             const listContainer = this.elements.questionsList;
             
-            let fullEnHtml = dataObj.en_transcript ? dataObj.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line)}</p>`).join('') : '<p>Chưa có dữ liệu lời thoại gốc.</p>';
-            let fullViHtml = dataObj.vi_transcript ? dataObj.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line)}</p>`).join('') : '<p>Chưa có dữ liệu lời thoại dịch.</p>';
+            let fullEnHtml = dataObj.en_transcript ? dataObj.en_transcript.map(line => `<p style="margin-bottom:10px; line-height:1.8;">${this.cleanTranscriptLine(line)}</p>`).join('') : '<p>Chưa có dữ liệu lời thoại gốc.</p>';
+            let fullViHtml = dataObj.vi_transcript ? dataObj.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic; line-height:1.8;">${this.cleanTranscriptLine(line)}</p>`).join('') : '<p>Chưa có dữ liệu lời thoại dịch.</p>';
             
             const fullTranscriptCard = document.createElement('div');
             fullTranscriptCard.className = 'question-card glass-card';
@@ -1271,19 +1271,19 @@ class VstepApp {
                 if (enLines.length === 0) {
                     enHtml = '<p class="text-secondary" style="font-size: 0.9rem; font-style: italic;">Không có trích đoạn cụ thể cho câu hỏi này. Vui lòng xem ở phần <b>FULL TRANSCRIPT</b> cuối bài.</p>';
                 } else {
-                    enHtml = enLines.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
+                    enHtml = enLines.map(line => `<p style="margin-bottom:10px; line-height:1.8;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
                 }
                 
                 if (viLines.length === 0) {
                     viHtml = '<p class="text-secondary" style="font-size: 0.9rem; font-style: italic;">Không có trích đoạn cụ thể cho câu hỏi này. Vui lòng xem ở phần <b>FULL TRANSCRIPT</b> cuối bài.</p>';
                 } else {
-                    viHtml = viLines.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
+                    viHtml = viLines.map(line => `<p style="margin-bottom:10px; font-style:italic; line-height:1.8;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
                 }
                 
                 if (item.vocabulary) vocabList = item.vocabulary;
             } else {
-                if (item.en_transcript) enHtml = item.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
-                if (item.vi_transcript) viHtml = item.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
+                if (item.en_transcript) enHtml = item.en_transcript.map(line => `<p style="margin-bottom:10px; line-height:1.8;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
+                if (item.vi_transcript) viHtml = item.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic; line-height:1.8;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
                 if (item.vocabulary) vocabList = item.vocabulary;
             }
             
