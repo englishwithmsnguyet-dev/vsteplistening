@@ -400,88 +400,77 @@ class VstepApp {
         }
     }
 
-    getAllowedPasswords(partNum, id, isTheory = false) {
-        if (partNum === 1) {
-            if (isTheory) {
-                if (id === 'p1_type_01' || id === 'p1_type_02') {
-                    return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'missnguyet2026'];
-                }
-                if (id === 'p1_type_03') {
-                    return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'missnguyet2026'];
-                }
-                if (id === 'p1_type_04') {
-                    return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212'];
-                }
-                if (id === 'p1_type_05') {
-                    return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213'];
-                }
-                if (id === 'p1_type_06') {
-                    return ['ONB103', 'CB206', 'CB210', 'CB211'];
-                }
-            } else {
-                // Đề Practice Part 1
-                return ['ONB103', 'CB206', 'CB210', 'CB211'];
-            }
-        } else if (partNum === 2) {
-            // Part 2
-            return ['CB206', 'CB210', 'CB211'];
-        } else if (partNum === 3) {
-            // Part 3
-            return ['CB206', 'CB210'];
-        }
-        return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'missnguyet2026'];
-    }
-
-    getUnlockedItems() {
-        try {
-            return JSON.parse(sessionStorage.getItem('vstep_unlocked_items') || '[]');
-        } catch (e) {
-            return [];
-        }
-    }
-
-    addUnlockedItem(id) {
-        const items = this.getUnlockedItems();
-        if (!items.includes(id)) {
-            items.push(id);
-            sessionStorage.setItem('vstep_unlocked_items', JSON.stringify(items));
-        }
-    }
-
     isItemUnlocked(partNum, id, isTheory = false) {
         if (sessionStorage.getItem('vstep_unlocked') === 'true') {
             return true;
         }
         
-        const lockKey = isTheory ? `theory_${partNum}_${id}` : `practice_${partNum}_${id}`;
-        const items = this.getUnlockedItems();
-        return items.includes(lockKey);
+        const code = sessionStorage.getItem('vstep_access_code');
+        if (!code) return false;
+
+        const masterCodes = ['CB206', 'CB210', 'MISSNGUYET2026'];
+        if (masterCodes.includes(code)) return true;
+
+        if (code === 'CB211') {
+            if (partNum === 1) return true;
+            if (partNum === 2) {
+                if (!id) return true; // Mở khóa giao diện Part 2
+                if (!isTheory && id.startsWith('p2_practice_')) {
+                    const pNum = parseInt(id.replace('p2_practice_', ''));
+                    if (pNum <= 4) return true;
+                }
+            }
+            return false;
+        }
+
+        if (code === 'ONB103') {
+            if (partNum === 1) return true;
+            if (partNum === 2) {
+                if (!id) return true; // Mở khóa giao diện Part 2
+                if (!isTheory && id.startsWith('p2_practice_')) {
+                    const pNum = parseInt(id.replace('p2_practice_', ''));
+                    if (pNum <= 3) return true;
+                }
+            }
+            return false;
+        }
+
+        if (code === 'CB213' || code === 'B212') {
+            if (partNum === 1) return true;
+            return false;
+        }
+
+        return false;
     }
 
     promptUnlock(partNum, id, isTheory, successCallback) {
-        const allowed = this.getAllowedPasswords(partNum, id, isTheory).map(p => p.toUpperCase());
-        const pwd = prompt("Vui lòng nhập mật khẩu mở khóa phần này:");
+        const pwd = prompt("Vui lòng nhập mã lớp / mật khẩu mở khóa phần này:");
         if (pwd) {
             const cleanPwd = pwd.trim().toUpperCase();
-            if (allowed.includes(cleanPwd)) {
-                if (cleanPwd === 'MISSNGUYET2026') {
+            const validCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211', 'ONB103', 'CB213', 'B212'];
+            
+            if (validCodes.includes(cleanPwd)) {
+                // Lưu mã lớp vào hệ thống
+                sessionStorage.setItem('vstep_access_code', cleanPwd);
+                
+                if (['CB206', 'CB210', 'MISSNGUYET2026'].includes(cleanPwd)) {
                     sessionStorage.setItem('vstep_unlocked', 'true');
-                } else {
-                    const lockKey = isTheory ? `theory_${partNum}_${id}` : `practice_${partNum}_${id}`;
-                    this.addUnlockedItem(lockKey);
                 }
                 
-                alert("Mở khóa thành công!");
-                this.applyLocks();
-                this.renderLists();
-                if (typeof successCallback === 'function') {
-                    successCallback();
+                // Kiểm tra xem mã lớp này có thực sự mở được bài học/phần hiện tại không
+                if (this.isItemUnlocked(partNum, id, isTheory)) {
+                    alert("Mã lớp hợp lệ. Đã mở khóa thành công!");
+                    this.applyLocks();
+                    this.renderLists();
+                    if (typeof successCallback === 'function') {
+                        successCallback();
+                    }
+                } else {
+                    alert("Mã lớp của bạn hợp lệ, nhưng lớp của bạn chưa được cấp quyền truy cập vào bài học/phần này.");
                 }
-                return;
+            } else {
+                alert("Mã lớp / mật khẩu không chính xác!");
             }
-        }
-        if (pwd !== null) {
-            alert("Mật khẩu không chính xác hoặc lớp của bạn chưa được cấp quyền truy cập mục này!");
         }
     }
 
