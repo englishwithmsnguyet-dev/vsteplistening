@@ -569,7 +569,7 @@ class VstepApp {
         } else {
             if (p2Card) {
                 p2Card.classList.remove('locked');
-                p2Card.onclick = null;
+                p2Card.onclick = () => this.switchView('part2');
                 const btn = p2Card.querySelector('.card-action-btn');
                 if (btn) {
                     btn.innerHTML = `
@@ -606,7 +606,7 @@ class VstepApp {
         } else {
             if (p3Card) {
                 p3Card.classList.remove('locked');
-                p3Card.onclick = null;
+                p3Card.onclick = () => this.switchView('part3');
                 const btn = p3Card.querySelector('.card-action-btn');
                 if (btn) {
                     btn.innerHTML = `
