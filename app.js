@@ -1196,9 +1196,13 @@ class VstepApp {
     cleanTranscriptLine(line, targetQNum = null, extractOnly = false) {
         if (!line) return "";
         
-        // Strip existing highlight tags so we can re-apply them correctly and cleanly
-        line = line.replace(/<span class="highlight">/g, '');
-        line = line.replace(/<\/span>/g, '');
+        const isPart2Or3 = this.activeSession && (this.activeSession.part === 2 || this.activeSession.part === 3);
+        
+        // Strip existing highlight tags so we can re-apply them correctly and cleanly (only for Part 2 & 3)
+        if (isPart2Or3) {
+            line = line.replace(/<span class="highlight">/g, '');
+            line = line.replace(/<\/span>/g, '');
+        }
         
         // If extractOnly is true, we strip away all text except the speaker prefix (if any) and the target snippet
         if (extractOnly && targetQNum !== null) {
