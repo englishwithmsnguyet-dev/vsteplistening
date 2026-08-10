@@ -1193,8 +1193,22 @@ class VstepApp {
         `;
     }
 
-    cleanTranscriptLine(line, targetQNum = null) {
+    cleanTranscriptLine(line, targetQNum = null, extractOnly = false) {
         if (!line) return "";
+        
+        // If extractOnly is true, we strip away all text except the speaker prefix (if any) and the target snippet
+        if (extractOnly && targetQNum !== null) {
+            const regex = new RegExp(`(\\(${targetQNum}\\)[\\s\\S]*?)(?=\\(\\d+\\)|$)`, 'i');
+            const match = line.match(regex);
+            if (match) {
+                let prefix = "";
+                const prefixMatch = line.match(/^(M:|W:|Nam:|Nữ:|Man:|Woman:)\s*/i);
+                if (prefixMatch) {
+                    prefix = prefixMatch[0];
+                }
+                line = prefix + match[1];
+            }
+        }
         
         // Auto-add highlight span for anything starting with (Number) up to the next (Number) or end of the line
         if (!line.includes('<span class="highlight">')) {
@@ -1255,19 +1269,19 @@ class VstepApp {
                 if (enLines.length === 0) {
                     enHtml = '<p class="text-secondary" style="font-size: 0.9rem; font-style: italic;">Không có trích đoạn cụ thể cho câu hỏi này. Vui lòng xem ở phần <b>FULL TRANSCRIPT</b> cuối bài.</p>';
                 } else {
-                    enHtml = enLines.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line, qNum)}</p>`).join('');
+                    enHtml = enLines.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
                 }
                 
                 if (viLines.length === 0) {
                     viHtml = '<p class="text-secondary" style="font-size: 0.9rem; font-style: italic;">Không có trích đoạn cụ thể cho câu hỏi này. Vui lòng xem ở phần <b>FULL TRANSCRIPT</b> cuối bài.</p>';
                 } else {
-                    viHtml = viLines.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line, qNum)}</p>`).join('');
+                    viHtml = viLines.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
                 }
                 
                 if (item.vocabulary) vocabList = item.vocabulary;
             } else {
-                if (item.en_transcript) enHtml = item.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line, qNum)}</p>`).join('');
-                if (item.vi_transcript) viHtml = item.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line, qNum)}</p>`).join('');
+                if (item.en_transcript) enHtml = item.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
+                if (item.vi_transcript) viHtml = item.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line, qNum, true)}</p>`).join('');
                 if (item.vocabulary) vocabList = item.vocabulary;
             }
             
