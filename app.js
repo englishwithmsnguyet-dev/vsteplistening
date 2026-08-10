@@ -1196,6 +1196,11 @@ class VstepApp {
     cleanTranscriptLine(line) {
         if (!line) return "";
         
+        // Auto-add highlight span for anything starting with (Number) up to the end of the line
+        if (!line.includes('<span class="highlight">') && line.match(/\(\d+\)/)) {
+            line = line.replace(/(\(\d+\).*)$/, '<span class="highlight">$1</span>');
+        }
+        
         // 1. Extract speakers/numbers from the START of a highlight span
         line = line.replace(/<span class="highlight">\s*(M:|W:|Nam:|Nữ:|Man:|Woman:|\(\d+\))\s*/gi, '<strong>$1</strong> <span class="highlight">');
         
