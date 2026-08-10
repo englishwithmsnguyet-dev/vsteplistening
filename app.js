@@ -427,7 +427,7 @@ class VstepApp {
             return ['CB206', 'CB210', 'CB211'];
         } else if (partNum === 3) {
             // Part 3
-            return ['CB206'];
+            return ['CB206', 'CB210'];
         }
         return ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'missnguyet2026'];
     }
