@@ -413,13 +413,7 @@ class VstepApp {
 
         if (code === 'CB211') {
             if (partNum === 1) return true;
-            if (partNum === 2) {
-                if (!id) return true; // Mở khóa giao diện Part 2
-                if (!isTheory && id.startsWith('p2_practice_')) {
-                    const pNum = parseInt(id.replace('p2_practice_', ''));
-                    if (pNum <= 5) return true;
-                }
-            }
+            if (partNum === 2) return true; // CB211 mở hết PART 02
             return false;
         }
 
@@ -435,7 +429,19 @@ class VstepApp {
             return false;
         }
 
-        if (code === 'CB213' || code === 'B212') {
+        if (code === 'CB213') {
+            if (partNum === 1) return true;
+            if (partNum === 2) {
+                if (!id) return true; // Mở khóa giao diện Part 2
+                if (!isTheory && id.startsWith('p2_practice_')) {
+                    const pNum = parseInt(id.replace('p2_practice_', ''));
+                    if (pNum <= 5) return true;
+                }
+            }
+            return false;
+        }
+
+        if (code === 'B212') {
             if (partNum === 1) return true;
             return false;
         }
