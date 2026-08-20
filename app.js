@@ -417,7 +417,7 @@ class VstepApp {
                 if (!id) return true; // Mở khóa giao diện Part 2
                 if (!isTheory && id.startsWith('p2_practice_')) {
                     const pNum = parseInt(id.replace('p2_practice_', ''));
-                    if (pNum <= 4) return true;
+                    if (pNum <= 5) return true;
                 }
             }
             return false;
