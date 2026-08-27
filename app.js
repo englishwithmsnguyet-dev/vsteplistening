@@ -6,7 +6,7 @@ class VstepApp {
     constructor() {
         this.data = null;
         this.studentName = sessionStorage.getItem('vstep_student_name') || ""; // Session-based student name (resets when closing tab/browser)
-        this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212'];
+        this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'GV'];
         this.progress = {
             completedTests: {}, // testId -> score
             completedTheory: {}, // theoryId -> true
@@ -424,7 +424,7 @@ class VstepApp {
         const code = sessionStorage.getItem('vstep_access_code');
         if (!code) return false;
 
-        const masterCodes = ['CB206', 'CB210', 'MISSNGUYET2026'];
+        const masterCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'GV'];
         if (masterCodes.includes(code)) return true;
 
         if (code === 'CB211') {
@@ -476,13 +476,13 @@ class VstepApp {
         const pwd = prompt("Vui lòng nhập mã lớp / mật khẩu mở khóa phần này:");
         if (pwd) {
             const cleanPwd = pwd.trim().toUpperCase();
-            const validCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211', 'ONB103', 'CB213', 'B212'];
+            const validCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211', 'ONB103', 'CB213', 'B212', 'GV'];
             
             if (validCodes.includes(cleanPwd)) {
                 // Lưu mã lớp vào hệ thống
                 sessionStorage.setItem('vstep_access_code', cleanPwd);
                 
-                if (['CB206', 'CB210', 'MISSNGUYET2026'].includes(cleanPwd)) {
+                if (['CB206', 'CB210', 'MISSNGUYET2026', 'GV'].includes(cleanPwd)) {
                     sessionStorage.setItem('vstep_unlocked', 'true');
                 }
                 
@@ -1539,7 +1539,12 @@ class VstepApp {
         if (hasValidFormat) {
             const parts = studentName.split(' - ');
             const studentClass = parts[1] ? parts[1].trim().toUpperCase() : '';
-            if (!this.allowedClasses.includes(studentClass)) {
+            if (this.allowedClasses.includes(studentClass)) {
+                sessionStorage.setItem('vstep_access_code', studentClass);
+                if (studentClass === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026'].includes(studentClass)) {
+                    sessionStorage.setItem('vstep_unlocked', 'true');
+                }
+            } else {
                 hasValidFormat = false;
             }
         }
@@ -1559,7 +1564,7 @@ class VstepApp {
         const inputClass = this.elements.studentClassInput.value.trim().toUpperCase();
         
         if (!this.allowedClasses.includes(inputClass)) {
-            alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212)`);
+            alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212, GV)`);
             return;
         }
         
@@ -1567,7 +1572,13 @@ class VstepApp {
             const combined = `${inputName} - ${inputClass}`;
             this.studentName = combined;
             sessionStorage.setItem('vstep_student_name', combined);
+            sessionStorage.setItem('vstep_access_code', inputClass);
+            if (inputClass === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026'].includes(inputClass)) {
+                sessionStorage.setItem('vstep_unlocked', 'true');
+            }
             this.checkStudentName();
+            this.applyLocks();
+            this.renderLists();
             this.submitToGoogleForm(combined);
         }
     }
@@ -1577,17 +1588,17 @@ class VstepApp {
         const currentName = parts[0] || "";
         const currentClass = parts[1] || "";
         
-        const newName = prompt("Nhập họ tên mới (Ví dụ: Phạm Minh Nguyệt):", currentName);
+        const newName = prompt("Nhập họ tên mới (Ví dụ: Phạm Minh Nguyệt hoặc MN):", currentName);
         if (newName === null) return;
         
-        const newClass = prompt("Nhập lớp học mới (Ví dụ: ONB103):", currentClass);
+        const newClass = prompt("Nhập lớp học mới (Ví dụ: ONB103 hoặc GV):", currentClass);
         if (newClass === null) return;
         
         const nameVal = newName.trim();
         const classVal = newClass.trim().toUpperCase();
         
         if (!this.allowedClasses.includes(classVal)) {
-            alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212)`);
+            alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212, GV)`);
             return;
         }
         
@@ -1595,9 +1606,15 @@ class VstepApp {
             const combined = `${nameVal} - ${classVal}`;
             this.studentName = combined;
             sessionStorage.setItem('vstep_student_name', combined);
+            sessionStorage.setItem('vstep_access_code', classVal);
+            if (classVal === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026'].includes(classVal)) {
+                sessionStorage.setItem('vstep_unlocked', 'true');
+            }
             this.updateSidebarUser(combined);
+            this.applyLocks();
+            this.renderLists();
             this.submitToGoogleForm(combined);
-            alert("Đã cập nhật thông tin học viên!");
+            alert("Đã cập nhật thông tin!");
         }
     }
 
