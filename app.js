@@ -158,10 +158,26 @@ class VstepApp {
                     const searchInput = document.getElementById('vocab-search');
                     if (searchInput) {
                         searchInput.value = '';
-                        document.querySelectorAll('.vocab-topic-block, .vocab-card').forEach(el => {
+                        document.querySelectorAll('#view-part1-vocab .vocab-topic-block, #view-part1-vocab .vocab-card').forEach(el => {
                             el.style.display = '';
                         });
                     }
+                    const ph = document.getElementById('game-placeholder');
+                    const gc = document.getElementById('game-content');
+                    if (ph) ph.style.display = 'block';
+                    if (gc) { gc.style.display = 'none'; gc.innerHTML = ''; }
+                } else if (tabId.startsWith('vocab2-cat-')) {
+                    const searchInput = document.getElementById('vocab2-search');
+                    if (searchInput) {
+                        searchInput.value = '';
+                        document.querySelectorAll('#view-part2-vocab .vocab-topic-block, #view-part2-vocab .vocab-card').forEach(el => {
+                            el.style.display = '';
+                        });
+                    }
+                    const ph = document.getElementById('game-placeholder-p2');
+                    const gc = document.getElementById('game-content-p2');
+                    if (ph) ph.style.display = 'block';
+                    if (gc) { gc.style.display = 'none'; gc.innerHTML = ''; }
                 }
             });
         });
@@ -379,10 +395,10 @@ class VstepApp {
     /* --- APPLICATION ROUTING --- */
     handleRouting() {
         const hash = window.location.hash.replace('#', '') || 'dashboard';
-        const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part3', 'statistics', 'practice-run'];
+        const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part2-vocab', 'part3', 'statistics', 'practice-run'];
         
-        if ((hash === 'part2' || hash === 'part3') && !this.isItemUnlocked(hash === 'part2' ? 2 : 3, '', false)) {
-            this.promptUnlock(hash === 'part2' ? 2 : 3, '', false, () => {
+        if ((hash === 'part2' || hash === 'part2-vocab' || hash === 'part3') && !this.isItemUnlocked(hash.startsWith('part2') ? 2 : 3, '', false)) {
+            this.promptUnlock(hash.startsWith('part2') ? 2 : 3, '', false, () => {
                 window.location.hash = '#' + hash;
             });
             window.location.hash = '#dashboard';
@@ -493,29 +509,35 @@ class VstepApp {
         
         // Update Sidebar menu items
         const p2MenuItem = document.querySelector('.menu-item[data-view="part2"]');
+        const p2VocabMenuItem = document.querySelector('.menu-item[data-view="part2-vocab"]');
         const p3MenuItem = document.querySelector('.menu-item[data-view="part3"]');
         
         if (!unlockedP2) {
-            if (p2MenuItem) {
-                p2MenuItem.classList.add('locked');
-                p2MenuItem.onclick = (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.promptUnlock(2, '', false, () => {
-                        this.switchView('part2');
-                        const menuBtn = document.querySelector('.menu-item[data-view="part2"]');
-                        if (menuBtn) {
-                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
-                            menuBtn.classList.add('active');
-                        }
-                    });
-                };
-            }
+            [p2MenuItem, p2VocabMenuItem].forEach(item => {
+                if (item) {
+                    item.classList.add('locked');
+                    item.onclick = (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        this.promptUnlock(2, '', false, () => {
+                            const viewTarget = item.getAttribute('data-view');
+                            this.switchView(viewTarget);
+                            const menuBtn = document.querySelector(`.menu-item[data-view="${viewTarget}"]`);
+                            if (menuBtn) {
+                                document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                                menuBtn.classList.add('active');
+                            }
+                        });
+                    };
+                }
+            });
         } else {
-            if (p2MenuItem) {
-                p2MenuItem.classList.remove('locked');
-                p2MenuItem.onclick = null;
-            }
+            [p2MenuItem, p2VocabMenuItem].forEach(item => {
+                if (item) {
+                    item.classList.remove('locked');
+                    item.onclick = null;
+                }
+            });
         }
         
         if (!unlockedP3) {
@@ -661,6 +683,7 @@ class VstepApp {
             'part1': { parent: 'Luyện tập', current: 'PART 01: SHORT TALKS/CONVERSATIONS' },
             'part1-vocab': { parent: 'Từ vựng', current: 'Từ vựng PART 01' },
             'part2': { parent: 'Luyện tập', current: 'PART 02: LONG CONVERSATIONS' },
+            'part2-vocab': { parent: 'Từ vựng', current: 'Từ vựng PART 02' },
             'part3': { parent: 'Luyện tập', current: 'PART 03: LONG TALKS' },
             'statistics': { parent: 'Tiện ích', current: 'Tiến độ học tập' },
             'practice-run': { parent: 'Phòng thi', current: 'Đang làm bài nghe' }
@@ -675,33 +698,29 @@ class VstepApp {
     }
 
     renderVocab() {
-        if (!window.VSTEP_VOCAB_DATA) return;
-        
-        window.VSTEP_VOCAB_DATA.forEach((cat, cIdx) => {
-            const container = document.getElementById(`tab-vocab-cat-${cIdx}`);
-            if (!container) return;
-            
+        const renderCategoryBlock = (cat) => {
             let html = '';
             cat.topics.forEach(topic => {
                 let emoji = "📝";
                 const nameUpper = topic.name.toUpperCase();
-                if (nameUpper.includes("GIÁO DỤC")) emoji = "🏫";
+                if (nameUpper.includes("GIÁO DỤC") || nameUpper.includes("CAMPUS") || nameUpper.includes("CLASSROOM") || nameUpper.includes("UNIVERSITY")) emoji = "🏫";
                 else if (nameUpper.includes("KHOA HỌC")) emoji = "🧪";
-                else if (nameUpper.includes("Y TẾ") || nameUpper.includes("MEDICAL")) emoji = "🏥";
-                else if (nameUpper.includes("KINH DOANH") || nameUpper.includes("OFFICE")) emoji = "🏢";
+                else if (nameUpper.includes("Y TẾ") || nameUpper.includes("MEDICAL") || nameUpper.includes("CLINIC") || nameUpper.includes("HEALTH") || nameUpper.includes("PHARMACY")) emoji = "🏥";
+                else if (nameUpper.includes("KINH DOANH") || nameUpper.includes("OFFICE") || nameUpper.includes("WORKPLACE") || nameUpper.includes("JOB") || nameUpper.includes("INTERVIEW")) emoji = "🏢";
                 else if (nameUpper.includes("XÂY DỰNG") || nameUpper.includes("WAREHOUSE")) emoji = "🏗️";
                 else if (nameUpper.includes("NGHỆ THUẬT") || nameUpper.includes("THEATER")) emoji = "🎭";
                 else if (nameUpper.includes("LUẬT")) emoji = "⚖️";
                 else if (nameUpper.includes("THỦ CÔNG")) emoji = "🛠️";
                 else if (nameUpper.includes("LOGISTICS") || nameUpper.includes("KHO VẬN")) emoji = "📦";
-                else if (nameUpper.includes("RESTAURANT") || nameUpper.includes("SHOP")) emoji = "🛍️";
-                else if (nameUpper.includes("HOTEL")) emoji = "🏨";
+                else if (nameUpper.includes("RESTAURANT") || nameUpper.includes("CAFÉ") || nameUpper.includes("CAFE")) emoji = "☕";
+                else if (nameUpper.includes("SHOP") || nameUpper.includes("STORE") || nameUpper.includes("SUPERMARKET") || nameUpper.includes("BOOKSTORE")) emoji = "🛍️";
+                else if (nameUpper.includes("HOTEL") || nameUpper.includes("HOMESTAY") || nameUpper.includes("ACCOMMODATION") || nameUpper.includes("DORMITORY") || nameUpper.includes("LANDLORD")) emoji = "🏠";
                 else if (nameUpper.includes("BANK")) emoji = "🏦";
                 else if (nameUpper.includes("POST OFFICE")) emoji = "📮";
-                else if (nameUpper.includes("AIRPORT")) emoji = "✈️";
-                else if (nameUpper.includes("REAL ESTATE")) emoji = "🏠";
-                else if (nameUpper.includes("TRAIN") || nameUpper.includes("STATION")) emoji = "🚆";
-                else if (nameUpper.includes("SỰ KIỆN")) emoji = "🎉";
+                else if (nameUpper.includes("AIRPORT") || nameUpper.includes("FLIGHT")) emoji = "✈️";
+                else if (nameUpper.includes("TRAIN") || nameUpper.includes("BUS") || nameUpper.includes("STATION") || nameUpper.includes("TOUR") || nameUpper.includes("DIRECTIONS")) emoji = "🚆";
+                else if (nameUpper.includes("SỰ KIỆN") || nameUpper.includes("EVENT") || nameUpper.includes("CEREMONY") || nameUpper.includes("WORKSHOP") || nameUpper.includes("ACTIVITY")) emoji = "🎉";
+                else if (nameUpper.includes("PHONE") || nameUpper.includes("BOOKING") || nameUpper.includes("SERVICE")) emoji = "📞";
                 
                 html += `
                     <div class="vocab-topic-block">
@@ -733,42 +752,60 @@ class VstepApp {
                     </div>
                 `;
             });
-            
-            container.innerHTML = html;
-        });
-        
-        // Set up search filter listener
-        const searchInput = document.getElementById('vocab-search');
-        if (searchInput) {
-            searchInput.addEventListener('input', (e) => {
-                const query = e.target.value.toLowerCase().trim();
-                const activePane = document.querySelector('#vocab-tab-body .tab-pane.active');
-                if (!activePane) return;
-                
-                const topicBlocks = activePane.querySelectorAll('.vocab-topic-block');
-                topicBlocks.forEach(block => {
-                    const cards = block.querySelectorAll('.vocab-card');
-                    let visibleCount = 0;
-                    
-                    cards.forEach(card => {
-                        const word = card.getAttribute('data-word') || '';
-                        const meaning = card.getAttribute('data-meaning') || '';
-                        if (word.includes(query) || meaning.includes(query)) {
-                            card.style.display = 'flex';
-                            visibleCount++;
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                    
-                    if (visibleCount > 0 || query === '') {
-                        block.style.display = 'block';
-                    } else {
-                        block.style.display = 'none';
-                    }
-                });
+            return html;
+        };
+
+        if (window.VSTEP_VOCAB_DATA) {
+            window.VSTEP_VOCAB_DATA.forEach((cat, cIdx) => {
+                const container = document.getElementById(`tab-vocab-cat-${cIdx}`);
+                if (container) container.innerHTML = renderCategoryBlock(cat);
             });
         }
+
+        if (window.VSTEP_VOCAB_PART2_DATA) {
+            window.VSTEP_VOCAB_PART2_DATA.forEach((cat, cIdx) => {
+                const container = document.getElementById(`tab-vocab2-cat-${cIdx}`);
+                if (container) container.innerHTML = renderCategoryBlock(cat);
+            });
+        }
+        
+        // Set up search filter listeners
+        const setupSearch = (inputId, tabBodySelector) => {
+            const searchInput = document.getElementById(inputId);
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    const query = e.target.value.toLowerCase().trim();
+                    const activePane = document.querySelector(`${tabBodySelector} .tab-pane.active`);
+                    if (!activePane) return;
+                    
+                    const topicBlocks = activePane.querySelectorAll('.vocab-topic-block');
+                    topicBlocks.forEach(block => {
+                        const cards = block.querySelectorAll('.vocab-card');
+                        let visibleCount = 0;
+                        
+                        cards.forEach(card => {
+                            const word = card.getAttribute('data-word') || '';
+                            const meaning = card.getAttribute('data-meaning') || '';
+                            if (word.includes(query) || meaning.includes(query)) {
+                                card.style.display = 'flex';
+                                visibleCount++;
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                        
+                        if (visibleCount > 0 || query === '') {
+                            block.style.display = 'block';
+                        } else {
+                            block.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        };
+
+        setupSearch('vocab-search', '#vocab-tab-body');
+        setupSearch('vocab2-search', '#vocab2-tab-body');
     }
 
     /* --- PRACTICE RUN ENGINE --- */
@@ -1769,18 +1806,30 @@ function shootConfetti() {
     }
 }
 
-window.startReviewGame = (type) => {
-    const activeBtn = document.querySelector('#vocab-tab-header .tab-btn.active');
+window.startReviewGame = (type, part = null) => {
+    let targetPart = part;
+    if (!targetPart) {
+        const p2View = document.getElementById('view-part2-vocab');
+        if (p2View && p2View.classList.contains('active')) {
+            targetPart = 2;
+        } else {
+            targetPart = 1;
+        }
+    }
+
+    const headerSelector = targetPart === 2 ? '#vocab2-tab-header' : '#vocab-tab-header';
+    const activeBtn = document.querySelector(`${headerSelector} .tab-btn.active`);
     if (!activeBtn) return;
     const tabId = activeBtn.getAttribute('data-tab');
-    const catIdx = parseInt(tabId.split('-')[2]);
+    const catIdx = parseInt(tabId.replace('vocab2-cat-', '').replace('vocab-cat-', ''));
     
-    if (!window.VSTEP_VOCAB_DATA || !window.VSTEP_VOCAB_DATA[catIdx]) {
+    const vocabSource = targetPart === 2 ? window.VSTEP_VOCAB_PART2_DATA : window.VSTEP_VOCAB_DATA;
+    if (!vocabSource || !vocabSource[catIdx]) {
         alert("Không tìm thấy dữ liệu từ vựng cho phần này!");
         return;
     }
     
-    const catData = window.VSTEP_VOCAB_DATA[catIdx];
+    const catData = vocabSource[catIdx];
     const gameWords = [];
     catData.topics.forEach(topic => {
         topic.words.forEach(w => {
@@ -1796,8 +1845,10 @@ window.startReviewGame = (type) => {
         return;
     }
     
-    const placeholder = document.getElementById('game-placeholder');
-    const content = document.getElementById('game-content');
+    const placeholderId = targetPart === 2 ? 'game-placeholder-p2' : 'game-placeholder';
+    const contentId = targetPart === 2 ? 'game-content-p2' : 'game-content';
+    const placeholder = document.getElementById(placeholderId);
+    const content = document.getElementById(contentId);
     
     if (placeholder) placeholder.style.display = 'none';
     if (content) {

@@ -64,6 +64,11 @@
                     <span>PART 02: LONG CONVERSATIONS</span>
                 </a>
                 
+                <a href="#part2-vocab" class="menu-item" data-view="part2-vocab" style="padding-left: 28px;">
+                    <div class="menu-item-badge">V2</div>
+                    <span>Từ vựng PART 02</span>
+                </a>
+                
                 <a href="#part3" class="menu-item" data-view="part3">
                     <div class="menu-item-badge">P3</div>
                     <span>PART 03: LONG TALKS</span>
@@ -333,6 +338,65 @@
                     </div>
                 </section>
 
+                <!-- 3.5. PART 02 VOCABULARY VIEW -->
+                <section class="view-panel" id="view-part2-vocab">
+                    <div class="tab-container">
+                        <div class="tab-header" id="vocab2-tab-header">
+                            <button class="tab-btn active" data-tab="vocab2-cat-0">🎓 University</button>
+                            <button class="tab-btn" data-tab="vocab2-cat-1">💼 Jobs & Workplace</button>
+                            <button class="tab-btn" data-tab="vocab2-cat-2">✈️ Travel & Transport</button>
+                            <button class="tab-btn" data-tab="vocab2-cat-3">📞 Booking & Services</button>
+                            <button class="tab-btn" data-tab="vocab2-cat-4">🏠 Accommodation</button>
+                            <button class="tab-btn" data-tab="vocab2-cat-5">🛍️ Shopping & Products</button>
+                            <button class="tab-btn" data-tab="vocab2-cat-6">🎉 Events & Activities</button>
+                            <button class="tab-btn" data-tab="vocab2-cat-7">🏥 Medical</button>
+                        </div>
+                        
+                        <div class="search-box-wrapper" style="margin: 20px 0; display: flex; gap: 12px; align-items: center;">
+                            <div style="position: relative; flex: 1;">
+                                <input type="text" id="vocab2-search" placeholder="🔍 Nhập từ vựng hoặc nghĩa tiếng Việt để tìm kiếm nhanh trong Part 2..." style="width: 100%; padding: 12px 40px 12px 16px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-size: 0.95rem;">
+                            </div>
+                        </div>
+
+                        <div class="tab-body" id="vocab2-tab-body">
+                            <!-- Dynamic loading of subtopics and words for Part 2 -->
+                            <div class="tab-pane active" id="tab-vocab2-cat-0"></div>
+                            <div class="tab-pane" id="tab-vocab2-cat-1"></div>
+                            <div class="tab-pane" id="tab-vocab2-cat-2"></div>
+                            <div class="tab-pane" id="tab-vocab2-cat-3"></div>
+                            <div class="tab-pane" id="tab-vocab2-cat-4"></div>
+                            <div class="tab-pane" id="tab-vocab2-cat-5"></div>
+                            <div class="tab-pane" id="tab-vocab2-cat-6"></div>
+                            <div class="tab-pane" id="tab-vocab2-cat-7"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Góc Ôn Tập (Review Section / Games for Part 2) -->
+                    <div id="review-section-p2" style="margin-top: 3rem; padding-top: 2rem; border-top: 2px dashed var(--border-color);">
+                        <div class="section-intro" style="text-align: center; margin-bottom: 24px;">
+                            <h2 style="color: var(--color-primary); font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                                🎮 GÓC ÔN TẬP TỪ VỰNG PART 02
+                            </h2>
+                            <p style="color: var(--text-secondary); margin-top: 4px;">Chọn một trò chơi bên dưới để kiểm tra trí nhớ của bạn cho nhóm từ vựng đang học!</p>
+                        </div>
+                        
+                        <div class="game-menu" style="display: flex; gap: 12px; justify-content: center; margin-bottom: 24px; flex-wrap: wrap;">
+                            <button class="btn" onclick="window.startReviewGame('flashcards')" style="background: linear-gradient(135deg, #3b82f6, #2563eb); color: white; border: none; font-weight: 700; box-shadow: 0 4px 10px rgba(59,130,246,0.3);">🎴 Lật Thẻ</button>
+                            <button class="btn" onclick="window.startReviewGame('matching')" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; font-weight: 700; box-shadow: 0 4px 10px rgba(16,185,129,0.3);">🔗 Nối Từ</button>
+                            <button class="btn" onclick="window.startReviewGame('quiz')" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border: none; font-weight: 700; box-shadow: 0 4px 10px rgba(139,92,246,0.3);">❓ Trắc Nghiệm</button>
+                            <button class="btn" onclick="window.startReviewGame('spelling')" style="background: linear-gradient(135deg, #ec4899, #be185d); color: white; border: none; font-weight: 700; box-shadow: 0 4px 10px rgba(236,72,153,0.3);">⌨️ Gõ Từ</button>
+                        </div>
+
+                        <div id="game-stage-p2" style="background: var(--bg-card); border: 2px solid var(--border-color); border-radius: 20px; padding: 32px; min-height: 380px; position: relative; overflow: hidden; box-shadow: inset 0 2px 10px rgba(0,0,0,0.02); display: flex; align-items: center; justify-content: center;">
+                            <div id="game-placeholder-p2" style="color: var(--text-muted); font-size: 1.1rem; text-align: center; width: 100%;">
+                                <div style="font-size: 3rem; margin-bottom: 12px; opacity: 0.7;">🎮</div>
+                                Hãy chọn một trò chơi bên trên để bắt đầu ôn tập
+                            </div>
+                            <div id="game-content-p2" style="display: none; width: 100%;"></div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- 4. PART 03 VIEW -->
                 <section class="view-panel" id="view-part3">
                     <p class="section-description">Mỗi đề luyện tập Part 3 gồm 1 bài nói/bài giảng học thuật đơn thoại dài kèm theo 5 câu hỏi trắc nghiệm học thuật sâu rộng.</p>
@@ -521,7 +585,7 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="data.js?v=7"></script>
-    <script src="vocab_data.js?v=2"></script>
-    <script src="app.js?v=27"></script>
+    <script src="vocab_data.js?v=3"></script>
+    <script src="app.js?v=28"></script>
 </body>
 </html>
