@@ -458,11 +458,11 @@ class VstepApp {
         }
 
         if (code === 'B212') {
-            if (partNum === 1) {
-                if (!id) return true; // Mở khóa giao diện Part 1
-                if (isTheory) return true; // Mở các bài lý thuyết Part 1
-                if (!isTheory && id.startsWith('p1_practice_')) {
-                    const pNum = parseInt(id.replace('p1_practice_', ''));
+            if (partNum === 1) return true;
+            if (partNum === 2) {
+                if (!id) return true; // Mở khóa giao diện Part 2
+                if (!isTheory && id.startsWith('p2_practice_')) {
+                    const pNum = parseInt(id.replace('p2_practice_', ''));
                     if (pNum <= 4) return true;
                 }
             }
