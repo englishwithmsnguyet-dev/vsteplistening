@@ -435,13 +435,7 @@ class VstepApp {
 
         if (code === 'ONB103') {
             if (partNum === 1) return true;
-            if (partNum === 2) {
-                if (!id) return true; // Mở khóa giao diện Part 2
-                if (!isTheory && id.startsWith('p2_practice_')) {
-                    const pNum = parseInt(id.replace('p2_practice_', ''));
-                    if (pNum <= 2) return true;
-                }
-            }
+            if (partNum === 2) return true; // ONB103 mở hết PART 02 (cả Từ vựng & Practice)
             return false;
         }
 
