@@ -442,6 +442,13 @@ class VstepApp {
         if (code === 'CB213') {
             if (partNum === 1) return true;
             if (partNum === 2) return true; // CB213 mở hết PART 02
+            if (partNum === 3) {
+                if (!id) return true; // Mở khóa giao diện Part 3
+                if (!isTheory && id.startsWith('p3_practice_')) {
+                    const pNum = parseInt(id.replace('p3_practice_', ''));
+                    if (pNum <= 3) return true;
+                }
+            }
             return false;
         }
 
