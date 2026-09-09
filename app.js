@@ -424,13 +424,11 @@ class VstepApp {
         const code = sessionStorage.getItem('vstep_access_code');
         if (!code) return false;
 
-        const masterCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'GV'];
+        const masterCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'GV', 'CB211'];
         if (masterCodes.includes(code)) return true;
 
         if (code === 'CB211') {
-            if (partNum === 1) return true;
-            if (partNum === 2) return true; // CB211 mở hết PART 02
-            return false;
+            return true; // CB211 mở hết PART 01, 02, 03
         }
 
         if (code === 'ONB103') {
@@ -471,7 +469,7 @@ class VstepApp {
                 // Lưu mã lớp vào hệ thống
                 sessionStorage.setItem('vstep_access_code', cleanPwd);
                 
-                if (['CB206', 'CB210', 'MISSNGUYET2026', 'GV'].includes(cleanPwd)) {
+                if (['CB206', 'CB210', 'MISSNGUYET2026', 'GV', 'CB211'].includes(cleanPwd)) {
                     sessionStorage.setItem('vstep_unlocked', 'true');
                 }
                 
@@ -1530,7 +1528,7 @@ class VstepApp {
             const studentClass = parts[1] ? parts[1].trim().toUpperCase() : '';
             if (this.allowedClasses.includes(studentClass)) {
                 sessionStorage.setItem('vstep_access_code', studentClass);
-                if (studentClass === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026'].includes(studentClass)) {
+                if (studentClass === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211'].includes(studentClass)) {
                     sessionStorage.setItem('vstep_unlocked', 'true');
                 }
             } else {
@@ -1562,7 +1560,7 @@ class VstepApp {
             this.studentName = combined;
             sessionStorage.setItem('vstep_student_name', combined);
             sessionStorage.setItem('vstep_access_code', inputClass);
-            if (inputClass === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026'].includes(inputClass)) {
+            if (inputClass === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211'].includes(inputClass)) {
                 sessionStorage.setItem('vstep_unlocked', 'true');
             }
             this.checkStudentName();
@@ -1596,7 +1594,7 @@ class VstepApp {
             this.studentName = combined;
             sessionStorage.setItem('vstep_student_name', combined);
             sessionStorage.setItem('vstep_access_code', classVal);
-            if (classVal === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026'].includes(classVal)) {
+            if (classVal === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211'].includes(classVal)) {
                 sessionStorage.setItem('vstep_unlocked', 'true');
             }
             this.updateSidebarUser(combined);
