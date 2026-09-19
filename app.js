@@ -6,8 +6,7 @@ class VstepApp {
     constructor() {
         this.data = null;
         this.studentName = sessionStorage.getItem('vstep_student_name') || ""; // Session-based student name (resets when closing tab/browser)
-        this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'GV', 'GIÁO VIÊN', 'GIAO VIEN', 'TEACHER'];
-        this.selectedLoginRole = 'student';
+        this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'GV'];
         this.progress = {
             completedTests: {}, // testId -> score
             completedTheory: {}, // theoryId -> true
@@ -425,12 +424,15 @@ class VstepApp {
         }
     }
 
-    isTeacherClass(classStr) {
-        if (!classStr) return false;
-        const normalized = classStr.toString().trim().toUpperCase()
-            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // GIÁO VIÊN -> GIAO VIEN
-            .replace(/[^A-Z0-9]/g, ''); // GIAO VIEN -> GIAOVIEN
-        return ['GV', 'GIAOVIEN', 'TEACHER', 'GIANGVIEN', 'CO', 'CONGUYET', 'MISSNGUYET'].includes(normalized);
+    isTeacher(name = '', classCode = '') {
+        const cleanClass = (classCode || '').toString().trim().toUpperCase();
+        const cleanName = (name || '').toString().trim().toUpperCase();
+        
+        // Mặc định là tài khoản giáo viên khi tên PTMN hoặc mã lớp GV
+        if (cleanClass === 'GV' || cleanName === 'PTMN') {
+            return true;
+        }
+        return false;
     }
 
     isItemUnlocked(partNum, id, isTheory = false) {
@@ -439,14 +441,15 @@ class VstepApp {
         }
         
         const code = sessionStorage.getItem('vstep_access_code');
-        if (!code) return false;
+        const studentName = sessionStorage.getItem('vstep_student_name') || '';
+        if (!code && !studentName) return false;
 
-        // Nếu là Giáo Viên thì mở khóa 100% toàn bộ hệ thống
-        if (this.isTeacherClass(code)) {
+        // Nếu là Giáo Viên (tên PTMN hoặc mã lớp GV) thì mở khóa 100%
+        if (this.isTeacher(studentName.split(' - ')[0] || '', code)) {
             return true;
         }
 
-        const masterCodes = ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV', 'GIÁO VIÊN', 'GIAO VIEN', 'TEACHER'];
+        const masterCodes = ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'];
         if (masterCodes.includes(code)) return true;
 
         if (code === 'ONB103' || code === 'B212') {
@@ -466,18 +469,18 @@ class VstepApp {
     }
 
     promptUnlock(partNum, id, isTheory, successCallback) {
-        const pwd = prompt("Vui lòng nhập mã lớp / mật khẩu mở khóa phần này (hoặc nhập Giáo Viên / GV):");
+        const pwd = prompt("Vui lòng nhập mã lớp / mật khẩu mở khóa phần này (hoặc GV):");
         if (pwd) {
             const cleanPwd = pwd.trim().toUpperCase();
-            const isTeacher = this.isTeacherClass(pwd);
-            const validCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211', 'ONB103', 'CB213', 'B212', 'GV', 'GIÁO VIÊN', 'GIAO VIEN', 'TEACHER'];
+            const isTeacher = this.isTeacher('', cleanPwd);
+            const validCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211', 'ONB103', 'CB213', 'B212', 'GV'];
             
             if (validCodes.includes(cleanPwd) || isTeacher) {
                 // Lưu mã lớp vào hệ thống
                 const codeToStore = isTeacher ? 'GV' : cleanPwd;
                 sessionStorage.setItem('vstep_access_code', codeToStore);
                 
-                if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV', 'GIÁO VIÊN', 'GIAO VIEN', 'TEACHER'].includes(cleanPwd)) {
+                if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(cleanPwd)) {
                     sessionStorage.setItem('vstep_unlocked', 'true');
                 } else {
                     sessionStorage.removeItem('vstep_unlocked');
@@ -1608,65 +1611,6 @@ class VstepApp {
         return inputName.replace(/\s*[\-\–\—:\/]\s*/g, ' - ').trim();
     }
 
-    setLoginRole(role) {
-        this.selectedLoginRole = role;
-        const btnStudent = document.getElementById('role-btn-student');
-        const btnTeacher = document.getElementById('role-btn-teacher');
-        const classGroup = document.getElementById('class-input-group');
-        const classInput = document.getElementById('student-class-input');
-        const nameInput = document.getElementById('student-name-input');
-        const note = document.getElementById('teacher-role-note');
-
-        if (role === 'teacher') {
-            if (btnTeacher) {
-                btnTeacher.style.borderColor = 'var(--color-primary)';
-                btnTeacher.style.background = 'var(--color-primary-light)';
-                btnTeacher.style.color = 'var(--color-primary)';
-            }
-            if (btnStudent) {
-                btnStudent.style.borderColor = 'var(--border-color)';
-                btnStudent.style.background = 'var(--bg-surface)';
-                btnStudent.style.color = 'var(--text-secondary)';
-            }
-            if (classInput) {
-                classInput.value = 'Giáo Viên';
-            }
-            if (classGroup) {
-                classGroup.style.display = 'none';
-            }
-            if (nameInput) {
-                nameInput.placeholder = 'Họ và tên Giáo viên (Ví dụ: Cô Nguyệt)';
-            }
-            if (note) {
-                note.classList.remove('hidden');
-            }
-        } else {
-            if (btnStudent) {
-                btnStudent.style.borderColor = 'var(--color-primary)';
-                btnStudent.style.background = 'var(--color-primary-light)';
-                btnStudent.style.color = 'var(--color-primary)';
-            }
-            if (btnTeacher) {
-                btnTeacher.style.borderColor = 'var(--border-color)';
-                btnTeacher.style.background = 'var(--bg-surface)';
-                btnTeacher.style.color = 'var(--text-secondary)';
-            }
-            if (classInput) {
-                classInput.value = '';
-                classInput.placeholder = 'Lớp học (Ví dụ: ONB103, CB210)';
-            }
-            if (classGroup) {
-                classGroup.style.display = 'block';
-            }
-            if (nameInput) {
-                nameInput.placeholder = 'Họ và tên học viên (Ví dụ: Phạm Minh Nguyệt)';
-            }
-            if (note) {
-                note.classList.add('hidden');
-            }
-        }
-    }
-
     checkStudentName() {
         const studentName = this.studentName;
         // Validate if the stored name contains a hyphen separating Name and Class
@@ -1674,13 +1618,13 @@ class VstepApp {
         
         if (hasValidFormat) {
             const parts = studentName.split(' - ');
-            const studentClass = parts[1] ? parts[1].trim() : '';
-            const isTeacher = this.isTeacherClass(studentClass);
-            const cleanClass = studentClass.toUpperCase();
+            const sName = parts[0] ? parts[0].trim() : '';
+            const sClass = parts[1] ? parts[1].trim().toUpperCase() : '';
+            const isTeacher = this.isTeacher(sName, sClass);
             
-            if (isTeacher || this.allowedClasses.includes(cleanClass)) {
-                sessionStorage.setItem('vstep_access_code', isTeacher ? 'GV' : cleanClass);
-                if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(cleanClass)) {
+            if (isTeacher || this.allowedClasses.includes(sClass)) {
+                sessionStorage.setItem('vstep_access_code', sClass);
+                if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(sClass)) {
                     sessionStorage.setItem('vstep_unlocked', 'true');
                 } else {
                     sessionStorage.removeItem('vstep_unlocked');
@@ -1702,41 +1646,38 @@ class VstepApp {
 
     saveStudentName() {
         const inputName = this.elements.studentNameInput.value.trim();
-        const rawClass = this.elements.studentClassInput ? this.elements.studentClassInput.value.trim() : '';
-        const isTeacher = this.isTeacherClass(rawClass) || (this.selectedLoginRole === 'teacher');
-        const inputClass = isTeacher ? 'Giáo Viên' : rawClass.toUpperCase();
+        const inputClass = this.elements.studentClassInput.value.trim().toUpperCase();
         
         if (!inputName) {
-            alert("Vui lòng nhập họ và tên!");
+            alert("Vui lòng nhập họ và tên của bạn!");
             return;
         }
 
-        if (!isTeacher && !rawClass) {
-            alert("Vui lòng nhập lớp học được cấp (Ví dụ: ONB103, CB210, CB211, CB213...) hoặc chọn vai trò Giáo viên!");
+        if (!inputClass) {
+            alert("Vui lòng nhập mã lớp học của bạn (Ví dụ: GV, ONB103, CB210, CB211, CB213, B212)!");
             return;
         }
 
+        const isTeacher = this.isTeacher(inputName, inputClass);
+        
         if (!isTeacher && !this.allowedClasses.includes(inputClass)) {
-            alert(`Lớp học "${rawClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212) hoặc chọn vai trò Giáo Viên.`);
+            alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: GV, ONB103, CB206, CB210, CB211, CB213, B212)`);
             return;
         }
         
-        if (inputName && (inputClass || isTeacher)) {
-            const finalClass = isTeacher ? 'Giáo Viên' : inputClass;
-            const combined = `${inputName} - ${finalClass}`;
-            this.studentName = combined;
-            sessionStorage.setItem('vstep_student_name', combined);
-            sessionStorage.setItem('vstep_access_code', isTeacher ? 'GV' : finalClass);
-            if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(finalClass)) {
-                sessionStorage.setItem('vstep_unlocked', 'true');
-            } else {
-                sessionStorage.removeItem('vstep_unlocked');
-            }
-            this.checkStudentName();
-            this.applyLocks();
-            this.renderLists();
-            this.submitToGoogleForm(combined);
+        const combined = `${inputName} - ${inputClass}`;
+        this.studentName = combined;
+        sessionStorage.setItem('vstep_student_name', combined);
+        sessionStorage.setItem('vstep_access_code', inputClass);
+        if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(inputClass)) {
+            sessionStorage.setItem('vstep_unlocked', 'true');
+        } else {
+            sessionStorage.removeItem('vstep_unlocked');
         }
+        this.checkStudentName();
+        this.applyLocks();
+        this.renderLists();
+        this.submitToGoogleForm(combined);
     }
 
     editStudentName() {
@@ -1744,46 +1685,49 @@ class VstepApp {
         const currentName = parts[0] || "";
         const currentClass = parts[1] || "";
         
-        const newName = prompt("Nhập họ tên mới (Ví dụ: Phạm Minh Nguyệt hoặc MN):", currentName);
+        const newName = prompt("Nhập họ tên mới (Ví dụ: PTMN):", currentName);
         if (newName === null) return;
         
-        const newClass = prompt("Nhập lớp học mới (Ví dụ: ONB103, CB210 hoặc nhập Giáo Viên / GV để mở khóa toàn bộ):", currentClass);
+        const newClass = prompt("Nhập lớp học mới (Ví dụ: GV, ONB103, CB210):", currentClass);
         if (newClass === null) return;
         
         const nameVal = newName.trim();
-        const rawClass = newClass.trim();
-        const isTeacher = this.isTeacherClass(rawClass);
-        const classVal = isTeacher ? 'Giáo Viên' : rawClass.toUpperCase();
+        const classVal = newClass.trim().toUpperCase();
+        
+        if (!nameVal || !classVal) {
+            alert("Họ tên và Lớp học không được để trống!");
+            return;
+        }
+
+        const isTeacher = this.isTeacher(nameVal, classVal);
         
         if (!isTeacher && !this.allowedClasses.includes(classVal)) {
-            alert(`Lớp học "${rawClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212) hoặc Giáo Viên`);
+            alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: GV, ONB103, CB206, CB210, CB211, CB213, B212)`);
             return;
         }
         
-        if (nameVal && (classVal || isTeacher)) {
-            const finalClass = isTeacher ? 'Giáo Viên' : classVal;
-            const combined = `${nameVal} - ${finalClass}`;
-            this.studentName = combined;
-            sessionStorage.setItem('vstep_student_name', combined);
-            sessionStorage.setItem('vstep_access_code', isTeacher ? 'GV' : finalClass);
-            if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(finalClass)) {
-                sessionStorage.setItem('vstep_unlocked', 'true');
-            } else {
-                sessionStorage.removeItem('vstep_unlocked');
-            }
-            this.updateSidebarUser(combined);
-            this.applyLocks();
-            this.renderLists();
-            this.submitToGoogleForm(combined);
-            alert(isTeacher ? "Đã cập nhật vai trò Giáo Viên! Đã mở khóa toàn bộ hệ thống." : "Đã cập nhật thông tin!");
+        const combined = `${nameVal} - ${classVal}`;
+        this.studentName = combined;
+        sessionStorage.setItem('vstep_student_name', combined);
+        sessionStorage.setItem('vstep_access_code', classVal);
+        if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(classVal)) {
+            sessionStorage.setItem('vstep_unlocked', 'true');
+        } else {
+            sessionStorage.removeItem('vstep_unlocked');
         }
+        this.updateSidebarUser(combined);
+        this.applyLocks();
+        this.renderLists();
+        this.submitToGoogleForm(combined);
+        alert(isTeacher ? "Đã cập nhật tài khoản Giáo Viên! Toàn bộ hệ thống đã mở khóa." : "Đã cập nhật thông tin!");
     }
 
     updateSidebarUser(name) {
         if (this.elements.sidebarUserName) {
             this.elements.sidebarUserName.textContent = name;
         }
-        const isTeacher = this.isTeacherClass(name.split(' - ')[1] || '');
+        const parts = name.split(' - ');
+        const isTeacher = this.isTeacher(parts[0] || '', parts[1] || '');
         if (this.elements.userAvatarChar) {
             this.elements.userAvatarChar.textContent = isTeacher ? '👩‍🏫' : name.charAt(0).toUpperCase();
         }
