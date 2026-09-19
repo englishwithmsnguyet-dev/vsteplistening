@@ -98,8 +98,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 9,
           "part": 2,
           "section_title": "Conversation 01",
-          "question": "How long does the tour “Whale Watching” last?",
-          "question_vi": "Chuyến tham quan “Whale Watching” kéo dài bao lâu?",
+          "question": "<span class=\"highlight\">How long</span> does the tour <span class=\"highlight\">“Whale Watching” last</span>?",
+          "question_vi": "Chuyến tham quan <span class=\"highlight\">“Whale Watching”</span> kéo dài <span class=\"highlight\">bao lâu</span>?",
           "options": [
             {
               "letter": "A",
@@ -176,8 +176,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 10,
           "part": 2,
           "section_title": "Conversation 01",
-          "question": "How are they going to travel?",
-          "question_vi": "Họ sẽ di chuyển bằng phương tiện gì?",
+          "question": "<span class=\"highlight\">How</span> are they going to <span class=\"highlight\">travel</span>?",
+          "question_vi": "Họ sẽ di chuyển bằng <span class=\"highlight\">phương tiện gì</span>?",
           "options": [
             {
               "letter": "A",
@@ -254,8 +254,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 11,
           "part": 2,
           "section_title": "Conversation 01",
-          "question": "What is the maximum group size on the tour?",
-          "question_vi": "Số lượng tối đa trong một nhóm tham quan là bao nhiêu?",
+          "question": "What is the <span class=\"highlight\">maximum group size</span> on the tour?",
+          "question_vi": "<span class=\"highlight\">Số lượng tối đa</span> trong một nhóm tham quan là bao nhiêu?",
           "options": [
             {
               "letter": "A",
@@ -332,8 +332,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 12,
           "part": 2,
           "section_title": "Conversation 01",
-          "question": "When is the next tour going?",
-          "question_vi": "Khi nào tour tiếp theo sẽ khởi hành?",
+          "question": "<span class=\"highlight\">When</span> is the <span class=\"highlight\">next tour going</span>?",
+          "question_vi": "<span class=\"highlight\">Khi nào</span> chuyến tham quan tiếp theo sẽ <span class=\"highlight\">khởi hành</span>?",
           "options": [
             {
               "letter": "A",
@@ -467,8 +467,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 13,
           "part": 2,
           "section_title": "Conversation 02",
-          "question": "What is included in the price of the tour?",
-          "question_vi": "Những gì được bao gồm trong giá tour?",
+          "question": "What is <span class=\"highlight\">included</span> in the <span class=\"highlight\">price of the tour</span>?",
+          "question_vi": "<span class=\"highlight\">Chi phí</span> chuyến tham quan đã <span class=\"highlight\">bao gồm những gì</span>?",
           "options": [
             {
               "letter": "A",
@@ -540,8 +540,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 14,
           "part": 2,
           "section_title": "Conversation 02",
-          "question": "How much is the tour?",
-          "question_vi": "Giá tour là bao nhiêu?",
+          "question": "<span class=\"highlight\">How much</span> is the <span class=\"highlight\">tour</span>?",
+          "question_vi": "Chuyến tham quan này có <span class=\"highlight\">giá bao nhiêu tiền</span>?",
           "options": [
             {
               "letter": "A",
@@ -613,8 +613,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 15,
           "part": 2,
           "section_title": "Conversation 02",
-          "question": "How many days must bookings be made in advance?",
-          "question_vi": "Việc đặt chỗ phải được thực hiện trước bao nhiêu ngày?",
+          "question": "<span class=\"highlight\">How many days</span> must bookings be made <span class=\"highlight\">in advance</span>?",
+          "question_vi": "Khách cần đặt chỗ <span class=\"highlight\">trước bao nhiêu ngày</span>?",
           "options": [
             {
               "letter": "A",
@@ -686,8 +686,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 16,
           "part": 2,
           "section_title": "Conversation 02",
-          "question": "What is the customer’s reference number?",
-          "question_vi": "Mã đặt chỗ của khách hàng là gì?",
+          "question": "What is the customer’s <span class=\"highlight\">reference number</span>?",
+          "question_vi": "<span class=\"highlight\">Mã đặt chỗ</span> của khách hàng là gì?",
           "options": [
             {
               "letter": "A",
@@ -811,8 +811,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 17,
           "part": 2,
           "section_title": "Conversation 03",
-          "question": "What is the student looking for?",
-          "question_vi": "Nam sinh đang tìm nơi nào?",
+          "question": "What is the student <span class=\"highlight\">looking for</span>?",
+          "question_vi": "Bạn sinh viên đang <span class=\"highlight\">tìm kiếm nơi nào</span>?",
           "options": [
             {
               "letter": "A",
@@ -950,8 +950,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 18,
           "part": 2,
           "section_title": "Conversation 03",
-          "question": "How many lectures are there per week?",
-          "question_vi": "Có bao nhiêu buổi giảng mỗi tuần?",
+          "question": "<span class=\"highlight\">How many lectures</span> are there <span class=\"highlight\">per week</span>?",
+          "question_vi": "Có <span class=\"highlight\">bao nhiêu buổi giảng</span> <span class=\"highlight\">mỗi tuần</span>?",
           "options": [
             {
               "letter": "A",
@@ -1089,8 +1089,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 19,
           "part": 2,
           "section_title": "Conversation 03",
-          "question": "What can be inferred about attendance at lectures?",
-          "question_vi": "Có thể suy ra điều gì về việc tham dự lớp học?",
+          "question": "What can be inferred about <span class=\"highlight\">attendance</span> at <span class=\"highlight\">lectures</span>?",
+          "question_vi": "Có thể suy ra điều gì về <span class=\"highlight\">quy định chuyên cần</span> tại các <span class=\"highlight\">buổi giảng</span>?",
           "options": [
             {
               "letter": "A",
@@ -1228,8 +1228,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 20,
           "part": 2,
           "section_title": "Conversation 03",
-          "question": "What should the man do if he wants to arrange time for tutorials?",
-          "question_vi": "Nếu muốn sắp xếp thời gian học nhóm (tutorials), nam sinh nên làm gì?",
+          "question": "What should the man do if he wants to <span class=\"highlight\">arrange time</span> for <span class=\"highlight\">tutorials</span>?",
+          "question_vi": "Người đàn ông nên làm gì nếu muốn <span class=\"highlight\">sắp xếp thời gian</span> cho các <span class=\"highlight\">buổi học hướng dẫn (tutorials)</span>?",
           "options": [
             {
               "letter": "A",
@@ -1485,8 +1485,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 21,
           "part": 3,
           "section_title": "Talk 01",
-          "question": "In 1993, Dan Pearman went to Ecuador ________________________",
-          "question_vi": "Vào năm 1993, Dan Pearman đến Ecuador để làm gì?",
+          "question": "In <span class=\"highlight\">1993</span>, <span class=\"highlight\">Dan Pearman</span> went to <span class=\"highlight\">Ecuador</span> ____________________",
+          "question_vi": "Vào năm <span class=\"highlight\">1993</span>, <span class=\"highlight\">Dan Pearman</span> đến <span class=\"highlight\">Ecuador</span> ____________________",
           "options": [
             {
               "letter": "A",
@@ -1521,8 +1521,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 22,
           "part": 3,
           "section_title": "Talk 01",
-          "question": "Dan’s neighbor was successful in business because he ___________________________",
-          "question_vi": "Hàng xóm của Dan thành công trong kinh doanh vì điều gì?",
+          "question": "Dan’s <span class=\"highlight\">neighbor was successful</span> in business because he ____________________",
+          "question_vi": "Người <span class=\"highlight\">hàng xóm của Dan thành công</span> trong kinh doanh vì ông ấy ____________________",
           "options": [
             {
               "letter": "A",
@@ -1557,8 +1557,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 23,
           "part": 3,
           "section_title": "Talk 01",
-          "question": "Dan says the charity relies on __________________________________",
-          "question_vi": "Dan nói tổ chức từ thiện này phụ thuộc vào điều gì?",
+          "question": "Dan says the <span class=\"highlight\">charity relies on</span> ____________________",
+          "question_vi": "Dan cho biết tổ chức <span class=\"highlight\">từ thiện này hoạt động dựa vào</span> ____________________",
           "options": [
             {
               "letter": "A",
@@ -1593,8 +1593,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 24,
           "part": 3,
           "section_title": "Talk 01",
-          "question": "What does Dan say about the town of Rivas?",
-          "question_vi": "Dan nói gì về thị trấn Rivas?",
+          "question": "What does Dan say about the <span class=\"highlight\">town of Rivas</span>?",
+          "question_vi": "Dan nói gì về <span class=\"highlight\">thị trấn Rivas</span>?",
           "options": [
             {
               "letter": "A",
@@ -1629,8 +1629,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 25,
           "part": 3,
           "section_title": "Talk 01",
-          "question": "What problem did the charity face in August 2000?",
-          "question_vi": "Vấn đề mà tổ chức từ thiện gặp phải vào tháng 8 năm 2000 là gì?",
+          "question": "What <span class=\"highlight\">problem</span> did the charity face in <span class=\"highlight\">August 2000</span>?",
+          "question_vi": "<span class=\"highlight\">Khó khăn</span> mà tổ chức từ thiện gặp phải vào <span class=\"highlight\">tháng 8 năm 2000</span> là gì?",
           "options": [
             {
               "letter": "A",
@@ -1680,8 +1680,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 26,
           "part": 3,
           "section_title": "Talk 02",
-          "question": "Between what times is the road traffic lightest?",
-          "question_vi": "Vào khoảng thời gian nào thì giao thông trên đường là nhẹ nhất?",
+          "question": "Between <span class=\"highlight\">what times</span> is the road traffic <span class=\"highlight\">lightest</span>?",
+          "question_vi": "Khoảng <span class=\"highlight\">thời gian nào</span> lượng xe cộ lưu thông trên đường <span class=\"highlight\">thưa thớt nhất</span>?",
           "options": [
             {
               "letter": "A",
@@ -1717,8 +1717,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 27,
           "part": 3,
           "section_title": "Talk 02",
-          "question": "Who will notice the noise most?",
-          "question_vi": "Ai sẽ bị ảnh hưởng bởi tiếng ồn nhiều nhất?",
+          "question": "<span class=\"highlight\">Who</span> will <span class=\"highlight\">notice the noise most</span>?",
+          "question_vi": "<span class=\"highlight\">Ai</span> sẽ là người <span class=\"highlight\">cảm nhận tiếng ồn rõ nhất</span>?",
           "options": [
             {
               "letter": "A",
@@ -1754,8 +1754,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 28,
           "part": 3,
           "section_title": "Talk 02",
-          "question": "Which day of the week has the least traffic?",
-          "question_vi": "Ngày nào trong tuần có lưu lượng giao thông ít nhất?",
+          "question": "<span class=\"highlight\">Which day</span> of the week has the <span class=\"highlight\">least traffic</span>?",
+          "question_vi": "<span class=\"highlight\">Ngày nào</span> trong tuần có lượng xe cộ qua lại <span class=\"highlight\">ít nhất</span>?",
           "options": [
             {
               "letter": "A",
@@ -1791,8 +1791,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 29,
           "part": 3,
           "section_title": "Talk 02",
-          "question": "What will be the extra cost of modifying houses?",
-          "question_vi": "Chi phí bổ sung để cải tạo nhà là bao nhiêu?",
+          "question": "What will be the <span class=\"highlight\">extra cost</span> of <span class=\"highlight\">modifying houses</span>?",
+          "question_vi": "<span class=\"highlight\">Chi phí bổ sung</span> để <span class=\"highlight\">cải tạo nhà</span> là bao nhiêu?",
           "options": [
             {
               "letter": "A",
@@ -1828,8 +1828,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 30,
           "part": 3,
           "section_title": "Talk 02",
-          "question": "What things mainly cause the highway noise?",
-          "question_vi": "Điều gì gây ra tiếng ồn lớn nhất trên đường cao tốc?",
+          "question": "What things mainly <span class=\"highlight\">cause</span> the <span class=\"highlight\">highway noise</span>?",
+          "question_vi": "Phương tiện nào chủ yếu <span class=\"highlight\">gây ra tiếng ồn</span> trên <span class=\"highlight\">đường cao tốc</span>?",
           "options": [
             {
               "letter": "A",
@@ -1881,8 +1881,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 31,
           "part": 3,
           "section_title": "Talk 03",
-          "question": "What is the talk mainly talking about?",
-          "question_vi": "Bài nói chủ yếu nói về điều gì?",
+          "question": "What is the talk <span class=\"highlight\">mainly talking about</span>?",
+          "question_vi": "<span class=\"highlight\">Nội dung chính</span> của bài nói là gì?",
           "options": [
             {
               "letter": "A",
@@ -1920,8 +1920,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 32,
           "part": 3,
           "section_title": "Talk 03",
-          "question": "By 2008, what percentage must the carbon dioxide emissions be reduced compared with 1990?",
-          "question_vi": "Đến năm 2008, lượng khí thải CO2 cần giảm bao nhiêu so với năm 1990?",
+          "question": "By <span class=\"highlight\">2008</span>, what <span class=\"highlight\">percentage</span> must the <span class=\"highlight\">carbon dioxide emissions</span> be reduced compared with <span class=\"highlight\">1990</span>?",
+          "question_vi": "Đến năm <span class=\"highlight\">2008</span>, lượng <span class=\"highlight\">khí thải CO2</span> cần giảm <span class=\"highlight\">bao nhiêu phần trăm</span> so với năm <span class=\"highlight\">1990</span>?",
           "options": [
             {
               "letter": "A",
@@ -1959,8 +1959,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 33,
           "part": 3,
           "section_title": "Talk 03",
-          "question": "What possible solution does the speaker suggest to help lower carbon dioxide emissions?",
-          "question_vi": "Giải pháp nào được người nói đề xuất để giảm lượng khí CO2?",
+          "question": "What <span class=\"highlight\">possible solution</span> does the speaker suggest to help <span class=\"highlight\">lower carbon dioxide emissions</span>?",
+          "question_vi": "<span class=\"highlight\">Giải pháp</span> nào được người nói đề xuất để <span class=\"highlight\">giảm lượng khí CO2</span>?",
           "options": [
             {
               "letter": "A",
@@ -1998,8 +1998,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 34,
           "part": 3,
           "section_title": "Talk 03",
-          "question": "What problem is connected with the household recycling waste?",
-          "question_vi": "Vấn đề gì liên quan đến rác tái chế trong gia đình?",
+          "question": "What <span class=\"highlight\">problem</span> is connected with the <span class=\"highlight\">household recycling waste</span>?",
+          "question_vi": "<span class=\"highlight\">Vấn đề</span> nào liên quan đến việc <span class=\"highlight\">tái chế rác thải sinh hoạt</span>?",
           "options": [
             {
               "letter": "A",
@@ -2037,8 +2037,8 @@ window.VSTEP_MOCK_TEST_DATA = {
           "number": 35,
           "part": 3,
           "section_title": "Talk 03",
-          "question": "In the UK, how many tons of glass are annually recycled?",
-          "question_vi": "Ở Anh, mỗi năm có bao nhiêu tấn thủy tinh được tái chế?",
+          "question": "In the UK, <span class=\"highlight\">how many tons of glass</span> are annually <span class=\"highlight\">recycled</span>?",
+          "question_vi": "Ở Anh, mỗi năm có <span class=\"highlight\">bao nhiêu tấn thủy tinh</span> được <span class=\"highlight\">tái chế</span>?",
           "options": [
             {
               "letter": "A",
@@ -2089,8 +2089,8 @@ window.VSTEP_MOCK_TEST_DATA = {
     {
       "number": 1,
       "part": 1,
-      "question": "Where would you NOT be able to purchase these products?",
-      "question_vi": "Bạn KHÔNG thể mua những sản phẩm này ở đâu?",
+      "question": "Where would you <span class=\"highlight\">NOT</span> be able to <span class=\"highlight\">purchase</span> these products?",
+      "question_vi": "Bạn <span class=\"highlight\">KHÔNG</span> thể <span class=\"highlight\">mua</span> những sản phẩm này ở đâu?",
       "options": [
         {
           "letter": "A",
@@ -2125,8 +2125,8 @@ window.VSTEP_MOCK_TEST_DATA = {
     {
       "number": 2,
       "part": 1,
-      "question": "How often is this business magazine published?",
-      "question_vi": "Tạp chí kinh doanh này được xuất bản bao lâu một lần?",
+      "question": "<span class=\"highlight\">How often</span> is this <span class=\"highlight\">business magazine published</span>?",
+      "question_vi": "Tạp chí kinh doanh này <span class=\"highlight\">được xuất bản bao lâu một lần</span>?",
       "options": [
         {
           "letter": "A",
@@ -2161,8 +2161,8 @@ window.VSTEP_MOCK_TEST_DATA = {
     {
       "number": 3,
       "part": 1,
-      "question": "Who is Robin Sitwell?",
-      "question_vi": "Robin Sitwell là ai?",
+      "question": "<span class=\"highlight\">Who</span> is <span class=\"highlight\">Robin Sitwell</span>?",
+      "question_vi": "<span class=\"highlight\">Robin Sitwell</span> là <span class=\"highlight\">ai</span>?",
       "options": [
         {
           "letter": "A",
@@ -2197,8 +2197,8 @@ window.VSTEP_MOCK_TEST_DATA = {
     {
       "number": 4,
       "part": 1,
-      "question": "What will probably be heard right after this talk?",
-      "question_vi": "Điều gì có thể sẽ được phát ngay sau bài nói này?",
+      "question": "What will probably be heard <span class=\"highlight\">right after this talk</span>?",
+      "question_vi": "Điều gì có thể sẽ được phát <span class=\"highlight\">ngay sau bài nói</span> này?",
       "options": [
         {
           "letter": "A",
@@ -2233,8 +2233,8 @@ window.VSTEP_MOCK_TEST_DATA = {
     {
       "number": 5,
       "part": 1,
-      "question": "What can be inferred from the talk?",
-      "question_vi": "Điều gì có thể suy ra từ bài nói?",
+      "question": "What <span class=\"highlight\">can be inferred</span> from the talk?",
+      "question_vi": "Điều gì <span class=\"highlight\">có thể suy ra</span> từ bài nói?",
       "options": [
         {
           "letter": "A",
@@ -2269,8 +2269,8 @@ window.VSTEP_MOCK_TEST_DATA = {
     {
       "number": 6,
       "part": 1,
-      "question": "What is known about the security system?",
-      "question_vi": "Thông tin nào sau đây đúng về hệ thống an ninh?",
+      "question": "What is <span class=\"highlight\">known</span> about the <span class=\"highlight\">security system</span>?",
+      "question_vi": "Thông tin nào sau đây <span class=\"highlight\">đúng</span> về <span class=\"highlight\">hệ thống an ninh</span>?",
       "options": [
         {
           "letter": "A",
@@ -2305,8 +2305,8 @@ window.VSTEP_MOCK_TEST_DATA = {
     {
       "number": 7,
       "part": 1,
-      "question": "What can be inferred about the climate where they live now?",
-      "question_vi": "Có thể suy ra điều gì về khí hậu nơi họ đang sống?",
+      "question": "What can be inferred about the <span class=\"highlight\">climate</span> where they <span class=\"highlight\">live now</span>?",
+      "question_vi": "Có thể suy ra điều gì về <span class=\"highlight\">khí hậu</span> nơi họ <span class=\"highlight\">đang sống</span>?",
       "options": [
         {
           "letter": "A",
@@ -2341,8 +2341,8 @@ window.VSTEP_MOCK_TEST_DATA = {
     {
       "number": 8,
       "part": 1,
-      "question": "What does she suggest the man do?",
-      "question_vi": "Cô ấy đề xuất người đàn ông làm gì?",
+      "question": "What does she <span class=\"highlight\">suggest</span> the <span class=\"highlight\">man do</span>?",
+      "question_vi": "Cô ấy <span class=\"highlight\">đề xuất</span> người <span class=\"highlight\">đàn ông làm gì</span>?",
       "options": [
         {
           "letter": "A",
@@ -2378,8 +2378,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 9,
       "part": 2,
       "section_title": "Conversation 01",
-      "question": "How long does the tour “Whale Watching” last?",
-      "question_vi": "Chuyến tham quan “Whale Watching” kéo dài bao lâu?",
+      "question": "<span class=\"highlight\">How long</span> does the tour <span class=\"highlight\">“Whale Watching” last</span>?",
+      "question_vi": "Chuyến tham quan <span class=\"highlight\">“Whale Watching”</span> kéo dài <span class=\"highlight\">bao lâu</span>?",
       "options": [
         {
           "letter": "A",
@@ -2457,8 +2457,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 10,
       "part": 2,
       "section_title": "Conversation 01",
-      "question": "How are they going to travel?",
-      "question_vi": "Họ sẽ di chuyển bằng phương tiện gì?",
+      "question": "<span class=\"highlight\">How</span> are they going to <span class=\"highlight\">travel</span>?",
+      "question_vi": "Họ sẽ di chuyển bằng <span class=\"highlight\">phương tiện gì</span>?",
       "options": [
         {
           "letter": "A",
@@ -2536,8 +2536,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 11,
       "part": 2,
       "section_title": "Conversation 01",
-      "question": "What is the maximum group size on the tour?",
-      "question_vi": "Số lượng tối đa trong một nhóm tham quan là bao nhiêu?",
+      "question": "What is the <span class=\"highlight\">maximum group size</span> on the tour?",
+      "question_vi": "<span class=\"highlight\">Số lượng tối đa</span> trong một nhóm tham quan là bao nhiêu?",
       "options": [
         {
           "letter": "A",
@@ -2615,8 +2615,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 12,
       "part": 2,
       "section_title": "Conversation 01",
-      "question": "When is the next tour going?",
-      "question_vi": "Khi nào chuyến tham quan tiếp theo sẽ khởi hành?",
+      "question": "<span class=\"highlight\">When</span> is the <span class=\"highlight\">next tour going</span>?",
+      "question_vi": "<span class=\"highlight\">Khi nào</span> chuyến tham quan tiếp theo sẽ <span class=\"highlight\">khởi hành</span>?",
       "options": [
         {
           "letter": "A",
@@ -2694,8 +2694,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 13,
       "part": 2,
       "section_title": "Conversation 02",
-      "question": "What is included in the price of the tour?",
-      "question_vi": "Chi phí chuyến tham quan đã bao gồm những gì?",
+      "question": "What is <span class=\"highlight\">included</span> in the <span class=\"highlight\">price of the tour</span>?",
+      "question_vi": "<span class=\"highlight\">Chi phí</span> chuyến tham quan đã <span class=\"highlight\">bao gồm những gì</span>?",
       "options": [
         {
           "letter": "A",
@@ -2768,8 +2768,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 14,
       "part": 2,
       "section_title": "Conversation 02",
-      "question": "How much is the tour?",
-      "question_vi": "Chuyến tham quan này có giá bao nhiêu tiền?",
+      "question": "<span class=\"highlight\">How much</span> is the <span class=\"highlight\">tour</span>?",
+      "question_vi": "Chuyến tham quan này có <span class=\"highlight\">giá bao nhiêu tiền</span>?",
       "options": [
         {
           "letter": "A",
@@ -2842,8 +2842,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 15,
       "part": 2,
       "section_title": "Conversation 02",
-      "question": "How many days must bookings be made in advance?",
-      "question_vi": "Khách cần đặt chỗ trước bao nhiêu ngày?",
+      "question": "<span class=\"highlight\">How many days</span> must bookings be made <span class=\"highlight\">in advance</span>?",
+      "question_vi": "Khách cần đặt chỗ <span class=\"highlight\">trước bao nhiêu ngày</span>?",
       "options": [
         {
           "letter": "A",
@@ -2916,8 +2916,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 16,
       "part": 2,
       "section_title": "Conversation 02",
-      "question": "What is the customer’s reference number?",
-      "question_vi": "Mã đặt chỗ của khách hàng là gì?",
+      "question": "What is the customer’s <span class=\"highlight\">reference number</span>?",
+      "question_vi": "<span class=\"highlight\">Mã đặt chỗ</span> của khách hàng là gì?",
       "options": [
         {
           "letter": "A",
@@ -2990,8 +2990,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 17,
       "part": 2,
       "section_title": "Conversation 03",
-      "question": "What is the student looking for?",
-      "question_vi": "Bạn sinh viên đang tìm kiếm nơi nào?",
+      "question": "What is the student <span class=\"highlight\">looking for</span>?",
+      "question_vi": "Bạn sinh viên đang <span class=\"highlight\">tìm kiếm nơi nào</span>?",
       "options": [
         {
           "letter": "A",
@@ -3130,8 +3130,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 18,
       "part": 2,
       "section_title": "Conversation 03",
-      "question": "How many lectures are there per week?",
-      "question_vi": "Có bao nhiêu buổi giảng mỗi tuần?",
+      "question": "<span class=\"highlight\">How many lectures</span> are there <span class=\"highlight\">per week</span>?",
+      "question_vi": "Có <span class=\"highlight\">bao nhiêu buổi giảng</span> <span class=\"highlight\">mỗi tuần</span>?",
       "options": [
         {
           "letter": "A",
@@ -3270,8 +3270,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 19,
       "part": 2,
       "section_title": "Conversation 03",
-      "question": "What can be inferred about attendance at lectures?",
-      "question_vi": "Có thể suy ra điều gì về quy định chuyên cần tại các buổi giảng?",
+      "question": "What can be inferred about <span class=\"highlight\">attendance</span> at <span class=\"highlight\">lectures</span>?",
+      "question_vi": "Có thể suy ra điều gì về <span class=\"highlight\">quy định chuyên cần</span> tại các <span class=\"highlight\">buổi giảng</span>?",
       "options": [
         {
           "letter": "A",
@@ -3410,8 +3410,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 20,
       "part": 2,
       "section_title": "Conversation 03",
-      "question": "What should the man do if he wants to arrange time for tutorials?",
-      "question_vi": "Người đàn ông nên làm gì nếu muốn sắp xếp thời gian cho các buổi học hướng dẫn (tutorials)?",
+      "question": "What should the man do if he wants to <span class=\"highlight\">arrange time</span> for <span class=\"highlight\">tutorials</span>?",
+      "question_vi": "Người đàn ông nên làm gì nếu muốn <span class=\"highlight\">sắp xếp thời gian</span> cho các <span class=\"highlight\">buổi học hướng dẫn (tutorials)</span>?",
       "options": [
         {
           "letter": "A",
@@ -3550,8 +3550,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 21,
       "part": 3,
       "section_title": "Talk 01",
-      "question": "In 1993, Dan Pearman went to Ecuador ____________________",
-      "question_vi": "Vào năm 1993, Dan Pearman đến Ecuador ____________________",
+      "question": "In <span class=\"highlight\">1993</span>, <span class=\"highlight\">Dan Pearman</span> went to <span class=\"highlight\">Ecuador</span> ____________________",
+      "question_vi": "Vào năm <span class=\"highlight\">1993</span>, <span class=\"highlight\">Dan Pearman</span> đến <span class=\"highlight\">Ecuador</span> ____________________",
       "options": [
         {
           "letter": "A",
@@ -3587,8 +3587,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 22,
       "part": 3,
       "section_title": "Talk 01",
-      "question": "Dan’s neighbor was successful in business because he ____________________",
-      "question_vi": "Người hàng xóm của Dan thành công trong kinh doanh vì ông ấy ____________________",
+      "question": "Dan’s <span class=\"highlight\">neighbor was successful</span> in business because he ____________________",
+      "question_vi": "Người <span class=\"highlight\">hàng xóm của Dan thành công</span> trong kinh doanh vì ông ấy ____________________",
       "options": [
         {
           "letter": "A",
@@ -3624,8 +3624,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 23,
       "part": 3,
       "section_title": "Talk 01",
-      "question": "Dan says the charity relies on ____________________",
-      "question_vi": "Dan cho biết tổ chức từ thiện này hoạt động dựa vào ____________________",
+      "question": "Dan says the <span class=\"highlight\">charity relies on</span> ____________________",
+      "question_vi": "Dan cho biết tổ chức <span class=\"highlight\">từ thiện này hoạt động dựa vào</span> ____________________",
       "options": [
         {
           "letter": "A",
@@ -3661,8 +3661,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 24,
       "part": 3,
       "section_title": "Talk 01",
-      "question": "What does Dan say about the town of Rivas?",
-      "question_vi": "Dan nói gì về thị trấn Rivas?",
+      "question": "What does Dan say about the <span class=\"highlight\">town of Rivas</span>?",
+      "question_vi": "Dan nói gì về <span class=\"highlight\">thị trấn Rivas</span>?",
       "options": [
         {
           "letter": "A",
@@ -3698,8 +3698,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 25,
       "part": 3,
       "section_title": "Talk 01",
-      "question": "What problem did the charity face in August 2000?",
-      "question_vi": "Vấn đề mà tổ chức từ thiện gặp phải vào tháng 8 năm 2000 là gì?",
+      "question": "What <span class=\"highlight\">problem</span> did the charity face in <span class=\"highlight\">August 2000</span>?",
+      "question_vi": "<span class=\"highlight\">Khó khăn</span> mà tổ chức từ thiện gặp phải vào <span class=\"highlight\">tháng 8 năm 2000</span> là gì?",
       "options": [
         {
           "letter": "A",
@@ -3735,8 +3735,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 26,
       "part": 3,
       "section_title": "Talk 02",
-      "question": "Between what times is the road traffic lightest?",
-      "question_vi": "Khoảng thời gian nào lượng xe cộ lưu thông trên đường thưa thớt nhất?",
+      "question": "Between <span class=\"highlight\">what times</span> is the road traffic <span class=\"highlight\">lightest</span>?",
+      "question_vi": "Khoảng <span class=\"highlight\">thời gian nào</span> lượng xe cộ lưu thông trên đường <span class=\"highlight\">thưa thớt nhất</span>?",
       "options": [
         {
           "letter": "A",
@@ -3773,8 +3773,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 27,
       "part": 3,
       "section_title": "Talk 02",
-      "question": "Who will notice the noise most?",
-      "question_vi": "Ai sẽ là người cảm nhận tiếng ồn rõ nhất?",
+      "question": "<span class=\"highlight\">Who</span> will <span class=\"highlight\">notice the noise most</span>?",
+      "question_vi": "<span class=\"highlight\">Ai</span> sẽ là người <span class=\"highlight\">cảm nhận tiếng ồn rõ nhất</span>?",
       "options": [
         {
           "letter": "A",
@@ -3811,8 +3811,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 28,
       "part": 3,
       "section_title": "Talk 02",
-      "question": "Which day of the week has the least traffic?",
-      "question_vi": "Ngày nào trong tuần có lượng xe cộ qua lại ít nhất?",
+      "question": "<span class=\"highlight\">Which day</span> of the week has the <span class=\"highlight\">least traffic</span>?",
+      "question_vi": "<span class=\"highlight\">Ngày nào</span> trong tuần có lượng xe cộ qua lại <span class=\"highlight\">ít nhất</span>?",
       "options": [
         {
           "letter": "A",
@@ -3849,8 +3849,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 29,
       "part": 3,
       "section_title": "Talk 02",
-      "question": "What will be the extra cost of modifying houses?",
-      "question_vi": "Chi phí bổ sung để cải tạo nhà là bao nhiêu?",
+      "question": "What will be the <span class=\"highlight\">extra cost</span> of <span class=\"highlight\">modifying houses</span>?",
+      "question_vi": "<span class=\"highlight\">Chi phí bổ sung</span> để <span class=\"highlight\">cải tạo nhà</span> là bao nhiêu?",
       "options": [
         {
           "letter": "A",
@@ -3887,8 +3887,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 30,
       "part": 3,
       "section_title": "Talk 02",
-      "question": "What things mainly cause the highway noise?",
-      "question_vi": "Phương tiện nào chủ yếu gây ra tiếng ồn trên đường cao tốc?",
+      "question": "What things mainly <span class=\"highlight\">cause</span> the <span class=\"highlight\">highway noise</span>?",
+      "question_vi": "Phương tiện nào chủ yếu <span class=\"highlight\">gây ra tiếng ồn</span> trên <span class=\"highlight\">đường cao tốc</span>?",
       "options": [
         {
           "letter": "A",
@@ -3925,8 +3925,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 31,
       "part": 3,
       "section_title": "Talk 03",
-      "question": "What is the talk mainly talking about?",
-      "question_vi": "Nội dung chính của bài nói là gì?",
+      "question": "What is the talk <span class=\"highlight\">mainly talking about</span>?",
+      "question_vi": "<span class=\"highlight\">Nội dung chính</span> của bài nói là gì?",
       "options": [
         {
           "letter": "A",
@@ -3965,8 +3965,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 32,
       "part": 3,
       "section_title": "Talk 03",
-      "question": "By 2008, what percentage must the carbon dioxide emissions be reduced compared with 1990?",
-      "question_vi": "Đến năm 2008, lượng khí thải CO2 cần giảm bao nhiêu so với năm 1990?",
+      "question": "By <span class=\"highlight\">2008</span>, what <span class=\"highlight\">percentage</span> must the <span class=\"highlight\">carbon dioxide emissions</span> be reduced compared with <span class=\"highlight\">1990</span>?",
+      "question_vi": "Đến năm <span class=\"highlight\">2008</span>, lượng <span class=\"highlight\">khí thải CO2</span> cần giảm <span class=\"highlight\">bao nhiêu phần trăm</span> so với năm <span class=\"highlight\">1990</span>?",
       "options": [
         {
           "letter": "A",
@@ -4005,8 +4005,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 33,
       "part": 3,
       "section_title": "Talk 03",
-      "question": "What possible solution does the speaker suggest to help lower carbon dioxide emissions?",
-      "question_vi": "Giải pháp nào được người nói đề xuất để giảm lượng khí CO2?",
+      "question": "What <span class=\"highlight\">possible solution</span> does the speaker suggest to help <span class=\"highlight\">lower carbon dioxide emissions</span>?",
+      "question_vi": "<span class=\"highlight\">Giải pháp</span> nào được người nói đề xuất để <span class=\"highlight\">giảm lượng khí CO2</span>?",
       "options": [
         {
           "letter": "A",
@@ -4045,8 +4045,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 34,
       "part": 3,
       "section_title": "Talk 03",
-      "question": "What problem is connected with the household recycling waste?",
-      "question_vi": "Vấn đề nào liên quan đến việc tái chế rác thải sinh hoạt?",
+      "question": "What <span class=\"highlight\">problem</span> is connected with the <span class=\"highlight\">household recycling waste</span>?",
+      "question_vi": "<span class=\"highlight\">Vấn đề</span> nào liên quan đến việc <span class=\"highlight\">tái chế rác thải sinh hoạt</span>?",
       "options": [
         {
           "letter": "A",
@@ -4085,8 +4085,8 @@ window.VSTEP_MOCK_TEST_DATA = {
       "number": 35,
       "part": 3,
       "section_title": "Talk 03",
-      "question": "In the UK, how many tons of glass are annually recycled?",
-      "question_vi": "Ở Anh, mỗi năm có bao nhiêu tấn thủy tinh được tái chế?",
+      "question": "In the UK, <span class=\"highlight\">how many tons of glass</span> are annually <span class=\"highlight\">recycled</span>?",
+      "question_vi": "Ở Anh, mỗi năm có <span class=\"highlight\">bao nhiêu tấn thủy tinh</span> được <span class=\"highlight\">tái chế</span>?",
       "options": [
         {
           "letter": "A",
