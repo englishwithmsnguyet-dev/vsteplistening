@@ -684,10 +684,10 @@ class VstepApp {
         if (viewName === 'mocktest') {
             this.initMockTest();
         } else {
-            const mockAudio = document.getElementById('mock-audio-element');
-            if (mockAudio && !mockAudio.paused) {
-                mockAudio.pause();
-            }
+            const mockAudios = document.querySelectorAll('.mock-audio-track, #mock-audio-element');
+            mockAudios.forEach(a => {
+                if (!a.paused) a.pause();
+            });
         }
         
         // Scroll to top of panel
@@ -1761,6 +1761,15 @@ Danh sách bài đã làm:
         }
     }
 
+    handleMockAudioPlay(activeAudio) {
+        const allAudios = document.querySelectorAll('.mock-audio-track, #mock-audio-element');
+        allAudios.forEach(a => {
+            if (a !== activeAudio && !a.paused) {
+                a.pause();
+            }
+        });
+    }
+
     startMockTimer() {
         if (!this.mockTestState || this.mockTestState.timerInterval) return;
         const timerDisplay = document.getElementById('mock-timer-display');
@@ -1923,6 +1932,16 @@ Danh sách bài đã làm:
                 <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">
                     Directions: In this part, you will hear eight short announcements or instructions. There is one question for each announcement or instruction. For each question, choose the best answer A, B, C, or D.
                 </p>
+                <div class="mock-section-audio" style="margin-top: 14px; padding: 12px 16px; border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border-color);">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                        <div style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.9rem; color: #3b82f6;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                            Audio PART 01 (Câu 01 - 08)
+                        </div>
+                        <span style="font-size: 0.82rem; color: var(--text-secondary); font-family: monospace;">09:07</span>
+                    </div>
+                    <audio class="mock-audio-track" controls preload="metadata" src="LISTENING MOCK TEST/AUDIO/PART 01.mp3" style="width: 100%; height: 38px; border-radius: 8px;" onplay="app.handleMockAudioPlay(this)"></audio>
+                </div>
             </div>
         `;
 
@@ -1947,15 +1966,27 @@ Danh sách bài đã làm:
         `;
 
         const p2Sections = [
-            { title: "Conversation 01 (Questions 09 - 12)", start: 9, end: 12 },
-            { title: "Conversation 02 (Questions 13 - 16)", start: 13, end: 16 },
-            { title: "Conversation 03 (Questions 17 - 20)", start: 17, end: 20 }
+            { title: "Conversation 01 (Questions 09 - 12)", name: "Conversation 01", start: 9, end: 12, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3", duration: "03:39" },
+            { title: "Conversation 02 (Questions 13 - 16)", name: "Conversation 02", start: 13, end: 16, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3", duration: "03:03" },
+            { title: "Conversation 03 (Questions 17 - 20)", name: "Conversation 03", start: 17, end: 20, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3", duration: "02:44" }
         ];
 
         p2Sections.forEach(sec => {
             html += `
-            <div class="mock-sub-header" style="margin: 24px 0 14px 0; padding-left: 12px; border-left: 4px solid var(--color-primary);">
-                <h4 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">${sec.title}</h4>
+            <div class="mock-sub-header" style="margin: 28px 0 16px 0;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; padding-left: 12px; border-left: 4px solid var(--color-primary);">
+                    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">${sec.title}</h4>
+                </div>
+                <div class="mock-section-audio" style="margin-bottom: 16px; padding: 12px 16px; border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border-color);">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                        <div style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.9rem; color: #10b981;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                            Audio ${sec.name} (Câu ${sec.start} - ${sec.end})
+                        </div>
+                        <span style="font-size: 0.82rem; color: var(--text-secondary); font-family: monospace;">${sec.duration}</span>
+                    </div>
+                    <audio class="mock-audio-track" controls preload="metadata" src="${sec.audio}" style="width: 100%; height: 38px; border-radius: 8px;" onplay="app.handleMockAudioPlay(this)"></audio>
+                </div>
             </div>
             `;
             const secQuestions = data.questions.filter(q => q.number >= sec.start && q.number <= sec.end);
@@ -1980,15 +2011,27 @@ Danh sách bài đã làm:
         `;
 
         const p3Sections = [
-            { title: "Talk 01 (Questions 21 - 25)", start: 21, end: 25 },
-            { title: "Talk 02 (Questions 26 - 30)", start: 26, end: 30 },
-            { title: "Talk 03 (Questions 31 - 35)", start: 31, end: 35 }
+            { title: "Talk 01 (Questions 21 - 25)", name: "Talk 01", start: 21, end: 25, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3", duration: "03:49" },
+            { title: "Talk 02 (Questions 26 - 30)", name: "Talk 02", start: 26, end: 30, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3", duration: "03:20" },
+            { title: "Talk 03 (Questions 31 - 35)", name: "Talk 03", start: 31, end: 35, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3", duration: "03:39" }
         ];
 
         p3Sections.forEach(sec => {
             html += `
-            <div class="mock-sub-header" style="margin: 24px 0 14px 0; padding-left: 12px; border-left: 4px solid #8b5cf6;">
-                <h4 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">${sec.title}</h4>
+            <div class="mock-sub-header" style="margin: 28px 0 16px 0;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; padding-left: 12px; border-left: 4px solid #8b5cf6;">
+                    <h4 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">${sec.title}</h4>
+                </div>
+                <div class="mock-section-audio" style="margin-bottom: 16px; padding: 12px 16px; border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border-color);">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+                        <div style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.9rem; color: #8b5cf6;">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                            Audio ${sec.name} (Câu ${sec.start} - ${sec.end})
+                        </div>
+                        <span style="font-size: 0.82rem; color: var(--text-secondary); font-family: monospace;">${sec.duration}</span>
+                    </div>
+                    <audio class="mock-audio-track" controls preload="metadata" src="${sec.audio}" style="width: 100%; height: 38px; border-radius: 8px;" onplay="app.handleMockAudioPlay(this)"></audio>
+                </div>
             </div>
             `;
             const secQuestions = data.questions.filter(q => q.number >= sec.start && q.number <= sec.end);
@@ -2246,11 +2289,11 @@ Danh sách bài đã làm:
         if (retakeBtn) retakeBtn.style.display = 'none';
         if (bottomSubWrapper) bottomSubWrapper.style.display = 'block';
 
-        const audio = document.getElementById('mock-audio-element');
-        if (audio) {
-            audio.pause();
-            audio.currentTime = 0;
-        }
+        const mockAudios = document.querySelectorAll('.mock-audio-track, #mock-audio-element');
+        mockAudios.forEach(a => {
+            a.pause();
+            a.currentTime = 0;
+        });
 
         this.renderMockQuestions();
         this.renderMockPalette();
