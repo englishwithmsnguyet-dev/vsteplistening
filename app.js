@@ -404,6 +404,14 @@ class VstepApp {
             window.location.hash = '#dashboard';
             return;
         }
+
+        if (hash === 'mocktest' && !this.isItemUnlocked('mocktest', '', false)) {
+            this.promptUnlock('mocktest', '', false, () => {
+                window.location.hash = '#mocktest';
+            });
+            window.location.hash = '#dashboard';
+            return;
+        }
         
         if (validViews.includes(hash)) {
             // If exiting practice, make sure audio is stopped
@@ -424,33 +432,17 @@ class VstepApp {
         const code = sessionStorage.getItem('vstep_access_code');
         if (!code) return false;
 
-        const masterCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'GV', 'CB211'];
+        const masterCodes = ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'];
         if (masterCodes.includes(code)) return true;
-
-        if (code === 'CB211') {
-            return true; // CB211 mở hết PART 01, 02, 03
-        }
 
         if (code === 'ONB103' || code === 'B212') {
             if (partNum === 1) return true;
-            if (partNum === 2) {
-                if (!id) return true; // Mở khóa giao diện Part 2
-                if (!isTheory && id.startsWith('p2_practice_')) {
-                    const pNum = parseInt(id.replace('p2_practice_', ''));
-                    if (pNum <= 3) return true;
-                }
-            }
-            return false;
-        }
-
-        if (code === 'CB213') {
-            if (partNum === 1) return true;
-            if (partNum === 2) return true; // CB213 mở hết PART 02
+            if (partNum === 2) return true; // B212, ONB103 mở hết Part 02
             if (partNum === 3) {
                 if (!id) return true; // Mở khóa giao diện Part 3
                 if (!isTheory && id.startsWith('p3_practice_')) {
                     const pNum = parseInt(id.replace('p3_practice_', ''));
-                    if (pNum <= 3) return true;
+                    if (pNum <= 3) return true; // Chỉ mở tới PRACTICE 03 của PART 03
                 }
             }
             return false;
@@ -469,8 +461,10 @@ class VstepApp {
                 // Lưu mã lớp vào hệ thống
                 sessionStorage.setItem('vstep_access_code', cleanPwd);
                 
-                if (['CB206', 'CB210', 'MISSNGUYET2026', 'GV', 'CB211'].includes(cleanPwd)) {
+                if (['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(cleanPwd)) {
                     sessionStorage.setItem('vstep_unlocked', 'true');
+                } else {
+                    sessionStorage.removeItem('vstep_unlocked');
                 }
                 
                 // Kiểm tra xem mã lớp này có thực sự mở được bài học/phần hiện tại không
@@ -493,11 +487,13 @@ class VstepApp {
     applyLocks() {
         const unlockedP2 = this.isItemUnlocked(2, '', false);
         const unlockedP3 = this.isItemUnlocked(3, '', false);
+        const unlockedMock = this.isItemUnlocked('mocktest', '', false);
         
         // Update Sidebar menu items
         const p2MenuItem = document.querySelector('.menu-item[data-view="part2"]');
         const p2VocabMenuItem = document.querySelector('.menu-item[data-view="part2-vocab"]');
         const p3MenuItem = document.querySelector('.menu-item[data-view="part3"]');
+        const mockMenuItem = document.querySelector('.menu-item[data-view="mocktest"]');
         
         if (!unlockedP2) {
             [p2MenuItem, p2VocabMenuItem].forEach(item => {
@@ -549,10 +545,34 @@ class VstepApp {
                 p3MenuItem.onclick = null;
             }
         }
+
+        if (!unlockedMock) {
+            if (mockMenuItem) {
+                mockMenuItem.classList.add('locked');
+                mockMenuItem.onclick = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.promptUnlock('mocktest', '', false, () => {
+                        this.switchView('mocktest');
+                        const menuBtn = document.querySelector('.menu-item[data-view="mocktest"]');
+                        if (menuBtn) {
+                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                            menuBtn.classList.add('active');
+                        }
+                    });
+                };
+            }
+        } else {
+            if (mockMenuItem) {
+                mockMenuItem.classList.remove('locked');
+                mockMenuItem.onclick = null;
+            }
+        }
         
         // Update Dashboard cards
         const p2Card = document.querySelector('.part-card[data-view="part2"]');
         const p3Card = document.querySelector('.part-card[data-view="part3"]');
+        const mockCard = document.querySelector('.part-card[data-view="mocktest"]');
         
         if (!unlockedP2) {
             if (p2Card) {
@@ -627,11 +647,55 @@ class VstepApp {
                 }
             }
         }
+
+        if (!unlockedMock) {
+            if (mockCard) {
+                mockCard.classList.add('locked');
+                mockCard.onclick = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.promptUnlock('mocktest', '', false, () => {
+                        this.switchView('mocktest');
+                        const menuBtn = document.querySelector('.menu-item[data-view="mocktest"]');
+                        if (menuBtn) {
+                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                            menuBtn.classList.add('active');
+                        }
+                    });
+                };
+                const btn = mockCard.querySelector('.card-action-btn');
+                if (btn) {
+                    btn.innerHTML = `
+                        <span>Đang khóa</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    `;
+                }
+            }
+        } else {
+            if (mockCard) {
+                mockCard.classList.remove('locked');
+                mockCard.onclick = () => this.switchView('mocktest');
+                const btn = mockCard.querySelector('.card-action-btn');
+                if (btn) {
+                    btn.innerHTML = `
+                        <span>Bắt đầu thi thử</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    `;
+                }
+            }
+        }
     }
 
     switchView(viewName) {
         if ((viewName === 'part2' || viewName === 'part3') && !this.isItemUnlocked(viewName === 'part2' ? 2 : 3, '', false)) {
             this.promptUnlock(viewName === 'part2' ? 2 : 3, '', false, () => {
+                this.switchView(viewName);
+            });
+            return;
+        }
+
+        if (viewName === 'mocktest' && !this.isItemUnlocked('mocktest', '', false)) {
+            this.promptUnlock('mocktest', '', false, () => {
                 this.switchView(viewName);
             });
             return;
@@ -1538,8 +1602,10 @@ class VstepApp {
             const studentClass = parts[1] ? parts[1].trim().toUpperCase() : '';
             if (this.allowedClasses.includes(studentClass)) {
                 sessionStorage.setItem('vstep_access_code', studentClass);
-                if (studentClass === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211'].includes(studentClass)) {
+                if (studentClass === 'GV' || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026'].includes(studentClass)) {
                     sessionStorage.setItem('vstep_unlocked', 'true');
+                } else {
+                    sessionStorage.removeItem('vstep_unlocked');
                 }
             } else {
                 hasValidFormat = false;
@@ -1570,8 +1636,10 @@ class VstepApp {
             this.studentName = combined;
             sessionStorage.setItem('vstep_student_name', combined);
             sessionStorage.setItem('vstep_access_code', inputClass);
-            if (inputClass === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211'].includes(inputClass)) {
+            if (inputClass === 'GV' || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026'].includes(inputClass)) {
                 sessionStorage.setItem('vstep_unlocked', 'true');
+            } else {
+                sessionStorage.removeItem('vstep_unlocked');
             }
             this.checkStudentName();
             this.applyLocks();
@@ -1604,8 +1672,10 @@ class VstepApp {
             this.studentName = combined;
             sessionStorage.setItem('vstep_student_name', combined);
             sessionStorage.setItem('vstep_access_code', classVal);
-            if (classVal === 'GV' || ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211'].includes(classVal)) {
+            if (classVal === 'GV' || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026'].includes(classVal)) {
                 sessionStorage.setItem('vstep_unlocked', 'true');
+            } else {
+                sessionStorage.removeItem('vstep_unlocked');
             }
             this.updateSidebarUser(combined);
             this.applyLocks();
