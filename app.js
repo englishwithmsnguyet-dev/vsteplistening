@@ -1843,6 +1843,7 @@ Danh sách bài đã làm:
 
         const qCard = document.getElementById(`mock-q-${qNum}`);
         if (qCard) {
+            qCard.classList.add('q-answered');
             const options = qCard.querySelectorAll('.mock-option');
             options.forEach(opt => {
                 const optLetter = opt.getAttribute('data-letter');
@@ -2049,6 +2050,9 @@ Danh sách bài đã làm:
         const userChoice = this.mockTestState.answers[q.number];
         
         let cardCls = 'mock-q-card glass-card';
+        if (userChoice) {
+            cardCls += ' q-answered';
+        }
         if (isSub) {
             if (userChoice === q.correct) {
                 cardCls += ' correct-card';
@@ -2103,15 +2107,16 @@ Danh sách bài đã làm:
             const clickAttr = isSub ? '' : `onclick="app.selectMockAnswer(${q.number}, '${opt.letter}')"`;
 
             html += `
-            <div class="${optCls}" data-letter="${opt.letter}" ${clickAttr} style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-radius: 10px; border: 1.5px solid var(--border-color); background: var(--bg-surface); cursor: ${isSub ? 'default' : 'pointer'}; transition: all 0.2s ease;">
+            <div class="${optCls}" data-letter="${opt.letter}" ${clickAttr} style="cursor: ${isSub ? 'default' : 'pointer'};">
                 <div style="display: flex; align-items: center; gap: 12px;">
-                    <span class="mock-opt-badge" style="width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.95rem; border: 1px solid var(--border-color); background: var(--bg-card);">${opt.letter}</span>
+                    <span class="mock-opt-badge">${opt.letter}</span>
                     <div>
                         <div style="font-weight: 600; color: var(--text-primary);">${opt.text}</div>
                         ${isSub && opt.text_vi ? `<div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px;">${opt.text_vi}</div>` : ''}
                     </div>
                 </div>
-                <div>
+                <div class="mock-opt-status" style="display: flex; align-items: center;">
+                    ${!isSub ? '<span class="mock-radio-dot"></span>' : ''}
                     ${isSub && opt.letter === q.correct ? '<span style="color: #10b981; font-weight: 800; font-size: 1.1rem;">✓</span>' : ''}
                     ${isSub && isSelected && opt.letter !== q.correct ? '<span style="color: #ef4444; font-weight: 800; font-size: 1.1rem;">✗</span>' : ''}
                 </div>
