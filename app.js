@@ -395,7 +395,7 @@ class VstepApp {
     /* --- APPLICATION ROUTING --- */
     handleRouting() {
         const hash = window.location.hash.replace('#', '') || 'dashboard';
-        const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part2-vocab', 'part3', 'statistics', 'practice-run'];
+        const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part2-vocab', 'part3', 'statistics', 'practice-run', 'mocktest'];
         
         if ((hash === 'part2' || hash === 'part2-vocab' || hash === 'part3') && !this.isItemUnlocked(hash.startsWith('part2') ? 2 : 3, '', false)) {
             this.promptUnlock(hash.startsWith('part2') ? 2 : 3, '', false, () => {
@@ -407,7 +407,7 @@ class VstepApp {
         
         if (validViews.includes(hash)) {
             // If exiting practice, make sure audio is stopped
-            if (hash !== 'practice-run' && this.elements.audio.src) {
+            if (hash !== 'practice-run' && this.elements.audio && this.elements.audio.src) {
                 this.stopAudio();
             }
             this.switchView(hash);
@@ -673,12 +673,22 @@ class VstepApp {
             'part2-vocab': { parent: 'Từ vựng', current: 'Từ vựng PART 02' },
             'part3': { parent: 'Luyện tập', current: 'PART 03: LONG TALKS' },
             'statistics': { parent: 'Tiện ích', current: 'Tiến độ học tập' },
-            'practice-run': { parent: 'Phòng thi', current: 'Đang làm bài nghe' }
+            'practice-run': { parent: 'Phòng thi', current: 'Đang làm bài nghe' },
+            'mocktest': { parent: 'Thi thử', current: 'LISTENING MOCK TEST 01' }
         };
         
         const titles = viewTitles[viewName] || { parent: 'Học nghe VSTEP', current: 'Học tập' };
         this.elements.parentBc.textContent = titles.parent;
         this.elements.currentBc.textContent = titles.current;
+        
+        if (viewName === 'mocktest') {
+            this.initMockTest();
+        } else {
+            const mockAudio = document.getElementById('mock-audio-element');
+            if (mockAudio && !mockAudio.paused) {
+                mockAudio.pause();
+            }
+        }
         
         // Scroll to top of panel
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1702,6 +1712,550 @@ Danh sách bài đã làm:
             alert("Không thể tự động sao chép báo cáo tổng hợp. Vui lòng sao chép thủ công:\n\n" + reportText);
             window.open("https://www.facebook.com/anhnguRiverCT", "_blank");
         });
+    }
+
+    // ==========================================================
+    // LISTENING MOCK TEST SYSTEM
+    // ==========================================================
+
+    initMockTest() {
+        if (!window.VSTEP_MOCK_TEST_DATA) {
+            console.error("Mock test data not found!");
+            return;
+        }
+
+        if (!this.mockTestState) {
+            this.mockTestState = {
+                answers: {},
+                isSubmitted: false,
+                timerSeconds: 40 * 60,
+                timerInterval: null,
+                currentFilterPart: 'all',
+                data: window.VSTEP_MOCK_TEST_DATA
+            };
+            this.renderMockQuestions();
+            this.renderMockPalette();
+            this.startMockTimer();
+            this.setupMockAudio();
+        } else {
+            this.renderMockQuestions();
+            this.renderMockPalette();
+            if (!this.mockTestState.isSubmitted && !this.mockTestState.timerInterval) {
+                this.startMockTimer();
+            }
+        }
+    }
+
+    setupMockAudio() {
+        const audio = document.getElementById('mock-audio-element');
+        const curSpan = document.getElementById('mock-audio-current');
+        const totSpan = document.getElementById('mock-audio-total');
+        if (audio && !audio._eventsAttached) {
+            audio._eventsAttached = true;
+            audio.addEventListener('timeupdate', () => {
+                if (curSpan) curSpan.textContent = this.formatTime(Math.floor(audio.currentTime));
+            });
+            audio.addEventListener('loadedmetadata', () => {
+                if (totSpan) totSpan.textContent = this.formatTime(Math.floor(audio.duration || 1762));
+            });
+        }
+    }
+
+    startMockTimer() {
+        if (!this.mockTestState || this.mockTestState.timerInterval) return;
+        const timerDisplay = document.getElementById('mock-timer-display');
+        
+        const updateDisplay = () => {
+            if (!timerDisplay) return;
+            const m = Math.floor(this.mockTestState.timerSeconds / 60);
+            const s = this.mockTestState.timerSeconds % 60;
+            timerDisplay.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+            if (this.mockTestState.timerSeconds <= 300) {
+                timerDisplay.style.color = '#ef4444';
+            } else {
+                timerDisplay.style.color = 'var(--text-primary)';
+            }
+        };
+        updateDisplay();
+
+        this.mockTestState.timerInterval = setInterval(() => {
+            if (this.mockTestState.isSubmitted) {
+                this.stopMockTimer();
+                return;
+            }
+            this.mockTestState.timerSeconds--;
+            updateDisplay();
+
+            if (this.mockTestState.timerSeconds <= 0) {
+                this.stopMockTimer();
+                alert('Đã hết 40 phút làm bài! Hệ thống sẽ tự động nộp bài thi của bạn.');
+                this.submitMockTest(true);
+            }
+        }, 1000);
+    }
+
+    stopMockTimer() {
+        if (this.mockTestState && this.mockTestState.timerInterval) {
+            clearInterval(this.mockTestState.timerInterval);
+            this.mockTestState.timerInterval = null;
+        }
+    }
+
+    filterMockPart(part) {
+        if (!this.mockTestState) return;
+        this.mockTestState.currentFilterPart = part;
+
+        const tabs = document.querySelectorAll('.mock-part-tabs .tab-btn');
+        tabs.forEach(tab => {
+            const val = tab.getAttribute('data-mock-part');
+            if (String(val) === String(part)) {
+                tab.classList.add('active');
+            } else {
+                tab.classList.remove('active');
+            }
+        });
+
+        const container = document.getElementById('mock-questions-container');
+        if (!container) return;
+        const items = container.querySelectorAll('.mock-part-section');
+        items.forEach(sec => {
+            const secPart = sec.getAttribute('data-part');
+            if (part === 'all' || String(secPart) === String(part)) {
+                sec.style.display = 'block';
+            } else {
+                sec.style.display = 'none';
+            }
+        });
+    }
+
+    selectMockAnswer(qNum, letter) {
+        if (!this.mockTestState || this.mockTestState.isSubmitted) return;
+        this.mockTestState.answers[qNum] = letter;
+
+        const qCard = document.getElementById(`mock-q-${qNum}`);
+        if (qCard) {
+            const options = qCard.querySelectorAll('.mock-option');
+            options.forEach(opt => {
+                const optLetter = opt.getAttribute('data-letter');
+                if (optLetter === letter) {
+                    opt.classList.add('selected');
+                } else {
+                    opt.classList.remove('selected');
+                }
+            });
+        }
+
+        const palBtn = document.getElementById(`mock-palette-btn-${qNum}`);
+        if (palBtn) {
+            palBtn.classList.add('answered');
+        }
+
+        const countSpan = document.getElementById('mock-answered-count');
+        if (countSpan) {
+            countSpan.textContent = Object.keys(this.mockTestState.answers).length;
+        }
+    }
+
+    renderMockPalette() {
+        const grid = document.getElementById('mock-palette-grid');
+        if (!grid || !this.mockTestState) return;
+
+        const isSub = this.mockTestState.isSubmitted;
+        const qList = this.mockTestState.data.questions;
+        let html = '';
+
+        qList.forEach(q => {
+            const chosen = this.mockTestState.answers[q.number];
+            let cls = 'mock-palette-btn';
+            if (chosen) cls += ' answered';
+            if (isSub) {
+                if (chosen === q.correct) {
+                    cls += ' correct';
+                } else {
+                    cls += ' wrong';
+                }
+            }
+            html += `<button type="button" class="${cls}" id="mock-palette-btn-${q.number}" onclick="app.scrollToMockQuestion(${q.number})" title="Câu ${q.number}">${q.number}</button>`;
+        });
+
+        grid.innerHTML = html;
+
+        const countSpan = document.getElementById('mock-answered-count');
+        if (countSpan) {
+            countSpan.textContent = Object.keys(this.mockTestState.answers).length;
+        }
+    }
+
+    scrollToMockQuestion(qNum) {
+        if (!this.mockTestState) return;
+        const qList = this.mockTestState.data.questions;
+        const targetQ = qList.find(q => q.number === qNum);
+        if (!targetQ) return;
+
+        if (this.mockTestState.currentFilterPart !== 'all' && String(this.mockTestState.currentFilterPart) !== String(targetQ.part)) {
+            this.filterMockPart(targetQ.part);
+        }
+
+        const el = document.getElementById(`mock-q-${qNum}`);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            el.classList.add('pulse-focus');
+            setTimeout(() => el.classList.remove('pulse-focus'), 1500);
+        }
+    }
+
+    renderMockQuestions() {
+        const container = document.getElementById('mock-questions-container');
+        if (!container || !this.mockTestState) return;
+
+        const data = this.mockTestState.data;
+        const isSub = this.mockTestState.isSubmitted;
+        let html = '';
+
+        // Part 1
+        html += `
+        <div class="mock-part-section" data-part="1" style="margin-bottom: 32px;">
+            <div class="mock-section-banner" style="background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(37,99,235,0.05)); border: 1px solid rgba(59,130,246,0.25); border-radius: 14px; padding: 18px 22px; margin-bottom: 20px;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                    <span class="badge" style="background: #3b82f6; color: white; font-weight: 700;">PART 01</span>
+                    <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: var(--text-primary);">Directions & Questions 01 - 08</h3>
+                </div>
+                <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">
+                    Directions: In this part, you will hear eight short announcements or instructions. There is one question for each announcement or instruction. For each question, choose the best answer A, B, C, or D.
+                </p>
+            </div>
+        `;
+
+        const p1Questions = data.questions.filter(q => q.part === 1);
+        p1Questions.forEach(q => {
+            html += this.renderMockQuestionCard(q, isSub);
+        });
+        html += `</div>`;
+
+        // Part 2
+        html += `
+        <div class="mock-part-section" data-part="2" style="margin-bottom: 32px;">
+            <div class="mock-section-banner" style="background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(5,150,105,0.05)); border: 1px solid rgba(16,185,129,0.25); border-radius: 14px; padding: 18px 22px; margin-bottom: 20px;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                    <span class="badge" style="background: #10b981; color: white; font-weight: 700;">PART 02</span>
+                    <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: var(--text-primary);">Directions & Questions 09 - 20 (3 Conversations)</h3>
+                </div>
+                <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">
+                    Directions: In this part, you will hear three conversations. The conversations will not be repeated. There are four questions for each conversation. For each question, choose the correct answer A, B, C, or D.
+                </p>
+            </div>
+        `;
+
+        const p2Sections = [
+            { title: "Conversation 01 (Questions 09 - 12)", start: 9, end: 12 },
+            { title: "Conversation 02 (Questions 13 - 16)", start: 13, end: 16 },
+            { title: "Conversation 03 (Questions 17 - 20)", start: 17, end: 20 }
+        ];
+
+        p2Sections.forEach(sec => {
+            html += `
+            <div class="mock-sub-header" style="margin: 24px 0 14px 0; padding-left: 12px; border-left: 4px solid var(--color-primary);">
+                <h4 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">${sec.title}</h4>
+            </div>
+            `;
+            const secQuestions = data.questions.filter(q => q.number >= sec.start && q.number <= sec.end);
+            secQuestions.forEach(q => {
+                html += this.renderMockQuestionCard(q, isSub);
+            });
+        });
+        html += `</div>`;
+
+        // Part 3
+        html += `
+        <div class="mock-part-section" data-part="3" style="margin-bottom: 32px;">
+            <div class="mock-section-banner" style="background: linear-gradient(135deg, rgba(139,92,246,0.1), rgba(124,58,237,0.05)); border: 1px solid rgba(139,92,246,0.25); border-radius: 14px; padding: 18px 22px; margin-bottom: 20px;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                    <span class="badge" style="background: #8b5cf6; color: white; font-weight: 700;">PART 03</span>
+                    <h3 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: var(--text-primary);">Directions & Questions 21 - 35 (3 Talks / Lectures)</h3>
+                </div>
+                <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">
+                    Directions: In this part, you will hear three talks or lectures. The talks will not be repeated. There are five questions for each talk. For each question, choose the right answer A, B, C, or D.
+                </p>
+            </div>
+        `;
+
+        const p3Sections = [
+            { title: "Talk 01 (Questions 21 - 25)", start: 21, end: 25 },
+            { title: "Talk 02 (Questions 26 - 30)", start: 26, end: 30 },
+            { title: "Talk 03 (Questions 31 - 35)", start: 31, end: 35 }
+        ];
+
+        p3Sections.forEach(sec => {
+            html += `
+            <div class="mock-sub-header" style="margin: 24px 0 14px 0; padding-left: 12px; border-left: 4px solid #8b5cf6;">
+                <h4 style="margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--text-primary);">${sec.title}</h4>
+            </div>
+            `;
+            const secQuestions = data.questions.filter(q => q.number >= sec.start && q.number <= sec.end);
+            secQuestions.forEach(q => {
+                html += this.renderMockQuestionCard(q, isSub);
+            });
+        });
+        html += `</div>`;
+
+        container.innerHTML = html;
+        this.filterMockPart(this.mockTestState.currentFilterPart);
+    }
+
+    renderMockQuestionCard(q, isSub) {
+        const userChoice = this.mockTestState.answers[q.number];
+        
+        let cardCls = 'mock-q-card glass-card';
+        if (isSub) {
+            if (userChoice === q.correct) {
+                cardCls += ' correct-card';
+            } else {
+                cardCls += ' wrong-card';
+            }
+        }
+
+        let html = `
+        <div class="${cardCls}" id="mock-q-${q.number}" style="margin-bottom: 20px; padding: 20px; border-radius: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+                <div>
+                    <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); line-height: 1.5;">
+                        <span style="display: inline-block; padding: 3px 10px; border-radius: 6px; background: var(--bg-surface); border: 1px solid var(--border-color); color: var(--color-primary); font-weight: 800; margin-right: 6px;">Câu ${q.number}</span>
+                        ${q.question}
+                    </div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px; font-style: italic;">
+                        👉 ${q.question_vi || ''}
+                    </div>
+                </div>
+        `;
+
+        if (isSub) {
+            const isCorrect = userChoice === q.correct;
+            html += `
+                <div style="white-space: nowrap;">
+                    <span class="badge ${isCorrect ? 'badge-success' : 'badge-danger'}" style="padding: 6px 12px; font-size: 0.85rem; font-weight: 700;">
+                        ${isCorrect ? '✓ ĐÚNG' : '✗ SAI (ĐA: ' + q.correct + ')'}
+                    </span>
+                </div>
+            `;
+        }
+
+        html += `</div>`;
+
+        html += `<div class="mock-options-list" style="display: grid; gap: 10px; margin-top: 14px;">`;
+        q.options.forEach(opt => {
+            const isSelected = userChoice === opt.letter;
+            let optCls = 'mock-option';
+            if (isSelected) optCls += ' selected';
+
+            if (isSub) {
+                if (opt.letter === q.correct) {
+                    optCls += ' is-correct';
+                } else if (isSelected && opt.letter !== q.correct) {
+                    optCls += ' is-wrong';
+                }
+            }
+
+            const clickAttr = isSub ? '' : `onclick="app.selectMockAnswer(${q.number}, '${opt.letter}')"`;
+
+            html += `
+            <div class="${optCls}" data-letter="${opt.letter}" ${clickAttr} style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-radius: 10px; border: 1.5px solid var(--border-color); background: var(--bg-surface); cursor: ${isSub ? 'default' : 'pointer'}; transition: all 0.2s ease;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <span class="mock-opt-badge" style="width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.95rem; border: 1px solid var(--border-color); background: var(--bg-card);">${opt.letter}</span>
+                    <div>
+                        <div style="font-weight: 600; color: var(--text-primary);">${opt.text}</div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px;">${opt.text_vi || ''}</div>
+                    </div>
+                </div>
+                <div>
+                    ${isSub && opt.letter === q.correct ? '<span style="color: #10b981; font-weight: 800; font-size: 1.1rem;">✓</span>' : ''}
+                    ${isSub && isSelected && opt.letter !== q.correct ? '<span style="color: #ef4444; font-weight: 800; font-size: 1.1rem;">✗</span>' : ''}
+                </div>
+            </div>
+            `;
+        });
+        html += `</div>`;
+
+        if (isSub) {
+            html += `
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border-color);">
+                <button type="button" class="btn btn-secondary" onclick="app.toggleMockTranscript(${q.number})" style="font-size: 0.85rem; padding: 8px 14px; border-radius: 8px;">
+                    📖 Xem Transcript & Dẫn chứng
+                </button>
+                <div id="mock-transcript-${q.number}" class="mock-transcript-drawer hidden" style="margin-top: 12px; padding: 16px; border-radius: 10px; background: rgba(0,0,0,0.02); border: 1px solid var(--border-color);">
+                    <div style="margin-bottom: 12px;">
+                        <div style="font-weight: 700; color: var(--color-primary); font-size: 0.9rem; margin-bottom: 6px;">🇬🇧 English Transcript:</div>
+                        <div style="font-size: 0.92rem; line-height: 1.6; color: var(--text-primary);">
+                            ${(q.en_transcript || []).map(line => `<p style="margin: 0 0 8px 0;">${line}</p>`).join('')}
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-weight: 700; color: #10b981; font-size: 0.9rem; margin-bottom: 6px;">🇻🇳 Bản Dịch & Dẫn Chứng Tiếng Việt:</div>
+                        <div style="font-size: 0.92rem; line-height: 1.6; color: var(--text-secondary);">
+                            ${(q.vi_transcript || []).map(line => `<p style="margin: 0 0 8px 0;">${line}</p>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+        }
+
+        html += `</div>`;
+        return html;
+    }
+
+    toggleMockTranscript(qNum) {
+        const el = document.getElementById(`mock-transcript-${qNum}`);
+        if (el) {
+            el.classList.toggle('hidden');
+        }
+    }
+
+    submitMockTest(autoSubmit = false) {
+        if (!this.mockTestState) return;
+        if (this.mockTestState.isSubmitted) {
+            alert('Bạn đã nộp bài thi này rồi!');
+            return;
+        }
+
+        const totalQ = this.mockTestState.data.totalQuestions || 35;
+        const answeredCount = Object.keys(this.mockTestState.answers).length;
+
+        if (!autoSubmit && answeredCount < totalQ) {
+            const confirmed = confirm(`Bạn mới trả lời ${answeredCount}/${totalQ} câu hỏi.\nBạn có chắc chắn muốn nộp bài thi ngay bây giờ không?`);
+            if (!confirmed) return;
+        }
+
+        this.stopMockTimer();
+        this.mockTestState.isSubmitted = true;
+
+        let score = 0;
+        const qList = this.mockTestState.data.questions;
+        let partScores = { 1: 0, 2: 0, 3: 0 };
+        let partTotals = { 1: 8, 2: 12, 3: 15 };
+
+        qList.forEach(q => {
+            const userChoice = this.mockTestState.answers[q.number];
+            if (userChoice === q.correct) {
+                score++;
+                partScores[q.part]++;
+            }
+        });
+
+        const vstepScale = [0, 0, 0.5, 1.0, 1.5, 2.0, 2.0, 2.5, 3.0, 3.0, 3.5, 3.5, 4.0, 4.0, 4.5, 4.5, 5.0, 5.0, 5.5, 5.5, 6.0, 6.0, 6.5, 7.0, 7.0, 7.5, 8.0, 8.0, 8.5, 8.5, 9.0, 9.0, 9.5, 9.5, 10.0, 10.0];
+        const vstepScore = vstepScale[score] !== undefined ? vstepScale[score] : (score * 10 / 35).toFixed(1);
+
+        let band = "Dưới B1";
+        let badgeColor = "#6b7280";
+        if (vstepScore >= 8.5) {
+            band = "BẬC 5 (C1)";
+            badgeColor = "#8b5cf6";
+        } else if (vstepScore >= 6.0) {
+            band = "BẬC 4 (B2)";
+            badgeColor = "#10b981";
+        } else if (vstepScore >= 4.0) {
+            band = "BẬC 3 (B1)";
+            badgeColor = "#f59e0b";
+        }
+
+        const resCard = document.getElementById('mock-result-card');
+        if (resCard) {
+            resCard.classList.remove('hidden');
+            resCard.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+                    <div>
+                        <span class="badge" style="background: ${badgeColor}; color: white; font-weight: 700; padding: 6px 14px; font-size: 0.9rem;">
+                            KẾT QUẢ ĐỀ THI: ${band}
+                        </span>
+                        <h3 style="margin: 8px 0 4px 0; font-size: 1.4rem; font-weight: 800; color: var(--text-primary);">
+                            Điểm quy đổi VSTEP: ${vstepScore} / 10.0
+                        </h3>
+                        <p style="margin: 0; color: var(--text-secondary); font-size: 0.95rem;">
+                            Đúng: <strong>${score}</strong> / ${totalQ} câu (${Math.round((score / totalQ) * 100)}%)
+                        </p>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-secondary" onclick="app.resetMockTest()" style="font-weight: 700; border-radius: 10px;">
+                            🔄 Làm lại đề này
+                        </button>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px;">
+                    <div style="padding: 14px; border-radius: 10px; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">Part 1 (Thông báo ngắn)</div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #3b82f6; margin-top: 4px;">${partScores[1]} / ${partTotals[1]}</div>
+                    </div>
+                    <div style="padding: 14px; border-radius: 10px; background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.2);">
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">Part 2 (Hội thoại)</div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #10b981; margin-top: 4px;">${partScores[2]} / ${partTotals[2]}</div>
+                    </div>
+                    <div style="padding: 14px; border-radius: 10px; background: rgba(139,92,246,0.08); border: 1px solid rgba(139,92,246,0.2);">
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">Part 3 (Bài nói/giảng)</div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #8b5cf6; margin-top: 4px;">${partScores[3]} / ${partTotals[3]}</div>
+                    </div>
+                </div>
+
+                <div style="padding: 12px 16px; border-radius: 10px; background: var(--bg-surface); border: 1px solid var(--border-color); font-size: 0.9rem; color: var(--text-secondary);">
+                    💡 <strong>Xem lại bài thi:</strong> Cuộn xuống bên dưới để kiểm tra đáp án đúng (tô màu xanh), câu trả lời của bạn, cùng transcript và dẫn chứng giải thích chi tiết cho từng câu hỏi.
+                </div>
+            `;
+            resCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        const topSubBtn = document.getElementById('mock-top-submit-btn');
+        const retakeBtn = document.getElementById('mock-retake-btn');
+        const bottomSubWrapper = document.getElementById('mock-bottom-submit-wrapper');
+        if (topSubBtn) topSubBtn.style.display = 'none';
+        if (retakeBtn) retakeBtn.style.display = 'inline-block';
+        if (bottomSubWrapper) bottomSubWrapper.style.display = 'none';
+
+        this.renderMockQuestions();
+        this.renderMockPalette();
+
+        this.progress.history = this.progress.history || [];
+        this.progress.history.unshift({
+            part: 'Mock 01',
+            title: 'VSTEP LISTENING MOCK TEST 01',
+            score: `${score}/${totalQ} (VSTEP: ${vstepScore})`,
+            percent: Math.round((score / totalQ) * 100),
+            timestamp: new Date().toLocaleString('vi-VN')
+        });
+        this.saveProgress();
+        this.updateStats();
+    }
+
+    resetMockTest() {
+        if (!confirm('Bạn có chắc chắn muốn làm lại bài thi thử? Tất cả câu trả lời trước đó sẽ được đặt lại.')) return;
+        this.stopMockTimer();
+        this.mockTestState = {
+            answers: {},
+            isSubmitted: false,
+            timerSeconds: 40 * 60,
+            timerInterval: null,
+            currentFilterPart: 'all',
+            data: window.VSTEP_MOCK_TEST_DATA
+        };
+
+        const resCard = document.getElementById('mock-result-card');
+        if (resCard) resCard.classList.add('hidden');
+
+        const topSubBtn = document.getElementById('mock-top-submit-btn');
+        const retakeBtn = document.getElementById('mock-retake-btn');
+        const bottomSubWrapper = document.getElementById('mock-bottom-submit-wrapper');
+        if (topSubBtn) topSubBtn.style.display = 'inline-block';
+        if (retakeBtn) retakeBtn.style.display = 'none';
+        if (bottomSubWrapper) bottomSubWrapper.style.display = 'block';
+
+        const audio = document.getElementById('mock-audio-element');
+        if (audio) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+
+        this.renderMockQuestions();
+        this.renderMockPalette();
+        this.startMockTimer();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }
 

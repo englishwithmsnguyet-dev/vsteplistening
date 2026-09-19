@@ -74,6 +74,13 @@
                     <span>PART 03: LONG TALKS</span>
                 </a>
                 
+                <div class="menu-section-label">Luyện đề thi thử</div>
+                
+                <a href="#mocktest" class="menu-item" data-view="mocktest">
+                    <div class="menu-item-badge" style="background: linear-gradient(135deg, #f59e0b, #ef4444); color: white;">MT</div>
+                    <span>LISTENING MOCK TEST</span>
+                </a>
+                
                 <div class="menu-section-label">Tiện ích</div>
                 
                 <a href="#statistics" class="menu-item" data-view="statistics">
@@ -246,6 +253,25 @@
                                 </div>
                                 <div class="card-action-btn">
                                     <span>Bắt đầu học</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Mock Test Card -->
+                        <div class="part-card" data-view="mocktest" onclick="app.switchView('mocktest')">
+                            <div class="part-card-header" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">
+                                <span class="part-badge" style="background: rgba(255,255,255,0.25); color: #fff;">MOCK TEST</span>
+                                <h3>LISTENING MOCK TEST</h3>
+                            </div>
+                            <div class="part-card-body">
+                                <p>Đề thi thử đầy đủ chuẩn định dạng VSTEP Listening gồm 3 phần với 35 câu hỏi. Thử thách áp lực phòng thi thực tế với tính giờ và chấm điểm chi tiết.</p>
+                                <div class="part-stats">
+                                    <span>CẤU TRÚC: <strong>3 PHẦN (35 CÂU)</strong></span>
+                                    <span>THỜI GIAN: <strong>40 PHÚT</strong></span>
+                                </div>
+                                <div class="card-action-btn">
+                                    <span>Bắt đầu thi thử</span>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                                 </div>
                             </div>
@@ -549,6 +575,89 @@
                             </div>
                         </div>
                     </div>
+                <!-- 6. MOCK TEST VIEW -->
+                <section class="view-panel" id="view-mocktest">
+                    <div class="mocktest-container">
+                        <!-- Mock Test Top Bar -->
+                        <div class="mocktest-header-bar glass-card" style="margin-bottom: 24px; padding: 22px; border-radius: 16px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                                <div>
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                                        <span class="audio-badge" style="background: linear-gradient(135deg, #f59e0b, #ef4444); color: white;">MOCK TEST</span>
+                                        <h2 style="margin: 0; font-size: 1.35rem; font-weight: 800; color: var(--text-primary);">VSTEP LISTENING MOCK TEST 01</h2>
+                                    </div>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Chuẩn định dạng VSTEP B1-B2-C1 | 3 Phần - 35 câu hỏi | Thời gian: 40 phút</p>
+                                </div>
+
+                                <!-- Timer & Controls -->
+                                <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+                                    <div class="mock-timer-box" id="mock-timer-box" style="display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 12px; background: var(--bg-surface); border: 2px solid var(--border-color); font-weight: 800; font-size: 1.25rem; font-family: monospace; color: var(--text-primary);">
+                                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        <span id="mock-timer-display">40:00</span>
+                                    </div>
+
+                                    <button class="btn btn-primary" id="mock-top-submit-btn" onclick="app.submitMockTest()" style="padding: 12px 22px; font-weight: 700; border-radius: 12px; background: linear-gradient(135deg, #10b981, #059669); border: none;">
+                                        NỘP BÀI THI
+                                    </button>
+                                    <button class="btn btn-secondary" id="mock-retake-btn" onclick="app.resetMockTest()" style="display: none; padding: 12px 20px; font-weight: 700; border-radius: 12px;">
+                                        LÀM LẠI ĐỀ THI
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Audio Player for Mock Test -->
+                            <div class="mock-audio-player-wrapper" style="margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--border-color);">
+                                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--color-primary)" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                                        <span style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary);">Audio Đề Thi Thử (Phát liên tục theo chuẩn phòng thi)</span>
+                                    </div>
+                                    <div class="audio-time" style="font-size: 0.85rem; color: var(--text-secondary); font-family: monospace;">
+                                        <span id="mock-audio-current">0:00</span> / <span id="mock-audio-total">29:22</span>
+                                    </div>
+                                </div>
+                                <audio id="mock-audio-element" src="LISTENING MOCK TEST/AUDIO/MOCK TEST.mp3" controls preload="metadata" style="width: 100%; height: 44px; border-radius: 8px;"></audio>
+                            </div>
+                        </div>
+
+                        <!-- Result Card (shown after submission) -->
+                        <div id="mock-result-card" class="glass-card hidden" style="margin-bottom: 24px; padding: 26px; border-radius: 16px; border: 2px solid var(--color-success); background: var(--bg-surface);">
+                            <!-- Dynamic Result Content -->
+                        </div>
+
+                        <!-- Part Navigation Tabs & Question Palette -->
+                        <div class="mock-nav-container glass-card" style="margin-bottom: 24px; padding: 18px; border-radius: 16px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
+                                <!-- Part Filter Tabs -->
+                                <div class="mock-part-tabs" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                    <button class="tab-btn active" data-mock-part="all" onclick="app.filterMockPart('all')">Tất cả (35 câu)</button>
+                                    <button class="tab-btn" data-mock-part="1" onclick="app.filterMockPart(1)">PART 01 (01 - 08)</button>
+                                    <button class="tab-btn" data-mock-part="2" onclick="app.filterMockPart(2)">PART 02 (09 - 20)</button>
+                                    <button class="tab-btn" data-mock-part="3" onclick="app.filterMockPart(3)">PART 03 (21 - 35)</button>
+                                </div>
+                                <div id="mock-progress-summary" style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary);">
+                                    Đã làm: <strong id="mock-answered-count" style="color: var(--color-primary); font-size: 1.1rem;">0</strong> / 35 câu
+                                </div>
+                            </div>
+
+                            <!-- Question Palette (1 - 35) -->
+                            <div class="mock-palette-grid" id="mock-palette-grid" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                <!-- Dynamically generated buttons 1 to 35 -->
+                            </div>
+                        </div>
+
+                        <!-- Questions List Container -->
+                        <div id="mock-questions-container" style="display: flex; flex-direction: column; gap: 20px;">
+                            <!-- Rendered by app.renderMockQuestions() -->
+                        </div>
+
+                        <!-- Bottom Submit Button -->
+                        <div id="mock-bottom-submit-wrapper" style="margin-top: 36px; text-align: center; padding-bottom: 60px;">
+                            <button class="btn btn-primary" id="mock-bottom-submit-btn" onclick="app.submitMockTest()" style="padding: 16px 48px; font-size: 1.1rem; font-weight: 800; border-radius: 14px; box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35); background: linear-gradient(135deg, #10b981, #059669); border: none;">
+                                NỘP BÀI THI & XEM KẾT QUẢ
+                            </button>
+                        </div>
+                    </div>
                 </section>
                 
             </main>
@@ -585,7 +694,8 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="data.js?v=7"></script>
+    <script src="mock_test_data.js?v=1"></script>
     <script src="vocab_data.js?v=4"></script>
-    <script src="app.js?v=36"></script>
+    <script src="app.js?v=37"></script>
 </body>
 </html>
