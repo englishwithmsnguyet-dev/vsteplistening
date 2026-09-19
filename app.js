@@ -2056,9 +2056,9 @@ Danh sách bài đã làm:
                             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
                             Audio PART 01 (Câu 01 - 08)
                         </div>
-                        <span style="font-size: 0.82rem; color: var(--text-secondary); font-family: monospace;">09:07</span>
+                        <span style="font-size: 0.82rem; color: var(--text-secondary); font-family: monospace;">08:19</span>
                     </div>
-                    <audio class="mock-audio-track" controls preload="metadata" src="LISTENING MOCK TEST/AUDIO/PART 01.mp3" style="width: 100%; height: 38px; border-radius: 8px;" onplay="app.handleMockAudioPlay(this)"></audio>
+                    <audio class="mock-audio-track" controls preload="metadata" src="LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2" style="width: 100%; height: 38px; border-radius: 8px;" onplay="app.handleMockAudioPlay(this)"></audio>
                 </div>
             </div>
         `;

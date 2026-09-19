@@ -14,7 +14,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         1,
         8
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "part": 2,
@@ -2120,7 +2120,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Bruin Design thông báo ra mắt dòng sản phẩm mới dành cho những người yêu du lịch khó tính. Tất cả đều được thiết kế đẹp mắt, bền bỉ và siêu nhẹ. Những sản phẩm này bao gồm: cặp tài liệu sang trọng, đồng hồ báo thức du lịch, bàn là du lịch chạy điện, và radio sóng ngắn di động mạnh mẽ dành cho người hay đi nước ngoài. Sản phẩm của Bruin Design hiện có mặt tại các cửa hàng cao cấp khắp Châu Âu, Bắc Mỹ và Châu Á."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "number": 2,
@@ -2156,7 +2156,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Ai cũng biết rằng khi bạn đọc một tạp chí kinh doanh hàng tháng hoặc hàng tuần thì thông tin đó đã lỗi thời. Tình hình kinh doanh quốc tế thay đổi từng ngày. Giờ đây, tạp chí Business Day – tạp chí kinh doanh hằng ngày duy nhất – sẽ giúp bạn cập nhật thế giới kinh doanh mỗi ngày từ thứ Hai đến thứ Sáu. Hôm nay, chúng tôi sẽ gửi tặng bạn cẩm nang nhà hàng quốc tế mới của chúng tôi mà không tính thêm phí. Tại sao không đặt thêm một bản cho đồng nghiệp? Bạn sẽ tiết kiệm được 3 đô la cho mỗi lần tặng."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "number": 3,
@@ -2192,7 +2192,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Đây là Don Beeson từ công ty kiến trúc Beeson và Sitwell. Hiện là 2:30 chiều. Tôi sẽ vắng mặt khỏi văn phòng trong suốt buổi chiều và sẽ quay lại vào lúc 9 giờ sáng mai. Nếu bạn cần nói chuyện với tôi trong buổi chiều nay, vui lòng để lại tin nhắn trong hộp thư thoại. Tôi sẽ kiểm tra và gọi lại từ nhà. Nếu bạn gặp vấn đề khẩn cấp, bạn có thể gọi cho đối tác của tôi, Robin Sitwell, theo số 320-1631. Chúc bạn một ngày tốt lành."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "number": 4,
@@ -2228,7 +2228,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào mừng đến với chương trình Garden Spot của đài phát thanh WKYO. Tôi là người dẫn chương trình, Peter Brooks. Thời điểm này trong năm là thời gian tuyệt vời để nói về việc thu hoạch rau trong vườn. Hôm nay tôi có một vài mẹo muốn chia sẻ. Ví dụ, bạn có biết nên hái bắp vào buổi sáng khi trời còn mát không? Vì nhiệt độ nóng vào buổi chiều sẽ biến đường trong bắp thành tinh bột và làm hỏng hương vị.Và bạn có biết càng để ớt trên cây lâu thì chúng càng chứa nhiều vitamin C? Chúng tôi sẽ quay lại ngay với nhiều mẹo thu hoạch hơn. Và lát nữa, giáo sư Gail Mueller – chuyên gia về ký sinh trùng thực vật – sẽ đến phòng thu trò chuyện với chúng ta. Nhưng trước tiên là một thông điệp quảng cáo từ nhà tài trợ – Công ty hạt giống Colony."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "number": 5,
@@ -2264,7 +2264,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Và bây giờ, thưa quý vị, tôi xin trao giải Nhân viên của Tháng cho cô Elizabeth Bryce đến từ bộ phận vận chuyển. Cô ấy không chỉ nhận được đánh giá cao nhất từ quản lý của mình. Cô ấy còn đề xuất một ý tưởng có thể giúp công ty tiết kiệm hàng ngàn đô la mỗi năm trong chi phí vận chuyển. Ngoài khoản tiền thưởng nhỏ trong bảng lương tuần tới, cô Bryce sẽ có chỗ đậu xe riêng trong một tháng – ngay cạnh chỗ của giám đốc điều hành. Cô ấy cũng sẽ đủ điều kiện tranh giải Nhân viên của Năm – và như bạn biết, người thắng giải này sẽ nhận được một chiếc xe hơi mới."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "number": 6,
@@ -2300,7 +2300,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Nam 1: Khi tôi đến chỗ làm sáng nay, hệ thống an ninh đã bị tắt. Nam 2: Thật sao? Thật kỳ lạ. Nam 1: Tôi cũng nghĩ vậy."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "number": 7,
@@ -2336,7 +2336,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Nam 1: Hôm nay lại sẽ là một ngày ấm áp nữa đấy. Nam 2: Dĩ nhiên rồi. Anh biết đấy, tôi nhớ sống ở nơi có đủ bốn mùa. Nam 1: Tôi cũng vậy. Tôi đặc biệt nhớ những buổi sáng mùa thu mát mẻ, se lạnh."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "number": 8,
@@ -2372,7 +2372,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Nữ: Xin lỗi, cô Bauer đang dự một cuộc họp về bán hàng. Nam: Tôi hiểu rồi. Cuộc họp đó còn lâu không? Nữ: Chắc là không đâu. Sao anh không tự lấy chút cà phê hoặc trà rồi ngồi đợi ở đằng kia?"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
     },
     {
       "number": 9,
