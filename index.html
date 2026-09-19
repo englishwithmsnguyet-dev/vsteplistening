@@ -680,15 +680,30 @@
                 </svg>
             </div>
             <h2>CHÀO MỪNG BẠN ĐẾN VỚI LỚP HỌC CỦA MISS NGUYET</h2>
-            <p>Vui lòng điền Họ tên và Lớp học của bạn để bắt đầu học. Kết quả luyện tập sẽ được ghi nhận và gửi báo cáo cho giáo viên.</p>
+            <p>Vui lòng chọn vai trò và điền thông tin để bắt đầu trải nghiệm hệ thống luyện thi:</p>
+
+            <!-- Role Selector -->
+            <div style="display: flex; gap: 10px; margin-bottom: 16px;">
+                <button type="button" id="role-btn-student" class="role-select-btn" onclick="app.setLoginRole('student')" style="flex: 1; padding: 10px 14px; border-radius: 8px; border: 2px solid var(--color-primary); background: var(--color-primary-light); color: var(--color-primary); font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;">
+                    🎓 Học viên
+                </button>
+                <button type="button" id="role-btn-teacher" class="role-select-btn" onclick="app.setLoginRole('teacher')" style="flex: 1; padding: 10px 14px; border-radius: 8px; border: 1.5px solid var(--border-color); background: var(--bg-surface); color: var(--text-secondary); font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s ease;">
+                    👩‍🏫 Giáo viên
+                </button>
+            </div>
+
+            <div id="teacher-role-note" class="hidden" style="margin-bottom: 16px; padding: 10px 14px; border-radius: 8px; background: rgba(16, 185, 129, 0.12); border: 1px solid #10b981; color: #065f46; font-size: 0.85rem; font-weight: 600; text-align: center;">
+                ✨ Quyền Giáo viên: Tự động mở khóa toàn bộ hệ thống (Part 1, Part 2, Part 3 & Listening Mock Test)
+            </div>
+
             <form id="welcome-form" onsubmit="event.preventDefault(); app.saveStudentName();">
                 <div class="input-group" style="margin-bottom: 16px;">
                     <input type="text" id="student-name-input" placeholder="Họ và tên (Ví dụ: Phạm Minh Nguyệt)" required autocomplete="off" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-size: 0.95rem;">
                 </div>
-                <div class="input-group" style="margin-bottom: 20px;">
-                    <input type="text" id="student-class-input" placeholder="Lớp học (Ví dụ: ONB103)" required autocomplete="off" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-size: 0.95rem;">
+                <div class="input-group" id="class-input-group" style="margin-bottom: 20px;">
+                    <input type="text" id="student-class-input" placeholder="Lớp học (Ví dụ: ONB103, CB210, CB213)" autocomplete="off" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-size: 0.95rem;">
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" style="width: 100%; padding: 12px; font-weight: 700; border-radius: 8px;">BẮT ĐẦU HỌC NGAY</button>
+                <button type="submit" class="btn btn-primary btn-block" style="width: 100%; padding: 12px; font-weight: 700; border-radius: 8px;">BẮT ĐẦU NGAY</button>
             </form>
         </div>
     </div>
@@ -698,6 +713,6 @@
     <script src="data.js?v=7"></script>
     <script src="mock_test_data.js?v=5"></script>
     <script src="vocab_data.js?v=4"></script>
-    <script src="app.js?v=42"></script>
+    <script src="app.js?v=43"></script>
 </body>
 </html>
