@@ -2065,9 +2065,11 @@ Danh sách bài đã làm:
                         <span style="display: inline-block; padding: 3px 10px; border-radius: 6px; background: var(--bg-surface); border: 1px solid var(--border-color); color: var(--color-primary); font-weight: 800; margin-right: 6px;">Câu ${q.number}</span>
                         ${q.question}
                     </div>
-                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px; font-style: italic;">
-                        👉 ${q.question_vi || ''}
+                    ${isSub && q.question_vi ? `
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px; font-style: italic;">
+                        👉 ${q.question_vi}
                     </div>
+                    ` : ''}
                 </div>
         `;
 
@@ -2106,7 +2108,7 @@ Danh sách bài đã làm:
                     <span class="mock-opt-badge" style="width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.95rem; border: 1px solid var(--border-color); background: var(--bg-card);">${opt.letter}</span>
                     <div>
                         <div style="font-weight: 600; color: var(--text-primary);">${opt.text}</div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px;">${opt.text_vi || ''}</div>
+                        ${isSub && opt.text_vi ? `<div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px;">${opt.text_vi}</div>` : ''}
                     </div>
                 </div>
                 <div>
