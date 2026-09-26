@@ -1847,7 +1847,7 @@ Danh sách bài đã làm:
                 isSubmitted: false,
                 timerSeconds: 40 * 60,
                 timerInterval: null,
-                currentFilterPart: 'all',
+                currentFilterPart: 1,
                 data: window.VSTEP_MOCK_TEST_DATA
             };
             this.renderMockQuestions();
@@ -1927,31 +1927,150 @@ Danh sách bài đã làm:
         }
     }
 
-    filterMockPart(part) {
+    filterMockPart(part, shouldScroll = false) {
         if (!this.mockTestState) return;
-        this.mockTestState.currentFilterPart = part;
+        const partNum = parseInt(part, 10) || 1;
+        this.mockTestState.currentFilterPart = partNum;
 
-        const tabs = document.querySelectorAll('.mock-part-tabs .tab-btn');
-        tabs.forEach(tab => {
-            const val = tab.getAttribute('data-mock-part');
-            if (String(val) === String(part)) {
+        // Pause other audios when switching tabs
+        const allAudios = document.querySelectorAll('.mock-audio-track, #mock-audio-element');
+        allAudios.forEach(a => {
+            if (!a.paused) a.pause();
+        });
+
+        // Update top tabs
+        const topTabs = document.querySelectorAll('.mock-part-tabs .tab-btn');
+        topTabs.forEach(tab => {
+            const val = parseInt(tab.getAttribute('data-mock-part'), 10);
+            if (val === partNum) {
                 tab.classList.add('active');
             } else {
                 tab.classList.remove('active');
             }
         });
 
-        const container = document.getElementById('mock-questions-container');
-        if (!container) return;
-        const items = container.querySelectorAll('.mock-part-section');
-        items.forEach(sec => {
-            const secPart = sec.getAttribute('data-part');
-            if (part === 'all' || String(secPart) === String(part)) {
-                sec.style.display = 'block';
+        // Update bottom tabs
+        const bottomTabs = document.querySelectorAll('.mock-bottom-tab-btn');
+        bottomTabs.forEach(tab => {
+            const val = parseInt(tab.getAttribute('data-mock-part'), 10);
+            if (val === partNum) {
+                tab.classList.add('active');
             } else {
-                sec.style.display = 'none';
+                tab.classList.remove('active');
             }
         });
+
+        // Show/hide part sections
+        const container = document.getElementById('mock-questions-container');
+        if (container) {
+            const items = container.querySelectorAll('.mock-part-section');
+            items.forEach(sec => {
+                const secPart = parseInt(sec.getAttribute('data-part'), 10);
+                if (secPart === partNum) {
+                    sec.style.display = 'block';
+                } else {
+                    sec.style.display = 'none';
+                }
+            });
+        }
+
+        // Update Bottom Nav Buttons
+        const prevBtn = document.getElementById('mock-prev-part-btn');
+        const prevText = document.getElementById('mock-prev-part-text');
+        const nextBtn = document.getElementById('mock-next-part-btn');
+        const nextText = document.getElementById('mock-next-part-text');
+        const bottomSubmitWrapper = document.getElementById('mock-bottom-submit-wrapper');
+
+        if (prevBtn) {
+            if (partNum === 1) {
+                prevBtn.style.visibility = 'hidden';
+                prevBtn.style.pointerEvents = 'none';
+            } else {
+                prevBtn.style.visibility = 'visible';
+                prevBtn.style.pointerEvents = 'auto';
+                if (prevText) prevText.textContent = `PART 0${partNum - 1}`;
+            }
+        }
+
+        if (nextBtn) {
+            if (partNum === 1) {
+                if (nextText) nextText.textContent = 'Tiếp tục: PART 02 ▶';
+                nextBtn.style.background = 'var(--color-primary)';
+            } else if (partNum === 2) {
+                if (nextText) nextText.textContent = 'Tiếp tục: PART 03 ▶';
+                nextBtn.style.background = 'var(--color-primary)';
+            } else if (partNum === 3) {
+                if (!this.mockTestState.isSubmitted) {
+                    if (nextText) nextText.textContent = 'Nộp bài thi & Xem kết quả 🏁';
+                    nextBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+                } else {
+                    if (nextText) nextText.textContent = 'Xem kết quả 📊';
+                    nextBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+                }
+            }
+        }
+
+        // Bottom submit wrapper is visible on Part 3 or when submitted
+        if (bottomSubmitWrapper) {
+            if (partNum === 3 || this.mockTestState.isSubmitted) {
+                bottomSubmitWrapper.style.display = 'block';
+            } else {
+                bottomSubmitWrapper.style.display = 'none';
+            }
+        }
+
+        this.renderMockPalette();
+
+        if (shouldScroll) {
+            const navEl = document.querySelector('.mock-nav-container');
+            if (navEl) {
+                navEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else if (container) {
+                container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    }
+
+    navigateMockPart(direction) {
+        if (!this.mockTestState) return;
+        const current = parseInt(this.mockTestState.currentFilterPart, 10) || 1;
+        if (direction === 'prev') {
+            if (current > 1) {
+                this.filterMockPart(current - 1, true);
+            }
+        } else if (direction === 'next') {
+            if (current < 3) {
+                this.filterMockPart(current + 1, true);
+            } else {
+                if (!this.mockTestState.isSubmitted) {
+                    this.submitMockTest();
+                } else {
+                    const resCard = document.getElementById('mock-result-card');
+                    if (resCard) resCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+        }
+    }
+
+    updateMockPartBadges() {
+        if (!this.mockTestState) return;
+        const answers = this.mockTestState.answers;
+        let c1 = 0, c2 = 0, c3 = 0;
+        for (let i = 1; i <= 8; i++) if (answers[i]) c1++;
+        for (let i = 9; i <= 20; i++) if (answers[i]) c2++;
+        for (let i = 21; i <= 35; i++) if (answers[i]) c3++;
+
+        const b1 = document.getElementById('mock-tab-count-1');
+        const b2 = document.getElementById('mock-tab-count-2');
+        const b3 = document.getElementById('mock-tab-count-3');
+        if (b1) b1.textContent = `${c1}/8`;
+        if (b2) b2.textContent = `${c2}/12`;
+        if (b3) b3.textContent = `${c3}/15`;
+
+        const countSpan = document.getElementById('mock-answered-count');
+        if (countSpan) {
+            countSpan.textContent = Object.keys(answers).length;
+        }
     }
 
     selectMockAnswer(qNum, letter) {
@@ -1977,10 +2096,7 @@ Danh sách bài đã làm:
             palBtn.classList.add('answered');
         }
 
-        const countSpan = document.getElementById('mock-answered-count');
-        if (countSpan) {
-            countSpan.textContent = Object.keys(this.mockTestState.answers).length;
-        }
+        this.updateMockPartBadges();
     }
 
     renderMockPalette() {
@@ -1988,29 +2104,55 @@ Danh sách bài đã làm:
         if (!grid || !this.mockTestState) return;
 
         const isSub = this.mockTestState.isSubmitted;
+        const currentPart = parseInt(this.mockTestState.currentFilterPart, 10) || 1;
         const qList = this.mockTestState.data.questions;
-        let html = '';
 
-        qList.forEach(q => {
-            const chosen = this.mockTestState.answers[q.number];
-            let cls = 'mock-palette-btn';
-            if (chosen) cls += ' answered';
-            if (isSub) {
-                if (chosen === q.correct) {
-                    cls += ' correct';
-                } else {
-                    cls += ' wrong';
+        const partConfigs = [
+            { part: 1, label: 'PART 01', color: '#3b82f6', range: [1, 8] },
+            { part: 2, label: 'PART 02', color: '#10b981', range: [9, 20] },
+            { part: 3, label: 'PART 03', color: '#8b5cf6', range: [21, 35] }
+        ];
+
+        let html = '<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">';
+
+        partConfigs.forEach(cfg => {
+            const isPartActive = currentPart === cfg.part;
+            const partQs = qList.filter(q => q.number >= cfg.range[0] && q.number <= cfg.range[1]);
+            const answeredInPart = partQs.filter(q => this.mockTestState.answers[q.number]).length;
+
+            html += `
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 6px 10px; border-radius: 10px; background: ${isPartActive ? 'rgba(99,102,241,0.06)' : 'transparent'}; border: 1px solid ${isPartActive ? 'var(--color-primary-light, rgba(99,102,241,0.2))' : 'transparent'}; transition: all 0.2s ease;">
+                <div style="display: flex; align-items: center; gap: 6px; width: 90px; flex-shrink: 0; cursor: pointer;" onclick="app.filterMockPart(${cfg.part}, true)">
+                    <span style="font-size: 0.78rem; font-weight: 800; color: ${cfg.color};">${cfg.label}</span>
+                    <span style="font-size: 0.75rem; color: var(--text-secondary); font-family: monospace;">(${answeredInPart}/${partQs.length})</span>
+                </div>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap; flex: 1;">
+            `;
+
+            partQs.forEach(q => {
+                const chosen = this.mockTestState.answers[q.number];
+                let cls = 'mock-palette-btn';
+                if (chosen) cls += ' answered';
+                if (isSub) {
+                    if (chosen === q.correct) {
+                        cls += ' correct';
+                    } else {
+                        cls += ' wrong';
+                    }
                 }
-            }
-            html += `<button type="button" class="${cls}" id="mock-palette-btn-${q.number}" onclick="app.scrollToMockQuestion(${q.number})" title="Câu ${q.number}">${q.number}</button>`;
+                html += `<button type="button" class="${cls}" id="mock-palette-btn-${q.number}" onclick="app.scrollToMockQuestion(${q.number})" title="Câu ${q.number}">${q.number}</button>`;
+            });
+
+            html += `
+                </div>
+            </div>
+            `;
         });
 
+        html += '</div>';
         grid.innerHTML = html;
 
-        const countSpan = document.getElementById('mock-answered-count');
-        if (countSpan) {
-            countSpan.textContent = Object.keys(this.mockTestState.answers).length;
-        }
+        this.updateMockPartBadges();
     }
 
     scrollToMockQuestion(qNum) {
@@ -2019,16 +2161,19 @@ Danh sách bài đã làm:
         const targetQ = qList.find(q => q.number === qNum);
         if (!targetQ) return;
 
-        if (this.mockTestState.currentFilterPart !== 'all' && String(this.mockTestState.currentFilterPart) !== String(targetQ.part)) {
-            this.filterMockPart(targetQ.part);
+        const currentPart = parseInt(this.mockTestState.currentFilterPart, 10);
+        if (currentPart !== targetQ.part) {
+            this.filterMockPart(targetQ.part, false);
         }
 
-        const el = document.getElementById(`mock-q-${qNum}`);
-        if (el) {
-            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            el.classList.add('pulse-focus');
-            setTimeout(() => el.classList.remove('pulse-focus'), 1500);
-        }
+        setTimeout(() => {
+            const el = document.getElementById(`mock-q-${qNum}`);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                el.classList.add('pulse-focus');
+                setTimeout(() => el.classList.remove('pulse-focus'), 1500);
+            }
+        }, 60);
     }
 
     renderMockQuestions() {
@@ -2399,7 +2544,7 @@ Danh sách bài đã làm:
             isSubmitted: false,
             timerSeconds: 40 * 60,
             timerInterval: null,
-            currentFilterPart: 'all',
+            currentFilterPart: 1,
             data: window.VSTEP_MOCK_TEST_DATA
         };
 

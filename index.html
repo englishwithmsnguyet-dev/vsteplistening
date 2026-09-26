@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css?v=14">
+    <link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
     <!-- App Container -->
@@ -616,20 +616,31 @@
                         <!-- Part Navigation Tabs & Question Palette -->
                         <div class="mock-nav-container glass-card" style="margin-bottom: 24px; padding: 18px; border-radius: 16px;">
                             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
-                                <!-- Part Filter Tabs -->
+                                <!-- 3 Part Tabs -->
                                 <div class="mock-part-tabs" style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                    <button class="tab-btn active" data-mock-part="all" onclick="app.filterMockPart('all')">Tất cả (35 câu)</button>
-                                    <button class="tab-btn" data-mock-part="1" onclick="app.filterMockPart(1)">PART 01 (01 - 08)</button>
-                                    <button class="tab-btn" data-mock-part="2" onclick="app.filterMockPart(2)">PART 02 (09 - 20)</button>
-                                    <button class="tab-btn" data-mock-part="3" onclick="app.filterMockPart(3)">PART 03 (21 - 35)</button>
+                                    <button class="tab-btn active" data-mock-part="1" onclick="app.filterMockPart(1, false)">
+                                        <span class="part-indicator-dot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#3b82f6; margin-right:6px;"></span>
+                                        PART 01 <span style="opacity: 0.8; font-size: 0.85em; margin-left: 2px;">(01 - 08)</span>
+                                        <span class="mock-part-count-badge" id="mock-tab-count-1" style="margin-left: 6px; padding: 2px 7px; border-radius: 10px; background: rgba(59,130,246,0.15); font-size: 0.8rem; font-weight: 700;">0/8</span>
+                                    </button>
+                                    <button class="tab-btn" data-mock-part="2" onclick="app.filterMockPart(2, false)">
+                                        <span class="part-indicator-dot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10b981; margin-right:6px;"></span>
+                                        PART 02 <span style="opacity: 0.8; font-size: 0.85em; margin-left: 2px;">(09 - 20)</span>
+                                        <span class="mock-part-count-badge" id="mock-tab-count-2" style="margin-left: 6px; padding: 2px 7px; border-radius: 10px; background: rgba(16,185,129,0.15); font-size: 0.8rem; font-weight: 700;">0/12</span>
+                                    </button>
+                                    <button class="tab-btn" data-mock-part="3" onclick="app.filterMockPart(3, false)">
+                                        <span class="part-indicator-dot" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#8b5cf6; margin-right:6px;"></span>
+                                        PART 03 <span style="opacity: 0.8; font-size: 0.85em; margin-left: 2px;">(21 - 35)</span>
+                                        <span class="mock-part-count-badge" id="mock-tab-count-3" style="margin-left: 6px; padding: 2px 7px; border-radius: 10px; background: rgba(139,92,246,0.15); font-size: 0.8rem; font-weight: 700;">0/15</span>
+                                    </button>
                                 </div>
                                 <div id="mock-progress-summary" style="font-size: 0.9rem; font-weight: 600; color: var(--text-secondary);">
-                                    Đã làm: <strong id="mock-answered-count" style="color: var(--color-primary); font-size: 1.1rem;">0</strong> / 35 câu
+                                    Tổng đã làm: <strong id="mock-answered-count" style="color: var(--color-primary); font-size: 1.1rem;">0</strong> / 35 câu
                                 </div>
                             </div>
 
                             <!-- Question Palette (1 - 35) -->
-                            <div class="mock-palette-grid" id="mock-palette-grid" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <div class="mock-palette-grid" id="mock-palette-grid" style="display: flex; flex-direction: column; gap: 8px;">
                                 <!-- Dynamically generated buttons 1 to 35 -->
                             </div>
                         </div>
@@ -639,10 +650,34 @@
                             <!-- Rendered by app.renderMockQuestions() -->
                         </div>
 
-                        <!-- Bottom Submit Button -->
-                        <div id="mock-bottom-submit-wrapper" style="margin-top: 36px; text-align: center; padding-bottom: 60px;">
+                        <!-- Bottom Navigation Bar ("thanh chuyển hướng bên dưới") -->
+                        <div class="mock-bottom-nav glass-card" id="mock-bottom-nav">
+                            <button type="button" class="btn btn-secondary mock-nav-btn" id="mock-prev-part-btn" onclick="app.navigateMockPart('prev')" style="display: flex; align-items: center; gap: 8px; font-weight: 700; padding: 12px 20px; border-radius: 12px; visibility: hidden;">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                                <span id="mock-prev-part-text">Phần trước</span>
+                            </button>
+
+                            <div class="mock-bottom-tabs" id="mock-bottom-tabs">
+                                <button type="button" class="mock-bottom-tab-btn active" data-mock-part="1" onclick="app.filterMockPart(1, true)">
+                                    PART 01
+                                </button>
+                                <button type="button" class="mock-bottom-tab-btn" data-mock-part="2" onclick="app.filterMockPart(2, true)">
+                                    PART 02
+                                </button>
+                                <button type="button" class="mock-bottom-tab-btn" data-mock-part="3" onclick="app.filterMockPart(3, true)">
+                                    PART 03
+                                </button>
+                            </div>
+
+                            <button type="button" class="btn btn-primary mock-nav-btn" id="mock-next-part-btn" onclick="app.navigateMockPart('next')" style="display: flex; align-items: center; gap: 8px; font-weight: 700; padding: 12px 24px; border-radius: 12px;">
+                                <span id="mock-next-part-text">Tiếp tục: PART 02 ▶</span>
+                            </button>
+                        </div>
+
+                        <!-- Bottom Submit Wrapper (Prominent on Part 3) -->
+                        <div id="mock-bottom-submit-wrapper" style="margin-top: 20px; text-align: center; padding-bottom: 60px; display: none;">
                             <button class="btn btn-primary" id="mock-bottom-submit-btn" onclick="app.submitMockTest()" style="padding: 16px 48px; font-size: 1.1rem; font-weight: 800; border-radius: 14px; box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35); background: linear-gradient(135deg, #10b981, #059669); border: none;">
-                                NỘP BÀI THI & XEM KẾT QUẢ
+                                NỘP BÀI THI & XEM KẾT QUẢ 🏁
                             </button>
                         </div>
                     </div>
@@ -685,6 +720,6 @@
     <script src="data.js?v=7"></script>
     <script src="mock_test_data.js?v=6"></script>
     <script src="vocab_data.js?v=4"></script>
-    <script src="app.js?v=46"></script>
+    <script src="app.js?v=47"></script>
 </body>
 </html>
