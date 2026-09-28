@@ -2410,7 +2410,7 @@ Danh sách bài đã làm:
                 <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">
                     Directions: In this part, you will hear eight short announcements or instructions. There is one question for each announcement or instruction. For each question, choose the best answer A, B, C, or D.
                 </p>
-                ${this.renderMockAudioPlayer('mock-audio-p1', 'Audio PART 01 (Câu 01 - 08)', '08:19', 'LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2', '#3b82f6', isSub)}
+                ${this.renderMockAudioPlayer('mock-audio-p1', 'Audio PART 01 (Câu 01 - 08)', '08:19', 'LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3', '#3b82f6', isSub)}
             </div>
         `;
 
@@ -2435,9 +2435,9 @@ Danh sách bài đã làm:
         `;
 
         const p2Sections = [
-            { title: "Conversation 01 (Questions 09 - 12)", name: "Conversation 01", start: 9, end: 12, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3", duration: "03:39" },
-            { title: "Conversation 02 (Questions 13 - 16)", name: "Conversation 02", start: 13, end: 16, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3", duration: "03:03" },
-            { title: "Conversation 03 (Questions 17 - 20)", name: "Conversation 03", start: 17, end: 20, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3", duration: "02:44" }
+            { title: "Conversation 01 (Questions 09 - 12)", name: "Conversation 01", start: 9, end: 12, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3", duration: "03:39" },
+            { title: "Conversation 02 (Questions 13 - 16)", name: "Conversation 02", start: 13, end: 16, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3", duration: "03:03" },
+            { title: "Conversation 03 (Questions 17 - 20)", name: "Conversation 03", start: 17, end: 20, audio: "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3", duration: "02:44" }
         ];
 
         p2Sections.forEach(sec => {
@@ -2471,9 +2471,9 @@ Danh sách bài đã làm:
         `;
 
         const p3Sections = [
-            { title: "Talk 01 (Questions 21 - 25)", name: "Talk 01", start: 21, end: 25, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3", duration: "03:49" },
-            { title: "Talk 02 (Questions 26 - 30)", name: "Talk 02", start: 26, end: 30, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3", duration: "03:20" },
-            { title: "Talk 03 (Questions 31 - 35)", name: "Talk 03", start: 31, end: 35, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3", duration: "03:39" }
+            { title: "Talk 01 (Questions 21 - 25)", name: "Talk 01", start: 21, end: 25, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3", duration: "03:49" },
+            { title: "Talk 02 (Questions 26 - 30)", name: "Talk 02", start: 26, end: 30, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3", duration: "03:20" },
+            { title: "Talk 03 (Questions 31 - 35)", name: "Talk 03", start: 31, end: 35, audio: "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3", duration: "03:39" }
         ];
 
         p3Sections.forEach(sec => {

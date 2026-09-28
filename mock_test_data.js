@@ -3,7 +3,7 @@ window.VSTEP_MOCK_TEST_DATA = {
   "title": "VSTEP LISTENING MOCK TEST 01",
   "subtitle": "Đề thi thử toàn diện chuẩn định dạng kỳ thi VSTEP bậc 3-5 (B1-B2-C1)",
   "duration": 2400,
-  "audio": "LISTENING MOCK TEST/AUDIO/MOCK TEST.mp3",
+  "audio": "LISTENING MOCK TEST/AUDIO/MOCK TEST.mp3?v=3",
   "totalQuestions": 35,
   "parts": [
     {
@@ -14,7 +14,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         1,
         8
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3"
     },
     {
       "part": 2,
@@ -31,7 +31,7 @@ window.VSTEP_MOCK_TEST_DATA = {
             9,
             12
           ],
-          "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3"
+          "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3"
         },
         {
           "title": "Conversation 02 (Câu 13 - 16)",
@@ -39,7 +39,7 @@ window.VSTEP_MOCK_TEST_DATA = {
             13,
             16
           ],
-          "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3"
+          "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3"
         },
         {
           "title": "Conversation 03 (Câu 17 - 20)",
@@ -47,7 +47,7 @@ window.VSTEP_MOCK_TEST_DATA = {
             17,
             20
           ],
-          "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3"
+          "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3"
         }
       ]
     },
@@ -66,7 +66,7 @@ window.VSTEP_MOCK_TEST_DATA = {
             21,
             25
           ],
-          "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3"
+          "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3"
         },
         {
           "title": "Talk 02 (Câu 26 - 30)",
@@ -74,7 +74,7 @@ window.VSTEP_MOCK_TEST_DATA = {
             26,
             30
           ],
-          "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3"
+          "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3"
         },
         {
           "title": "Talk 03 (Câu 31 - 35)",
@@ -82,7 +82,7 @@ window.VSTEP_MOCK_TEST_DATA = {
             31,
             35
           ],
-          "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3"
+          "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3"
         }
       ]
     }
@@ -455,7 +455,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
         "Khách: Tuyệt quá."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3"
     },
     {
       "part": 2,
@@ -799,7 +799,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
         "Khách: Rồi, tôi sẽ làm vậy."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3"
     },
     {
       "part": 2,
@@ -1473,7 +1473,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
         "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3"
     },
     {
       "part": 3,
@@ -1668,7 +1668,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3"
     },
     {
       "part": 3,
@@ -1869,7 +1869,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3"
     },
     {
       "part": 3,
@@ -2082,7 +2082,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Johnson & Jones ở Wales (làm danh thiếp…)",
         "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3"
     }
   ],
   "questions": [
@@ -2120,7 +2120,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Bruin Design thông báo ra mắt dòng sản phẩm mới dành cho những người yêu du lịch khó tính. Tất cả đều được thiết kế đẹp mắt, bền bỉ và siêu nhẹ. Những sản phẩm này bao gồm: cặp tài liệu sang trọng, đồng hồ báo thức du lịch, bàn là du lịch chạy điện, và radio sóng ngắn di động mạnh mẽ dành cho người hay đi nước ngoài. Sản phẩm của Bruin Design hiện có mặt tại các cửa hàng cao cấp khắp Châu Âu, Bắc Mỹ và Châu Á."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
         "purchase /ˈpɜːrtʃəs/ (v): mua sắm",
         "discriminating /dɪˈskrɪmɪneɪtɪŋ/ (adj): sành sỏi, biết thưởng thức, kỹ tính",
@@ -2166,7 +2166,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Ai cũng biết rằng khi bạn đọc một tạp chí kinh doanh hàng tháng hoặc hàng tuần thì thông tin đó đã lỗi thời. Tình hình kinh doanh quốc tế thay đổi từng ngày. Giờ đây, tạp chí Business Day – tạp chí kinh doanh hằng ngày duy nhất – sẽ giúp bạn cập nhật thế giới kinh doanh mỗi ngày từ thứ Hai đến thứ Sáu. Hôm nay, chúng tôi sẽ gửi tặng bạn cẩm nang nhà hàng quốc tế mới của chúng tôi mà không tính thêm phí. Tại sao không đặt thêm một bản cho đồng nghiệp? Bạn sẽ tiết kiệm được 3 đô la cho mỗi lần tặng."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
         "publish /ˈpʌblɪʃ/ (v): xuất bản, phát hành",
         "out of date /ˌaʊt əv ˈdeɪt/ (adj): lỗi thời, lạc hậu",
@@ -2211,7 +2211,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Đây là Don Beeson từ công ty kiến trúc Beeson và Sitwell. Hiện là 2:30 chiều. Tôi sẽ vắng mặt khỏi văn phòng trong suốt buổi chiều và sẽ quay lại vào lúc 9 giờ sáng mai. Nếu bạn cần nói chuyện với tôi trong buổi chiều nay, vui lòng để lại tin nhắn trong hộp thư thoại. Tôi sẽ kiểm tra và gọi lại từ nhà. Nếu bạn gặp vấn đề khẩn cấp, bạn có thể gọi cho đối tác của tôi, Robin Sitwell, theo số 320-1631. Chúc bạn một ngày tốt lành."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
         "architectural /ˌɑːrkɪˈtektʃərəl/ (adj): thuộc kiến trúc",
         "associate /əˈsoʊʃieɪt/ (n): cộng sự, đối tác",
@@ -2255,7 +2255,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào mừng đến với chương trình Garden Spot của đài phát thanh WKYO. Tôi là người dẫn chương trình, Peter Brooks. Thời điểm này trong năm là thời gian tuyệt vời để nói về việc thu hoạch rau trong vườn. Hôm nay tôi có một vài mẹo muốn chia sẻ. Ví dụ, bạn có biết nên hái bắp vào buổi sáng khi trời còn mát không? Vì nhiệt độ nóng vào buổi chiều sẽ biến đường trong bắp thành tinh bột và làm hỏng hương vị.Và bạn có biết càng để ớt trên cây lâu thì chúng càng chứa nhiều vitamin C? Chúng tôi sẽ quay lại ngay với nhiều mẹo thu hoạch hơn. Và lát nữa, giáo sư Gail Mueller – chuyên gia về ký sinh trùng thực vật – sẽ đến phòng thu trò chuyện với chúng ta. Nhưng trước tiên là một thông điệp quảng cáo từ nhà tài trợ – Công ty hạt giống Colony."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
         "harvest /ˈhɑːrvɪst/ (v, n): thu hoạch, mùa gặt",
         "spoil /spɔɪl/ (v): làm hỏng, ôi thiu",
@@ -2300,7 +2300,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Và bây giờ, thưa quý vị, tôi xin trao giải Nhân viên của Tháng cho cô Elizabeth Bryce đến từ bộ phận vận chuyển. Cô ấy không chỉ nhận được đánh giá cao nhất từ quản lý của mình. Cô ấy còn đề xuất một ý tưởng có thể giúp công ty tiết kiệm hàng ngàn đô la mỗi năm trong chi phí vận chuyển. Ngoài khoản tiền thưởng nhỏ trong bảng lương tuần tới, cô Bryce sẽ có chỗ đậu xe riêng trong một tháng – ngay cạnh chỗ của giám đốc điều hành. Cô ấy cũng sẽ đủ điều kiện tranh giải Nhân viên của Năm – và như bạn biết, người thắng giải này sẽ nhận được một chiếc xe hơi mới."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
         "shipping department /ˈʃɪpɪŋ dɪˌpɑːrtmənt/ (n): bộ phận vận chuyển giao hàng",
         "supervisor /ˈsuːpərvaɪzər/ (n): người giám sát, sếp trực tiếp",
@@ -2344,7 +2344,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Nam 1: Khi tôi đến chỗ làm sáng nay, hệ thống an ninh đã bị tắt. Nam 2: Thật sao? Thật kỳ lạ. Nam 1: Tôi cũng nghĩ vậy."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
         "security system /sɪˈkjʊrəti ˌsɪstəm/ (n): hệ thống an ninh",
         "turn off /tɜːrn ɔːf/ (phr v): tắt, ngắt hoạt động",
@@ -2387,7 +2387,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Nam 1: Hôm nay lại sẽ là một ngày ấm áp nữa đấy. Nam 2: Dĩ nhiên rồi. Anh biết đấy, tôi nhớ sống ở nơi có đủ bốn mùa. Nam 1: Tôi cũng vậy. Tôi đặc biệt nhớ những buổi sáng mùa thu mát mẻ, se lạnh."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
         "climate /ˈklaɪmət/ (n): khí hậu",
         "four seasons /fɔːr ˈsiːznz/ (n): bốn mùa (xuân, hạ, thu, đông)",
@@ -2430,7 +2430,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Nữ: Xin lỗi, cô Bauer đang dự một cuộc họp về bán hàng. Nam: Tôi hiểu rồi. Cuộc họp đó còn lâu không? Nữ: Chắc là không đâu. Sao anh không tự lấy chút cà phê hoặc trà rồi ngồi đợi ở đằng kia?"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=2",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
         "sales meeting /ˈseɪlz ˌmiːtɪŋ/ (n): cuộc họp kinh doanh / phòng bán hàng",
         "suggest /səˈdʒest/ (v): gợi ý, khuyên bảo",
@@ -2515,7 +2515,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
         "Khách: Tuyệt quá."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
       "vocabulary": [
         "whale watching /weɪl ˈwɑːtʃɪŋ/ (n): chuyến ngắm cá voi",
         "receptionist /rɪˈsepʃənɪst/ (n): nhân viên lễ tân",
@@ -2601,7 +2601,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
         "Khách: Tuyệt quá."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
       "vocabulary": [
         "catamaran /ˌkætəməˈræn/ (n): thuyền hai thân",
         "passenger /ˈpæsɪndʒər/ (n): hành khách",
@@ -2687,7 +2687,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
         "Khách: Tuyệt quá."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
       "vocabulary": [
         "maximum /ˈmæksɪməm/ (adj, n): tối đa, cực đại",
         "minimum /ˈmɪnɪməm/ (adj, n): tối thiểu",
@@ -2773,7 +2773,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
         "Khách: Tuyệt quá."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
       "vocabulary": [
         "departure /dɪˈpɑːrtʃər/ (n): sự khởi hành",
         "schedule /ˈskedʒuːl/ (n): lịch trình chạy",
@@ -2853,7 +2853,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
         "Khách: Rồi, tôi sẽ làm vậy."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
       "vocabulary": [
         "be included in /ɪnˈkluːdɪd ɪn/ (v phr): được bao gồm trong",
         "refreshment /rɪˈfreʃmənt/ (n): món ăn nhẹ, thức uống giải khát",
@@ -2934,7 +2934,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
         "Khách: Rồi, tôi sẽ làm vậy."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
       "vocabulary": [
         "fare /fer/ (n): giá vé (tàu xe, du lịch)",
         "discount /ˈdɪskaʊnt/ (n): mức giảm giá, chiết khấu",
@@ -3015,7 +3015,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
         "Khách: Rồi, tôi sẽ làm vậy."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
       "vocabulary": [
         "in advance /ɪn ədˈvæns/ (exp): trước (về mặt thời gian)",
         "booking /ˈbʊkɪŋ/ (n): việc giữ chỗ, đặt chỗ",
@@ -3096,7 +3096,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
         "Khách: Rồi, tôi sẽ làm vậy."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
       "vocabulary": [
         "reference number /ˈrefrəns ˌnʌmbər/ (n): mã số tham chiếu, mã đơn đặt",
         "confirmation /ˌkɑːnfərˈmeɪʃn/ (n): sự xác nhận",
@@ -3242,7 +3242,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
         "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
       "vocabulary": [
         "admission office /ədˈmɪʃn ˈɔːfɪs/ (n): phòng tuyển sinh",
         "lecturer /ˈlektʃərər/ (n): giảng viên đại học",
@@ -3389,7 +3389,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
         "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
       "vocabulary": [
         "lecture /ˈlektʃər/ (n): bài giảng, tiết lý thuyết",
         "session /ˈseʃn/ (n): buổi học, phiên làm việc",
@@ -3536,7 +3536,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
         "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
       "vocabulary": [
         "attendance /əˈtendəns/ (n): sự có mặt, chuyên cần",
         "compulsory /kəmˈpʌlsəri/ (adj): bắt buộc",
@@ -3683,7 +3683,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
         "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
       "vocabulary": [
         "tutorial /tuːˈtɔːriəl/ (n): buổi học hướng dẫn nhóm nhỏ",
         "arrange /əˈreɪndʒ/ (v): sắp xếp, thu xếp thời gian",
@@ -3727,7 +3727,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
         "charity /ˈtʃærəti/ (n): hội từ thiện, việc từ thiện",
         "non-profit /ˌnɑːn ˈprɑːfɪt/ (adj): phi lợi nhuận",
@@ -3771,7 +3771,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
         "successful /səkˈsesfl/ (adj): thành công",
         "enterprise /ˈentərpraɪz/ (n): cơ sở kinh doanh, xí nghiệp",
@@ -3815,7 +3815,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
         "rely on /rɪˈlaɪ ɑːn/ (phr v): dựa vào, phụ thuộc vào",
         "donation /doʊˈneɪʃn/ (n): sự đóng góp, khoản quyên tặng",
@@ -3859,7 +3859,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
         "remote /rɪˈmoʊt/ (adj): hẻo lánh, vùng sâu vùng xa",
         "rural area /ˈrʊrəl ˈeriə/ (n): khu vực nông thôn",
@@ -3903,7 +3903,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
         "shipping cost /ˈʃɪpɪŋ kɔːst/ (n): chi phí vận chuyển hàng hóa",
         "customs duty /ˈkʌstəmz ˌduːti/ (n): thuế hải quan",
@@ -3948,7 +3948,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
         "traffic flow /ˈtræfɪk floʊ/ (n): dòng lưu thông xe cộ",
         "light traffic /laɪt ˈtræfɪk/ (n): giao thông vắng xe, đường thông thoáng",
@@ -3993,7 +3993,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
         "notice /ˈnoʊtɪs/ (v): nhận biết, chú ý thấy",
         "resident /ˈrezɪdənt/ (n): cư dân, người dân sống tại khu vực",
@@ -4038,7 +4038,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
         "fluctuation /ˌflʌktʃuˈeɪʃn/ (n): sự biến động dao động",
         "commuter /kəˈmjuːtər/ (n): người đi làm/đi học hàng ngày bằng phương tiện",
@@ -4083,7 +4083,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
         "modify /ˈmɑːdɪfaɪ/ (v): sửa đổi, cải tạo",
         "soundproofing /ˈsaʊndpruːfɪŋ/ (n): việc cách âm",
@@ -4128,7 +4128,7 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
         "highway /ˈhaɪweɪ/ (n): đường cao tốc, quốc lộ",
         "friction /ˈfrɪkʃn/ (n): lực ma sát",
@@ -4175,7 +4175,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Johnson & Jones ở Wales (làm danh thiếp…)",
         "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
         "greenhouse gas /ˈɡriːnhaʊs ɡæs/ (n): khí gây hiệu ứng nhà kính",
         "carbon footprint /ˌkɑːrbən ˈfʊtprɪnt/ (n): dấu chân carbon",
@@ -4222,7 +4222,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Johnson & Jones ở Wales (làm danh thiếp…)",
         "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
         "carbon dioxide /ˌkɑːrbən daɪˈɑːksaɪd/ (n): khí CO2",
         "reduce /rɪˈduːs/ (v): cắt giảm bớt",
@@ -4269,7 +4269,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Johnson & Jones ở Wales (làm danh thiếp…)",
         "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
         "renewable energy /rɪˈnuːəbl ˈenərdʒi/ (n): năng lượng tái tạo",
         "solar power /ˌsoʊlər ˈpaʊər/ (n): điện năng lượng mặt trời",
@@ -4316,7 +4316,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Johnson & Jones ở Wales (làm danh thiếp…)",
         "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
         "household waste /ˈhaʊshoʊld weɪst/ (n): rác sinh hoạt từ các hộ gia đình",
         "contamination /kənˌtæmɪˈneɪʃn/ (n): sự nhiễm bẩn, lẫn tạp chất",
@@ -4363,7 +4363,7 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Johnson & Jones ở Wales (làm danh thiếp…)",
         "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3",
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
         "annually /ˈænjuəli/ (adv): hàng năm, mỗi năm",
         "recycled glass /ˌriːˈsaɪkld ɡlæs/ (n): thủy tinh tái chế",
