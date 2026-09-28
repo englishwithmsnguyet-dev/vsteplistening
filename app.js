@@ -2465,6 +2465,9 @@ Danh sách bài đã làm:
             secQuestions.forEach(q => {
                 html += this.renderMockQuestionCard(q, isSub);
             });
+            if (isSub) {
+                html += this.renderMockSectionFullTranscript(sec, data);
+            }
         });
         html += `</div>`;
 
@@ -2501,6 +2504,9 @@ Danh sách bài đã làm:
             secQuestions.forEach(q => {
                 html += this.renderMockQuestionCard(q, isSub);
             });
+            if (isSub) {
+                html += this.renderMockSectionFullTranscript(sec, data);
+            }
         });
         html += `</div>`;
 
@@ -2606,6 +2612,12 @@ Danh sách bài đã làm:
                             ${(q.vi_transcript || []).map(line => `<p style="margin: 0 0 8px 0;">${line}</p>`).join('')}
                         </div>
                     </div>
+                    ${(q.part === 2 || q.part === 3) ? `
+                    <div style="margin-top: 10px; padding: 6px 10px; background: rgba(59, 130, 246, 0.08); border-radius: 6px; font-size: 0.82rem; color: var(--text-secondary); display: flex; align-items: center; gap: 6px;">
+                        <span>💡</span>
+                        <span><em>Đoạn trích dẫn chứng câu ${q.number}. Kéo xuống cuối phần thi để xem <strong>Full Transcript</strong> toàn bộ bài nghe.</em></span>
+                    </div>
+                    ` : ''}
                     ${(q.vocabulary && q.vocabulary.length > 0) ? `
                     <div class="useful-vocab-section" style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--border-color);">
                         <h4 style="margin-bottom: 12px; font-size: 0.95rem; font-weight: bold; color: var(--color-primary); display: flex; align-items: center; gap: 6px;">
@@ -2642,6 +2654,80 @@ Danh sách bài đã làm:
 
         html += `</div>`;
         return html;
+    }
+
+    renderMockSectionFullTranscript(sec, data) {
+        const sectionData = (data.sections || []).find(s => 
+            s.title === sec.name || 
+            (s.q_start === sec.start && s.q_end === sec.end)
+        );
+        if (!sectionData || !sectionData.en_transcript) return '';
+
+        const secId = sec.name.replace(/\s+/g, '-').toLowerCase();
+        const enLines = sectionData.en_transcript || [];
+        const viLines = sectionData.vi_transcript || [];
+        const isPart2 = sec.start >= 9 && sec.end <= 20;
+        const themeColor = isPart2 ? '#10b981' : '#8b5cf6';
+
+        return `
+        <div class="mock-full-transcript-box glass-card" style="margin: 16px 0 32px 0; padding: 18px 20px; border-radius: 14px; border: 1.5px solid ${isPart2 ? 'rgba(16,185,129,0.35)' : 'rgba(139,92,246,0.35)'}; background: var(--bg-surface); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
+            <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none; gap: 12px; flex-wrap: wrap;" onclick="app.toggleMockFullTranscript('${secId}')">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.35rem;">📜</span>
+                    <div>
+                        <div style="font-weight: 800; font-size: 1.02rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+                            <span>FULL TRANSCRIPT & DỊCH NGHĨA TOÀN BÀI</span>
+                            <span class="badge" style="background: ${themeColor}; color: white; font-size: 0.75rem; padding: 2px 8px;">${sec.name}</span>
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px;">
+                            Toàn bộ lời thoại & dịch nghĩa chi tiết có highlight đáp án (Câu ${sec.start} - ${sec.end})
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary" style="font-size: 0.82rem; padding: 6px 14px; border-radius: 8px; display: inline-flex; align-items: center; gap: 6px; pointer-events: none;">
+                    <span id="mock-full-btn-text-${secId}">📖 Xem Full Transcript</span>
+                    <span id="mock-full-icon-${secId}" style="display: inline-block; transition: transform 0.25s ease;">▼</span>
+                </button>
+            </div>
+            
+            <div id="mock-full-transcript-${secId}" class="mock-full-transcript-content hidden" style="margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--border-color);">
+                <div style="margin-bottom: 20px;">
+                    <div style="font-weight: 800; color: var(--color-primary); font-size: 0.95rem; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                        <span>🇬🇧</span> FULL ENGLISH TRANSCRIPT:
+                    </div>
+                    <div style="font-size: 0.92rem; line-height: 1.7; color: var(--text-primary); background: var(--bg-surface-secondary, rgba(0,0,0,0.02)); padding: 16px; border-radius: 10px; border: 1px solid var(--border-color);">
+                        ${enLines.map(line => `<p style="margin: 0 0 10px 0;">${line}</p>`).join('')}
+                    </div>
+                </div>
+                <div>
+                    <div style="font-weight: 800; color: #10b981; font-size: 0.95rem; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                        <span>🇻🇳</span> BẢN DỊCH TIẾNG VIỆT TOÀN BÀI:
+                    </div>
+                    <div style="font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); background: var(--bg-surface-secondary, rgba(0,0,0,0.02)); padding: 16px; border-radius: 10px; border: 1px solid var(--border-color);">
+                        ${viLines.map(line => `<p style="margin: 0 0 10px 0;">${line}</p>`).join('')}
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+    }
+
+    toggleMockFullTranscript(secId) {
+        const content = document.getElementById(`mock-full-transcript-${secId}`);
+        const btnText = document.getElementById(`mock-full-btn-text-${secId}`);
+        const icon = document.getElementById(`mock-full-icon-${secId}`);
+        if (content) {
+            const isHidden = content.classList.contains('hidden');
+            if (isHidden) {
+                content.classList.remove('hidden');
+                if (btnText) btnText.textContent = 'Thu gọn Full Transcript';
+                if (icon) icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                if (btnText) btnText.textContent = '📖 Xem Full Transcript';
+                if (icon) icon.style.transform = 'rotate(0deg)';
+            }
+        }
     }
 
     toggleMockTranscript(qNum) {

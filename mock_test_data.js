@@ -124,52 +124,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "B",
           "en_transcript": [
-            "RECEPTIONIST: Good afternoon, Dream Time Travel. How can I help you?",
-            "CUSTOMER: Oh, hello. I’m interested in the holidays you offer along the coast near here.",
-            "RECEPTIONIST: Yes. We operate several tours up the coast. Where in particular did you want to go?",
-            "CUSTOMER: Well, I like the sound of the holiday that mentioned whales. Was it ‘Whale Watching’?",
-            "RECEPTIONIST: Oh, that’s our Whale Watch Experience. It’s very popular, and it’s based in a lovely little town with nice beaches.",
             "CUSTOMER: Oh, right, and how long does it last?",
-            "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>",
-            "CUSTOMER: Good, I don’t want to be away any longer than that. So is that by coach?",
-            "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span> <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>",
-            "CUSTOMER: Oh, right. So do you run these tours often?",
-            "RECEPTIONIST: Well, it depends on the time of year. Of course, in peak times like the summer holidays, we do them every weekend, but at the moment it’s usually once a month at most.",
-            "CUSTOMER: And when is the next one going?",
-            "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>",
-            "CUSTOMER: All right, and is April a good time to go?",
-            "RECEPTIONIST: Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things offered.",
-            "CUSTOMER: Really?",
-            "RECEPTIONIST: Yes. The hotel itself where you stay has great facilities. It’s called The Pallisades.",
-            "CUSTOMER: The Paris what?",
-            "RECEPTIONIST: No, it’s actually The Pallisades, P-A-L-L-I-S-A-D-E-S. It’s right on the main beach there.",
-            "CUSTOMER: Oh, I see.",
-            "RECEPTIONIST: All of the rooms have nice views, and the food is really good there, too.",
-            "CUSTOMER: Oh, right."
+            "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>"
           ],
           "vi_transcript": [
-            "Lễ tân: Chào buổi chiều, Dream Time Travel xin nghe. Tôi có thể giúp gì cho bạn?",
-            "Khách: À, chào bạn. Tôi đang quan tâm đến các kỳ nghỉ mà các bạn tổ chức dọc theo bờ biển gần đây.",
-            "Lễ tân: Vâng, chúng tôi có nhiều tour dọc bờ biển. Bạn muốn đến địa điểm cụ thể nào?",
-            "Khách: Tôi thấy có một tour nói về cá voi, nghe khá hấp dẫn. Có phải gọi là “Whale Watching”?",
-            "Lễ tân: À, đó là tour “Whale Watch Experience” của chúng tôi. Rất nổi tiếng, và diễn ra tại một thị trấn nhỏ xinh đẹp, có bãi biển rất đẹp.",
             "Khách: À, vậy tour đó kéo dài bao lâu?",
-            "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>",
-            "Khách: Tuyệt, tôi không muốn đi quá lâu. Vậy là đi bằng xe khách à?",
-            "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span> <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>",
-            "Khách: Ồ, vậy tour này tổ chức thường xuyên không?",
-            "Lễ tân: Còn tùy vào thời điểm trong năm. Vào mùa cao điểm như kỳ nghỉ hè, chúng tôi tổ chức mỗi cuối tuần, nhưng hiện tại thì chỉ khoảng mỗi tháng một lần.",
-            "Khách: Vậy khi nào có tour tiếp theo?",
-            "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>",
-            "Khách: À, vậy tháng 4 có phải thời điểm tốt để đi không?",
-            "Lễ tân: Cũng khá ổn, nhưng thời điểm đẹp nhất là vào cuối năm. Dù sao thì việc ngắm cá voi cũng chỉ là một phần trong số nhiều hoạt động được cung cấp thôi.",
-            "Khách: Thật vậy sao?",
-            "Lễ tân: Vâng. Khách sạn mà bạn sẽ ở cũng có nhiều tiện nghi tuyệt vời. Nó tên là The Pallisades.",
-            "Khách: Là Paris gì cơ?",
-            "Lễ tân: Không, là The Pallisades, đánh vần là P-A-L-L-I-S-A-D-E-S. Nó nằm ngay trên bãi biển chính.",
-            "Khách: À, tôi hiểu rồi.",
-            "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
-            "Khách: Tuyệt quá."
+            "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>"
           ]
         },
         {
@@ -202,52 +162,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "RECEPTIONIST: Good afternoon, Dream Time Travel. How can I help you?",
-            "CUSTOMER: Oh, hello. I’m interested in the holidays you offer along the coast near here.",
-            "RECEPTIONIST: Yes. We operate several tours up the coast. Where in particular did you want to go?",
-            "CUSTOMER: Well, I like the sound of the holiday that mentioned whales. Was it ‘Whale Watching’?",
-            "RECEPTIONIST: Oh, that’s our Whale Watch Experience. It’s very popular, and it’s based in a lovely little town with nice beaches.",
-            "CUSTOMER: Oh, right, and how long does it last?",
-            "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>",
             "CUSTOMER: Good, I don’t want to be away any longer than that. So is that by coach?",
-            "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span> <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>",
-            "CUSTOMER: Oh, right. So do you run these tours often?",
-            "RECEPTIONIST: Well, it depends on the time of year. Of course, in peak times like the summer holidays, we do them every weekend, but at the moment it’s usually once a month at most.",
-            "CUSTOMER: And when is the next one going?",
-            "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>",
-            "CUSTOMER: All right, and is April a good time to go?",
-            "RECEPTIONIST: Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things offered.",
-            "CUSTOMER: Really?",
-            "RECEPTIONIST: Yes. The hotel itself where you stay has great facilities. It’s called The Pallisades.",
-            "CUSTOMER: The Paris what?",
-            "RECEPTIONIST: No, it’s actually The Pallisades, P-A-L-L-I-S-A-D-E-S. It’s right on the main beach there.",
-            "CUSTOMER: Oh, I see.",
-            "RECEPTIONIST: All of the rooms have nice views, and the food is really good there, too.",
-            "CUSTOMER: Oh, right."
+            "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span>"
           ],
           "vi_transcript": [
-            "Lễ tân: Chào buổi chiều, Dream Time Travel xin nghe. Tôi có thể giúp gì cho bạn?",
-            "Khách: À, chào bạn. Tôi đang quan tâm đến các kỳ nghỉ mà các bạn tổ chức dọc theo bờ biển gần đây.",
-            "Lễ tân: Vâng, chúng tôi có nhiều tour dọc bờ biển. Bạn muốn đến địa điểm cụ thể nào?",
-            "Khách: Tôi thấy có một tour nói về cá voi, nghe khá hấp dẫn. Có phải gọi là “Whale Watching”?",
-            "Lễ tân: À, đó là tour “Whale Watch Experience” của chúng tôi. Rất nổi tiếng, và diễn ra tại một thị trấn nhỏ xinh đẹp, có bãi biển rất đẹp.",
-            "Khách: À, vậy tour đó kéo dài bao lâu?",
-            "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>",
             "Khách: Tuyệt, tôi không muốn đi quá lâu. Vậy là đi bằng xe khách à?",
-            "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span> <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>",
-            "Khách: Ồ, vậy tour này tổ chức thường xuyên không?",
-            "Lễ tân: Còn tùy vào thời điểm trong năm. Vào mùa cao điểm như kỳ nghỉ hè, chúng tôi tổ chức mỗi cuối tuần, nhưng hiện tại thì chỉ khoảng mỗi tháng một lần.",
-            "Khách: Vậy khi nào có tour tiếp theo?",
-            "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>",
-            "Khách: À, vậy tháng 4 có phải thời điểm tốt để đi không?",
-            "Lễ tân: Cũng khá ổn, nhưng thời điểm đẹp nhất là vào cuối năm. Dù sao thì việc ngắm cá voi cũng chỉ là một phần trong số nhiều hoạt động được cung cấp thôi.",
-            "Khách: Thật vậy sao?",
-            "Lễ tân: Vâng. Khách sạn mà bạn sẽ ở cũng có nhiều tiện nghi tuyệt vời. Nó tên là The Pallisades.",
-            "Khách: Là Paris gì cơ?",
-            "Lễ tân: Không, là The Pallisades, đánh vần là P-A-L-L-I-S-A-D-E-S. Nó nằm ngay trên bãi biển chính.",
-            "Khách: À, tôi hiểu rồi.",
-            "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
-            "Khách: Tuyệt quá."
+            "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span>"
           ]
         },
         {
@@ -280,52 +200,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "D",
           "en_transcript": [
-            "RECEPTIONIST: Good afternoon, Dream Time Travel. How can I help you?",
-            "CUSTOMER: Oh, hello. I’m interested in the holidays you offer along the coast near here.",
-            "RECEPTIONIST: Yes. We operate several tours up the coast. Where in particular did you want to go?",
-            "CUSTOMER: Well, I like the sound of the holiday that mentioned whales. Was it ‘Whale Watching’?",
-            "RECEPTIONIST: Oh, that’s our Whale Watch Experience. It’s very popular, and it’s based in a lovely little town with nice beaches.",
-            "CUSTOMER: Oh, right, and how long does it last?",
-            "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>",
-            "CUSTOMER: Good, I don’t want to be away any longer than that. So is that by coach?",
-            "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span> <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>",
-            "CUSTOMER: Oh, right. So do you run these tours often?",
-            "RECEPTIONIST: Well, it depends on the time of year. Of course, in peak times like the summer holidays, we do them every weekend, but at the moment it’s usually once a month at most.",
-            "CUSTOMER: And when is the next one going?",
-            "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>",
-            "CUSTOMER: All right, and is April a good time to go?",
-            "RECEPTIONIST: Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things offered.",
-            "CUSTOMER: Really?",
-            "RECEPTIONIST: Yes. The hotel itself where you stay has great facilities. It’s called The Pallisades.",
-            "CUSTOMER: The Paris what?",
-            "RECEPTIONIST: No, it’s actually The Pallisades, P-A-L-L-I-S-A-D-E-S. It’s right on the main beach there.",
-            "CUSTOMER: Oh, I see.",
-            "RECEPTIONIST: All of the rooms have nice views, and the food is really good there, too.",
-            "CUSTOMER: Oh, right."
+            "RECEPTIONIST: <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>"
           ],
           "vi_transcript": [
-            "Lễ tân: Chào buổi chiều, Dream Time Travel xin nghe. Tôi có thể giúp gì cho bạn?",
-            "Khách: À, chào bạn. Tôi đang quan tâm đến các kỳ nghỉ mà các bạn tổ chức dọc theo bờ biển gần đây.",
-            "Lễ tân: Vâng, chúng tôi có nhiều tour dọc bờ biển. Bạn muốn đến địa điểm cụ thể nào?",
-            "Khách: Tôi thấy có một tour nói về cá voi, nghe khá hấp dẫn. Có phải gọi là “Whale Watching”?",
-            "Lễ tân: À, đó là tour “Whale Watch Experience” của chúng tôi. Rất nổi tiếng, và diễn ra tại một thị trấn nhỏ xinh đẹp, có bãi biển rất đẹp.",
-            "Khách: À, vậy tour đó kéo dài bao lâu?",
-            "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>",
-            "Khách: Tuyệt, tôi không muốn đi quá lâu. Vậy là đi bằng xe khách à?",
-            "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span> <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>",
-            "Khách: Ồ, vậy tour này tổ chức thường xuyên không?",
-            "Lễ tân: Còn tùy vào thời điểm trong năm. Vào mùa cao điểm như kỳ nghỉ hè, chúng tôi tổ chức mỗi cuối tuần, nhưng hiện tại thì chỉ khoảng mỗi tháng một lần.",
-            "Khách: Vậy khi nào có tour tiếp theo?",
-            "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>",
-            "Khách: À, vậy tháng 4 có phải thời điểm tốt để đi không?",
-            "Lễ tân: Cũng khá ổn, nhưng thời điểm đẹp nhất là vào cuối năm. Dù sao thì việc ngắm cá voi cũng chỉ là một phần trong số nhiều hoạt động được cung cấp thôi.",
-            "Khách: Thật vậy sao?",
-            "Lễ tân: Vâng. Khách sạn mà bạn sẽ ở cũng có nhiều tiện nghi tuyệt vời. Nó tên là The Pallisades.",
-            "Khách: Là Paris gì cơ?",
-            "Lễ tân: Không, là The Pallisades, đánh vần là P-A-L-L-I-S-A-D-E-S. Nó nằm ngay trên bãi biển chính.",
-            "Khách: À, tôi hiểu rồi.",
-            "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
-            "Khách: Tuyệt quá."
+            "Lễ tân: <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>"
           ]
         },
         {
@@ -358,52 +236,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "A",
           "en_transcript": [
-            "RECEPTIONIST: Good afternoon, Dream Time Travel. How can I help you?",
-            "CUSTOMER: Oh, hello. I’m interested in the holidays you offer along the coast near here.",
-            "RECEPTIONIST: Yes. We operate several tours up the coast. Where in particular did you want to go?",
-            "CUSTOMER: Well, I like the sound of the holiday that mentioned whales. Was it ‘Whale Watching’?",
-            "RECEPTIONIST: Oh, that’s our Whale Watch Experience. It’s very popular, and it’s based in a lovely little town with nice beaches.",
-            "CUSTOMER: Oh, right, and how long does it last?",
-            "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>",
-            "CUSTOMER: Good, I don’t want to be away any longer than that. So is that by coach?",
-            "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span> <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>",
-            "CUSTOMER: Oh, right. So do you run these tours often?",
-            "RECEPTIONIST: Well, it depends on the time of year. Of course, in peak times like the summer holidays, we do them every weekend, but at the moment it’s usually once a month at most.",
             "CUSTOMER: And when is the next one going?",
-            "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>",
-            "CUSTOMER: All right, and is April a good time to go?",
-            "RECEPTIONIST: Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things offered.",
-            "CUSTOMER: Really?",
-            "RECEPTIONIST: Yes. The hotel itself where you stay has great facilities. It’s called The Pallisades.",
-            "CUSTOMER: The Paris what?",
-            "RECEPTIONIST: No, it’s actually The Pallisades, P-A-L-L-I-S-A-D-E-S. It’s right on the main beach there.",
-            "CUSTOMER: Oh, I see.",
-            "RECEPTIONIST: All of the rooms have nice views, and the food is really good there, too.",
-            "CUSTOMER: Oh, right."
+            "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>"
           ],
           "vi_transcript": [
-            "Lễ tân: Chào buổi chiều, Dream Time Travel xin nghe. Tôi có thể giúp gì cho bạn?",
-            "Khách: À, chào bạn. Tôi đang quan tâm đến các kỳ nghỉ mà các bạn tổ chức dọc theo bờ biển gần đây.",
-            "Lễ tân: Vâng, chúng tôi có nhiều tour dọc bờ biển. Bạn muốn đến địa điểm cụ thể nào?",
-            "Khách: Tôi thấy có một tour nói về cá voi, nghe khá hấp dẫn. Có phải gọi là “Whale Watching”?",
-            "Lễ tân: À, đó là tour “Whale Watch Experience” của chúng tôi. Rất nổi tiếng, và diễn ra tại một thị trấn nhỏ xinh đẹp, có bãi biển rất đẹp.",
-            "Khách: À, vậy tour đó kéo dài bao lâu?",
-            "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>",
-            "Khách: Tuyệt, tôi không muốn đi quá lâu. Vậy là đi bằng xe khách à?",
-            "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span> <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>",
-            "Khách: Ồ, vậy tour này tổ chức thường xuyên không?",
-            "Lễ tân: Còn tùy vào thời điểm trong năm. Vào mùa cao điểm như kỳ nghỉ hè, chúng tôi tổ chức mỗi cuối tuần, nhưng hiện tại thì chỉ khoảng mỗi tháng một lần.",
             "Khách: Vậy khi nào có tour tiếp theo?",
-            "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>",
-            "Khách: À, vậy tháng 4 có phải thời điểm tốt để đi không?",
-            "Lễ tân: Cũng khá ổn, nhưng thời điểm đẹp nhất là vào cuối năm. Dù sao thì việc ngắm cá voi cũng chỉ là một phần trong số nhiều hoạt động được cung cấp thôi.",
-            "Khách: Thật vậy sao?",
-            "Lễ tân: Vâng. Khách sạn mà bạn sẽ ở cũng có nhiều tiện nghi tuyệt vời. Nó tên là The Pallisades.",
-            "Khách: Là Paris gì cơ?",
-            "Lễ tân: Không, là The Pallisades, đánh vần là P-A-L-L-I-S-A-D-E-S. Nó nằm ngay trên bãi biển chính.",
-            "Khách: À, tôi hiểu rồi.",
-            "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
-            "Khách: Tuyệt quá."
+            "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>"
           ]
         }
       ],
@@ -493,47 +331,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "CUSTOMER: And what about the other things? You know, that are included in the price.",
-            "RECEPTIONIST: Oh, there are lots of things. If you don’t want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there’s no extra charge for that, or on a fishing trip. That’s an extra $12, I think. And there’s also a reptile park in town – that costs more or less the same.",
-            "CUSTOMER: No, I think I’d prefer whales to snakes.",
-            "RECEPTIONIST: Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>",
-            "CUSTOMER: Well, that sounds good. So how much is the basic tour price?",
-            "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around $300, but let me check. Er…oh, it’s actually $280.</span>",
-            "CUSTOMER: And the next tour, are there any places on that one?",
-            "RECEPTIONIST: HOW many people Is It for?",
-            "CUSTOMER: These are two of us.",
-            "RECEPTIONIST: Yes, that should be fine. <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>",
-            "CUSTOMER: OK.",
-            "RECEPTIONIST: And you also need to pay a 20% deposit at the time of booking.",
-            "CUSTOMER: Can I pay that by credit card?",
-            "RECEPTIONIST: Yes, you can.",
-            "CUSTOMER: All right, what I’ll do is I’ll talk to my partner and get back to you.",
-            "RECEPTIONIST: Fine. So I’ll make a provisional booking, shall I? – two for the Whale Watch Experience. Let me issue you with a",
-            "CUSTOMER reference number for when you call back. Do you have a pen?",
-            "CUSTOMER: Yes.",
-            "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>",
-            "CUSTOMER: Fine, I will."
+            "RECEPTIONIST: <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>"
           ],
           "vi_transcript": [
-            "Khách: Còn những hoạt động khác thì sao? Ý tôi là, những gì được bao gồm trong giá tour?",
-            "Lễ tân: Ồ, có rất nhiều. Nếu bạn không muốn tham gia chuyến du ngoạn ngắm cá voi, hướng dẫn viên sẽ dẫn những người quan tâm đi bộ khám phá rừng trong công viên quốc gia gần khách sạn – và không mất thêm phí. Hoặc có thể tham gia một chuyến đi câu cá – cái đó thì tốn thêm khoảng 12 đô, tôi nghĩ vậy. Ngoài ra còn có một công viên bò sát trong thị trấn – phí vào cổng cũng xấp xỉ như vậy.",
-            "Khách: Không, tôi nghĩ tôi thích cá voi hơn rắn đấy.",
-            "Lễ tân: Ừ, tôi hiểu. Nếu bạn chỉ muốn thư giãn thì bạn có thể ngồi bên hồ bơi của khách sạn hoặc ra bãi biển. À, khách sạn cũng có sân tennis, nhưng bạn phải trả tiền theo giờ để sử dụng. <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>",
-            "Khách: Nghe hay đấy. Vậy giá cơ bản của tour là bao nhiêu?",
-            "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>",
-            "Khách: Còn tour sắp tới, vẫn còn chỗ chứ?",
-            "Lễ tân: Nhóm của bạn có bao nhiêu người?",
-            "Khách: Có hai người bọn tôi.",
-            "Lễ tân: Vậy là được. <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>",
-            "Khách: OK.",
-            "Lễ tân: Và bạn cũng cần thanh toán 20% tiền cọc khi đặt chỗ.",
-            "Khách: Tôi có thể trả bằng thẻ tín dụng không?",
-            "Lễ tân: Vâng, bạn có thể.",
-            "Khách: Được rồi, tôi sẽ nói chuyện với bạn đồng hành rồi gọi lại sau.",
-            "Lễ tân: Tuyệt. Vậy tôi sẽ giữ chỗ tạm thời cho bạn – 2 người cho tour Whale Watch Experience nhé. Để tôi cấp cho bạn mã đặt chỗ để khi bạn gọi lại có thể cung cấp.",
-            "Khách: Vâng, tôi có bút đây.",
-            "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
-            "Khách: Rồi, tôi sẽ làm vậy."
+            "Lễ tân: <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>"
           ]
         },
         {
@@ -566,47 +367,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "CUSTOMER: And what about the other things? You know, that are included in the price.",
-            "RECEPTIONIST: Oh, there are lots of things. If you don’t want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there’s no extra charge for that, or on a fishing trip. That’s an extra $12, I think. And there’s also a reptile park in town – that costs more or less the same.",
-            "CUSTOMER: No, I think I’d prefer whales to snakes.",
-            "RECEPTIONIST: Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>",
             "CUSTOMER: Well, that sounds good. So how much is the basic tour price?",
-            "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around $300, but let me check. Er…oh, it’s actually $280.</span>",
-            "CUSTOMER: And the next tour, are there any places on that one?",
-            "RECEPTIONIST: HOW many people Is It for?",
-            "CUSTOMER: These are two of us.",
-            "RECEPTIONIST: Yes, that should be fine. <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>",
-            "CUSTOMER: OK.",
-            "RECEPTIONIST: And you also need to pay a 20% deposit at the time of booking.",
-            "CUSTOMER: Can I pay that by credit card?",
-            "RECEPTIONIST: Yes, you can.",
-            "CUSTOMER: All right, what I’ll do is I’ll talk to my partner and get back to you.",
-            "RECEPTIONIST: Fine. So I’ll make a provisional booking, shall I? – two for the Whale Watch Experience. Let me issue you with a",
-            "CUSTOMER reference number for when you call back. Do you have a pen?",
-            "CUSTOMER: Yes.",
-            "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>",
-            "CUSTOMER: Fine, I will."
+            "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around , but let me check. Er…oh, it’s actually .</span>"
           ],
           "vi_transcript": [
-            "Khách: Còn những hoạt động khác thì sao? Ý tôi là, những gì được bao gồm trong giá tour?",
-            "Lễ tân: Ồ, có rất nhiều. Nếu bạn không muốn tham gia chuyến du ngoạn ngắm cá voi, hướng dẫn viên sẽ dẫn những người quan tâm đi bộ khám phá rừng trong công viên quốc gia gần khách sạn – và không mất thêm phí. Hoặc có thể tham gia một chuyến đi câu cá – cái đó thì tốn thêm khoảng 12 đô, tôi nghĩ vậy. Ngoài ra còn có một công viên bò sát trong thị trấn – phí vào cổng cũng xấp xỉ như vậy.",
-            "Khách: Không, tôi nghĩ tôi thích cá voi hơn rắn đấy.",
-            "Lễ tân: Ừ, tôi hiểu. Nếu bạn chỉ muốn thư giãn thì bạn có thể ngồi bên hồ bơi của khách sạn hoặc ra bãi biển. À, khách sạn cũng có sân tennis, nhưng bạn phải trả tiền theo giờ để sử dụng. <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>",
             "Khách: Nghe hay đấy. Vậy giá cơ bản của tour là bao nhiêu?",
-            "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>",
-            "Khách: Còn tour sắp tới, vẫn còn chỗ chứ?",
-            "Lễ tân: Nhóm của bạn có bao nhiêu người?",
-            "Khách: Có hai người bọn tôi.",
-            "Lễ tân: Vậy là được. <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>",
-            "Khách: OK.",
-            "Lễ tân: Và bạn cũng cần thanh toán 20% tiền cọc khi đặt chỗ.",
-            "Khách: Tôi có thể trả bằng thẻ tín dụng không?",
-            "Lễ tân: Vâng, bạn có thể.",
-            "Khách: Được rồi, tôi sẽ nói chuyện với bạn đồng hành rồi gọi lại sau.",
-            "Lễ tân: Tuyệt. Vậy tôi sẽ giữ chỗ tạm thời cho bạn – 2 người cho tour Whale Watch Experience nhé. Để tôi cấp cho bạn mã đặt chỗ để khi bạn gọi lại có thể cung cấp.",
-            "Khách: Vâng, tôi có bút đây.",
-            "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
-            "Khách: Rồi, tôi sẽ làm vậy."
+            "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>"
           ]
         },
         {
@@ -639,47 +405,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "B",
           "en_transcript": [
-            "CUSTOMER: And what about the other things? You know, that are included in the price.",
-            "RECEPTIONIST: Oh, there are lots of things. If you don’t want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there’s no extra charge for that, or on a fishing trip. That’s an extra $12, I think. And there’s also a reptile park in town – that costs more or less the same.",
-            "CUSTOMER: No, I think I’d prefer whales to snakes.",
-            "RECEPTIONIST: Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>",
-            "CUSTOMER: Well, that sounds good. So how much is the basic tour price?",
-            "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around $300, but let me check. Er…oh, it’s actually $280.</span>",
-            "CUSTOMER: And the next tour, are there any places on that one?",
-            "RECEPTIONIST: HOW many people Is It for?",
-            "CUSTOMER: These are two of us.",
-            "RECEPTIONIST: Yes, that should be fine. <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>",
-            "CUSTOMER: OK.",
-            "RECEPTIONIST: And you also need to pay a 20% deposit at the time of booking.",
-            "CUSTOMER: Can I pay that by credit card?",
-            "RECEPTIONIST: Yes, you can.",
-            "CUSTOMER: All right, what I’ll do is I’ll talk to my partner and get back to you.",
-            "RECEPTIONIST: Fine. So I’ll make a provisional booking, shall I? – two for the Whale Watch Experience. Let me issue you with a",
-            "CUSTOMER reference number for when you call back. Do you have a pen?",
-            "CUSTOMER: Yes.",
-            "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>",
-            "CUSTOMER: Fine, I will."
+            "RECEPTIONIST: <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>"
           ],
           "vi_transcript": [
-            "Khách: Còn những hoạt động khác thì sao? Ý tôi là, những gì được bao gồm trong giá tour?",
-            "Lễ tân: Ồ, có rất nhiều. Nếu bạn không muốn tham gia chuyến du ngoạn ngắm cá voi, hướng dẫn viên sẽ dẫn những người quan tâm đi bộ khám phá rừng trong công viên quốc gia gần khách sạn – và không mất thêm phí. Hoặc có thể tham gia một chuyến đi câu cá – cái đó thì tốn thêm khoảng 12 đô, tôi nghĩ vậy. Ngoài ra còn có một công viên bò sát trong thị trấn – phí vào cổng cũng xấp xỉ như vậy.",
-            "Khách: Không, tôi nghĩ tôi thích cá voi hơn rắn đấy.",
-            "Lễ tân: Ừ, tôi hiểu. Nếu bạn chỉ muốn thư giãn thì bạn có thể ngồi bên hồ bơi của khách sạn hoặc ra bãi biển. À, khách sạn cũng có sân tennis, nhưng bạn phải trả tiền theo giờ để sử dụng. <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>",
-            "Khách: Nghe hay đấy. Vậy giá cơ bản của tour là bao nhiêu?",
-            "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>",
-            "Khách: Còn tour sắp tới, vẫn còn chỗ chứ?",
-            "Lễ tân: Nhóm của bạn có bao nhiêu người?",
-            "Khách: Có hai người bọn tôi.",
-            "Lễ tân: Vậy là được. <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>",
-            "Khách: OK.",
-            "Lễ tân: Và bạn cũng cần thanh toán 20% tiền cọc khi đặt chỗ.",
-            "Khách: Tôi có thể trả bằng thẻ tín dụng không?",
-            "Lễ tân: Vâng, bạn có thể.",
-            "Khách: Được rồi, tôi sẽ nói chuyện với bạn đồng hành rồi gọi lại sau.",
-            "Lễ tân: Tuyệt. Vậy tôi sẽ giữ chỗ tạm thời cho bạn – 2 người cho tour Whale Watch Experience nhé. Để tôi cấp cho bạn mã đặt chỗ để khi bạn gọi lại có thể cung cấp.",
-            "Khách: Vâng, tôi có bút đây.",
-            "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
-            "Khách: Rồi, tôi sẽ làm vậy."
+            "Lễ tân: <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>"
           ]
         },
         {
@@ -712,47 +441,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "A",
           "en_transcript": [
-            "CUSTOMER: And what about the other things? You know, that are included in the price.",
-            "RECEPTIONIST: Oh, there are lots of things. If you don’t want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there’s no extra charge for that, or on a fishing trip. That’s an extra $12, I think. And there’s also a reptile park in town – that costs more or less the same.",
-            "CUSTOMER: No, I think I’d prefer whales to snakes.",
-            "RECEPTIONIST: Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>",
-            "CUSTOMER: Well, that sounds good. So how much is the basic tour price?",
-            "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around $300, but let me check. Er…oh, it’s actually $280.</span>",
-            "CUSTOMER: And the next tour, are there any places on that one?",
-            "RECEPTIONIST: HOW many people Is It for?",
-            "CUSTOMER: These are two of us.",
-            "RECEPTIONIST: Yes, that should be fine. <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>",
-            "CUSTOMER: OK.",
-            "RECEPTIONIST: And you also need to pay a 20% deposit at the time of booking.",
-            "CUSTOMER: Can I pay that by credit card?",
-            "RECEPTIONIST: Yes, you can.",
-            "CUSTOMER: All right, what I’ll do is I’ll talk to my partner and get back to you.",
-            "RECEPTIONIST: Fine. So I’ll make a provisional booking, shall I? – two for the Whale Watch Experience. Let me issue you with a",
-            "CUSTOMER reference number for when you call back. Do you have a pen?",
             "CUSTOMER: Yes.",
-            "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>",
-            "CUSTOMER: Fine, I will."
+            "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>"
           ],
           "vi_transcript": [
-            "Khách: Còn những hoạt động khác thì sao? Ý tôi là, những gì được bao gồm trong giá tour?",
-            "Lễ tân: Ồ, có rất nhiều. Nếu bạn không muốn tham gia chuyến du ngoạn ngắm cá voi, hướng dẫn viên sẽ dẫn những người quan tâm đi bộ khám phá rừng trong công viên quốc gia gần khách sạn – và không mất thêm phí. Hoặc có thể tham gia một chuyến đi câu cá – cái đó thì tốn thêm khoảng 12 đô, tôi nghĩ vậy. Ngoài ra còn có một công viên bò sát trong thị trấn – phí vào cổng cũng xấp xỉ như vậy.",
-            "Khách: Không, tôi nghĩ tôi thích cá voi hơn rắn đấy.",
-            "Lễ tân: Ừ, tôi hiểu. Nếu bạn chỉ muốn thư giãn thì bạn có thể ngồi bên hồ bơi của khách sạn hoặc ra bãi biển. À, khách sạn cũng có sân tennis, nhưng bạn phải trả tiền theo giờ để sử dụng. <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>",
-            "Khách: Nghe hay đấy. Vậy giá cơ bản của tour là bao nhiêu?",
-            "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>",
-            "Khách: Còn tour sắp tới, vẫn còn chỗ chứ?",
-            "Lễ tân: Nhóm của bạn có bao nhiêu người?",
-            "Khách: Có hai người bọn tôi.",
-            "Lễ tân: Vậy là được. <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>",
-            "Khách: OK.",
-            "Lễ tân: Và bạn cũng cần thanh toán 20% tiền cọc khi đặt chỗ.",
-            "Khách: Tôi có thể trả bằng thẻ tín dụng không?",
-            "Lễ tân: Vâng, bạn có thể.",
-            "Khách: Được rồi, tôi sẽ nói chuyện với bạn đồng hành rồi gọi lại sau.",
-            "Lễ tân: Tuyệt. Vậy tôi sẽ giữ chỗ tạm thời cho bạn – 2 người cho tour Whale Watch Experience nhé. Để tôi cấp cho bạn mã đặt chỗ để khi bạn gọi lại có thể cung cấp.",
             "Khách: Vâng, tôi có bút đây.",
-            "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
-            "Khách: Rồi, tôi sẽ làm vậy."
+            "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>"
           ]
         }
       ],
@@ -837,113 +531,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "M = male student      F = female lecturer",
-            "M:   Hello, can I come in?",
-            "F:    Oh yes, come in. How can I help you?",
-            "M:   <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>",
-            "F:    Yes, this is the School of Economics.",
-            "M:   Oh, good. Um, I’m a new student, and I was wondering if someone could give me some information.",
-            "F:    Well, I might be able to help. I lecture on that program. What do you need to Know?",
-            "M:   Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
-            "F:    <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>",
-            "M:   What time?",
-            "F:    Let me see ... You know this information is all in the handout, which you should have received yesterday at the orientation meeting.",
-            "M:   Oh, was there a meeting yesterday? I didn’t know about that ... no one mentioned ...",
-            "F:    Yes, there was, but never mind. Now lectures are at four m the afternoon.",
-            "M:   Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
-            "F:    <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>",
-            "M:   90%! That’s high. Do they enforce that rule?",
-            "F:    Yes, we do. We’re pretty strict about it, actually.",
-            "M:   And what times have been set down for the tutorials — do you have that Information?",
-            "F:    That’s a very well-attended course so there’s a number of tutorial times. Monday. Wednesday and Friday, all at 9 o’clock. Yours will be allocated at the first lecture.",
-            "M:   Can’t I choose the time?",
-            "F:    Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>",
-            "M:   Oh. OK.",
-            "F:    Anything else I can help you with while you’re here?",
-            "M:   Well, yes, actually. Do you know what the course requirements are? I mean, how much work is expected for this course?",
-            "F:    Well, you have to complete a tutorial paper.",
-            "M:   What does that involve?",
-            "F:    Well, it’s a piece of work on a given topic based on some set reading texts. You’ll have to give a small talk to your tutorial group ...",
-            "M:   How long does that have to be?",
-            "F:    Oh, about 25 minutes usually.",
-            "M:   I have to talk for 25 minutes.",
-            "F:    Yes, that’s right. And then, you have to write up your piece of work and give it to the lecturer to be marked.",
-            "M:   Right. And is that all?",
-            "F:    No. You also have to complete a 3000-word essay on a topic.",
-            "M:   Can I choose the topic?",
-            "F:    Yes, usually you can.",
-            "M:   Right. That shouldn’t be too bad.",
-            "F:    And in addition to that, there is an exam.",
-            "M:   An exam! What sort of exam?",
-            "F:    Well, it’s an open-book exam.",
-            "M:   Does that mean I can have the textbook with me during the exam?",
-            "F:    Yes., that’s right.",
-            "M:   And can you give me any idea about the content of the first year of Economics so that I can get into some reading?",
-            "F:   Well, you’ll be getting the reading list next week when lectures start. All the books are in the library.",
-            "M:   Yes, but won’t everyone else take them out as soon as they get the reading list too?",
-            "F:    Well, yes. they might. But most of the important ones are held in Closed Reserve ... that’s a part of the library where you can go to read books but you can’t take them out of the building.",
-            "M:   What did you call that section of the library?",
-            "F:    Closed Reserve. However, we do recommend that you buy the core books. You’ll find them useful, and you’ll need them for the exam.",
-            "M:   Yes. I suppose I will. But what is the focus of the course?",
-            "F:    Well, the course at this university has a vocational focus. That is a focus on preparing its graduates for work, so we’re orientated very much towards employment.",
-            "M:   So my chances of getting a job are good?",
-            "F:    Well. provided you get good results.",
-            "M:   Well, look, thanks for your time. You’ve been really helpful.",
-            "F:    That’s fine. See you next week then."
+            "F: Oh yes, come in. How can I help you?",
+            "M: <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>"
           ],
           "vi_transcript": [
-            "Nam sinh: Xin chào, em vào được chứ ạ?",
             "Cô: Ồ, vâng, vào đi. Em cần gì vậy?",
-            "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>",
-            "Cô: Vâng, đây là Khoa Kinh tế.",
-            "Nam sinh: Tuyệt quá. Em là sinh viên mới và muốn tìm hiểu một vài thông tin.",
-            "Cô: Cô có thể giúp. Cô cũng giảng dạy chương trình này. Em muốn biết điều gì?",
-            "Nam sinh: Thực ra là khá nhiều thứ ạ. Đầu tiên là mỗi tuần có bao nhiêu buổi giảng?",
-            "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>",
-            "Nam sinh: Vào mấy giờ ạ?",
-            "Cô: Để cô xem… Thông tin đó có trong tờ hướng dẫn mà em đáng lẽ đã nhận được hôm qua trong buổi định hướng.",
-            "Nam sinh: Ồ, có buổi định hướng hôm qua ạ? Em không biết… chẳng ai nhắc gì cả...",
-            "Cô: Có đấy, nhưng không sao. Giờ giảng là 4 giờ chiều.",
-            "Nam sinh: 4 giờ thì hơi trễ. Em có việc làm bán thời gian bắt đầu lúc 4:30.",
-            "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>",
-            "Nam sinh: 90%! Cao quá. Trường có thực sự bắt buộc không ạ?",
-            "Cô: Có chứ. Chúng tôi khá nghiêm túc về việc đó.",
-            "Nam sinh: Còn buổi tutorial thì sao, đã xếp lịch chưa ạ?",
-            "Cô: Đây là khóa học có nhiều người đăng ký, nên có nhiều khung giờ tutorial. Vào thứ Hai, thứ Tư và thứ Sáu – đều lúc 9 giờ sáng. Em sẽ được xếp buổi học trong buổi giảng đầu tiên.",
-            "Nam sinh: Em không được chọn giờ học sao?",
-            "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>",
-            "Nam sinh: À, vâng.",
-            "Cô: Em còn cần gì nữa không?",
-            "Nam sinh: Có ạ. Em muốn hỏi yêu cầu của khóa học – tức là em phải làm bao nhiêu việc cho môn học này?",
-            "Cô: Em phải hoàn thành một bài tutorial.",
-            "Nam sinh: Bài đó là gì ạ?",
-            "Cô: Là một bài viết về chủ đề được giao, dựa trên các tài liệu đọc được chỉ định. Em cũng phải trình bày ngắn cho nhóm học của mình...",
-            "Nam sinh: Trình bày bao lâu ạ?",
-            "Cô: Khoảng 25 phút.",
-            "Nam sinh: Em phải nói suốt 25 phút á?",
-            "Cô: Đúng vậy. Sau đó em viết lại nội dung bài và nộp cho giảng viên để chấm điểm.",
-            "Nam sinh: Còn gì nữa không ạ?",
-            "Cô: Có chứ. Em còn phải viết một bài luận 3000 từ về một chủ đề.",
-            "Nam sinh: Em được chọn chủ đề chứ?",
-            "Cô: Thường thì được chọn.",
-            "Nam sinh: Vậy cũng không tệ lắm.",
-            "Cô: Ngoài ra còn có một kỳ thi nữa.",
-            "Nam sinh: Thi gì vậy ạ?",
-            "Cô: Thi mở sách.",
-            "Nam sinh: Tức là em được mang sách vào phòng thi ạ?",
-            "Cô: Đúng rồi.",
-            "Nam sinh: Cô có thể gợi ý em nên đọc trước những gì cho năm nhất không?",
-            "Cô: Tuần sau khi bắt đầu học, em sẽ nhận danh sách đọc. Tất cả sách đều có trong thư viện.",
-            "Nam sinh: Nhưng rồi ai cũng sẽ mượn ngay khi nhận danh sách mà.",
-            "Cô: Đúng, nhưng đa số sách quan trọng được đặt ở khu “Closed Reserve” – tức là em chỉ được đọc tại chỗ, không được mượn mang ra ngoài.",
-            "Nam sinh: “Closed Reserve” là gì ạ?",
-            "Cô: Một khu đặc biệt trong thư viện. Tuy nhiên, chúng tôi khuyến khích mua sách cốt lõi, vì em sẽ cần dùng khi thi.",
-            "Nam sinh: Vâng, chắc em sẽ mua. Vậy nội dung khóa học tập trung vào điều gì ạ?",
-            "Cô: Khóa học của trường này hướng đến thực tiễn, nghĩa là chuẩn bị cho sinh viên đi làm sau này, nên mọi thứ rất thực tế.",
-            "Nam sinh: Vậy cơ hội xin việc của em có cao không ạ?",
-            "Cô: Miễn là em đạt kết quả tốt.",
-            "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
-            "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
+            "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>"
           ]
         },
         {
@@ -976,113 +569,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "B",
           "en_transcript": [
-            "M = male student      F = female lecturer",
-            "M:   Hello, can I come in?",
-            "F:    Oh yes, come in. How can I help you?",
-            "M:   <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>",
-            "F:    Yes, this is the School of Economics.",
-            "M:   Oh, good. Um, I’m a new student, and I was wondering if someone could give me some information.",
-            "F:    Well, I might be able to help. I lecture on that program. What do you need to Know?",
-            "M:   Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
-            "F:    <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>",
-            "M:   What time?",
-            "F:    Let me see ... You know this information is all in the handout, which you should have received yesterday at the orientation meeting.",
-            "M:   Oh, was there a meeting yesterday? I didn’t know about that ... no one mentioned ...",
-            "F:    Yes, there was, but never mind. Now lectures are at four m the afternoon.",
-            "M:   Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
-            "F:    <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>",
-            "M:   90%! That’s high. Do they enforce that rule?",
-            "F:    Yes, we do. We’re pretty strict about it, actually.",
-            "M:   And what times have been set down for the tutorials — do you have that Information?",
-            "F:    That’s a very well-attended course so there’s a number of tutorial times. Monday. Wednesday and Friday, all at 9 o’clock. Yours will be allocated at the first lecture.",
-            "M:   Can’t I choose the time?",
-            "F:    Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>",
-            "M:   Oh. OK.",
-            "F:    Anything else I can help you with while you’re here?",
-            "M:   Well, yes, actually. Do you know what the course requirements are? I mean, how much work is expected for this course?",
-            "F:    Well, you have to complete a tutorial paper.",
-            "M:   What does that involve?",
-            "F:    Well, it’s a piece of work on a given topic based on some set reading texts. You’ll have to give a small talk to your tutorial group ...",
-            "M:   How long does that have to be?",
-            "F:    Oh, about 25 minutes usually.",
-            "M:   I have to talk for 25 minutes.",
-            "F:    Yes, that’s right. And then, you have to write up your piece of work and give it to the lecturer to be marked.",
-            "M:   Right. And is that all?",
-            "F:    No. You also have to complete a 3000-word essay on a topic.",
-            "M:   Can I choose the topic?",
-            "F:    Yes, usually you can.",
-            "M:   Right. That shouldn’t be too bad.",
-            "F:    And in addition to that, there is an exam.",
-            "M:   An exam! What sort of exam?",
-            "F:    Well, it’s an open-book exam.",
-            "M:   Does that mean I can have the textbook with me during the exam?",
-            "F:    Yes., that’s right.",
-            "M:   And can you give me any idea about the content of the first year of Economics so that I can get into some reading?",
-            "F:   Well, you’ll be getting the reading list next week when lectures start. All the books are in the library.",
-            "M:   Yes, but won’t everyone else take them out as soon as they get the reading list too?",
-            "F:    Well, yes. they might. But most of the important ones are held in Closed Reserve ... that’s a part of the library where you can go to read books but you can’t take them out of the building.",
-            "M:   What did you call that section of the library?",
-            "F:    Closed Reserve. However, we do recommend that you buy the core books. You’ll find them useful, and you’ll need them for the exam.",
-            "M:   Yes. I suppose I will. But what is the focus of the course?",
-            "F:    Well, the course at this university has a vocational focus. That is a focus on preparing its graduates for work, so we’re orientated very much towards employment.",
-            "M:   So my chances of getting a job are good?",
-            "F:    Well. provided you get good results.",
-            "M:   Well, look, thanks for your time. You’ve been really helpful.",
-            "F:    That’s fine. See you next week then."
+            "M: Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
+            "F: <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>"
           ],
           "vi_transcript": [
-            "Nam sinh: Xin chào, em vào được chứ ạ?",
-            "Cô: Ồ, vâng, vào đi. Em cần gì vậy?",
-            "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>",
-            "Cô: Vâng, đây là Khoa Kinh tế.",
-            "Nam sinh: Tuyệt quá. Em là sinh viên mới và muốn tìm hiểu một vài thông tin.",
-            "Cô: Cô có thể giúp. Cô cũng giảng dạy chương trình này. Em muốn biết điều gì?",
             "Nam sinh: Thực ra là khá nhiều thứ ạ. Đầu tiên là mỗi tuần có bao nhiêu buổi giảng?",
-            "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>",
-            "Nam sinh: Vào mấy giờ ạ?",
-            "Cô: Để cô xem… Thông tin đó có trong tờ hướng dẫn mà em đáng lẽ đã nhận được hôm qua trong buổi định hướng.",
-            "Nam sinh: Ồ, có buổi định hướng hôm qua ạ? Em không biết… chẳng ai nhắc gì cả...",
-            "Cô: Có đấy, nhưng không sao. Giờ giảng là 4 giờ chiều.",
-            "Nam sinh: 4 giờ thì hơi trễ. Em có việc làm bán thời gian bắt đầu lúc 4:30.",
-            "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>",
-            "Nam sinh: 90%! Cao quá. Trường có thực sự bắt buộc không ạ?",
-            "Cô: Có chứ. Chúng tôi khá nghiêm túc về việc đó.",
-            "Nam sinh: Còn buổi tutorial thì sao, đã xếp lịch chưa ạ?",
-            "Cô: Đây là khóa học có nhiều người đăng ký, nên có nhiều khung giờ tutorial. Vào thứ Hai, thứ Tư và thứ Sáu – đều lúc 9 giờ sáng. Em sẽ được xếp buổi học trong buổi giảng đầu tiên.",
-            "Nam sinh: Em không được chọn giờ học sao?",
-            "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>",
-            "Nam sinh: À, vâng.",
-            "Cô: Em còn cần gì nữa không?",
-            "Nam sinh: Có ạ. Em muốn hỏi yêu cầu của khóa học – tức là em phải làm bao nhiêu việc cho môn học này?",
-            "Cô: Em phải hoàn thành một bài tutorial.",
-            "Nam sinh: Bài đó là gì ạ?",
-            "Cô: Là một bài viết về chủ đề được giao, dựa trên các tài liệu đọc được chỉ định. Em cũng phải trình bày ngắn cho nhóm học của mình...",
-            "Nam sinh: Trình bày bao lâu ạ?",
-            "Cô: Khoảng 25 phút.",
-            "Nam sinh: Em phải nói suốt 25 phút á?",
-            "Cô: Đúng vậy. Sau đó em viết lại nội dung bài và nộp cho giảng viên để chấm điểm.",
-            "Nam sinh: Còn gì nữa không ạ?",
-            "Cô: Có chứ. Em còn phải viết một bài luận 3000 từ về một chủ đề.",
-            "Nam sinh: Em được chọn chủ đề chứ?",
-            "Cô: Thường thì được chọn.",
-            "Nam sinh: Vậy cũng không tệ lắm.",
-            "Cô: Ngoài ra còn có một kỳ thi nữa.",
-            "Nam sinh: Thi gì vậy ạ?",
-            "Cô: Thi mở sách.",
-            "Nam sinh: Tức là em được mang sách vào phòng thi ạ?",
-            "Cô: Đúng rồi.",
-            "Nam sinh: Cô có thể gợi ý em nên đọc trước những gì cho năm nhất không?",
-            "Cô: Tuần sau khi bắt đầu học, em sẽ nhận danh sách đọc. Tất cả sách đều có trong thư viện.",
-            "Nam sinh: Nhưng rồi ai cũng sẽ mượn ngay khi nhận danh sách mà.",
-            "Cô: Đúng, nhưng đa số sách quan trọng được đặt ở khu “Closed Reserve” – tức là em chỉ được đọc tại chỗ, không được mượn mang ra ngoài.",
-            "Nam sinh: “Closed Reserve” là gì ạ?",
-            "Cô: Một khu đặc biệt trong thư viện. Tuy nhiên, chúng tôi khuyến khích mua sách cốt lõi, vì em sẽ cần dùng khi thi.",
-            "Nam sinh: Vâng, chắc em sẽ mua. Vậy nội dung khóa học tập trung vào điều gì ạ?",
-            "Cô: Khóa học của trường này hướng đến thực tiễn, nghĩa là chuẩn bị cho sinh viên đi làm sau này, nên mọi thứ rất thực tế.",
-            "Nam sinh: Vậy cơ hội xin việc của em có cao không ạ?",
-            "Cô: Miễn là em đạt kết quả tốt.",
-            "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
-            "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
+            "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>"
           ]
         },
         {
@@ -1115,113 +607,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "D",
           "en_transcript": [
-            "M = male student      F = female lecturer",
-            "M:   Hello, can I come in?",
-            "F:    Oh yes, come in. How can I help you?",
-            "M:   <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>",
-            "F:    Yes, this is the School of Economics.",
-            "M:   Oh, good. Um, I’m a new student, and I was wondering if someone could give me some information.",
-            "F:    Well, I might be able to help. I lecture on that program. What do you need to Know?",
-            "M:   Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
-            "F:    <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>",
-            "M:   What time?",
-            "F:    Let me see ... You know this information is all in the handout, which you should have received yesterday at the orientation meeting.",
-            "M:   Oh, was there a meeting yesterday? I didn’t know about that ... no one mentioned ...",
-            "F:    Yes, there was, but never mind. Now lectures are at four m the afternoon.",
-            "M:   Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
-            "F:    <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>",
-            "M:   90%! That’s high. Do they enforce that rule?",
-            "F:    Yes, we do. We’re pretty strict about it, actually.",
-            "M:   And what times have been set down for the tutorials — do you have that Information?",
-            "F:    That’s a very well-attended course so there’s a number of tutorial times. Monday. Wednesday and Friday, all at 9 o’clock. Yours will be allocated at the first lecture.",
-            "M:   Can’t I choose the time?",
-            "F:    Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>",
-            "M:   Oh. OK.",
-            "F:    Anything else I can help you with while you’re here?",
-            "M:   Well, yes, actually. Do you know what the course requirements are? I mean, how much work is expected for this course?",
-            "F:    Well, you have to complete a tutorial paper.",
-            "M:   What does that involve?",
-            "F:    Well, it’s a piece of work on a given topic based on some set reading texts. You’ll have to give a small talk to your tutorial group ...",
-            "M:   How long does that have to be?",
-            "F:    Oh, about 25 minutes usually.",
-            "M:   I have to talk for 25 minutes.",
-            "F:    Yes, that’s right. And then, you have to write up your piece of work and give it to the lecturer to be marked.",
-            "M:   Right. And is that all?",
-            "F:    No. You also have to complete a 3000-word essay on a topic.",
-            "M:   Can I choose the topic?",
-            "F:    Yes, usually you can.",
-            "M:   Right. That shouldn’t be too bad.",
-            "F:    And in addition to that, there is an exam.",
-            "M:   An exam! What sort of exam?",
-            "F:    Well, it’s an open-book exam.",
-            "M:   Does that mean I can have the textbook with me during the exam?",
-            "F:    Yes., that’s right.",
-            "M:   And can you give me any idea about the content of the first year of Economics so that I can get into some reading?",
-            "F:   Well, you’ll be getting the reading list next week when lectures start. All the books are in the library.",
-            "M:   Yes, but won’t everyone else take them out as soon as they get the reading list too?",
-            "F:    Well, yes. they might. But most of the important ones are held in Closed Reserve ... that’s a part of the library where you can go to read books but you can’t take them out of the building.",
-            "M:   What did you call that section of the library?",
-            "F:    Closed Reserve. However, we do recommend that you buy the core books. You’ll find them useful, and you’ll need them for the exam.",
-            "M:   Yes. I suppose I will. But what is the focus of the course?",
-            "F:    Well, the course at this university has a vocational focus. That is a focus on preparing its graduates for work, so we’re orientated very much towards employment.",
-            "M:   So my chances of getting a job are good?",
-            "F:    Well. provided you get good results.",
-            "M:   Well, look, thanks for your time. You’ve been really helpful.",
-            "F:    That’s fine. See you next week then."
+            "M: Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
+            "F: <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>"
           ],
           "vi_transcript": [
-            "Nam sinh: Xin chào, em vào được chứ ạ?",
-            "Cô: Ồ, vâng, vào đi. Em cần gì vậy?",
-            "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>",
-            "Cô: Vâng, đây là Khoa Kinh tế.",
-            "Nam sinh: Tuyệt quá. Em là sinh viên mới và muốn tìm hiểu một vài thông tin.",
-            "Cô: Cô có thể giúp. Cô cũng giảng dạy chương trình này. Em muốn biết điều gì?",
-            "Nam sinh: Thực ra là khá nhiều thứ ạ. Đầu tiên là mỗi tuần có bao nhiêu buổi giảng?",
-            "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>",
-            "Nam sinh: Vào mấy giờ ạ?",
-            "Cô: Để cô xem… Thông tin đó có trong tờ hướng dẫn mà em đáng lẽ đã nhận được hôm qua trong buổi định hướng.",
-            "Nam sinh: Ồ, có buổi định hướng hôm qua ạ? Em không biết… chẳng ai nhắc gì cả...",
-            "Cô: Có đấy, nhưng không sao. Giờ giảng là 4 giờ chiều.",
             "Nam sinh: 4 giờ thì hơi trễ. Em có việc làm bán thời gian bắt đầu lúc 4:30.",
-            "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>",
-            "Nam sinh: 90%! Cao quá. Trường có thực sự bắt buộc không ạ?",
-            "Cô: Có chứ. Chúng tôi khá nghiêm túc về việc đó.",
-            "Nam sinh: Còn buổi tutorial thì sao, đã xếp lịch chưa ạ?",
-            "Cô: Đây là khóa học có nhiều người đăng ký, nên có nhiều khung giờ tutorial. Vào thứ Hai, thứ Tư và thứ Sáu – đều lúc 9 giờ sáng. Em sẽ được xếp buổi học trong buổi giảng đầu tiên.",
-            "Nam sinh: Em không được chọn giờ học sao?",
-            "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>",
-            "Nam sinh: À, vâng.",
-            "Cô: Em còn cần gì nữa không?",
-            "Nam sinh: Có ạ. Em muốn hỏi yêu cầu của khóa học – tức là em phải làm bao nhiêu việc cho môn học này?",
-            "Cô: Em phải hoàn thành một bài tutorial.",
-            "Nam sinh: Bài đó là gì ạ?",
-            "Cô: Là một bài viết về chủ đề được giao, dựa trên các tài liệu đọc được chỉ định. Em cũng phải trình bày ngắn cho nhóm học của mình...",
-            "Nam sinh: Trình bày bao lâu ạ?",
-            "Cô: Khoảng 25 phút.",
-            "Nam sinh: Em phải nói suốt 25 phút á?",
-            "Cô: Đúng vậy. Sau đó em viết lại nội dung bài và nộp cho giảng viên để chấm điểm.",
-            "Nam sinh: Còn gì nữa không ạ?",
-            "Cô: Có chứ. Em còn phải viết một bài luận 3000 từ về một chủ đề.",
-            "Nam sinh: Em được chọn chủ đề chứ?",
-            "Cô: Thường thì được chọn.",
-            "Nam sinh: Vậy cũng không tệ lắm.",
-            "Cô: Ngoài ra còn có một kỳ thi nữa.",
-            "Nam sinh: Thi gì vậy ạ?",
-            "Cô: Thi mở sách.",
-            "Nam sinh: Tức là em được mang sách vào phòng thi ạ?",
-            "Cô: Đúng rồi.",
-            "Nam sinh: Cô có thể gợi ý em nên đọc trước những gì cho năm nhất không?",
-            "Cô: Tuần sau khi bắt đầu học, em sẽ nhận danh sách đọc. Tất cả sách đều có trong thư viện.",
-            "Nam sinh: Nhưng rồi ai cũng sẽ mượn ngay khi nhận danh sách mà.",
-            "Cô: Đúng, nhưng đa số sách quan trọng được đặt ở khu “Closed Reserve” – tức là em chỉ được đọc tại chỗ, không được mượn mang ra ngoài.",
-            "Nam sinh: “Closed Reserve” là gì ạ?",
-            "Cô: Một khu đặc biệt trong thư viện. Tuy nhiên, chúng tôi khuyến khích mua sách cốt lõi, vì em sẽ cần dùng khi thi.",
-            "Nam sinh: Vâng, chắc em sẽ mua. Vậy nội dung khóa học tập trung vào điều gì ạ?",
-            "Cô: Khóa học của trường này hướng đến thực tiễn, nghĩa là chuẩn bị cho sinh viên đi làm sau này, nên mọi thứ rất thực tế.",
-            "Nam sinh: Vậy cơ hội xin việc của em có cao không ạ?",
-            "Cô: Miễn là em đạt kết quả tốt.",
-            "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
-            "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
+            "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>"
           ]
         },
         {
@@ -1254,113 +645,12 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "A",
           "en_transcript": [
-            "M = male student      F = female lecturer",
-            "M:   Hello, can I come in?",
-            "F:    Oh yes, come in. How can I help you?",
-            "M:   <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>",
-            "F:    Yes, this is the School of Economics.",
-            "M:   Oh, good. Um, I’m a new student, and I was wondering if someone could give me some information.",
-            "F:    Well, I might be able to help. I lecture on that program. What do you need to Know?",
-            "M:   Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
-            "F:    <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>",
-            "M:   What time?",
-            "F:    Let me see ... You know this information is all in the handout, which you should have received yesterday at the orientation meeting.",
-            "M:   Oh, was there a meeting yesterday? I didn’t know about that ... no one mentioned ...",
-            "F:    Yes, there was, but never mind. Now lectures are at four m the afternoon.",
-            "M:   Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
-            "F:    <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>",
-            "M:   90%! That’s high. Do they enforce that rule?",
-            "F:    Yes, we do. We’re pretty strict about it, actually.",
-            "M:   And what times have been set down for the tutorials — do you have that Information?",
-            "F:    That’s a very well-attended course so there’s a number of tutorial times. Monday. Wednesday and Friday, all at 9 o’clock. Yours will be allocated at the first lecture.",
-            "M:   Can’t I choose the time?",
-            "F:    Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>",
-            "M:   Oh. OK.",
-            "F:    Anything else I can help you with while you’re here?",
-            "M:   Well, yes, actually. Do you know what the course requirements are? I mean, how much work is expected for this course?",
-            "F:    Well, you have to complete a tutorial paper.",
-            "M:   What does that involve?",
-            "F:    Well, it’s a piece of work on a given topic based on some set reading texts. You’ll have to give a small talk to your tutorial group ...",
-            "M:   How long does that have to be?",
-            "F:    Oh, about 25 minutes usually.",
-            "M:   I have to talk for 25 minutes.",
-            "F:    Yes, that’s right. And then, you have to write up your piece of work and give it to the lecturer to be marked.",
-            "M:   Right. And is that all?",
-            "F:    No. You also have to complete a 3000-word essay on a topic.",
-            "M:   Can I choose the topic?",
-            "F:    Yes, usually you can.",
-            "M:   Right. That shouldn’t be too bad.",
-            "F:    And in addition to that, there is an exam.",
-            "M:   An exam! What sort of exam?",
-            "F:    Well, it’s an open-book exam.",
-            "M:   Does that mean I can have the textbook with me during the exam?",
-            "F:    Yes., that’s right.",
-            "M:   And can you give me any idea about the content of the first year of Economics so that I can get into some reading?",
-            "F:   Well, you’ll be getting the reading list next week when lectures start. All the books are in the library.",
-            "M:   Yes, but won’t everyone else take them out as soon as they get the reading list too?",
-            "F:    Well, yes. they might. But most of the important ones are held in Closed Reserve ... that’s a part of the library where you can go to read books but you can’t take them out of the building.",
-            "M:   What did you call that section of the library?",
-            "F:    Closed Reserve. However, we do recommend that you buy the core books. You’ll find them useful, and you’ll need them for the exam.",
-            "M:   Yes. I suppose I will. But what is the focus of the course?",
-            "F:    Well, the course at this university has a vocational focus. That is a focus on preparing its graduates for work, so we’re orientated very much towards employment.",
-            "M:   So my chances of getting a job are good?",
-            "F:    Well. provided you get good results.",
-            "M:   Well, look, thanks for your time. You’ve been really helpful.",
-            "F:    That’s fine. See you next week then."
+            "M: Can’t I choose the time?",
+            "F: Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>"
           ],
           "vi_transcript": [
-            "Nam sinh: Xin chào, em vào được chứ ạ?",
-            "Cô: Ồ, vâng, vào đi. Em cần gì vậy?",
-            "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>",
-            "Cô: Vâng, đây là Khoa Kinh tế.",
-            "Nam sinh: Tuyệt quá. Em là sinh viên mới và muốn tìm hiểu một vài thông tin.",
-            "Cô: Cô có thể giúp. Cô cũng giảng dạy chương trình này. Em muốn biết điều gì?",
-            "Nam sinh: Thực ra là khá nhiều thứ ạ. Đầu tiên là mỗi tuần có bao nhiêu buổi giảng?",
-            "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>",
-            "Nam sinh: Vào mấy giờ ạ?",
-            "Cô: Để cô xem… Thông tin đó có trong tờ hướng dẫn mà em đáng lẽ đã nhận được hôm qua trong buổi định hướng.",
-            "Nam sinh: Ồ, có buổi định hướng hôm qua ạ? Em không biết… chẳng ai nhắc gì cả...",
-            "Cô: Có đấy, nhưng không sao. Giờ giảng là 4 giờ chiều.",
-            "Nam sinh: 4 giờ thì hơi trễ. Em có việc làm bán thời gian bắt đầu lúc 4:30.",
-            "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>",
-            "Nam sinh: 90%! Cao quá. Trường có thực sự bắt buộc không ạ?",
-            "Cô: Có chứ. Chúng tôi khá nghiêm túc về việc đó.",
-            "Nam sinh: Còn buổi tutorial thì sao, đã xếp lịch chưa ạ?",
-            "Cô: Đây là khóa học có nhiều người đăng ký, nên có nhiều khung giờ tutorial. Vào thứ Hai, thứ Tư và thứ Sáu – đều lúc 9 giờ sáng. Em sẽ được xếp buổi học trong buổi giảng đầu tiên.",
             "Nam sinh: Em không được chọn giờ học sao?",
-            "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>",
-            "Nam sinh: À, vâng.",
-            "Cô: Em còn cần gì nữa không?",
-            "Nam sinh: Có ạ. Em muốn hỏi yêu cầu của khóa học – tức là em phải làm bao nhiêu việc cho môn học này?",
-            "Cô: Em phải hoàn thành một bài tutorial.",
-            "Nam sinh: Bài đó là gì ạ?",
-            "Cô: Là một bài viết về chủ đề được giao, dựa trên các tài liệu đọc được chỉ định. Em cũng phải trình bày ngắn cho nhóm học của mình...",
-            "Nam sinh: Trình bày bao lâu ạ?",
-            "Cô: Khoảng 25 phút.",
-            "Nam sinh: Em phải nói suốt 25 phút á?",
-            "Cô: Đúng vậy. Sau đó em viết lại nội dung bài và nộp cho giảng viên để chấm điểm.",
-            "Nam sinh: Còn gì nữa không ạ?",
-            "Cô: Có chứ. Em còn phải viết một bài luận 3000 từ về một chủ đề.",
-            "Nam sinh: Em được chọn chủ đề chứ?",
-            "Cô: Thường thì được chọn.",
-            "Nam sinh: Vậy cũng không tệ lắm.",
-            "Cô: Ngoài ra còn có một kỳ thi nữa.",
-            "Nam sinh: Thi gì vậy ạ?",
-            "Cô: Thi mở sách.",
-            "Nam sinh: Tức là em được mang sách vào phòng thi ạ?",
-            "Cô: Đúng rồi.",
-            "Nam sinh: Cô có thể gợi ý em nên đọc trước những gì cho năm nhất không?",
-            "Cô: Tuần sau khi bắt đầu học, em sẽ nhận danh sách đọc. Tất cả sách đều có trong thư viện.",
-            "Nam sinh: Nhưng rồi ai cũng sẽ mượn ngay khi nhận danh sách mà.",
-            "Cô: Đúng, nhưng đa số sách quan trọng được đặt ở khu “Closed Reserve” – tức là em chỉ được đọc tại chỗ, không được mượn mang ra ngoài.",
-            "Nam sinh: “Closed Reserve” là gì ạ?",
-            "Cô: Một khu đặc biệt trong thư viện. Tuy nhiên, chúng tôi khuyến khích mua sách cốt lõi, vì em sẽ cần dùng khi thi.",
-            "Nam sinh: Vâng, chắc em sẽ mua. Vậy nội dung khóa học tập trung vào điều gì ạ?",
-            "Cô: Khóa học của trường này hướng đến thực tiễn, nghĩa là chuẩn bị cho sinh viên đi làm sau này, nên mọi thứ rất thực tế.",
-            "Nam sinh: Vậy cơ hội xin việc của em có cao không ạ?",
-            "Cô: Miễn là em đạt kết quả tốt.",
-            "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
-            "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
+            "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>"
           ]
         }
       ],
@@ -1511,10 +801,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+            "<span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys.</span>"
           ],
           "vi_transcript": [
-            "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+            "<span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai.</span>"
           ]
         },
         {
@@ -1547,10 +837,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "B",
           "en_transcript": [
-            "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+            "<span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour.</span>"
           ],
           "vi_transcript": [
-            "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+            "<span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy.</span>"
           ]
         },
         {
@@ -1583,10 +873,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "A",
           "en_transcript": [
-            "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+            "<span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months.</span>"
           ],
           "vi_transcript": [
-            "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+            "<span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần.</span>"
           ]
         },
         {
@@ -1619,10 +909,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+            "<span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there.</span>"
           ],
           "vi_transcript": [
-            "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+            "<span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó.</span>"
           ]
         },
         {
@@ -1655,10 +945,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+            "<span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
           ],
           "vi_transcript": [
-            "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+            "<span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
           ]
         }
       ],
@@ -1706,11 +996,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-            "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+            "<span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span>"
           ],
           "vi_transcript": [
-            "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+            "<span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span>"
           ]
         },
         {
@@ -1743,11 +1032,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "A",
           "en_transcript": [
-            "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-            "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+            "<span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span>"
           ],
           "vi_transcript": [
-            "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+            "<span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span>"
           ]
         },
         {
@@ -1780,11 +1068,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "B",
           "en_transcript": [
-            "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-            "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+            "<span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>"
           ],
           "vi_transcript": [
-            "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+            "<span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật.</span>"
           ]
         },
         {
@@ -1817,11 +1104,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "A",
           "en_transcript": [
-            "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-            "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+            "<span class=\"highlight\">[29] The modifications I am about to outline will add about ,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area.</span>"
           ],
           "vi_transcript": [
-            "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+            "<span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng .000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn.</span>"
           ]
         },
         {
@@ -1854,20 +1140,18 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "A",
           "en_transcript": [
-            "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-            "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+            "<span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead.</span>"
           ],
           "vi_transcript": [
-            "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+            "<span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang.</span>"
           ]
         }
       ],
       "en_transcript": [
-        "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-        "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+        "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span> Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about ,000 to the price of a newly built house.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead.</span>"
       ],
       "vi_transcript": [
-        "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+        "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng .000 vào giá mỗi căn nhà mới.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3"
     },
@@ -1907,13 +1191,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "A",
           "en_transcript": [
-            "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+            "<span class=\"highlight\">[31] Well, my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste.</span>"
           ],
           "vi_transcript": [
-            "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-            "Waterford (làm bút chì)",
-            "Johnson & Jones ở Wales (làm danh thiếp…)",
-            "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+            "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ.</span>"
           ]
         },
         {
@@ -1946,13 +1227,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "B",
           "en_transcript": [
-            "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+            "<span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span>"
           ],
           "vi_transcript": [
-            "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-            "Waterford (làm bút chì)",
-            "Johnson & Jones ở Wales (làm danh thiếp…)",
-            "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+            "<span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span>"
           ]
         },
         {
@@ -1985,13 +1263,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "C",
           "en_transcript": [
-            "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+            "<span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants.</span>"
           ],
           "vi_transcript": [
-            "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-            "Waterford (làm bút chì)",
-            "Johnson & Jones ở Wales (làm danh thiếp…)",
-            "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+            "<span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác.</span>"
           ]
         },
         {
@@ -2024,13 +1299,10 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "D",
           "en_transcript": [
-            "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+            "<span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand.</span>"
           ],
           "vi_transcript": [
-            "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-            "Waterford (làm bút chì)",
-            "Johnson & Jones ở Wales (làm danh thiếp…)",
-            "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+            "<span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay.</span>"
           ]
         },
         {
@@ -2063,24 +1335,18 @@ window.VSTEP_MOCK_TEST_DATA = {
           ],
           "correct": "B",
           "en_transcript": [
-            "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+            "<span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled.</span>"
           ],
           "vi_transcript": [
-            "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-            "Waterford (làm bút chì)",
-            "Johnson & Jones ở Wales (làm danh thiếp…)",
-            "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+            "<span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế.</span>"
           ]
         }
       ],
       "en_transcript": [
-        "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+        "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled.</span>"
       ],
       "vi_transcript": [
-        "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-        "Waterford (làm bút chì)",
-        "Johnson & Jones ở Wales (làm danh thiếp…)",
-        "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+        "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế.</span> Waterford (làm bút chì) Johnson & Jones ở Wales (làm danh thiếp…) Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3"
     }
@@ -2468,52 +1734,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "RECEPTIONIST: Good afternoon, Dream Time Travel. How can I help you?",
-        "CUSTOMER: Oh, hello. I’m interested in the holidays you offer along the coast near here.",
-        "RECEPTIONIST: Yes. We operate several tours up the coast. Where in particular did you want to go?",
-        "CUSTOMER: Well, I like the sound of the holiday that mentioned whales. Was it ‘Whale Watching’?",
-        "RECEPTIONIST: Oh, that’s our Whale Watch Experience. It’s very popular, and it’s based in a lovely little town with nice beaches.",
         "CUSTOMER: Oh, right, and how long does it last?",
-        "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>",
-        "CUSTOMER: Good, I don’t want to be away any longer than that. So is that by coach?",
-        "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span> <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>",
-        "CUSTOMER: Oh, right. So do you run these tours often?",
-        "RECEPTIONIST: Well, it depends on the time of year. Of course, in peak times like the summer holidays, we do them every weekend, but at the moment it’s usually once a month at most.",
-        "CUSTOMER: And when is the next one going?",
-        "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>",
-        "CUSTOMER: All right, and is April a good time to go?",
-        "RECEPTIONIST: Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things offered.",
-        "CUSTOMER: Really?",
-        "RECEPTIONIST: Yes. The hotel itself where you stay has great facilities. It’s called The Pallisades.",
-        "CUSTOMER: The Paris what?",
-        "RECEPTIONIST: No, it’s actually The Pallisades, P-A-L-L-I-S-A-D-E-S. It’s right on the main beach there.",
-        "CUSTOMER: Oh, I see.",
-        "RECEPTIONIST: All of the rooms have nice views, and the food is really good there, too.",
-        "CUSTOMER: Oh, right."
+        "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>"
       ],
       "vi_transcript": [
-        "Lễ tân: Chào buổi chiều, Dream Time Travel xin nghe. Tôi có thể giúp gì cho bạn?",
-        "Khách: À, chào bạn. Tôi đang quan tâm đến các kỳ nghỉ mà các bạn tổ chức dọc theo bờ biển gần đây.",
-        "Lễ tân: Vâng, chúng tôi có nhiều tour dọc bờ biển. Bạn muốn đến địa điểm cụ thể nào?",
-        "Khách: Tôi thấy có một tour nói về cá voi, nghe khá hấp dẫn. Có phải gọi là “Whale Watching”?",
-        "Lễ tân: À, đó là tour “Whale Watch Experience” của chúng tôi. Rất nổi tiếng, và diễn ra tại một thị trấn nhỏ xinh đẹp, có bãi biển rất đẹp.",
         "Khách: À, vậy tour đó kéo dài bao lâu?",
-        "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>",
-        "Khách: Tuyệt, tôi không muốn đi quá lâu. Vậy là đi bằng xe khách à?",
-        "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span> <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>",
-        "Khách: Ồ, vậy tour này tổ chức thường xuyên không?",
-        "Lễ tân: Còn tùy vào thời điểm trong năm. Vào mùa cao điểm như kỳ nghỉ hè, chúng tôi tổ chức mỗi cuối tuần, nhưng hiện tại thì chỉ khoảng mỗi tháng một lần.",
-        "Khách: Vậy khi nào có tour tiếp theo?",
-        "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>",
-        "Khách: À, vậy tháng 4 có phải thời điểm tốt để đi không?",
-        "Lễ tân: Cũng khá ổn, nhưng thời điểm đẹp nhất là vào cuối năm. Dù sao thì việc ngắm cá voi cũng chỉ là một phần trong số nhiều hoạt động được cung cấp thôi.",
-        "Khách: Thật vậy sao?",
-        "Lễ tân: Vâng. Khách sạn mà bạn sẽ ở cũng có nhiều tiện nghi tuyệt vời. Nó tên là The Pallisades.",
-        "Khách: Là Paris gì cơ?",
-        "Lễ tân: Không, là The Pallisades, đánh vần là P-A-L-L-I-S-A-D-E-S. Nó nằm ngay trên bãi biển chính.",
-        "Khách: À, tôi hiểu rồi.",
-        "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
-        "Khách: Tuyệt quá."
+        "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
       "vocabulary": [
@@ -2554,52 +1780,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "RECEPTIONIST: Good afternoon, Dream Time Travel. How can I help you?",
-        "CUSTOMER: Oh, hello. I’m interested in the holidays you offer along the coast near here.",
-        "RECEPTIONIST: Yes. We operate several tours up the coast. Where in particular did you want to go?",
-        "CUSTOMER: Well, I like the sound of the holiday that mentioned whales. Was it ‘Whale Watching’?",
-        "RECEPTIONIST: Oh, that’s our Whale Watch Experience. It’s very popular, and it’s based in a lovely little town with nice beaches.",
-        "CUSTOMER: Oh, right, and how long does it last?",
-        "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>",
         "CUSTOMER: Good, I don’t want to be away any longer than that. So is that by coach?",
-        "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span> <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>",
-        "CUSTOMER: Oh, right. So do you run these tours often?",
-        "RECEPTIONIST: Well, it depends on the time of year. Of course, in peak times like the summer holidays, we do them every weekend, but at the moment it’s usually once a month at most.",
-        "CUSTOMER: And when is the next one going?",
-        "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>",
-        "CUSTOMER: All right, and is April a good time to go?",
-        "RECEPTIONIST: Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things offered.",
-        "CUSTOMER: Really?",
-        "RECEPTIONIST: Yes. The hotel itself where you stay has great facilities. It’s called The Pallisades.",
-        "CUSTOMER: The Paris what?",
-        "RECEPTIONIST: No, it’s actually The Pallisades, P-A-L-L-I-S-A-D-E-S. It’s right on the main beach there.",
-        "CUSTOMER: Oh, I see.",
-        "RECEPTIONIST: All of the rooms have nice views, and the food is really good there, too.",
-        "CUSTOMER: Oh, right."
+        "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span>"
       ],
       "vi_transcript": [
-        "Lễ tân: Chào buổi chiều, Dream Time Travel xin nghe. Tôi có thể giúp gì cho bạn?",
-        "Khách: À, chào bạn. Tôi đang quan tâm đến các kỳ nghỉ mà các bạn tổ chức dọc theo bờ biển gần đây.",
-        "Lễ tân: Vâng, chúng tôi có nhiều tour dọc bờ biển. Bạn muốn đến địa điểm cụ thể nào?",
-        "Khách: Tôi thấy có một tour nói về cá voi, nghe khá hấp dẫn. Có phải gọi là “Whale Watching”?",
-        "Lễ tân: À, đó là tour “Whale Watch Experience” của chúng tôi. Rất nổi tiếng, và diễn ra tại một thị trấn nhỏ xinh đẹp, có bãi biển rất đẹp.",
-        "Khách: À, vậy tour đó kéo dài bao lâu?",
-        "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>",
         "Khách: Tuyệt, tôi không muốn đi quá lâu. Vậy là đi bằng xe khách à?",
-        "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span> <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>",
-        "Khách: Ồ, vậy tour này tổ chức thường xuyên không?",
-        "Lễ tân: Còn tùy vào thời điểm trong năm. Vào mùa cao điểm như kỳ nghỉ hè, chúng tôi tổ chức mỗi cuối tuần, nhưng hiện tại thì chỉ khoảng mỗi tháng một lần.",
-        "Khách: Vậy khi nào có tour tiếp theo?",
-        "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>",
-        "Khách: À, vậy tháng 4 có phải thời điểm tốt để đi không?",
-        "Lễ tân: Cũng khá ổn, nhưng thời điểm đẹp nhất là vào cuối năm. Dù sao thì việc ngắm cá voi cũng chỉ là một phần trong số nhiều hoạt động được cung cấp thôi.",
-        "Khách: Thật vậy sao?",
-        "Lễ tân: Vâng. Khách sạn mà bạn sẽ ở cũng có nhiều tiện nghi tuyệt vời. Nó tên là The Pallisades.",
-        "Khách: Là Paris gì cơ?",
-        "Lễ tân: Không, là The Pallisades, đánh vần là P-A-L-L-I-S-A-D-E-S. Nó nằm ngay trên bãi biển chính.",
-        "Khách: À, tôi hiểu rồi.",
-        "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
-        "Khách: Tuyệt quá."
+        "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
       "vocabulary": [
@@ -2640,52 +1826,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "D",
       "en_transcript": [
-        "RECEPTIONIST: Good afternoon, Dream Time Travel. How can I help you?",
-        "CUSTOMER: Oh, hello. I’m interested in the holidays you offer along the coast near here.",
-        "RECEPTIONIST: Yes. We operate several tours up the coast. Where in particular did you want to go?",
-        "CUSTOMER: Well, I like the sound of the holiday that mentioned whales. Was it ‘Whale Watching’?",
-        "RECEPTIONIST: Oh, that’s our Whale Watch Experience. It’s very popular, and it’s based in a lovely little town with nice beaches.",
-        "CUSTOMER: Oh, right, and how long does it last?",
-        "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>",
-        "CUSTOMER: Good, I don’t want to be away any longer than that. So is that by coach?",
-        "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span> <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>",
-        "CUSTOMER: Oh, right. So do you run these tours often?",
-        "RECEPTIONIST: Well, it depends on the time of year. Of course, in peak times like the summer holidays, we do them every weekend, but at the moment it’s usually once a month at most.",
-        "CUSTOMER: And when is the next one going?",
-        "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>",
-        "CUSTOMER: All right, and is April a good time to go?",
-        "RECEPTIONIST: Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things offered.",
-        "CUSTOMER: Really?",
-        "RECEPTIONIST: Yes. The hotel itself where you stay has great facilities. It’s called The Pallisades.",
-        "CUSTOMER: The Paris what?",
-        "RECEPTIONIST: No, it’s actually The Pallisades, P-A-L-L-I-S-A-D-E-S. It’s right on the main beach there.",
-        "CUSTOMER: Oh, I see.",
-        "RECEPTIONIST: All of the rooms have nice views, and the food is really good there, too.",
-        "CUSTOMER: Oh, right."
+        "RECEPTIONIST: <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>"
       ],
       "vi_transcript": [
-        "Lễ tân: Chào buổi chiều, Dream Time Travel xin nghe. Tôi có thể giúp gì cho bạn?",
-        "Khách: À, chào bạn. Tôi đang quan tâm đến các kỳ nghỉ mà các bạn tổ chức dọc theo bờ biển gần đây.",
-        "Lễ tân: Vâng, chúng tôi có nhiều tour dọc bờ biển. Bạn muốn đến địa điểm cụ thể nào?",
-        "Khách: Tôi thấy có một tour nói về cá voi, nghe khá hấp dẫn. Có phải gọi là “Whale Watching”?",
-        "Lễ tân: À, đó là tour “Whale Watch Experience” của chúng tôi. Rất nổi tiếng, và diễn ra tại một thị trấn nhỏ xinh đẹp, có bãi biển rất đẹp.",
-        "Khách: À, vậy tour đó kéo dài bao lâu?",
-        "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>",
-        "Khách: Tuyệt, tôi không muốn đi quá lâu. Vậy là đi bằng xe khách à?",
-        "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span> <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>",
-        "Khách: Ồ, vậy tour này tổ chức thường xuyên không?",
-        "Lễ tân: Còn tùy vào thời điểm trong năm. Vào mùa cao điểm như kỳ nghỉ hè, chúng tôi tổ chức mỗi cuối tuần, nhưng hiện tại thì chỉ khoảng mỗi tháng một lần.",
-        "Khách: Vậy khi nào có tour tiếp theo?",
-        "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>",
-        "Khách: À, vậy tháng 4 có phải thời điểm tốt để đi không?",
-        "Lễ tân: Cũng khá ổn, nhưng thời điểm đẹp nhất là vào cuối năm. Dù sao thì việc ngắm cá voi cũng chỉ là một phần trong số nhiều hoạt động được cung cấp thôi.",
-        "Khách: Thật vậy sao?",
-        "Lễ tân: Vâng. Khách sạn mà bạn sẽ ở cũng có nhiều tiện nghi tuyệt vời. Nó tên là The Pallisades.",
-        "Khách: Là Paris gì cơ?",
-        "Lễ tân: Không, là The Pallisades, đánh vần là P-A-L-L-I-S-A-D-E-S. Nó nằm ngay trên bãi biển chính.",
-        "Khách: À, tôi hiểu rồi.",
-        "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
-        "Khách: Tuyệt quá."
+        "Lễ tân: <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
       "vocabulary": [
@@ -2726,52 +1870,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "RECEPTIONIST: Good afternoon, Dream Time Travel. How can I help you?",
-        "CUSTOMER: Oh, hello. I’m interested in the holidays you offer along the coast near here.",
-        "RECEPTIONIST: Yes. We operate several tours up the coast. Where in particular did you want to go?",
-        "CUSTOMER: Well, I like the sound of the holiday that mentioned whales. Was it ‘Whale Watching’?",
-        "RECEPTIONIST: Oh, that’s our Whale Watch Experience. It’s very popular, and it’s based in a lovely little town with nice beaches.",
-        "CUSTOMER: Oh, right, and how long does it last?",
-        "RECEPTIONIST: <span class=\"highlight\">[9] It’s two days – that includes four hours’ travel time each way from here.</span>",
-        "CUSTOMER: Good, I don’t want to be away any longer than that. So is that by coach?",
-        "RECEPTIONIST: <span class=\"highlight\">[10] Actually, it’s by minibus. We like to keep those tours small and personal so we don’t take a whole coachload of people.</span> <span class=\"highlight\">[11] In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.</span>",
-        "CUSTOMER: Oh, right. So do you run these tours often?",
-        "RECEPTIONIST: Well, it depends on the time of year. Of course, in peak times like the summer holidays, we do them every weekend, but at the moment it’s usually once a month at most.",
         "CUSTOMER: And when is the next one going?",
-        "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>",
-        "CUSTOMER: All right, and is April a good time to go?",
-        "RECEPTIONIST: Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things offered.",
-        "CUSTOMER: Really?",
-        "RECEPTIONIST: Yes. The hotel itself where you stay has great facilities. It’s called The Pallisades.",
-        "CUSTOMER: The Paris what?",
-        "RECEPTIONIST: No, it’s actually The Pallisades, P-A-L-L-I-S-A-D-E-S. It’s right on the main beach there.",
-        "CUSTOMER: Oh, I see.",
-        "RECEPTIONIST: All of the rooms have nice views, and the food is really good there, too.",
-        "CUSTOMER: Oh, right."
+        "RECEPTIONIST: Mmm, let me see. <span class=\"highlight\">[12] Um, there’s one in three weeks’ time which is April the 18th, and then we don’t have another one until June the 2nd.</span>"
       ],
       "vi_transcript": [
-        "Lễ tân: Chào buổi chiều, Dream Time Travel xin nghe. Tôi có thể giúp gì cho bạn?",
-        "Khách: À, chào bạn. Tôi đang quan tâm đến các kỳ nghỉ mà các bạn tổ chức dọc theo bờ biển gần đây.",
-        "Lễ tân: Vâng, chúng tôi có nhiều tour dọc bờ biển. Bạn muốn đến địa điểm cụ thể nào?",
-        "Khách: Tôi thấy có một tour nói về cá voi, nghe khá hấp dẫn. Có phải gọi là “Whale Watching”?",
-        "Lễ tân: À, đó là tour “Whale Watch Experience” của chúng tôi. Rất nổi tiếng, và diễn ra tại một thị trấn nhỏ xinh đẹp, có bãi biển rất đẹp.",
-        "Khách: À, vậy tour đó kéo dài bao lâu?",
-        "Lễ tân: <span class=\"highlight\">(9) Tour kéo dài 2 ngày – bao gồm cả thời gian di chuyển 4 tiếng mỗi chiều từ đây.</span>",
-        "Khách: Tuyệt, tôi không muốn đi quá lâu. Vậy là đi bằng xe khách à?",
-        "Lễ tân: <span class=\"highlight\">(10) Thực ra là đi bằng xe buýt nhỏ. Chúng tôi muốn giữ nhóm nhỏ và thân thiện, nên không chở nguyên cả xe khách.</span> <span class=\"highlight\">(11) Thật ra, tour này chỉ nhận tối đa 15 người, dù đôi khi chỉ có 12 hoặc 13 người thôi.</span>",
-        "Khách: Ồ, vậy tour này tổ chức thường xuyên không?",
-        "Lễ tân: Còn tùy vào thời điểm trong năm. Vào mùa cao điểm như kỳ nghỉ hè, chúng tôi tổ chức mỗi cuối tuần, nhưng hiện tại thì chỉ khoảng mỗi tháng một lần.",
         "Khách: Vậy khi nào có tour tiếp theo?",
-        "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>",
-        "Khách: À, vậy tháng 4 có phải thời điểm tốt để đi không?",
-        "Lễ tân: Cũng khá ổn, nhưng thời điểm đẹp nhất là vào cuối năm. Dù sao thì việc ngắm cá voi cũng chỉ là một phần trong số nhiều hoạt động được cung cấp thôi.",
-        "Khách: Thật vậy sao?",
-        "Lễ tân: Vâng. Khách sạn mà bạn sẽ ở cũng có nhiều tiện nghi tuyệt vời. Nó tên là The Pallisades.",
-        "Khách: Là Paris gì cơ?",
-        "Lễ tân: Không, là The Pallisades, đánh vần là P-A-L-L-I-S-A-D-E-S. Nó nằm ngay trên bãi biển chính.",
-        "Khách: À, tôi hiểu rồi.",
-        "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
-        "Khách: Tuyệt quá."
+        "Lễ tân: Để tôi xem nào. <span class=\"highlight\">(12) Có một tour sẽ khởi hành sau 3 tuần nữa, tức là vào ngày 18 tháng 4, sau đó thì phải tới ngày 2 tháng 6 mới có tour tiếp theo.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
       "vocabulary": [
@@ -2811,47 +1915,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "CUSTOMER: And what about the other things? You know, that are included in the price.",
-        "RECEPTIONIST: Oh, there are lots of things. If you don’t want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there’s no extra charge for that, or on a fishing trip. That’s an extra $12, I think. And there’s also a reptile park in town – that costs more or less the same.",
-        "CUSTOMER: No, I think I’d prefer whales to snakes.",
-        "RECEPTIONIST: Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>",
-        "CUSTOMER: Well, that sounds good. So how much is the basic tour price?",
-        "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around $300, but let me check. Er…oh, it’s actually $280.</span>",
-        "CUSTOMER: And the next tour, are there any places on that one?",
-        "RECEPTIONIST: HOW many people Is It for?",
-        "CUSTOMER: These are two of us.",
-        "RECEPTIONIST: Yes, that should be fine. <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>",
-        "CUSTOMER: OK.",
-        "RECEPTIONIST: And you also need to pay a 20% deposit at the time of booking.",
-        "CUSTOMER: Can I pay that by credit card?",
-        "RECEPTIONIST: Yes, you can.",
-        "CUSTOMER: All right, what I’ll do is I’ll talk to my partner and get back to you.",
-        "RECEPTIONIST: Fine. So I’ll make a provisional booking, shall I? – two for the Whale Watch Experience. Let me issue you with a",
-        "CUSTOMER reference number for when you call back. Do you have a pen?",
-        "CUSTOMER: Yes.",
-        "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>",
-        "CUSTOMER: Fine, I will."
+        "RECEPTIONIST: <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>"
       ],
       "vi_transcript": [
-        "Khách: Còn những hoạt động khác thì sao? Ý tôi là, những gì được bao gồm trong giá tour?",
-        "Lễ tân: Ồ, có rất nhiều. Nếu bạn không muốn tham gia chuyến du ngoạn ngắm cá voi, hướng dẫn viên sẽ dẫn những người quan tâm đi bộ khám phá rừng trong công viên quốc gia gần khách sạn – và không mất thêm phí. Hoặc có thể tham gia một chuyến đi câu cá – cái đó thì tốn thêm khoảng 12 đô, tôi nghĩ vậy. Ngoài ra còn có một công viên bò sát trong thị trấn – phí vào cổng cũng xấp xỉ như vậy.",
-        "Khách: Không, tôi nghĩ tôi thích cá voi hơn rắn đấy.",
-        "Lễ tân: Ừ, tôi hiểu. Nếu bạn chỉ muốn thư giãn thì bạn có thể ngồi bên hồ bơi của khách sạn hoặc ra bãi biển. À, khách sạn cũng có sân tennis, nhưng bạn phải trả tiền theo giờ để sử dụng. <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>",
-        "Khách: Nghe hay đấy. Vậy giá cơ bản của tour là bao nhiêu?",
-        "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>",
-        "Khách: Còn tour sắp tới, vẫn còn chỗ chứ?",
-        "Lễ tân: Nhóm của bạn có bao nhiêu người?",
-        "Khách: Có hai người bọn tôi.",
-        "Lễ tân: Vậy là được. <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>",
-        "Khách: OK.",
-        "Lễ tân: Và bạn cũng cần thanh toán 20% tiền cọc khi đặt chỗ.",
-        "Khách: Tôi có thể trả bằng thẻ tín dụng không?",
-        "Lễ tân: Vâng, bạn có thể.",
-        "Khách: Được rồi, tôi sẽ nói chuyện với bạn đồng hành rồi gọi lại sau.",
-        "Lễ tân: Tuyệt. Vậy tôi sẽ giữ chỗ tạm thời cho bạn – 2 người cho tour Whale Watch Experience nhé. Để tôi cấp cho bạn mã đặt chỗ để khi bạn gọi lại có thể cung cấp.",
-        "Khách: Vâng, tôi có bút đây.",
-        "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
-        "Khách: Rồi, tôi sẽ làm vậy."
+        "Lễ tân: <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
       "vocabulary": [
@@ -2892,47 +1959,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "CUSTOMER: And what about the other things? You know, that are included in the price.",
-        "RECEPTIONIST: Oh, there are lots of things. If you don’t want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there’s no extra charge for that, or on a fishing trip. That’s an extra $12, I think. And there’s also a reptile park in town – that costs more or less the same.",
-        "CUSTOMER: No, I think I’d prefer whales to snakes.",
-        "RECEPTIONIST: Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>",
         "CUSTOMER: Well, that sounds good. So how much is the basic tour price?",
-        "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around $300, but let me check. Er…oh, it’s actually $280.</span>",
-        "CUSTOMER: And the next tour, are there any places on that one?",
-        "RECEPTIONIST: HOW many people Is It for?",
-        "CUSTOMER: These are two of us.",
-        "RECEPTIONIST: Yes, that should be fine. <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>",
-        "CUSTOMER: OK.",
-        "RECEPTIONIST: And you also need to pay a 20% deposit at the time of booking.",
-        "CUSTOMER: Can I pay that by credit card?",
-        "RECEPTIONIST: Yes, you can.",
-        "CUSTOMER: All right, what I’ll do is I’ll talk to my partner and get back to you.",
-        "RECEPTIONIST: Fine. So I’ll make a provisional booking, shall I? – two for the Whale Watch Experience. Let me issue you with a",
-        "CUSTOMER reference number for when you call back. Do you have a pen?",
-        "CUSTOMER: Yes.",
-        "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>",
-        "CUSTOMER: Fine, I will."
+        "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around , but let me check. Er…oh, it’s actually .</span>"
       ],
       "vi_transcript": [
-        "Khách: Còn những hoạt động khác thì sao? Ý tôi là, những gì được bao gồm trong giá tour?",
-        "Lễ tân: Ồ, có rất nhiều. Nếu bạn không muốn tham gia chuyến du ngoạn ngắm cá voi, hướng dẫn viên sẽ dẫn những người quan tâm đi bộ khám phá rừng trong công viên quốc gia gần khách sạn – và không mất thêm phí. Hoặc có thể tham gia một chuyến đi câu cá – cái đó thì tốn thêm khoảng 12 đô, tôi nghĩ vậy. Ngoài ra còn có một công viên bò sát trong thị trấn – phí vào cổng cũng xấp xỉ như vậy.",
-        "Khách: Không, tôi nghĩ tôi thích cá voi hơn rắn đấy.",
-        "Lễ tân: Ừ, tôi hiểu. Nếu bạn chỉ muốn thư giãn thì bạn có thể ngồi bên hồ bơi của khách sạn hoặc ra bãi biển. À, khách sạn cũng có sân tennis, nhưng bạn phải trả tiền theo giờ để sử dụng. <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>",
         "Khách: Nghe hay đấy. Vậy giá cơ bản của tour là bao nhiêu?",
-        "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>",
-        "Khách: Còn tour sắp tới, vẫn còn chỗ chứ?",
-        "Lễ tân: Nhóm của bạn có bao nhiêu người?",
-        "Khách: Có hai người bọn tôi.",
-        "Lễ tân: Vậy là được. <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>",
-        "Khách: OK.",
-        "Lễ tân: Và bạn cũng cần thanh toán 20% tiền cọc khi đặt chỗ.",
-        "Khách: Tôi có thể trả bằng thẻ tín dụng không?",
-        "Lễ tân: Vâng, bạn có thể.",
-        "Khách: Được rồi, tôi sẽ nói chuyện với bạn đồng hành rồi gọi lại sau.",
-        "Lễ tân: Tuyệt. Vậy tôi sẽ giữ chỗ tạm thời cho bạn – 2 người cho tour Whale Watch Experience nhé. Để tôi cấp cho bạn mã đặt chỗ để khi bạn gọi lại có thể cung cấp.",
-        "Khách: Vâng, tôi có bút đây.",
-        "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
-        "Khách: Rồi, tôi sẽ làm vậy."
+        "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
       "vocabulary": [
@@ -2973,47 +2005,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "CUSTOMER: And what about the other things? You know, that are included in the price.",
-        "RECEPTIONIST: Oh, there are lots of things. If you don’t want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there’s no extra charge for that, or on a fishing trip. That’s an extra $12, I think. And there’s also a reptile park in town – that costs more or less the same.",
-        "CUSTOMER: No, I think I’d prefer whales to snakes.",
-        "RECEPTIONIST: Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>",
-        "CUSTOMER: Well, that sounds good. So how much is the basic tour price?",
-        "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around $300, but let me check. Er…oh, it’s actually $280.</span>",
-        "CUSTOMER: And the next tour, are there any places on that one?",
-        "RECEPTIONIST: HOW many people Is It for?",
-        "CUSTOMER: These are two of us.",
-        "RECEPTIONIST: Yes, that should be fine. <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>",
-        "CUSTOMER: OK.",
-        "RECEPTIONIST: And you also need to pay a 20% deposit at the time of booking.",
-        "CUSTOMER: Can I pay that by credit card?",
-        "RECEPTIONIST: Yes, you can.",
-        "CUSTOMER: All right, what I’ll do is I’ll talk to my partner and get back to you.",
-        "RECEPTIONIST: Fine. So I’ll make a provisional booking, shall I? – two for the Whale Watch Experience. Let me issue you with a",
-        "CUSTOMER reference number for when you call back. Do you have a pen?",
-        "CUSTOMER: Yes.",
-        "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>",
-        "CUSTOMER: Fine, I will."
+        "RECEPTIONIST: <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>"
       ],
       "vi_transcript": [
-        "Khách: Còn những hoạt động khác thì sao? Ý tôi là, những gì được bao gồm trong giá tour?",
-        "Lễ tân: Ồ, có rất nhiều. Nếu bạn không muốn tham gia chuyến du ngoạn ngắm cá voi, hướng dẫn viên sẽ dẫn những người quan tâm đi bộ khám phá rừng trong công viên quốc gia gần khách sạn – và không mất thêm phí. Hoặc có thể tham gia một chuyến đi câu cá – cái đó thì tốn thêm khoảng 12 đô, tôi nghĩ vậy. Ngoài ra còn có một công viên bò sát trong thị trấn – phí vào cổng cũng xấp xỉ như vậy.",
-        "Khách: Không, tôi nghĩ tôi thích cá voi hơn rắn đấy.",
-        "Lễ tân: Ừ, tôi hiểu. Nếu bạn chỉ muốn thư giãn thì bạn có thể ngồi bên hồ bơi của khách sạn hoặc ra bãi biển. À, khách sạn cũng có sân tennis, nhưng bạn phải trả tiền theo giờ để sử dụng. <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>",
-        "Khách: Nghe hay đấy. Vậy giá cơ bản của tour là bao nhiêu?",
-        "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>",
-        "Khách: Còn tour sắp tới, vẫn còn chỗ chứ?",
-        "Lễ tân: Nhóm của bạn có bao nhiêu người?",
-        "Khách: Có hai người bọn tôi.",
-        "Lễ tân: Vậy là được. <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>",
-        "Khách: OK.",
-        "Lễ tân: Và bạn cũng cần thanh toán 20% tiền cọc khi đặt chỗ.",
-        "Khách: Tôi có thể trả bằng thẻ tín dụng không?",
-        "Lễ tân: Vâng, bạn có thể.",
-        "Khách: Được rồi, tôi sẽ nói chuyện với bạn đồng hành rồi gọi lại sau.",
-        "Lễ tân: Tuyệt. Vậy tôi sẽ giữ chỗ tạm thời cho bạn – 2 người cho tour Whale Watch Experience nhé. Để tôi cấp cho bạn mã đặt chỗ để khi bạn gọi lại có thể cung cấp.",
-        "Khách: Vâng, tôi có bút đây.",
-        "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
-        "Khách: Rồi, tôi sẽ làm vậy."
+        "Lễ tân: <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
       "vocabulary": [
@@ -3054,47 +2049,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "CUSTOMER: And what about the other things? You know, that are included in the price.",
-        "RECEPTIONIST: Oh, there are lots of things. If you don’t want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there’s no extra charge for that, or on a fishing trip. That’s an extra $12, I think. And there’s also a reptile park in town – that costs more or less the same.",
-        "CUSTOMER: No, I think I’d prefer whales to snakes.",
-        "RECEPTIONIST: Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. <span class=\"highlight\">[13] But there are table tennis tables downstairs, and they’re part of the accommodation package. Just speak to your guide.</span>",
-        "CUSTOMER: Well, that sounds good. So how much is the basic tour price?",
-        "RECEPTIONIST: <span class=\"highlight\">[14] At this time of year, it’s usually around $300, but let me check. Er…oh, it’s actually $280.</span>",
-        "CUSTOMER: And the next tour, are there any places on that one?",
-        "RECEPTIONIST: HOW many people Is It for?",
-        "CUSTOMER: These are two of us.",
-        "RECEPTIONIST: Yes, that should be fine. <span class=\"highlight\">[15] Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours? And if you cancel within seven days of departure you will have to pay 50% of your total booking.</span>",
-        "CUSTOMER: OK.",
-        "RECEPTIONIST: And you also need to pay a 20% deposit at the time of booking.",
-        "CUSTOMER: Can I pay that by credit card?",
-        "RECEPTIONIST: Yes, you can.",
-        "CUSTOMER: All right, what I’ll do is I’ll talk to my partner and get back to you.",
-        "RECEPTIONIST: Fine. So I’ll make a provisional booking, shall I? – two for the Whale Watch Experience. Let me issue you with a",
-        "CUSTOMER reference number for when you call back. Do you have a pen?",
         "CUSTOMER: Yes.",
-        "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>",
-        "CUSTOMER: Fine, I will."
+        "RECEPTIONIST: <span class=\"highlight\">[16] OK, it’s three nine seven, four five, T. That’s T for tango. When you call back, ask to speak to the Tour Manager, that’s me, Tracy.</span>"
       ],
       "vi_transcript": [
-        "Khách: Còn những hoạt động khác thì sao? Ý tôi là, những gì được bao gồm trong giá tour?",
-        "Lễ tân: Ồ, có rất nhiều. Nếu bạn không muốn tham gia chuyến du ngoạn ngắm cá voi, hướng dẫn viên sẽ dẫn những người quan tâm đi bộ khám phá rừng trong công viên quốc gia gần khách sạn – và không mất thêm phí. Hoặc có thể tham gia một chuyến đi câu cá – cái đó thì tốn thêm khoảng 12 đô, tôi nghĩ vậy. Ngoài ra còn có một công viên bò sát trong thị trấn – phí vào cổng cũng xấp xỉ như vậy.",
-        "Khách: Không, tôi nghĩ tôi thích cá voi hơn rắn đấy.",
-        "Lễ tân: Ừ, tôi hiểu. Nếu bạn chỉ muốn thư giãn thì bạn có thể ngồi bên hồ bơi của khách sạn hoặc ra bãi biển. À, khách sạn cũng có sân tennis, nhưng bạn phải trả tiền theo giờ để sử dụng. <span class=\"highlight\">(13) Nhưng ở tầng dưới có bàn bóng bàn, và nó đã được bao gồm trong gói chỗ ở. Bạn chỉ cần nói với hướng dẫn viên là được.</span>",
-        "Khách: Nghe hay đấy. Vậy giá cơ bản của tour là bao nhiêu?",
-        "Lễ tân: <span class=\"highlight\">(14) Thời điểm này trong năm, thường là khoảng 300 đô, nhưng để tôi kiểm tra... À, thực tế là 280 đô.</span>",
-        "Khách: Còn tour sắp tới, vẫn còn chỗ chứ?",
-        "Lễ tân: Nhóm của bạn có bao nhiêu người?",
-        "Khách: Có hai người bọn tôi.",
-        "Lễ tân: Vậy là được. <span class=\"highlight\">(15) Cho tôi nhắc rằng: việc đặt chỗ cần thực hiện ít nhất 14 ngày trước ngày khởi hành để tránh bị hủy chuyến tham quan. Và nếu bạn hủy trong vòng 7 ngày trước khi đi, bạn sẽ phải trả 50% tổng chi phí đặt chỗ.</span>",
-        "Khách: OK.",
-        "Lễ tân: Và bạn cũng cần thanh toán 20% tiền cọc khi đặt chỗ.",
-        "Khách: Tôi có thể trả bằng thẻ tín dụng không?",
-        "Lễ tân: Vâng, bạn có thể.",
-        "Khách: Được rồi, tôi sẽ nói chuyện với bạn đồng hành rồi gọi lại sau.",
-        "Lễ tân: Tuyệt. Vậy tôi sẽ giữ chỗ tạm thời cho bạn – 2 người cho tour Whale Watch Experience nhé. Để tôi cấp cho bạn mã đặt chỗ để khi bạn gọi lại có thể cung cấp.",
         "Khách: Vâng, tôi có bút đây.",
-        "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
-        "Khách: Rồi, tôi sẽ làm vậy."
+        "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
       "vocabulary": [
@@ -3134,113 +2094,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "M = male student      F = female lecturer",
-        "M:   Hello, can I come in?",
-        "F:    Oh yes, come in. How can I help you?",
-        "M:   <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>",
-        "F:    Yes, this is the School of Economics.",
-        "M:   Oh, good. Um, I’m a new student, and I was wondering if someone could give me some information.",
-        "F:    Well, I might be able to help. I lecture on that program. What do you need to Know?",
-        "M:   Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
-        "F:    <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>",
-        "M:   What time?",
-        "F:    Let me see ... You know this information is all in the handout, which you should have received yesterday at the orientation meeting.",
-        "M:   Oh, was there a meeting yesterday? I didn’t know about that ... no one mentioned ...",
-        "F:    Yes, there was, but never mind. Now lectures are at four m the afternoon.",
-        "M:   Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
-        "F:    <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>",
-        "M:   90%! That’s high. Do they enforce that rule?",
-        "F:    Yes, we do. We’re pretty strict about it, actually.",
-        "M:   And what times have been set down for the tutorials — do you have that Information?",
-        "F:    That’s a very well-attended course so there’s a number of tutorial times. Monday. Wednesday and Friday, all at 9 o’clock. Yours will be allocated at the first lecture.",
-        "M:   Can’t I choose the time?",
-        "F:    Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>",
-        "M:   Oh. OK.",
-        "F:    Anything else I can help you with while you’re here?",
-        "M:   Well, yes, actually. Do you know what the course requirements are? I mean, how much work is expected for this course?",
-        "F:    Well, you have to complete a tutorial paper.",
-        "M:   What does that involve?",
-        "F:    Well, it’s a piece of work on a given topic based on some set reading texts. You’ll have to give a small talk to your tutorial group ...",
-        "M:   How long does that have to be?",
-        "F:    Oh, about 25 minutes usually.",
-        "M:   I have to talk for 25 minutes.",
-        "F:    Yes, that’s right. And then, you have to write up your piece of work and give it to the lecturer to be marked.",
-        "M:   Right. And is that all?",
-        "F:    No. You also have to complete a 3000-word essay on a topic.",
-        "M:   Can I choose the topic?",
-        "F:    Yes, usually you can.",
-        "M:   Right. That shouldn’t be too bad.",
-        "F:    And in addition to that, there is an exam.",
-        "M:   An exam! What sort of exam?",
-        "F:    Well, it’s an open-book exam.",
-        "M:   Does that mean I can have the textbook with me during the exam?",
-        "F:    Yes., that’s right.",
-        "M:   And can you give me any idea about the content of the first year of Economics so that I can get into some reading?",
-        "F:   Well, you’ll be getting the reading list next week when lectures start. All the books are in the library.",
-        "M:   Yes, but won’t everyone else take them out as soon as they get the reading list too?",
-        "F:    Well, yes. they might. But most of the important ones are held in Closed Reserve ... that’s a part of the library where you can go to read books but you can’t take them out of the building.",
-        "M:   What did you call that section of the library?",
-        "F:    Closed Reserve. However, we do recommend that you buy the core books. You’ll find them useful, and you’ll need them for the exam.",
-        "M:   Yes. I suppose I will. But what is the focus of the course?",
-        "F:    Well, the course at this university has a vocational focus. That is a focus on preparing its graduates for work, so we’re orientated very much towards employment.",
-        "M:   So my chances of getting a job are good?",
-        "F:    Well. provided you get good results.",
-        "M:   Well, look, thanks for your time. You’ve been really helpful.",
-        "F:    That’s fine. See you next week then."
+        "F: Oh yes, come in. How can I help you?",
+        "M: <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>"
       ],
       "vi_transcript": [
-        "Nam sinh: Xin chào, em vào được chứ ạ?",
         "Cô: Ồ, vâng, vào đi. Em cần gì vậy?",
-        "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>",
-        "Cô: Vâng, đây là Khoa Kinh tế.",
-        "Nam sinh: Tuyệt quá. Em là sinh viên mới và muốn tìm hiểu một vài thông tin.",
-        "Cô: Cô có thể giúp. Cô cũng giảng dạy chương trình này. Em muốn biết điều gì?",
-        "Nam sinh: Thực ra là khá nhiều thứ ạ. Đầu tiên là mỗi tuần có bao nhiêu buổi giảng?",
-        "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>",
-        "Nam sinh: Vào mấy giờ ạ?",
-        "Cô: Để cô xem… Thông tin đó có trong tờ hướng dẫn mà em đáng lẽ đã nhận được hôm qua trong buổi định hướng.",
-        "Nam sinh: Ồ, có buổi định hướng hôm qua ạ? Em không biết… chẳng ai nhắc gì cả...",
-        "Cô: Có đấy, nhưng không sao. Giờ giảng là 4 giờ chiều.",
-        "Nam sinh: 4 giờ thì hơi trễ. Em có việc làm bán thời gian bắt đầu lúc 4:30.",
-        "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>",
-        "Nam sinh: 90%! Cao quá. Trường có thực sự bắt buộc không ạ?",
-        "Cô: Có chứ. Chúng tôi khá nghiêm túc về việc đó.",
-        "Nam sinh: Còn buổi tutorial thì sao, đã xếp lịch chưa ạ?",
-        "Cô: Đây là khóa học có nhiều người đăng ký, nên có nhiều khung giờ tutorial. Vào thứ Hai, thứ Tư và thứ Sáu – đều lúc 9 giờ sáng. Em sẽ được xếp buổi học trong buổi giảng đầu tiên.",
-        "Nam sinh: Em không được chọn giờ học sao?",
-        "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>",
-        "Nam sinh: À, vâng.",
-        "Cô: Em còn cần gì nữa không?",
-        "Nam sinh: Có ạ. Em muốn hỏi yêu cầu của khóa học – tức là em phải làm bao nhiêu việc cho môn học này?",
-        "Cô: Em phải hoàn thành một bài tutorial.",
-        "Nam sinh: Bài đó là gì ạ?",
-        "Cô: Là một bài viết về chủ đề được giao, dựa trên các tài liệu đọc được chỉ định. Em cũng phải trình bày ngắn cho nhóm học của mình...",
-        "Nam sinh: Trình bày bao lâu ạ?",
-        "Cô: Khoảng 25 phút.",
-        "Nam sinh: Em phải nói suốt 25 phút á?",
-        "Cô: Đúng vậy. Sau đó em viết lại nội dung bài và nộp cho giảng viên để chấm điểm.",
-        "Nam sinh: Còn gì nữa không ạ?",
-        "Cô: Có chứ. Em còn phải viết một bài luận 3000 từ về một chủ đề.",
-        "Nam sinh: Em được chọn chủ đề chứ?",
-        "Cô: Thường thì được chọn.",
-        "Nam sinh: Vậy cũng không tệ lắm.",
-        "Cô: Ngoài ra còn có một kỳ thi nữa.",
-        "Nam sinh: Thi gì vậy ạ?",
-        "Cô: Thi mở sách.",
-        "Nam sinh: Tức là em được mang sách vào phòng thi ạ?",
-        "Cô: Đúng rồi.",
-        "Nam sinh: Cô có thể gợi ý em nên đọc trước những gì cho năm nhất không?",
-        "Cô: Tuần sau khi bắt đầu học, em sẽ nhận danh sách đọc. Tất cả sách đều có trong thư viện.",
-        "Nam sinh: Nhưng rồi ai cũng sẽ mượn ngay khi nhận danh sách mà.",
-        "Cô: Đúng, nhưng đa số sách quan trọng được đặt ở khu “Closed Reserve” – tức là em chỉ được đọc tại chỗ, không được mượn mang ra ngoài.",
-        "Nam sinh: “Closed Reserve” là gì ạ?",
-        "Cô: Một khu đặc biệt trong thư viện. Tuy nhiên, chúng tôi khuyến khích mua sách cốt lõi, vì em sẽ cần dùng khi thi.",
-        "Nam sinh: Vâng, chắc em sẽ mua. Vậy nội dung khóa học tập trung vào điều gì ạ?",
-        "Cô: Khóa học của trường này hướng đến thực tiễn, nghĩa là chuẩn bị cho sinh viên đi làm sau này, nên mọi thứ rất thực tế.",
-        "Nam sinh: Vậy cơ hội xin việc của em có cao không ạ?",
-        "Cô: Miễn là em đạt kết quả tốt.",
-        "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
-        "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
+        "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
       "vocabulary": [
@@ -3281,113 +2140,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "M = male student      F = female lecturer",
-        "M:   Hello, can I come in?",
-        "F:    Oh yes, come in. How can I help you?",
-        "M:   <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>",
-        "F:    Yes, this is the School of Economics.",
-        "M:   Oh, good. Um, I’m a new student, and I was wondering if someone could give me some information.",
-        "F:    Well, I might be able to help. I lecture on that program. What do you need to Know?",
-        "M:   Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
-        "F:    <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>",
-        "M:   What time?",
-        "F:    Let me see ... You know this information is all in the handout, which you should have received yesterday at the orientation meeting.",
-        "M:   Oh, was there a meeting yesterday? I didn’t know about that ... no one mentioned ...",
-        "F:    Yes, there was, but never mind. Now lectures are at four m the afternoon.",
-        "M:   Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
-        "F:    <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>",
-        "M:   90%! That’s high. Do they enforce that rule?",
-        "F:    Yes, we do. We’re pretty strict about it, actually.",
-        "M:   And what times have been set down for the tutorials — do you have that Information?",
-        "F:    That’s a very well-attended course so there’s a number of tutorial times. Monday. Wednesday and Friday, all at 9 o’clock. Yours will be allocated at the first lecture.",
-        "M:   Can’t I choose the time?",
-        "F:    Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>",
-        "M:   Oh. OK.",
-        "F:    Anything else I can help you with while you’re here?",
-        "M:   Well, yes, actually. Do you know what the course requirements are? I mean, how much work is expected for this course?",
-        "F:    Well, you have to complete a tutorial paper.",
-        "M:   What does that involve?",
-        "F:    Well, it’s a piece of work on a given topic based on some set reading texts. You’ll have to give a small talk to your tutorial group ...",
-        "M:   How long does that have to be?",
-        "F:    Oh, about 25 minutes usually.",
-        "M:   I have to talk for 25 minutes.",
-        "F:    Yes, that’s right. And then, you have to write up your piece of work and give it to the lecturer to be marked.",
-        "M:   Right. And is that all?",
-        "F:    No. You also have to complete a 3000-word essay on a topic.",
-        "M:   Can I choose the topic?",
-        "F:    Yes, usually you can.",
-        "M:   Right. That shouldn’t be too bad.",
-        "F:    And in addition to that, there is an exam.",
-        "M:   An exam! What sort of exam?",
-        "F:    Well, it’s an open-book exam.",
-        "M:   Does that mean I can have the textbook with me during the exam?",
-        "F:    Yes., that’s right.",
-        "M:   And can you give me any idea about the content of the first year of Economics so that I can get into some reading?",
-        "F:   Well, you’ll be getting the reading list next week when lectures start. All the books are in the library.",
-        "M:   Yes, but won’t everyone else take them out as soon as they get the reading list too?",
-        "F:    Well, yes. they might. But most of the important ones are held in Closed Reserve ... that’s a part of the library where you can go to read books but you can’t take them out of the building.",
-        "M:   What did you call that section of the library?",
-        "F:    Closed Reserve. However, we do recommend that you buy the core books. You’ll find them useful, and you’ll need them for the exam.",
-        "M:   Yes. I suppose I will. But what is the focus of the course?",
-        "F:    Well, the course at this university has a vocational focus. That is a focus on preparing its graduates for work, so we’re orientated very much towards employment.",
-        "M:   So my chances of getting a job are good?",
-        "F:    Well. provided you get good results.",
-        "M:   Well, look, thanks for your time. You’ve been really helpful.",
-        "F:    That’s fine. See you next week then."
+        "M: Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
+        "F: <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>"
       ],
       "vi_transcript": [
-        "Nam sinh: Xin chào, em vào được chứ ạ?",
-        "Cô: Ồ, vâng, vào đi. Em cần gì vậy?",
-        "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>",
-        "Cô: Vâng, đây là Khoa Kinh tế.",
-        "Nam sinh: Tuyệt quá. Em là sinh viên mới và muốn tìm hiểu một vài thông tin.",
-        "Cô: Cô có thể giúp. Cô cũng giảng dạy chương trình này. Em muốn biết điều gì?",
         "Nam sinh: Thực ra là khá nhiều thứ ạ. Đầu tiên là mỗi tuần có bao nhiêu buổi giảng?",
-        "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>",
-        "Nam sinh: Vào mấy giờ ạ?",
-        "Cô: Để cô xem… Thông tin đó có trong tờ hướng dẫn mà em đáng lẽ đã nhận được hôm qua trong buổi định hướng.",
-        "Nam sinh: Ồ, có buổi định hướng hôm qua ạ? Em không biết… chẳng ai nhắc gì cả...",
-        "Cô: Có đấy, nhưng không sao. Giờ giảng là 4 giờ chiều.",
-        "Nam sinh: 4 giờ thì hơi trễ. Em có việc làm bán thời gian bắt đầu lúc 4:30.",
-        "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>",
-        "Nam sinh: 90%! Cao quá. Trường có thực sự bắt buộc không ạ?",
-        "Cô: Có chứ. Chúng tôi khá nghiêm túc về việc đó.",
-        "Nam sinh: Còn buổi tutorial thì sao, đã xếp lịch chưa ạ?",
-        "Cô: Đây là khóa học có nhiều người đăng ký, nên có nhiều khung giờ tutorial. Vào thứ Hai, thứ Tư và thứ Sáu – đều lúc 9 giờ sáng. Em sẽ được xếp buổi học trong buổi giảng đầu tiên.",
-        "Nam sinh: Em không được chọn giờ học sao?",
-        "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>",
-        "Nam sinh: À, vâng.",
-        "Cô: Em còn cần gì nữa không?",
-        "Nam sinh: Có ạ. Em muốn hỏi yêu cầu của khóa học – tức là em phải làm bao nhiêu việc cho môn học này?",
-        "Cô: Em phải hoàn thành một bài tutorial.",
-        "Nam sinh: Bài đó là gì ạ?",
-        "Cô: Là một bài viết về chủ đề được giao, dựa trên các tài liệu đọc được chỉ định. Em cũng phải trình bày ngắn cho nhóm học của mình...",
-        "Nam sinh: Trình bày bao lâu ạ?",
-        "Cô: Khoảng 25 phút.",
-        "Nam sinh: Em phải nói suốt 25 phút á?",
-        "Cô: Đúng vậy. Sau đó em viết lại nội dung bài và nộp cho giảng viên để chấm điểm.",
-        "Nam sinh: Còn gì nữa không ạ?",
-        "Cô: Có chứ. Em còn phải viết một bài luận 3000 từ về một chủ đề.",
-        "Nam sinh: Em được chọn chủ đề chứ?",
-        "Cô: Thường thì được chọn.",
-        "Nam sinh: Vậy cũng không tệ lắm.",
-        "Cô: Ngoài ra còn có một kỳ thi nữa.",
-        "Nam sinh: Thi gì vậy ạ?",
-        "Cô: Thi mở sách.",
-        "Nam sinh: Tức là em được mang sách vào phòng thi ạ?",
-        "Cô: Đúng rồi.",
-        "Nam sinh: Cô có thể gợi ý em nên đọc trước những gì cho năm nhất không?",
-        "Cô: Tuần sau khi bắt đầu học, em sẽ nhận danh sách đọc. Tất cả sách đều có trong thư viện.",
-        "Nam sinh: Nhưng rồi ai cũng sẽ mượn ngay khi nhận danh sách mà.",
-        "Cô: Đúng, nhưng đa số sách quan trọng được đặt ở khu “Closed Reserve” – tức là em chỉ được đọc tại chỗ, không được mượn mang ra ngoài.",
-        "Nam sinh: “Closed Reserve” là gì ạ?",
-        "Cô: Một khu đặc biệt trong thư viện. Tuy nhiên, chúng tôi khuyến khích mua sách cốt lõi, vì em sẽ cần dùng khi thi.",
-        "Nam sinh: Vâng, chắc em sẽ mua. Vậy nội dung khóa học tập trung vào điều gì ạ?",
-        "Cô: Khóa học của trường này hướng đến thực tiễn, nghĩa là chuẩn bị cho sinh viên đi làm sau này, nên mọi thứ rất thực tế.",
-        "Nam sinh: Vậy cơ hội xin việc của em có cao không ạ?",
-        "Cô: Miễn là em đạt kết quả tốt.",
-        "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
-        "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
+        "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
       "vocabulary": [
@@ -3428,113 +2186,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "D",
       "en_transcript": [
-        "M = male student      F = female lecturer",
-        "M:   Hello, can I come in?",
-        "F:    Oh yes, come in. How can I help you?",
-        "M:   <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>",
-        "F:    Yes, this is the School of Economics.",
-        "M:   Oh, good. Um, I’m a new student, and I was wondering if someone could give me some information.",
-        "F:    Well, I might be able to help. I lecture on that program. What do you need to Know?",
-        "M:   Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
-        "F:    <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>",
-        "M:   What time?",
-        "F:    Let me see ... You know this information is all in the handout, which you should have received yesterday at the orientation meeting.",
-        "M:   Oh, was there a meeting yesterday? I didn’t know about that ... no one mentioned ...",
-        "F:    Yes, there was, but never mind. Now lectures are at four m the afternoon.",
-        "M:   Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
-        "F:    <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>",
-        "M:   90%! That’s high. Do they enforce that rule?",
-        "F:    Yes, we do. We’re pretty strict about it, actually.",
-        "M:   And what times have been set down for the tutorials — do you have that Information?",
-        "F:    That’s a very well-attended course so there’s a number of tutorial times. Monday. Wednesday and Friday, all at 9 o’clock. Yours will be allocated at the first lecture.",
-        "M:   Can’t I choose the time?",
-        "F:    Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>",
-        "M:   Oh. OK.",
-        "F:    Anything else I can help you with while you’re here?",
-        "M:   Well, yes, actually. Do you know what the course requirements are? I mean, how much work is expected for this course?",
-        "F:    Well, you have to complete a tutorial paper.",
-        "M:   What does that involve?",
-        "F:    Well, it’s a piece of work on a given topic based on some set reading texts. You’ll have to give a small talk to your tutorial group ...",
-        "M:   How long does that have to be?",
-        "F:    Oh, about 25 minutes usually.",
-        "M:   I have to talk for 25 minutes.",
-        "F:    Yes, that’s right. And then, you have to write up your piece of work and give it to the lecturer to be marked.",
-        "M:   Right. And is that all?",
-        "F:    No. You also have to complete a 3000-word essay on a topic.",
-        "M:   Can I choose the topic?",
-        "F:    Yes, usually you can.",
-        "M:   Right. That shouldn’t be too bad.",
-        "F:    And in addition to that, there is an exam.",
-        "M:   An exam! What sort of exam?",
-        "F:    Well, it’s an open-book exam.",
-        "M:   Does that mean I can have the textbook with me during the exam?",
-        "F:    Yes., that’s right.",
-        "M:   And can you give me any idea about the content of the first year of Economics so that I can get into some reading?",
-        "F:   Well, you’ll be getting the reading list next week when lectures start. All the books are in the library.",
-        "M:   Yes, but won’t everyone else take them out as soon as they get the reading list too?",
-        "F:    Well, yes. they might. But most of the important ones are held in Closed Reserve ... that’s a part of the library where you can go to read books but you can’t take them out of the building.",
-        "M:   What did you call that section of the library?",
-        "F:    Closed Reserve. However, we do recommend that you buy the core books. You’ll find them useful, and you’ll need them for the exam.",
-        "M:   Yes. I suppose I will. But what is the focus of the course?",
-        "F:    Well, the course at this university has a vocational focus. That is a focus on preparing its graduates for work, so we’re orientated very much towards employment.",
-        "M:   So my chances of getting a job are good?",
-        "F:    Well. provided you get good results.",
-        "M:   Well, look, thanks for your time. You’ve been really helpful.",
-        "F:    That’s fine. See you next week then."
+        "M: Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
+        "F: <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>"
       ],
       "vi_transcript": [
-        "Nam sinh: Xin chào, em vào được chứ ạ?",
-        "Cô: Ồ, vâng, vào đi. Em cần gì vậy?",
-        "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>",
-        "Cô: Vâng, đây là Khoa Kinh tế.",
-        "Nam sinh: Tuyệt quá. Em là sinh viên mới và muốn tìm hiểu một vài thông tin.",
-        "Cô: Cô có thể giúp. Cô cũng giảng dạy chương trình này. Em muốn biết điều gì?",
-        "Nam sinh: Thực ra là khá nhiều thứ ạ. Đầu tiên là mỗi tuần có bao nhiêu buổi giảng?",
-        "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>",
-        "Nam sinh: Vào mấy giờ ạ?",
-        "Cô: Để cô xem… Thông tin đó có trong tờ hướng dẫn mà em đáng lẽ đã nhận được hôm qua trong buổi định hướng.",
-        "Nam sinh: Ồ, có buổi định hướng hôm qua ạ? Em không biết… chẳng ai nhắc gì cả...",
-        "Cô: Có đấy, nhưng không sao. Giờ giảng là 4 giờ chiều.",
         "Nam sinh: 4 giờ thì hơi trễ. Em có việc làm bán thời gian bắt đầu lúc 4:30.",
-        "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>",
-        "Nam sinh: 90%! Cao quá. Trường có thực sự bắt buộc không ạ?",
-        "Cô: Có chứ. Chúng tôi khá nghiêm túc về việc đó.",
-        "Nam sinh: Còn buổi tutorial thì sao, đã xếp lịch chưa ạ?",
-        "Cô: Đây là khóa học có nhiều người đăng ký, nên có nhiều khung giờ tutorial. Vào thứ Hai, thứ Tư và thứ Sáu – đều lúc 9 giờ sáng. Em sẽ được xếp buổi học trong buổi giảng đầu tiên.",
-        "Nam sinh: Em không được chọn giờ học sao?",
-        "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>",
-        "Nam sinh: À, vâng.",
-        "Cô: Em còn cần gì nữa không?",
-        "Nam sinh: Có ạ. Em muốn hỏi yêu cầu của khóa học – tức là em phải làm bao nhiêu việc cho môn học này?",
-        "Cô: Em phải hoàn thành một bài tutorial.",
-        "Nam sinh: Bài đó là gì ạ?",
-        "Cô: Là một bài viết về chủ đề được giao, dựa trên các tài liệu đọc được chỉ định. Em cũng phải trình bày ngắn cho nhóm học của mình...",
-        "Nam sinh: Trình bày bao lâu ạ?",
-        "Cô: Khoảng 25 phút.",
-        "Nam sinh: Em phải nói suốt 25 phút á?",
-        "Cô: Đúng vậy. Sau đó em viết lại nội dung bài và nộp cho giảng viên để chấm điểm.",
-        "Nam sinh: Còn gì nữa không ạ?",
-        "Cô: Có chứ. Em còn phải viết một bài luận 3000 từ về một chủ đề.",
-        "Nam sinh: Em được chọn chủ đề chứ?",
-        "Cô: Thường thì được chọn.",
-        "Nam sinh: Vậy cũng không tệ lắm.",
-        "Cô: Ngoài ra còn có một kỳ thi nữa.",
-        "Nam sinh: Thi gì vậy ạ?",
-        "Cô: Thi mở sách.",
-        "Nam sinh: Tức là em được mang sách vào phòng thi ạ?",
-        "Cô: Đúng rồi.",
-        "Nam sinh: Cô có thể gợi ý em nên đọc trước những gì cho năm nhất không?",
-        "Cô: Tuần sau khi bắt đầu học, em sẽ nhận danh sách đọc. Tất cả sách đều có trong thư viện.",
-        "Nam sinh: Nhưng rồi ai cũng sẽ mượn ngay khi nhận danh sách mà.",
-        "Cô: Đúng, nhưng đa số sách quan trọng được đặt ở khu “Closed Reserve” – tức là em chỉ được đọc tại chỗ, không được mượn mang ra ngoài.",
-        "Nam sinh: “Closed Reserve” là gì ạ?",
-        "Cô: Một khu đặc biệt trong thư viện. Tuy nhiên, chúng tôi khuyến khích mua sách cốt lõi, vì em sẽ cần dùng khi thi.",
-        "Nam sinh: Vâng, chắc em sẽ mua. Vậy nội dung khóa học tập trung vào điều gì ạ?",
-        "Cô: Khóa học của trường này hướng đến thực tiễn, nghĩa là chuẩn bị cho sinh viên đi làm sau này, nên mọi thứ rất thực tế.",
-        "Nam sinh: Vậy cơ hội xin việc của em có cao không ạ?",
-        "Cô: Miễn là em đạt kết quả tốt.",
-        "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
-        "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
+        "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
       "vocabulary": [
@@ -3575,113 +2232,12 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "M = male student      F = female lecturer",
-        "M:   Hello, can I come in?",
-        "F:    Oh yes, come in. How can I help you?",
-        "M:   <span class=\"highlight\">[17] I was looking for the Economics office. I’ve been all over the Arts Faculty building looking for it, but I could only find the School of Accounting and Economic History. Is this the right place?</span>",
-        "F:    Yes, this is the School of Economics.",
-        "M:   Oh, good. Um, I’m a new student, and I was wondering if someone could give me some information.",
-        "F:    Well, I might be able to help. I lecture on that program. What do you need to Know?",
-        "M:   Quite a few things, actually. Firstly, how many lectures a week do I have to Attend?",
-        "F:    <span class=\"highlight\">[18] Ah, well, the Economics I course is a double unit, so there are two lectures a week and one tutorial. The lectures are scheduled for Tuesday and Thursday.</span>",
-        "M:   What time?",
-        "F:    Let me see ... You know this information is all in the handout, which you should have received yesterday at the orientation meeting.",
-        "M:   Oh, was there a meeting yesterday? I didn’t know about that ... no one mentioned ...",
-        "F:    Yes, there was, but never mind. Now lectures are at four m the afternoon.",
-        "M:   Four’s a bit late. I’ve got a part-time job that starts at four thirty.",
-        "F:    <span class=\"highlight\">[19] Well, you can’t be in two places at once, can you, and attendance at lectures is necessary. We expect at least 90% attendance at this university, you know.</span>",
-        "M:   90%! That’s high. Do they enforce that rule?",
-        "F:    Yes, we do. We’re pretty strict about it, actually.",
-        "M:   And what times have been set down for the tutorials — do you have that Information?",
-        "F:    That’s a very well-attended course so there’s a number of tutorial times. Monday. Wednesday and Friday, all at 9 o’clock. Yours will be allocated at the first lecture.",
-        "M:   Can’t I choose the time?",
-        "F:    Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>",
-        "M:   Oh. OK.",
-        "F:    Anything else I can help you with while you’re here?",
-        "M:   Well, yes, actually. Do you know what the course requirements are? I mean, how much work is expected for this course?",
-        "F:    Well, you have to complete a tutorial paper.",
-        "M:   What does that involve?",
-        "F:    Well, it’s a piece of work on a given topic based on some set reading texts. You’ll have to give a small talk to your tutorial group ...",
-        "M:   How long does that have to be?",
-        "F:    Oh, about 25 minutes usually.",
-        "M:   I have to talk for 25 minutes.",
-        "F:    Yes, that’s right. And then, you have to write up your piece of work and give it to the lecturer to be marked.",
-        "M:   Right. And is that all?",
-        "F:    No. You also have to complete a 3000-word essay on a topic.",
-        "M:   Can I choose the topic?",
-        "F:    Yes, usually you can.",
-        "M:   Right. That shouldn’t be too bad.",
-        "F:    And in addition to that, there is an exam.",
-        "M:   An exam! What sort of exam?",
-        "F:    Well, it’s an open-book exam.",
-        "M:   Does that mean I can have the textbook with me during the exam?",
-        "F:    Yes., that’s right.",
-        "M:   And can you give me any idea about the content of the first year of Economics so that I can get into some reading?",
-        "F:   Well, you’ll be getting the reading list next week when lectures start. All the books are in the library.",
-        "M:   Yes, but won’t everyone else take them out as soon as they get the reading list too?",
-        "F:    Well, yes. they might. But most of the important ones are held in Closed Reserve ... that’s a part of the library where you can go to read books but you can’t take them out of the building.",
-        "M:   What did you call that section of the library?",
-        "F:    Closed Reserve. However, we do recommend that you buy the core books. You’ll find them useful, and you’ll need them for the exam.",
-        "M:   Yes. I suppose I will. But what is the focus of the course?",
-        "F:    Well, the course at this university has a vocational focus. That is a focus on preparing its graduates for work, so we’re orientated very much towards employment.",
-        "M:   So my chances of getting a job are good?",
-        "F:    Well. provided you get good results.",
-        "M:   Well, look, thanks for your time. You’ve been really helpful.",
-        "F:    That’s fine. See you next week then."
+        "M: Can’t I choose the time?",
+        "F: Maybe. Maybe not. <span class=\"highlight\">[20] You’ll have to talk to the lecturer on the course. Dr. Roberts is his name.</span>"
       ],
       "vi_transcript": [
-        "Nam sinh: Xin chào, em vào được chứ ạ?",
-        "Cô: Ồ, vâng, vào đi. Em cần gì vậy?",
-        "Nam sinh: <span class=\"highlight\">(17) Em đang tìm văn phòng khoa Kinh tế. Em đã đi khắp tòa nhà của khoa Nghệ thuật nhưng chỉ thấy Khoa Kế toán và Lịch sử Kinh tế. Đây có phải chỗ đúng không ạ?</span>",
-        "Cô: Vâng, đây là Khoa Kinh tế.",
-        "Nam sinh: Tuyệt quá. Em là sinh viên mới và muốn tìm hiểu một vài thông tin.",
-        "Cô: Cô có thể giúp. Cô cũng giảng dạy chương trình này. Em muốn biết điều gì?",
-        "Nam sinh: Thực ra là khá nhiều thứ ạ. Đầu tiên là mỗi tuần có bao nhiêu buổi giảng?",
-        "Cô: <span class=\"highlight\">(18) À, khóa học Kinh tế I là môn học nhân đôi tín chỉ, nên có hai buổi giảng và một buổi tutorial mỗi tuần. Các buổi giảng được xếp vào thứ Ba và thứ Năm.</span>",
-        "Nam sinh: Vào mấy giờ ạ?",
-        "Cô: Để cô xem… Thông tin đó có trong tờ hướng dẫn mà em đáng lẽ đã nhận được hôm qua trong buổi định hướng.",
-        "Nam sinh: Ồ, có buổi định hướng hôm qua ạ? Em không biết… chẳng ai nhắc gì cả...",
-        "Cô: Có đấy, nhưng không sao. Giờ giảng là 4 giờ chiều.",
-        "Nam sinh: 4 giờ thì hơi trễ. Em có việc làm bán thời gian bắt đầu lúc 4:30.",
-        "Cô: <span class=\"highlight\">(19) Em không thể ở hai nơi cùng lúc được đâu. Và việc tham dự lớp học là bắt buộc. Ở trường này, chúng tôi yêu cầu ít nhất 90% tham dự đấy nhé.</span>",
-        "Nam sinh: 90%! Cao quá. Trường có thực sự bắt buộc không ạ?",
-        "Cô: Có chứ. Chúng tôi khá nghiêm túc về việc đó.",
-        "Nam sinh: Còn buổi tutorial thì sao, đã xếp lịch chưa ạ?",
-        "Cô: Đây là khóa học có nhiều người đăng ký, nên có nhiều khung giờ tutorial. Vào thứ Hai, thứ Tư và thứ Sáu – đều lúc 9 giờ sáng. Em sẽ được xếp buổi học trong buổi giảng đầu tiên.",
         "Nam sinh: Em không được chọn giờ học sao?",
-        "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>",
-        "Nam sinh: À, vâng.",
-        "Cô: Em còn cần gì nữa không?",
-        "Nam sinh: Có ạ. Em muốn hỏi yêu cầu của khóa học – tức là em phải làm bao nhiêu việc cho môn học này?",
-        "Cô: Em phải hoàn thành một bài tutorial.",
-        "Nam sinh: Bài đó là gì ạ?",
-        "Cô: Là một bài viết về chủ đề được giao, dựa trên các tài liệu đọc được chỉ định. Em cũng phải trình bày ngắn cho nhóm học của mình...",
-        "Nam sinh: Trình bày bao lâu ạ?",
-        "Cô: Khoảng 25 phút.",
-        "Nam sinh: Em phải nói suốt 25 phút á?",
-        "Cô: Đúng vậy. Sau đó em viết lại nội dung bài và nộp cho giảng viên để chấm điểm.",
-        "Nam sinh: Còn gì nữa không ạ?",
-        "Cô: Có chứ. Em còn phải viết một bài luận 3000 từ về một chủ đề.",
-        "Nam sinh: Em được chọn chủ đề chứ?",
-        "Cô: Thường thì được chọn.",
-        "Nam sinh: Vậy cũng không tệ lắm.",
-        "Cô: Ngoài ra còn có một kỳ thi nữa.",
-        "Nam sinh: Thi gì vậy ạ?",
-        "Cô: Thi mở sách.",
-        "Nam sinh: Tức là em được mang sách vào phòng thi ạ?",
-        "Cô: Đúng rồi.",
-        "Nam sinh: Cô có thể gợi ý em nên đọc trước những gì cho năm nhất không?",
-        "Cô: Tuần sau khi bắt đầu học, em sẽ nhận danh sách đọc. Tất cả sách đều có trong thư viện.",
-        "Nam sinh: Nhưng rồi ai cũng sẽ mượn ngay khi nhận danh sách mà.",
-        "Cô: Đúng, nhưng đa số sách quan trọng được đặt ở khu “Closed Reserve” – tức là em chỉ được đọc tại chỗ, không được mượn mang ra ngoài.",
-        "Nam sinh: “Closed Reserve” là gì ạ?",
-        "Cô: Một khu đặc biệt trong thư viện. Tuy nhiên, chúng tôi khuyến khích mua sách cốt lõi, vì em sẽ cần dùng khi thi.",
-        "Nam sinh: Vâng, chắc em sẽ mua. Vậy nội dung khóa học tập trung vào điều gì ạ?",
-        "Cô: Khóa học của trường này hướng đến thực tiễn, nghĩa là chuẩn bị cho sinh viên đi làm sau này, nên mọi thứ rất thực tế.",
-        "Nam sinh: Vậy cơ hội xin việc của em có cao không ạ?",
-        "Cô: Miễn là em đạt kết quả tốt.",
-        "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
-        "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
+        "Cô: Có thể được, cũng có thể không. <span class=\"highlight\">(20) Em phải nói chuyện với giảng viên chính của học phần. Thầy ấy tên là Dr. Roberts.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
       "vocabulary": [
@@ -3722,10 +2278,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+        "<span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys.</span>"
       ],
       "vi_transcript": [
-        "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+        "<span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
@@ -3766,10 +2322,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+        "<span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour.</span>"
       ],
       "vi_transcript": [
-        "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+        "<span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
@@ -3810,10 +2366,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+        "<span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months.</span>"
       ],
       "vi_transcript": [
-        "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+        "<span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
@@ -3854,10 +2410,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+        "<span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there.</span>"
       ],
       "vi_transcript": [
-        "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+        "<span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
@@ -3898,10 +2454,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "My name's Dan Pearman and I'd like to talk about the work of Pedal Power, a small charity based mainly in the UK. I'll be giving our contact details at the end, if anyone would like to find out more about how to support us. But first, how the charity began. I got the idea of exporting bicycles to developing countries while I was in Ecuador. I went there in 1993, just after graduating from university. After three years of studying, I wanted adventure. <span class=\"highlight\">[21] I loved traveling, so I decided to join a voluntary organization and was sent to Ecuador to carry out land surveys. The project came to an end after five years, and when I returned to the UK in 1998, I started planning Pedal Power. Where I lived in Ecuador was a very rural area. My neighbor had the only bicycle in the village, whereas everyone else walked everywhere. My neighbour's business was unusually successful, and for years I couldn't understand why.</span> <span class=\"highlight\">[22] Then I realized having a bike meant he could get where he wanted to go without much trouble. Other local carpenters could only accept jobs in a three-kilometre radius, so no matter how skilled they were, they could never do as many jobs as my neighbour. At Pedal Power, we collect second-hand bikes in the UK and send them to some of the poorest regions in the world. When we distribute bikes overseas, we don't give them away for free. We'd like to, but long term that doesn't really help the local economy. The demand for bikes is enormous, which makes them very expensive locally So we sell them for 5% of the normal price.</span> <span class=\"highlight\">[23] But in order to continue operating we need to have a constant supply of bikes which we send out every six months. One example of a town that's received bicycles from Pedal Power is Rivas. It was the first place I sent a full container of bicycles to. Most people there now own a bicycle.</span> <span class=\"highlight\">[24] The local economy has developed so much, you wouldn't recognise it as the same place. In fact, there are more bikes than on the streets of Amsterdam if you've ever been there. But Pedal Power still needs your help. You may have read about some of our recent problems in the British media.</span> <span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
+        "<span class=\"highlight\">[25] In August 2000, we simply ran out of money. We had containers of bikes ready to send but no money to pay the bills. It was a terrible situation. We managed to ensure the bikes went out on time, but the other problems carried on for several months.</span>"
       ],
       "vi_transcript": [
-        "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
+        "<span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
       "vocabulary": [
@@ -3942,11 +2498,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-        "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+        "<span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span>"
       ],
       "vi_transcript": [
-        "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+        "<span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
@@ -3987,11 +2542,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-        "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+        "<span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span>"
       ],
       "vi_transcript": [
-        "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+        "<span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
@@ -4032,11 +2586,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-        "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+        "<span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>"
       ],
       "vi_transcript": [
-        "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+        "<span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
@@ -4077,11 +2630,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-        "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+        "<span class=\"highlight\">[29] The modifications I am about to outline will add about ,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area.</span>"
       ],
       "vi_transcript": [
-        "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+        "<span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng .000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
@@ -4122,11 +2674,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "Good afternoon. I'm Paula Bundell, and I am giving you the lectures on Environmental Noise this term. Today, we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area. This site is not as bad as some I have researched in the past. The Blacktown airport is closed from 6 pm to 7 am, and this is a great advantage to this site. <span class=\"highlight\">[26] The only noise after dark is from the highway, and the traffic is somewhat reduced between 7:30 pm and 5:30 am.</span> <span class=\"highlight\">[27] So, the people most affected by the noise will be, I expect, housewives. By the time most of the students and workers have arrived back home in the evening during the week, the noise will have abated to a fairly large extent.</span> <span class=\"highlight\">[28] The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.</span>",
-        "Of course, modifications to houses will be necessary at a site like this, and they come at a significant cost to the developer and homebuyer. <span class=\"highlight\">[29] The modifications I am about to outline will add about $25,000 to the price of a newly built house. That will still mean a cheaper house than in a less noisy and more desirable area. A bit of background would not go astray. I understand that you are all familiar with the proposed development site at Manchester Park. In those areas with sealed windows, it will be necessary to fit fans with absorbers to cut out the noise in those particular houses. Air conditioning units could also be fitted in the ceilings of such houses, but this is substantially more expensive than fans, and may not be needed on this site. Coming back now to the double glazing I mentioned before. Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing. The gap must be at least 7 centimetres. The thickness of the glass is also a factor—8 millimetres on the outside and 6 on the inside pane. It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres. Obviously, the noise factor will have to be taken into consideration with the layout of the houses. Living areas will have to be designed at the back of the houses away from the highway. Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway, two layers of plasterboard will be needed for the interior bedroom walls. Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms, and dining rooms. It's a particularly difficult one in terms of noise, with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.</span> <span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead. As you all know, the normal noise threshold for private housing is 55 decibels. At this site, the levels have been recorded as high as 67 decibels. The construction of the houses has to be somewhat modified from houses in most areas. In the houses on the highway and in the noisiest areas of this site, there will be a need for specialised double glazing, and special acoustic seals will have to be fitted to the doors. All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges. Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high-density insulation materials in the roof. Not only will all the roofs need insulating, but the exterior walls will also be required to be double brick. All ceilings will require double-thickness plasterboard to be used in the construction. In the noisiest areas, mechanical ventilation will have to be installed in the exterior walls. I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.</span>"
+        "<span class=\"highlight\">[30] Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead.</span>"
       ],
       "vi_transcript": [
-        "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng $25.000 vào giá mỗi căn nhà mới. Tuy vậy, giá đó vẫn thấp hơn so với nhà ở những khu yên tĩnh và đáng sống hơn. Một số yêu cầu kỹ thuật gồm: nếu nhà có cửa sổ kín, cần lắp thêm quạt có bộ hấp thụ âm để giảm tiếng ồn. Có thể lắp hệ thống điều hòa trần nhưng chi phí cao hơn nhiều và có thể không cần thiết tại khu này. Quay lại phần cửa kính cách âm: loại kính hai lớp đặc biệt cần có khoảng cách giữa hai lớp kính ít nhất là 7cm, kính ngoài dày 8mm, kính trong dày 6mm. Kính bên ngoài phải dày hơn kính bên trong. Sơ đồ thiết kế nhà cần tính đến hướng tiếng ồn: phòng khách và phòng ngủ phải bố trí phía sau, tránh xa đường cao tốc. Phía trước nên là nhà xe, phòng giặt, bếp, phòng tắm và phòng ăn. Khu này khá phức tạp về tiếng ồn, vì đường cao tốc nằm ở rìa phía Đông và sân bay chỉ cách đó chưa đầy 3 km về phía Bắc.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang. Ngưỡng tiếng ồn cho nhà ở tư nhân là 55 decibel, còn khu vực này đo được tới 67 decibel. Tất cả mái nhà sẽ cần vật liệu cách âm mật độ cao. Tường ngoài cần xây hai lớp gạch, trần cần hai lớp thạch cao. Những khu gần đường cần hệ thống thông gió cơ học. Tôi kết luận rằng dự án có thể được triển khai, nhưng cần các cải tạo âm học phù hợp với vị trí của từng căn nhà.</span>"
+        "<span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
       "vocabulary": [
@@ -4167,13 +2718,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+        "<span class=\"highlight\">[31] Well, my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste.</span>"
       ],
       "vi_transcript": [
-        "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-        "Waterford (làm bút chì)",
-        "Johnson & Jones ở Wales (làm danh thiếp…)",
-        "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+        "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
@@ -4214,13 +2762,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+        "<span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span>"
       ],
       "vi_transcript": [
-        "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-        "Waterford (làm bút chì)",
-        "Johnson & Jones ở Wales (làm danh thiếp…)",
-        "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+        "<span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
@@ -4261,13 +2806,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+        "<span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants.</span>"
       ],
       "vi_transcript": [
-        "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-        "Waterford (làm bút chì)",
-        "Johnson & Jones ở Wales (làm danh thiếp…)",
-        "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+        "<span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
@@ -4308,13 +2850,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "D",
       "en_transcript": [
-        "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+        "<span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand.</span>"
       ],
       "vi_transcript": [
-        "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-        "Waterford (làm bút chì)",
-        "Johnson & Jones ở Wales (làm danh thiếp…)",
-        "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+        "<span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
@@ -4355,13 +2894,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "Well, <span class=\"highlight\">[31] my group has been doing a project on how household waste is recycled in Britain. We were quite shocked to discover that only nine percent of people here in the UK make an effort to recycle their household waste. This is a lower figure that in most other European countries and needs to increase dramatically in the next few years, if the government is going to meet its recycling targets.</span> <span class=\"highlight\">[32] The agreed targets for the UK mean that by 2008 we must reduce our carbon dioxide emissions by 12.5 percent compared with 1990 and recycling can help to achieve that goal in two main ways.</span> <span class=\"highlight\">[33] The production of recycled glass and paper uses much less energy than producing them from virgin materials and also recycling reduces greenhouse gas emissions from landfill sites and incineration plants. As part of our project, we carried out a survey of people in the street and the thing that came up over and over again is that people don't think it's easy enough to recycle their waste. One problem is that there aren't enough drop-off sites. That is, the places where the public is supposed to take their waste. We also discovered that waste that's collected from householders is taken to places called drain banks for sorting and baling and to loads.</span> <span class=\"highlight\">[34] One problem here is taking out everything that shouldn't have been placed in the recycling containers. People put all sorts of things into bottle banks, like plastic bags and even broken umbrellas. All this has to be removed by hand. Another difficulty is the toughened glass used for cooking doesn't fully melt at the temperature required for other glass. And so that also has to be picked out by hand. Glass is easy to recycle because it can be reused over and over again without becoming weaker.</span> <span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled. Oddly enough half the glass that's collected is green and a lot of that is imported. So more green glasses recycled in the UK needs as a result, new uses are being developed for recycled glass, particularly green glass. For example, in fiber glass manufacture and water filtration. A company called CIF Aggregates makes a product for roads and 30% of the material is crushed glass. The recycling paper. Britain came second in Europe with 40 percent behind Germany's amazing 70%. When recycling started there were quality problems. So it was difficult to use recycled paper in office printers, but these problems have now been solved and Martins based in South London produces a range of office stationery, which is 100% recycled. Costs the same as normal paper and is of equally high quality, but this high quality comes at a cost in terms of the waste produced during the process. Over a third of the wastepaper that comes in can't be used in the recycled paper, leaving the question of what to do with it. One firm Paper Save currently sells this to farmers as a soil conditioner. Though this practice will soon be banned because of transport costs and the smell and the company is looking into the possibility of alternative uses. Plastic causes problems because there are so many different types of plastic in use today and each one has to be dealt with differently. Pack Right recycles all sorts of things from bottles to car bumpers and one of its most successful activities is recycling plastic bottles to make containers, which are used all over the country to collect waste. “The save a cup scheme” was set up by the vending and plastics industries to recycle as many as possible of the three and a half billion polystyrene cups used each year. At the moment, 500 million poly cups are collected, processed and sold on to other businesses such as Waterford, which turns the cups into pencils and Johnson and Jones, a Welch based firm, which has developed a wide variety of items including business cards. Well, to sum up, there seems to be plenty of research going on into how to reuse materials, but the biggest problem is getting people to think about recycling instead of throwing things away. At least doing the research made us much more careful.</span>"
+        "<span class=\"highlight\">[35] Two million tons of glass is thrown away each year. That is 7 billion bottles and jars. But only 500,000 tons of that is collected and recycled.</span>"
       ],
       "vi_transcript": [
-        "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế. Điều kỳ lạ là một nửa lượng thủy tinh thu gom được là màu xanh lá, và nhiều trong số đó là hàng nhập khẩu. Do đó, người ta đang phát triển những ứng dụng mới cho thủy tinh tái chế màu xanh, ví dụ như sản xuất sợi thủy tinh và lọc nước. Công ty CIF Aggregates sản xuất vật liệu cho đường sá, trong đó 30% là thủy tinh nghiền. Về giấy tái chế, Anh đứng thứ 2 châu Âu với 40%, sau Đức (70%). Trước đây giấy tái chế không phù hợp để in văn phòng, nhưng giờ chất lượng đã cải thiện. Công ty Martins ở Nam London sản xuất văn phòng phẩm 100% tái chế, giá không khác giấy thường, và chất lượng tương đương. Tuy nhiên, hơn 1/3 lượng giấy phế liệu không thể dùng lại. Một công ty tên Paper Save đang bán loại giấy dư đó làm phân bón cho nông dân, nhưng việc này sắp bị cấm vì mùi và chi phí vận chuyển, nên họ đang tìm hướng sử dụng khác. Về nhựa, có quá nhiều loại, mỗi loại cần xử lý khác nhau. Pack Right tái chế từ chai lọ đến cản xe, và nổi bật nhất là dùng chai nhựa để làm thùng chứa rác. Chương trình “Save a Cup” do ngành nhựa và máy bán hàng tự động lập ra để tái chế hơn 3,5 tỷ ly xốp mỗi năm. Hiện tại 500 triệu ly đã được tái chế và bán lại cho các doanh nghiệp như:</span>",
-        "Waterford (làm bút chì)",
-        "Johnson & Jones ở Wales (làm danh thiếp…)",
-        "Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
+        "<span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
       "vocabulary": [
