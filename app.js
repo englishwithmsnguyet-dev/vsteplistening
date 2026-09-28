@@ -2139,16 +2139,28 @@ Danh sách bài đã làm:
     filterMockPart(part, shouldScroll = false) {
         if (!this.mockTestState) return;
         const partNum = parseInt(part, 10) || 1;
+        const prevPart = this.mockTestState.currentFilterPart;
         this.mockTestState.currentFilterPart = partNum;
 
-        // Only pause audios on tab switch if already submitted (review mode)
-        if (this.mockTestState && this.mockTestState.isSubmitted) {
+        // When switching to another part, pause all playing audios
+        if (prevPart !== partNum) {
             const allAudios = document.querySelectorAll('.mock-audio-track, #mock-audio-element');
             allAudios.forEach(a => {
                 if (!a.paused) {
                     a._systemAllowed = true;
                     a.pause();
                     a._systemAllowed = false;
+                    const id = a.id;
+                    const btn = document.getElementById(`mock-btn-${id}`);
+                    if (btn && !a.ended) {
+                        btn.disabled = false;
+                        btn.style.pointerEvents = 'auto';
+                        btn.style.background = '';
+                        btn.innerHTML = `
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            <span>TIẾP TỤC PHÁT</span>
+                        `;
+                    }
                 }
             });
         }
