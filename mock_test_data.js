@@ -2115,10 +2115,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "D",
       "en_transcript": [
-        "Bruin Design announces a new line of products for the discriminating traveller. All are beautifully designed, long-lasting, and ultra-lightweight. These include handsome briefcases, travel alarm clocks, electric travel irons, and powerful portable shortwave radios for the world traveller. Bruin Design products are available at fine stores throughout Europe, North America, and Asia."
+        "Bruin Design announces a new line of products for the discriminating traveller. All are beautifully designed, long-lasting, and ultra-lightweight. These include handsome briefcases, travel alarm clocks, electric travel irons, and powerful portable shortwave radios for the world traveller. <span class=\"highlight\">[1] Bruin Design products are available at fine stores throughout Europe, North America, and Asia.</span>"
       ],
       "vi_transcript": [
-        "Bruin Design thông báo ra mắt dòng sản phẩm mới dành cho những người yêu du lịch khó tính. Tất cả đều được thiết kế đẹp mắt, bền bỉ và siêu nhẹ. Những sản phẩm này bao gồm: cặp tài liệu sang trọng, đồng hồ báo thức du lịch, bàn là du lịch chạy điện, và radio sóng ngắn di động mạnh mẽ dành cho người hay đi nước ngoài. Sản phẩm của Bruin Design hiện có mặt tại các cửa hàng cao cấp khắp Châu Âu, Bắc Mỹ và Châu Á."
+        "Bruin Design thông báo ra mắt dòng sản phẩm mới dành cho những người yêu du lịch khó tính. Tất cả đều được thiết kế đẹp mắt, bền bỉ và siêu nhẹ. Những sản phẩm này bao gồm: cặp tài liệu sang trọng, đồng hồ báo thức du lịch, bàn là du lịch chạy điện, và radio sóng ngắn di động mạnh mẽ dành cho người hay đi nước ngoài. <span class=\"highlight\">(1) Sản phẩm của Bruin Design hiện có mặt tại các cửa hàng cao cấp khắp Châu Âu, Bắc Mỹ và Châu Á.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
@@ -2161,10 +2161,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "Everyone knows that by the time you read something in a monthly or weekly business magazine, it is already old news. International business situations change from day to day. Now, Business Day, the only major daily business magazine, helps you stay current with the unfolding world of business every day, Monday through Friday. Today, we will send you our new international restaurant guide at no additional charge and why not get a copy for your co-workers, you can save three dollars on each additional gift subscription."
+        "Everyone knows that by the time you read something in a monthly or weekly business magazine, it is already old news. International business situations change from day to day. <span class=\"highlight\">[2] Now, Business Day, the only major daily business magazine, helps you stay current with the unfolding world of business every day, Monday through Friday.</span> Today, we will send you our new international restaurant guide at no additional charge and why not get a copy for your co-workers, you can save three dollars on each additional gift subscription."
       ],
       "vi_transcript": [
-        "Ai cũng biết rằng khi bạn đọc một tạp chí kinh doanh hàng tháng hoặc hàng tuần thì thông tin đó đã lỗi thời. Tình hình kinh doanh quốc tế thay đổi từng ngày. Giờ đây, tạp chí Business Day – tạp chí kinh doanh hằng ngày duy nhất – sẽ giúp bạn cập nhật thế giới kinh doanh mỗi ngày từ thứ Hai đến thứ Sáu. Hôm nay, chúng tôi sẽ gửi tặng bạn cẩm nang nhà hàng quốc tế mới của chúng tôi mà không tính thêm phí. Tại sao không đặt thêm một bản cho đồng nghiệp? Bạn sẽ tiết kiệm được 3 đô la cho mỗi lần tặng."
+        "Ai cũng biết rằng khi bạn đọc một tạp chí kinh doanh hàng tháng hoặc hàng tuần thì thông tin đó đã lỗi thời. Tình hình kinh doanh quốc tế thay đổi từng ngày. <span class=\"highlight\">(2) Giờ đây, tạp chí Business Day – tạp chí kinh doanh hằng ngày duy nhất – sẽ giúp bạn cập nhật thế giới kinh doanh mỗi ngày từ thứ Hai đến thứ Sáu.</span> Hôm nay, chúng tôi sẽ gửi tặng bạn cẩm nang nhà hàng quốc tế mới của chúng tôi mà không tính thêm phí. Tại sao không đặt thêm một bản cho đồng nghiệp? Bạn sẽ tiết kiệm được 3 đô la cho mỗi lần tặng."
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
@@ -2206,10 +2206,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "This is Don Beeson of Beeson and Sitwell Architectural Associates. It's now 2:30 p.m. I will be out of the office for the rest of the afternoon, and I won't be returning until tomorrow at 9 a.m. If you need to speak with me this afternoon, please leave a message on my voicemail. I'll be checking my voicemail and returning calls from my home. If you have an urgent problem, you can call my partner, Robin Sitwell, at 320-1631. Have a great day."
+        "This is Don Beeson of Beeson and Sitwell Architectural Associates. It's now 2:30 p.m. I will be out of the office for the rest of the afternoon, and I won't be returning until tomorrow at 9 a.m. If you need to speak with me this afternoon, please leave a message on my voicemail. I'll be checking my voicemail and returning calls from my home. <span class=\"highlight\">[3] If you have an urgent problem, you can call my partner, Robin Sitwell, at 320-1631.</span> Have a great day."
       ],
       "vi_transcript": [
-        "Đây là Don Beeson từ công ty kiến trúc Beeson và Sitwell. Hiện là 2:30 chiều. Tôi sẽ vắng mặt khỏi văn phòng trong suốt buổi chiều và sẽ quay lại vào lúc 9 giờ sáng mai. Nếu bạn cần nói chuyện với tôi trong buổi chiều nay, vui lòng để lại tin nhắn trong hộp thư thoại. Tôi sẽ kiểm tra và gọi lại từ nhà. Nếu bạn gặp vấn đề khẩn cấp, bạn có thể gọi cho đối tác của tôi, Robin Sitwell, theo số 320-1631. Chúc bạn một ngày tốt lành."
+        "Đây là Don Beeson từ công ty kiến trúc Beeson và Sitwell. Hiện là 2:30 chiều. Tôi sẽ vắng mặt khỏi văn phòng trong suốt buổi chiều và sẽ quay lại vào lúc 9 giờ sáng mai. Nếu bạn cần nói chuyện với tôi trong buổi chiều nay, vui lòng để lại tin nhắn trong hộp thư thoại. Tôi sẽ kiểm tra và gọi lại từ nhà. <span class=\"highlight\">(3) Nếu bạn gặp vấn đề khẩn cấp, bạn có thể gọi cho đối tác của tôi, Robin Sitwell, theo số 320-1631.</span> Chúc bạn một ngày tốt lành."
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
@@ -2250,10 +2250,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "C",
       "en_transcript": [
-        "Welcome to radio station WKYO's show, Garden Spot. This is your host, Peter Brooks. This time of year is a good time to talk about harvesting your garden vegetables. And today, I have a few hints for you. For example, did you know that you should always pick corn in the morning when it's cool? That's because the afternoon heat turns the sugar in the corn to starch and spoils the taste. And did you know that the longer you leave peppers on the vine, the more vitamin C they contain? We'll be back in a moment with more harvesting hints. And a little later, Professor Gail Mueller, an expert on plant parasites, will be dropping by the studio to chat with us. But first, this commercial message from our sponsor, the Colony Seed Company."
+        "Welcome to radio station WKYO's show, Garden Spot. This is your host, Peter Brooks. This time of year is a good time to talk about harvesting your garden vegetables. And today, I have a few hints for you. For example, did you know that you should always pick corn in the morning when it's cool? That's because the afternoon heat turns the sugar in the corn to starch and spoils the taste. And did you know that the longer you leave peppers on the vine, the more vitamin C they contain? We'll be back in a moment with more harvesting hints. And a little later, Professor Gail Mueller, an expert on plant parasites, will be dropping by the studio to chat with us. <span class=\"highlight\">[4] But first, this commercial message from our sponsor, the Colony Seed Company.</span>"
       ],
       "vi_transcript": [
-        "Chào mừng đến với chương trình Garden Spot của đài phát thanh WKYO. Tôi là người dẫn chương trình, Peter Brooks. Thời điểm này trong năm là thời gian tuyệt vời để nói về việc thu hoạch rau trong vườn. Hôm nay tôi có một vài mẹo muốn chia sẻ. Ví dụ, bạn có biết nên hái bắp vào buổi sáng khi trời còn mát không? Vì nhiệt độ nóng vào buổi chiều sẽ biến đường trong bắp thành tinh bột và làm hỏng hương vị.Và bạn có biết càng để ớt trên cây lâu thì chúng càng chứa nhiều vitamin C? Chúng tôi sẽ quay lại ngay với nhiều mẹo thu hoạch hơn. Và lát nữa, giáo sư Gail Mueller – chuyên gia về ký sinh trùng thực vật – sẽ đến phòng thu trò chuyện với chúng ta. Nhưng trước tiên là một thông điệp quảng cáo từ nhà tài trợ – Công ty hạt giống Colony."
+        "Chào mừng đến với chương trình Garden Spot của đài phát thanh WKYO. Tôi là người dẫn chương trình, Peter Brooks. Thời điểm này trong năm là thời gian tuyệt vời để nói về việc thu hoạch rau trong vườn. Hôm nay tôi có một vài mẹo muốn chia sẻ. Ví dụ, bạn có biết nên hái bắp vào buổi sáng khi trời còn mát không? Vì nhiệt độ nóng vào buổi chiều sẽ biến đường trong bắp thành tinh bột và làm hỏng hương vị.Và bạn có biết càng để ớt trên cây lâu thì chúng càng chứa nhiều vitamin C? Chúng tôi sẽ quay lại ngay với nhiều mẹo thu hoạch hơn. Và lát nữa, giáo sư Gail Mueller – chuyên gia về ký sinh trùng thực vật – sẽ đến phòng thu trò chuyện với chúng ta. <span class=\"highlight\">(4) Nhưng trước tiên là một thông điệp quảng cáo từ nhà tài trợ – Công ty hạt giống Colony.</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
@@ -2295,10 +2295,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "D",
       "en_transcript": [
-        "And now, ladies and gentlemen, I'd like to present the award for employee of the month to Elizabeth Bryce from the shipping department. She not only received top evaluations from her supervisor. She also submitted a suggestion that could save the company thousands of dollars a year in shipping costs. Besides a small bonus in next week's paycheck. Ms. Bryce gets a reserved parking place for a month, the one right next to the CEO spot. She also becomes eligible for the Employee of the Year Award. And as you know, the Employee of the Year wins a new car."
+        "And now, ladies and gentlemen, I'd like to present the award for employee of the month to Elizabeth Bryce from the shipping department. <span class=\"highlight\">[5] She not only received top evaluations from her supervisor. She also submitted a suggestion that could save the company thousands of dollars a year in shipping costs.</span> Besides a small bonus in next week's paycheck. Ms. Bryce gets a reserved parking place for a month, the one right next to the CEO spot. She also becomes eligible for the Employee of the Year Award. And as you know, the Employee of the Year wins a new car."
       ],
       "vi_transcript": [
-        "Và bây giờ, thưa quý vị, tôi xin trao giải Nhân viên của Tháng cho cô Elizabeth Bryce đến từ bộ phận vận chuyển. Cô ấy không chỉ nhận được đánh giá cao nhất từ quản lý của mình. Cô ấy còn đề xuất một ý tưởng có thể giúp công ty tiết kiệm hàng ngàn đô la mỗi năm trong chi phí vận chuyển. Ngoài khoản tiền thưởng nhỏ trong bảng lương tuần tới, cô Bryce sẽ có chỗ đậu xe riêng trong một tháng – ngay cạnh chỗ của giám đốc điều hành. Cô ấy cũng sẽ đủ điều kiện tranh giải Nhân viên của Năm – và như bạn biết, người thắng giải này sẽ nhận được một chiếc xe hơi mới."
+        "Và bây giờ, thưa quý vị, tôi xin trao giải Nhân viên của Tháng cho cô Elizabeth Bryce đến từ bộ phận vận chuyển. <span class=\"highlight\">(5) Cô ấy không chỉ nhận được đánh giá cao nhất từ quản lý của mình. Cô ấy còn đề xuất một ý tưởng có thể giúp công ty tiết kiệm hàng ngàn đô la mỗi năm trong chi phí vận chuyển.</span> Ngoài khoản tiền thưởng nhỏ trong bảng lương tuần tới, cô Bryce sẽ có chỗ đậu xe riêng trong một tháng – ngay cạnh chỗ của giám đốc điều hành. Cô ấy cũng sẽ đủ điều kiện tranh giải Nhân viên của Năm – và như bạn biết, người thắng giải này sẽ nhận được một chiếc xe hơi mới."
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
@@ -2339,10 +2339,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "A",
       "en_transcript": [
-        "Man 1: When I got to work this morning, the security system had been turned off. Man 2: Really? That's strange. Man 1: That's what I thought, too."
+        "Man 1: <span class=\"highlight\">[6] When I got to work this morning, the security system had been turned off.</span> Man 2: Really? That's strange. Man 1: That's what I thought, too."
       ],
       "vi_transcript": [
-        "Nam 1: Khi tôi đến chỗ làm sáng nay, hệ thống an ninh đã bị tắt. Nam 2: Thật sao? Thật kỳ lạ. Nam 1: Tôi cũng nghĩ vậy."
+        "Nam 1: <span class=\"highlight\">(6) Khi tôi đến chỗ làm sáng nay, hệ thống an ninh đã bị tắt.</span> Nam 2: Thật sao? Thật kỳ lạ. Nam 1: Tôi cũng nghĩ vậy."
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
@@ -2382,10 +2382,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "Man 1: It's going to be another warm day. Man 2: Of course. You know, I miss living somewhere that has four seasons. Man 1: Me too. I especially miss those cool, brisk autumn mornings."
+        "Man 1: <span class=\"highlight\">[7] It's going to be another warm day.</span> Man 2: Of course. You know, I miss living somewhere that has four seasons. Man 1: Me too. I especially miss those cool, brisk autumn mornings."
       ],
       "vi_transcript": [
-        "Nam 1: Hôm nay lại sẽ là một ngày ấm áp nữa đấy. Nam 2: Dĩ nhiên rồi. Anh biết đấy, tôi nhớ sống ở nơi có đủ bốn mùa. Nam 1: Tôi cũng vậy. Tôi đặc biệt nhớ những buổi sáng mùa thu mát mẻ, se lạnh."
+        "Nam 1: <span class=\"highlight\">(7) Hôm nay lại sẽ là một ngày ấm áp nữa đấy.</span> Nam 2: Dĩ nhiên rồi. Anh biết đấy, tôi nhớ sống ở nơi có đủ bốn mùa. Nam 1: Tôi cũng vậy. Tôi đặc biệt nhớ những buổi sáng mùa thu mát mẻ, se lạnh."
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
@@ -2425,10 +2425,10 @@ window.VSTEP_MOCK_TEST_DATA = {
       ],
       "correct": "B",
       "en_transcript": [
-        "Woman:I'm sorry. Ms. Bauer is at a sales meeting. Man: I see. Will it last much longer? Woman:Probably not. Why don't you get yourself some coffee or tea and have a seat over there?"
+        "Woman: I'm sorry. Ms. Bauer is at a sales meeting. Man: I see. Will it last much longer? Woman: Probably not. <span class=\"highlight\">[8] Why don't you get yourself some coffee or tea and have a seat over there?</span>"
       ],
       "vi_transcript": [
-        "Nữ: Xin lỗi, cô Bauer đang dự một cuộc họp về bán hàng. Nam: Tôi hiểu rồi. Cuộc họp đó còn lâu không? Nữ: Chắc là không đâu. Sao anh không tự lấy chút cà phê hoặc trà rồi ngồi đợi ở đằng kia?"
+        "Nữ: Xin lỗi, cô Bauer đang dự một cuộc họp về bán hàng. Nam: Tôi hiểu rồi. Cuộc họp đó còn lâu không? Nữ: Chắc là không đâu. <span class=\"highlight\">(8) Sao anh không tự lấy chút cà phê hoặc trà rồi ngồi đợi ở đằng kia?</span>"
       ],
       "audio": "LISTENING MOCK TEST/AUDIO/PART 01.mp3?v=3",
       "vocabulary": [
