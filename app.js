@@ -1204,6 +1204,55 @@ class VstepApp {
             let fullEnHtml = dataObj.en_transcript ? dataObj.en_transcript.map(line => `<p style="margin-bottom:10px;">${this.cleanTranscriptLine(line)}</p>`).join('') : '<p>Chưa có dữ liệu lời thoại gốc.</p>';
             let fullViHtml = dataObj.vi_transcript ? dataObj.vi_transcript.map(line => `<p style="margin-bottom:10px; font-style:italic;">${this.cleanTranscriptLine(line)}</p>`).join('') : '<p>Chưa có dữ liệu lời thoại dịch.</p>';
             
+            // Collect all unique vocabularies from questions in this practice test
+            const allVocabSet = new Set();
+            const allVocabList = [];
+            if (dataObj.questions) {
+                dataObj.questions.forEach(q => {
+                    if (q.vocabulary && Array.isArray(q.vocabulary)) {
+                        q.vocabulary.forEach(v => {
+                            if (!allVocabSet.has(v)) {
+                                allVocabSet.add(v);
+                                allVocabList.push(v);
+                            }
+                        });
+                    }
+                });
+            }
+
+            let fullVocabHtml = '';
+            if (allVocabList.length > 0) {
+                fullVocabHtml = `
+                    <div class="useful-vocab-section" style="margin-top: 24px; padding-top: 16px; border-top: 1px dashed var(--border-color);">
+                        <h4 style="margin-bottom: 12px; font-size: 0.95rem; font-weight: bold; color: var(--color-primary); display: flex; align-items: center; gap: 6px;">
+                            <span>📚</span> TỪ VỰNG HỮU ÍCH
+                        </h4>
+                        <div style="font-size: 0.9rem; line-height: 1.6; color: var(--text-primary);">
+                            ${allVocabList.map(v => {
+                                const match = v.match(/^([^/(:]+)(.*)$/);
+                                if (match) {
+                                    const wordPart = match[1].trim();
+                                    const restPart = match[2] || '';
+                                    return `
+                                        <div style="margin-bottom: 8px; display: flex; align-items: flex-start;">
+                                            <button type="button" class="btn-speak-vocab" onclick="window.speakWord('${wordPart.replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0; margin-right: 8px; transform: translateY(1px);" title="Nghe đọc mẫu">
+                                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                                    <path d="M12 3L6.5 8H2V16H6.5L12 21V3ZM16.5 12C16.5 10.23 15.48 8.71 14 8V16C15.48 15.29 16.5 13.77 16.5 12ZM14 3.23V5.29C16.89 6.15 19 8.83 19 12C19 15.17 16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12C21 7.72 18.01 4.14 14 3.23Z"/>
+                                                </svg>
+                                            </button>
+                                            <div>
+                                                - <strong>${wordPart}</strong> ${restPart}
+                                            </div>
+                                        </div>
+                                    `;
+                                }
+                                return `<div style="margin-bottom: 8px;">- ${v}</div>`;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
             const fullTranscriptCard = document.createElement('div');
             fullTranscriptCard.className = 'question-card glass-card';
             fullTranscriptCard.style.marginTop = '30px';
@@ -1227,6 +1276,7 @@ class VstepApp {
                         </div>
                     </div>
                 </div>
+                ${fullVocabHtml}
             `;
             listContainer.appendChild(fullTranscriptCard);
         }
@@ -2406,6 +2456,35 @@ Danh sách bài đã làm:
                             ${(q.vi_transcript || []).map(line => `<p style="margin: 0 0 8px 0;">${line}</p>`).join('')}
                         </div>
                     </div>
+                    ${(q.vocabulary && q.vocabulary.length > 0) ? `
+                    <div class="useful-vocab-section" style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--border-color);">
+                        <h4 style="margin-bottom: 12px; font-size: 0.95rem; font-weight: bold; color: var(--color-primary); display: flex; align-items: center; gap: 6px;">
+                            <span>📚</span> TỪ VỰNG HỮU ÍCH:
+                        </h4>
+                        <div style="font-size: 0.9rem; line-height: 1.6; color: var(--text-primary);">
+                            ${q.vocabulary.map(v => {
+                                const match = v.match(/^([^/(:]+)(.*)$/);
+                                if (match) {
+                                    const wordPart = match[1].trim();
+                                    const restPart = match[2] || '';
+                                    return `
+                                        <div style="margin-bottom: 8px; display: flex; align-items: flex-start;">
+                                            <button type="button" class="btn-speak-vocab" onclick="window.speakWord('${wordPart.replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0; margin-right: 8px; transform: translateY(1px);" title="Nghe đọc mẫu">
+                                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                                    <path d="M12 3L6.5 8H2V16H6.5L12 21V3ZM16.5 12C16.5 10.23 15.48 8.71 14 8V16C15.48 15.29 16.5 13.77 16.5 12ZM14 3.23V5.29C16.89 6.15 19 8.83 19 12C19 15.17 16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12C21 7.72 18.01 4.14 14 3.23Z"/>
+                                                </svg>
+                                            </button>
+                                            <div>
+                                                - <strong>${wordPart}</strong> ${restPart}
+                                            </div>
+                                        </div>
+                                    `;
+                                }
+                                return `<div style="margin-bottom: 8px;">- ${v}</div>`;
+                            }).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
                 </div>
             </div>
             `;
