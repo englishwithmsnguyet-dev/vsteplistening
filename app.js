@@ -436,24 +436,30 @@ class VstepApp {
     }
 
     isItemUnlocked(partNum, id, isTheory = false) {
-        if (sessionStorage.getItem('vstep_unlocked') === 'true') {
-            return true;
-        }
-        
-        const code = sessionStorage.getItem('vstep_access_code');
+        const code = sessionStorage.getItem('vstep_access_code') || '';
         const studentName = sessionStorage.getItem('vstep_student_name') || '';
-        if (!code && !studentName) return false;
 
         // Nếu là Giáo Viên (tên PTMN hoặc mã lớp GV) thì mở khóa 100%
         if (this.isTeacher(studentName.split(' - ')[0] || '', code)) {
             return true;
         }
 
+        // Quyền mở LISTENING MOCK TEST: CB210, CB211, CB213, ONB103 (và GV / MISSNGUYET2026)
+        if (partNum === 'mocktest') {
+            const mockAllowedClasses = ['CB210', 'CB211', 'CB213', 'ONB103', 'GV', 'MISSNGUYET2026'];
+            return mockAllowedClasses.includes(code);
+        }
+
+        if (sessionStorage.getItem('vstep_unlocked') === 'true') {
+            return true;
+        }
+        
+        if (!code && !studentName) return false;
+
         const masterCodes = ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'];
         if (masterCodes.includes(code)) return true;
 
         if (code === 'ONB103' || code === 'B212') {
-            if (partNum === 'mocktest' && code === 'ONB103') return true;
             if (partNum === 1) return true;
             if (partNum === 2) return true; // B212, ONB103 mở hết Part 02
             if (partNum === 3) {
