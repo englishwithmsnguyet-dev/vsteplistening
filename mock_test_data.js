@@ -293,7 +293,28 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: Tất cả các phòng đều có view đẹp, và đồ ăn ở đó cũng rất ngon.",
         "Khách: Tuyệt quá."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 01.mp3?v=3",
+      "vocabulary": [
+        "whale watching /weɪl ˈwɑːtʃɪŋ/ (n): chuyến ngắm cá voi",
+        "receptionist /rɪˈsepʃənɪst/ (n): nhân viên lễ tân",
+        "duration /duˈreɪʃn/ (n): thời lượng, khoảng thời gian diễn ra",
+        "sightseeing /ˈsaɪtsiːɪŋ/ (n): việc tham quan, ngắm cảnh",
+        "cruise /kruːz/ (n): chuyến du ngoạn trên biển",
+        "catamaran /ˌkætəməˈræn/ (n): thuyền hai thân",
+        "passenger /ˈpæsɪndʒər/ (n): hành khách",
+        "comfortable /ˈkʌmftəbl/ (adj): tiện nghi, dễ chịu",
+        "board /bɔːrd/ (v): bước lên (tàu, xe, máy bay)",
+        "harbor /ˈhɑːrbər/ (n): bến cảng",
+        "maximum /ˈmæksɪməm/ (adj, n): tối đa, cực đại",
+        "minimum /ˈmɪnɪməm/ (adj, n): tối thiểu",
+        "group size /ɡruːp saɪz/ (n): số lượng người trong đoàn",
+        "guarantee /ˌɡærənˈtiː/ (v, n): cam kết, bảo đảm",
+        "intimate /ˈɪntɪmət/ (adj): thân mật, ấm cúng",
+        "departure /dɪˈpɑːrtʃər/ (n): sự khởi hành",
+        "schedule /ˈskedʒuːl/ (n): lịch trình chạy",
+        "available /əˈveɪləbl/ (adj): còn chỗ, có sẵn",
+        "fully booked /ˈfʊli bʊkt/ (adj): đã kín chỗ, hết vé"
+      ]
     },
     {
       "part": 2,
@@ -493,7 +514,28 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Lễ tân: <span class=\"highlight\">(16) OK, mã là 3 – 9 – 7 – 4 – 5 – T. T là chữ “Tango”. Khi bạn gọi lại, hãy yêu cầu nói chuyện với quản lý tour – chính là tôi, Tracy.</span>",
         "Khách: Rồi, tôi sẽ làm vậy."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 02.mp3?v=3",
+      "vocabulary": [
+        "be included in /ɪnˈkluːdɪd ɪn/ (v phr): được bao gồm trong",
+        "refreshment /rɪˈfreʃmənt/ (n): món ăn nhẹ, thức uống giải khát",
+        "beverage /ˈbevərɪdʒ/ (n): đồ uống",
+        "souvenir /ˌsuːvəˈnɪr/ (n): quà lưu niệm",
+        "admission fee /ədˈmɪʃn fiː/ (n): lệ phí vào cổng",
+        "fare /fer/ (n): giá vé (tàu xe, du lịch)",
+        "discount /ˈdɪskaʊnt/ (n): mức giảm giá, chiết khấu",
+        "per person /pər ˈpɜːrsn/ (exp): tính trên mỗi người",
+        "adult /ˈædʌlt/ (n): người lớn",
+        "child rate /tʃaɪld reɪt/ (n): giá vé trẻ em",
+        "in advance /ɪn ədˈvæns/ (exp): trước (về mặt thời gian)",
+        "booking /ˈbʊkɪŋ/ (n): việc giữ chỗ, đặt chỗ",
+        "reservation /ˌrezərˈveɪʃn/ (n): sự đặt chỗ trước",
+        "cancel /ˈkænsl/ (v): hủy bỏ",
+        "policy /ˈpɑːləsi/ (n): quy định, chính sách",
+        "reference number /ˈrefrəns ˌnʌmbər/ (n): mã số tham chiếu, mã đơn đặt",
+        "confirmation /ˌkɑːnfərˈmeɪʃn/ (n): sự xác nhận",
+        "receipt /rɪˈsiːt/ (n): hóa đơn biên lai",
+        "customer /ˈkʌstəmər/ (n): khách hàng"
+      ]
     },
     {
       "part": 2,
@@ -763,7 +805,29 @@ window.VSTEP_MOCK_TEST_DATA = {
         "Nam sinh: Cảm ơn cô đã dành thời gian. Cô đã giúp em rất nhiều.",
         "Cô: Không có gì. Hẹn gặp em tuần sau nhé."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 02 - Conversation 03.mp3?v=3",
+      "vocabulary": [
+        "admission office /ədˈmɪʃn ˈɔːfɪs/ (n): phòng tuyển sinh",
+        "lecturer /ˈlektʃərər/ (n): giảng viên đại học",
+        "student /ˈstuːdnt/ (n): sinh viên",
+        "campus /ˈkæmpəs/ (n): khuôn viên trường đại học",
+        "faculty /ˈfæklti/ (n): khoa (trong trường đại học)",
+        "lecture /ˈlektʃər/ (n): bài giảng, tiết lý thuyết",
+        "session /ˈseʃn/ (n): buổi học, phiên làm việc",
+        "weekly /ˈwiːkli/ (adj, adv): hàng tuần",
+        "semester /sɪˈmestər/ (n): học kỳ",
+        "timetable /ˈtaɪmteɪbl/ (n): thời khóa biểu",
+        "attendance /əˈtendəns/ (n): sự có mặt, chuyên cần",
+        "compulsory /kəmˈpʌlsəri/ (adj): bắt buộc",
+        "optional /ˈɑːpʃənl/ (adj): không bắt buộc, tự nguyện",
+        "requirement /rɪˈkwaɪərmənt/ (n): yêu cầu, điều kiện bắt buộc",
+        "record /ˈrekərd/ (n): hồ sơ theo dõi điểm danh",
+        "tutorial /tuːˈtɔːriəl/ (n): buổi học hướng dẫn nhóm nhỏ",
+        "arrange /əˈreɪndʒ/ (v): sắp xếp, thu xếp thời gian",
+        "appointment /əˈpɔɪntmənt/ (n): cuộc hẹn gặp",
+        "contact /ˈkɑːntækt/ (v): liên hệ, trao đổi",
+        "consultation /ˌkɑːnslˈteɪʃn/ (n): sự tham khảo, tư vấn học thuật"
+      ]
     },
     {
       "part": 3,
@@ -958,7 +1022,34 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Tên tôi là Dan Pearman và hôm nay tôi muốn chia sẻ về công việc của Pedal Power, một tổ chức từ thiện nhỏ chủ yếu hoạt động ở Vương quốc Anh. Tôi sẽ cung cấp thông tin liên lạc ở cuối bài nếu ai đó muốn biết thêm cách hỗ trợ chúng tôi. Trước tiên, tôi sẽ kể về cách tổ chức này bắt đầu. Tôi nảy ra ý tưởng xuất khẩu xe đạp đến các quốc gia đang phát triển khi tôi đang ở Ecuador. Tôi đến đó năm 1993, ngay sau khi tốt nghiệp đại học. Sau ba năm học tập, tôi muốn tìm kiếm một chút phiêu lưu. <span class=\"highlight\">(21) Tôi thích du lịch, vì vậy tôi đã gia nhập một tổ chức tình nguyện và được cử đến Ecuador để thực hiện khảo sát đất đai. Dự án kết thúc sau năm năm, và khi tôi trở lại Anh vào năm 1998, tôi bắt đầu lên kế hoạch cho Pedal Power. Nơi tôi sống ở Ecuador là một khu vực rất nông thôn. Hàng xóm của tôi là người duy nhất trong làng có một chiếc xe đạp, trong khi mọi người khác thì đi bộ mọi nơi. Công việc kinh doanh của ông ấy phát triển một cách đáng ngạc nhiên, và nhiều năm tôi không hiểu vì sao.</span> <span class=\"highlight\">(22) Rồi tôi nhận ra rằng: có một chiếc xe đạp giúp ông ấy dễ dàng đi đến bất cứ nơi nào mình muốn. Những người thợ mộc khác ở địa phương chỉ nhận được việc trong phạm vi bán kính 3 km, vì vậy dù họ có giỏi đến đâu, họ cũng không thể làm được nhiều việc như ông ấy. Tại Pedal Power, chúng tôi thu thập xe đạp cũ ở Anh và gửi đến một số khu vực nghèo nhất trên thế giới. Khi phân phát xe đạp ở nước ngoài, chúng tôi không tặng miễn phí – dù chúng tôi muốn làm vậy – nhưng về lâu dài điều đó không giúp được nền kinh tế địa phương. Nhu cầu về xe đạp rất cao, khiến chúng rất đắt đỏ tại địa phương. Vì vậy chúng tôi bán với giá chỉ 5% so với giá gốc.</span> <span class=\"highlight\">(23) Tuy nhiên, để duy trì hoạt động, chúng tôi cần có nguồn cung xe đạp ổn định, gửi đi cứ mỗi sáu tháng một lần. Một ví dụ là thị trấn Rivas, nơi đầu tiên tôi gửi một container đầy xe đạp. Bây giờ, phần lớn người dân ở đó đều sở hữu một chiếc xe đạp.</span> <span class=\"highlight\">(24) Nền kinh tế địa phương đã phát triển vượt bậc, đến mức bạn sẽ không nhận ra đó là nơi từng như vậy. Thậm chí, số lượng xe đạp ở đó còn nhiều hơn ở Amsterdam, nếu bạn từng đến đó. Nhưng Pedal Power vẫn rất cần sự giúp đỡ của bạn. Có thể bạn đã đọc về vấn đề gần đây của chúng tôi trên truyền thông Anh.</span> <span class=\"highlight\">(25) Vào tháng 8 năm 2000, chúng tôi hết tiền. Dù đã có sẵn container xe đạp để gửi đi, nhưng không có tiền để chi trả các hóa đơn vận chuyển. Đó là một tình huống thật tồi tệ. Dù vậy, chúng tôi vẫn cố đảm bảo các xe đạp được gửi đúng hạn, nhưng các rắc rối còn kéo dài nhiều tháng sau đó.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 01.mp3?v=3",
+      "vocabulary": [
+        "charity /ˈtʃærəti/ (n): hội từ thiện, việc từ thiện",
+        "non-profit /ˌnɑːn ˈprɑːfɪt/ (adj): phi lợi nhuận",
+        "volunteer /ˌvɑːlənˈtɪr/ (v, n): tình nguyện viên",
+        "pedal /ˈpedl/ (n, v): bàn đạp, đạp xe",
+        "expedition /ˌekspəˈdɪʃn/ (n): chuyến thám hiểm, chuyến đi xa",
+        "successful /səkˈsesfl/ (adj): thành công",
+        "enterprise /ˈentərpraɪz/ (n): cơ sở kinh doanh, xí nghiệp",
+        "livelihood /ˈlaɪvlihʊd/ (n): kế sinh nhai, phương tiện kiếm sống",
+        "transportation /ˌtrænspɔːrˈteɪʃn/ (n): việc chuyên chở, giao thông",
+        "income /ˈɪnkʌm/ (n): thu nhập",
+        "rely on /rɪˈlaɪ ɑːn/ (phr v): dựa vào, phụ thuộc vào",
+        "donation /doʊˈneɪʃn/ (n): sự đóng góp, khoản quyên tặng",
+        "second-hand /ˌsekənd ˈhænd/ (adj): đã qua sử dụng, đồ cũ",
+        "spare parts /ˌsper ˈpɑːrts/ (n): phụ tùng thay thế",
+        "fundraising /ˈfʌndreɪzɪŋ/ (n): hoạt động gây quỹ",
+        "remote /rɪˈmoʊt/ (adj): hẻo lánh, vùng sâu vùng xa",
+        "rural area /ˈrʊrəl ˈeriə/ (n): khu vực nông thôn",
+        "infrastructure /ˈɪnfrəstrʌktʃər/ (n): cơ sở hạ tầng (đường sá, cầu cống)",
+        "accessible /əkˈsesəbl/ (adj): có thể tiếp cận được",
+        "terrain /təˈreɪn/ (n): địa hình",
+        "shipping cost /ˈʃɪpɪŋ kɔːst/ (n): chi phí vận chuyển hàng hóa",
+        "customs duty /ˈkʌstəmz ˌduːti/ (n): thuế hải quan",
+        "obstacle /ˈɑːbstəkl/ (n): trở ngại, chướng ngại",
+        "freight charge /freɪt tʃɑːrdʒ/ (n): cước phí chuyên chở",
+        "shortage /ˈʃɔːrtɪdʒ/ (n): sự thiếu hụt ngân sách"
+      ]
     },
     {
       "part": 3,
@@ -1153,7 +1244,34 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "Chào buổi chiều. Tôi là Paula Bundell, và hôm nay tôi sẽ giảng bài về tiếng ồn môi trường trong học kỳ này. Hôm nay, chúng ta sẽ xem xét ảnh hưởng của tiếng ồn đến một khu dân cư dự kiến xây dựng tại một phần đặc biệt phức tạp của khu vực Manchester Park mới. Khu đất này không quá tệ như một số nơi tôi đã từng nghiên cứu trước đây. Sân bay Blacktown đóng cửa từ 6 giờ tối đến 7 giờ sáng, đây là một lợi thế lớn cho khu vực này. <span class=\"highlight\">(26) Tiếng ồn duy nhất vào ban đêm là từ đường cao tốc, và lưu lượng giao thông giảm đáng kể từ 7:30 tối đến 5:30 sáng.</span> <span class=\"highlight\">(27) Vì vậy, những người bị ảnh hưởng nhiều nhất bởi tiếng ồn sẽ là các bà nội trợ. Khi sinh viên và người đi làm trở về nhà vào buổi tối trong tuần, tiếng ồn đã giảm đi khá nhiều.</span> <span class=\"highlight\">(28) Cuối tuần vẫn có vấn đề, nhưng lượng xe cộ vào thứ Bảy đã giảm đáng kể và càng giảm hơn vào Chủ Nhật. Tất nhiên, việc cải tạo nhà sẽ cần thiết ở một nơi như thế này, và chi phí sẽ đáng kể đối với nhà phát triển và người mua nhà.</span> <span class=\"highlight\">(29) Những cải tạo tôi sắp nêu ra sẽ làm tăng thêm khoảng .000 vào giá mỗi căn nhà mới.</span> <span class=\"highlight\">(30) Những ngôi nhà gần đường cao tốc sẽ bị ảnh hưởng nặng nhất bởi tiếng xe cộ và tiếng máy bay nhỏ bay ngang.</span>"
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 02.mp3?v=3",
+      "vocabulary": [
+        "traffic flow /ˈtræfɪk floʊ/ (n): dòng lưu thông xe cộ",
+        "light traffic /laɪt ˈtræfɪk/ (n): giao thông vắng xe, đường thông thoáng",
+        "peak hours /piːk ˈaʊərz/ (n): giờ cao điểm",
+        "off-peak /ˌɔːf ˈpiːk/ (adj): ngoài giờ cao điểm",
+        "survey /ˈsɜːrveɪ/ (n): cuộc khảo sát điều tra",
+        "notice /ˈnoʊtɪs/ (v): nhận biết, chú ý thấy",
+        "resident /ˈrezɪdənt/ (n): cư dân, người dân sống tại khu vực",
+        "decibel /ˈdesɪbel/ (n): đơn vị đo độ ồn dB",
+        "noise pollution /nɔɪz pəˈluːʃn/ (n): ô nhiễm tiếng ồn",
+        "sensitive /ˈsensətɪv/ (adj): nhạy cảm, dễ bị ảnh hưởng",
+        "fluctuation /ˌflʌktʃuˈeɪʃn/ (n): sự biến động dao động",
+        "commuter /kəˈmjuːtər/ (n): người đi làm/đi học hàng ngày bằng phương tiện",
+        "weekday /ˈwiːkdeɪ/ (n): ngày trong tuần (thứ 2 đến thứ 6)",
+        "weekend /ˌwiːkˈend/ (n): ngày cuối tuần",
+        "volume of traffic /ˈvɑːljuːm əv ˈtræfɪk/ (n): lượng xe cộ lưu thông",
+        "modify /ˈmɑːdɪfaɪ/ (v): sửa đổi, cải tạo",
+        "soundproofing /ˈsaʊndpruːfɪŋ/ (n): việc cách âm",
+        "insulation /ˌɪnsəˈleɪʃn/ (n): vật liệu cách âm, cách nhiệt",
+        "double-glazing /ˌdʌbl ˈɡleɪzɪŋ/ (n): cửa kính hai lớp cách âm",
+        "extra cost /ˈekstrə kɔːst/ (n): chi phí phụ trội, khoản tốn thêm",
+        "highway /ˈhaɪweɪ/ (n): đường cao tốc, quốc lộ",
+        "friction /ˈfrɪkʃn/ (n): lực ma sát",
+        "road surface /roʊd ˈsɜːrfɪs/ (n): bề mặt mặt đường",
+        "tire / tyre /ˈtaɪər/ (n): lốp xe bánh xe",
+        "engine noise /ˈendʒɪn nɔɪz/ (n): tiếng ồn phát ra từ động cơ"
+      ]
     },
     {
       "part": 3,
@@ -1348,7 +1466,34 @@ window.VSTEP_MOCK_TEST_DATA = {
       "vi_transcript": [
         "<span class=\"highlight\">(31) Nhóm chúng tôi đã thực hiện một dự án về cách rác thải sinh hoạt được tái chế ở Anh. Chúng tôi khá sốc khi phát hiện rằng chỉ có 9% người dân ở Anh cố gắng tái chế rác sinh hoạt của họ. Con số này thấp hơn hầu hết các quốc gia châu Âu khác và cần phải tăng đáng kể trong vài năm tới nếu chính phủ muốn đạt mục tiêu tái chế đã đề ra.</span> <span class=\"highlight\">(32) Theo mục tiêu đã thống nhất, Anh phải giảm lượng khí thải CO₂ xuống 12,5% so với năm 1990 vào năm 2008. Và việc tái chế có thể giúp đạt mục tiêu này theo hai cách chính.</span> <span class=\"highlight\">(33) Việc sản xuất giấy và thủy tinh từ rác tái chế sử dụng ít năng lượng hơn nhiều so với sản xuất từ nguyên liệu thô, đồng thời tái chế cũng giúp giảm khí nhà kính từ các bãi rác và nhà máy đốt rác. Trong dự án, chúng tôi khảo sát người dân trên đường và điều lặp đi lặp lại là họ không thấy tái chế rác dễ dàng. Một vấn đề là không đủ các điểm thu gom, nơi công cộng có thể đưa rác đến. Rác từ các hộ gia đình được chở đến nơi gọi là \"drain banks\" để phân loại, ép kiện và vận chuyển.</span> <span class=\"highlight\">(34) Một vấn đề lớn là loại bỏ những thứ không nên cho vào thùng tái chế. Nhiều người bỏ cả túi nilon và ô hỏng vào thùng thủy tinh. Tất cả những thứ đó phải nhặt ra bằng tay. Một khó khăn khác là loại thủy tinh cường lực dùng trong nấu ăn không tan chảy hoàn toàn ở nhiệt độ của thủy tinh thường, nên cũng phải được gỡ ra bằng tay. Thủy tinh dễ tái chế vì có thể tái sử dụng nhiều lần mà không bị yếu đi.</span> <span class=\"highlight\">(35) Mỗi năm, có 2 triệu tấn thủy tinh bị vứt bỏ, tương đương với 7 tỷ chai lọ, nhưng chỉ có 500.000 tấn được thu gom và tái chế.</span> Waterford (làm bút chì) Johnson & Jones ở Wales (làm danh thiếp…) Tóm lại, có rất nhiều nghiên cứu đang diễn ra về cách tái sử dụng vật liệu, nhưng vấn đề lớn nhất vẫn là thay đổi thói quen của con người: nghĩ đến việc tái chế thay vì vứt bỏ. Ít nhất thì việc nghiên cứu này đã giúp chúng tôi cẩn thận hơn rất nhiều."
       ],
-      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3"
+      "audio": "LISTENING MOCK TEST/AUDIO/PART 03 - Talk 03.mp3?v=3",
+      "vocabulary": [
+        "greenhouse gas /ˈɡriːnhaʊs ɡæs/ (n): khí gây hiệu ứng nhà kính",
+        "carbon footprint /ˌkɑːrbən ˈfʊtprɪnt/ (n): dấu chân carbon",
+        "recycling /ˌriːˈsaɪklɪŋ/ (n): hoạt động tái chế rác",
+        "emission /ɪˈmɪʃn/ (n): khí thải, lượng phát thải",
+        "environmental project /ɪnˌvaɪrənˈmentl ˈprɑːdʒekt/ (n): dự án môi trường",
+        "carbon dioxide /ˌkɑːrbən daɪˈɑːksaɪd/ (n): khí CO2",
+        "reduce /rɪˈduːs/ (v): cắt giảm bớt",
+        "reduction /rɪˈdʌkʃn/ (n): sự suy giảm, tỷ lệ cắt giảm",
+        "percentage /pərˈsentɪdʒ/ (n): tỷ lệ phần trăm",
+        "treaty /ˈtriːti/ (n): hiệp ước quốc tế",
+        "renewable energy /rɪˈnuːəbl ˈenərdʒi/ (n): năng lượng tái tạo",
+        "solar power /ˌsoʊlər ˈpaʊər/ (n): điện năng lượng mặt trời",
+        "sustainable /səˈsteɪnəbl/ (adj): bền vững, thân thiện môi trường",
+        "solution /səˈluːʃn/ (n): giải pháp khắc phục",
+        "energy efficiency /ˈenərdʒi ɪˌfɪʃnsi/ (n): hiệu quả sử dụng năng lượng",
+        "household waste /ˈhaʊshoʊld weɪst/ (n): rác sinh hoạt từ các hộ gia đình",
+        "contamination /kənˌtæmɪˈneɪʃn/ (n): sự nhiễm bẩn, lẫn tạp chất",
+        "sorting /ˈsɔːrtɪŋ/ (n): việc phân loại rác",
+        "landfill /ˈlændfɪl/ (n): bãi chôn lấp rác thải",
+        "collect /kəˈlekt/ (v): thu gom rác",
+        "annually /ˈænjuəli/ (adv): hàng năm, mỗi năm",
+        "recycled glass /ˌriːˈsaɪkld ɡlæs/ (n): thủy tinh tái chế",
+        "ton /tʌn/ (n): tấn (đơn vị khối lượng)",
+        "manufacture /ˌmænjuˈfæktʃər/ (v): sản xuất chế tạo",
+        "raw material /ˌrɔː məˈtɪriəl/ (n): nguồn nguyên liệu thô"
+      ]
     }
   ],
   "questions": [

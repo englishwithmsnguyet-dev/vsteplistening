@@ -2669,6 +2669,23 @@ Danh sách bài đã làm:
         const isPart2 = sec.start >= 9 && sec.end <= 20;
         const themeColor = isPart2 ? '#10b981' : '#8b5cf6';
 
+        // Vocabulary for this section
+        let vocabList = sectionData.vocabulary || [];
+        if (!vocabList || vocabList.length === 0) {
+            const secQuestions = (data.questions || []).filter(q => q.number >= sec.start && q.number <= sec.end);
+            const seen = new Set();
+            vocabList = [];
+            secQuestions.forEach(q => {
+                (q.vocabulary || []).forEach(v => {
+                    const head = v.split('/')[0].trim().toLowerCase();
+                    if (!seen.has(head)) {
+                        seen.add(head);
+                        vocabList.push(v);
+                    }
+                });
+            });
+        }
+
         return `
         <div class="mock-full-transcript-box glass-card" style="margin: 16px 0 32px 0; padding: 18px 20px; border-radius: 14px; border: 1.5px solid ${isPart2 ? 'rgba(16,185,129,0.35)' : 'rgba(139,92,246,0.35)'}; background: var(--bg-surface); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
             <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none; gap: 12px; flex-wrap: wrap;" onclick="app.toggleMockFullTranscript('${secId}')">
@@ -2680,7 +2697,7 @@ Danh sách bài đã làm:
                             <span class="badge" style="background: ${themeColor}; color: white; font-size: 0.75rem; padding: 2px 8px;">${sec.name}</span>
                         </div>
                         <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 2px;">
-                            Toàn bộ lời thoại & dịch nghĩa chi tiết có highlight đáp án (Câu ${sec.start} - ${sec.end})
+                            Toàn bộ lời thoại, dịch nghĩa chi tiết và từ vựng hữu ích (Câu ${sec.start} - ${sec.end})
                         </div>
                     </div>
                 </div>
@@ -2699,7 +2716,7 @@ Danh sách bài đã làm:
                         ${enLines.map(line => `<p style="margin: 0 0 10px 0;">${line}</p>`).join('')}
                     </div>
                 </div>
-                <div>
+                <div style="margin-bottom: 20px;">
                     <div style="font-weight: 800; color: #10b981; font-size: 0.95rem; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
                         <span>🇻🇳</span> BẢN DỊCH TIẾNG VIỆT TOÀN BÀI:
                     </div>
@@ -2707,6 +2724,35 @@ Danh sách bài đã làm:
                         ${viLines.map(line => `<p style="margin: 0 0 10px 0;">${line}</p>`).join('')}
                     </div>
                 </div>
+                ${vocabList.length > 0 ? `
+                <div class="mock-full-vocab-section" style="padding-top: 16px; border-top: 1px dashed var(--border-color);">
+                    <div style="font-weight: 800; color: #f59e0b; font-size: 0.95rem; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
+                        <span>📚</span> TỪ VỰNG HỮU ÍCH (${sec.name} - ${vocabList.length} từ):
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px;">
+                        ${vocabList.map(v => {
+                            const match = v.match(/^([^/(:]+)(.*)$/);
+                            if (match) {
+                                const wordPart = match[1].trim();
+                                const restPart = match[2] || '';
+                                return `
+                                    <div style="display: flex; align-items: flex-start; background: var(--bg-surface-secondary, rgba(0,0,0,0.02)); padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.88rem; line-height: 1.5;">
+                                        <button type="button" class="btn-speak-vocab" onclick="window.speakWord('${wordPart.replace(/'/g, "\\'")}')" style="background: none; border: none; cursor: pointer; color: var(--color-primary); padding: 0; margin-right: 8px; transform: translateY(2px);" title="Nghe phát âm">
+                                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                                <path d="M12 3L6.5 8H2V16H6.5L12 21V3ZM16.5 12C16.5 10.23 15.48 8.71 14 8V16C15.48 15.29 16.5 13.77 16.5 12ZM14 3.23V5.29C16.89 6.15 19 8.83 19 12C19 15.17 16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12C21 7.72 18.01 4.14 14 3.23Z"/>
+                                            </svg>
+                                        </button>
+                                        <div>
+                                            <strong style="color: var(--text-primary);">${wordPart}</strong> <span style="color: var(--text-secondary);">${restPart}</span>
+                                        </div>
+                                    </div>
+                                `;
+                            }
+                            return `<div style="font-size: 0.88rem; padding: 6px 10px;">- ${v}</div>`;
+                        }).join('')}
+                    </div>
+                </div>
+                ` : ''}
             </div>
         </div>
         `;
