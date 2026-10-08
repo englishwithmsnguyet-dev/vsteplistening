@@ -935,11 +935,17 @@ class VstepApp {
         this.elements.playerPartBadge.textContent = isTheory ? "Lý thuyết" : `PART 0${partNum}`;
         this.elements.playerPartBadge.className = `audio-badge bg-${partNum === 1 ? 'purple' : partNum === 2 ? 'blue' : 'green'}`;
         
-        // Setup Audio Source
-        if (isTheory) {
+        // Setup Audio Source & Top Instruction Note
+        const topInstructionCard = document.getElementById('practice-instruction-card');
+        if (isTheory && dataObj && dataObj.theory_content) {
             this.elements.mainPlayerCard.style.display = 'none';
+            if (topInstructionCard) topInstructionCard.style.display = 'none';
+        } else if (isTheory) {
+            this.elements.mainPlayerCard.style.display = 'none';
+            if (topInstructionCard) topInstructionCard.style.display = 'block';
         } else {
             this.elements.mainPlayerCard.style.display = 'block';
+            if (topInstructionCard) topInstructionCard.style.display = 'block';
             this.elements.audio.src = dataObj.audio || "";
             this.stopAudio();
         }
@@ -1070,18 +1076,39 @@ class VstepApp {
             
             listContainer.appendChild(theoryCard);
 
-            // Divider between theory and example questions
+            // Divider between theory and practical exercises
             const divider = document.createElement('div');
             divider.className = 'theory-examples-divider';
             divider.innerHTML = `
                 <div class="divider-line"></div>
                 <div class="divider-label">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-                    BÀI TẬP VÍ DỤ MINH HỌA (${dataObj.examples ? dataObj.examples.length : 0} CÂU)
+                    THỰC HÀNH NGHE - BÀI TẬP VÍ DỤ MINH HỌA (${dataObj.examples ? dataObj.examples.length : 0} CÂU)
                 </div>
                 <div class="divider-line"></div>
             `;
             listContainer.appendChild(divider);
+
+            // Instruction Card (LƯU Ý BÀI NGHE đặt ngay trên chỗ thực hành nghe)
+            const practiceInstructionCard = document.createElement('div');
+            practiceInstructionCard.className = 'glass-card instruction-card';
+            practiceInstructionCard.style.marginBottom = '20px';
+            practiceInstructionCard.innerHTML = `
+                <div class="instruction-header">
+                    <svg class="instruction-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <h4>LƯU Ý:</h4>
+                </div>
+                <ul class="instruction-list">
+                    <li><strong>Trước khi nghe:</strong> Đọc câu hỏi và các phương án trả lời, lưu ý từ khoá. Tuyệt đối không sử dụng từ điển hay bất kì công cụ dịch nào.</li>
+                    <li><strong>Trong khi nghe:</strong> Không bấm dừng, không tua, không chỉnh tốc độ.</li>
+                    <li><strong>Sau khi hoàn thành bài nghe:</strong> Xem ĐÁP ÁN & GIẢI THÍCH, ghi chú từ vựng và câu chứa đáp án. Có thể nghe đi nghe lại nhiều lần ở bước này.</li>
+                </ul>
+            `;
+            listContainer.appendChild(practiceInstructionCard);
         }
         
         const items = this.activeSession.isTheory ? dataObj.examples : dataObj.questions;
