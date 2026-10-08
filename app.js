@@ -1026,48 +1026,86 @@ class VstepApp {
                 `;
             }).join('');
 
-            // Build strategy cards
-            const strategiesHtml = (tc.strategies || []).map(s => `
-                <div class="theory-step-item">
-                    <div class="theory-step-header">
-                        <span class="theory-step-number">${s.badge || '📌'}</span>
-                        <h4 class="theory-step-title">${s.step}</h4>
+            // Build strategy steps (1-column vertical list, xuống hàng từng bước, từng ý)
+            const strategiesHtml = (tc.strategies || []).map(s => {
+                let pointsHtml = '';
+                if (s.points && Array.isArray(s.points)) {
+                    pointsHtml = s.points.map(pt => `
+                        <div class="theory-step-point">
+                            <span class="point-bullet">🔹</span>
+                            <span class="point-text">${pt}</span>
+                        </div>
+                    `).join('');
+                } else if (s.detail) {
+                    pointsHtml = `<div class="theory-step-desc">${s.detail}</div>`;
+                }
+                return `
+                    <div class="theory-step-item">
+                        <div class="theory-step-header">
+                            <span class="theory-step-number">${s.badge || '📌'}</span>
+                            <h4 class="theory-step-title">${s.step}</h4>
+                        </div>
+                        <div class="theory-step-body">
+                            ${pointsHtml}
+                        </div>
                     </div>
-                    <div class="theory-step-desc">${s.detail}</div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
 
-            // Build signal groups or individual signals
+            // Build signal groups (1-column vertical list, xuống hàng từng nhóm, từng từ khóa)
             let signalsSectionHtml = '';
             if (tc.signal_groups && tc.signal_groups.length > 0) {
-                const groupsHtml = tc.signal_groups.map(grp => `
-                    <div class="signal-group-card theme-${grp.color || 'blue'}">
-                        <div class="signal-group-header">
-                            <span class="signal-group-icon">${grp.icon}</span>
-                            <span class="signal-group-title">${grp.category}</span>
+                const groupsHtml = tc.signal_groups.map(grp => {
+                    const signalsListHtml = grp.signals.map(s => {
+                        if (typeof s === 'object' && s.en) {
+                            return `
+                                <div class="signal-line-item">
+                                    <span class="signal-bullet">•</span>
+                                    <span class="signal-en">“${s.en}”</span>
+                                    ${s.vi ? `<span class="signal-vi">${s.vi}</span>` : ''}
+                                </div>
+                            `;
+                        } else {
+                            return `
+                                <div class="signal-line-item">
+                                    <span class="signal-bullet">•</span>
+                                    <span class="signal-en">“${s}”</span>
+                                </div>
+                            `;
+                        }
+                    }).join('');
+                    return `
+                        <div class="signal-group-card theme-${grp.color || 'blue'}">
+                            <div class="signal-group-header">
+                                <span class="signal-group-icon">${grp.icon}</span>
+                                <span class="signal-group-title">${grp.category}</span>
+                            </div>
+                            <div class="signal-group-lines">
+                                ${signalsListHtml}
+                            </div>
                         </div>
-                        <div class="signal-group-chips">
-                            ${grp.signals.map(s => `<span class="signal-chip">“${s}”</span>`).join('')}
-                        </div>
-                    </div>
-                `).join('');
+                    `;
+                }).join('');
                 signalsSectionHtml = `
                     <div class="theory-section">
                         <h3 class="theory-sec-title"><span class="theory-num">4</span> Từ khóa tín hiệu thường xuất hiện trong bài nghe</h3>
                         <p class="theory-sec-sub">Bắt ngay các mẫu câu mở đầu này để xác định chính xác mục đích:</p>
-                        <div class="theory-signal-groups-grid">
+                        <div class="theory-signal-groups-list">
                             ${groupsHtml}
                         </div>
                     </div>
                 `;
             } else if (tc.key_signals && tc.key_signals.length > 0) {
                 const signalsHtml = tc.key_signals.map(sig => `
-                    <span class="theory-signal-tag">🔑 ${sig}</span>
+                    <div class="signal-line-item">
+                        <span class="signal-bullet">•</span>
+                        <span class="signal-en">“${sig}”</span>
+                    </div>
                 `).join('');
                 signalsSectionHtml = `
                     <div class="theory-section">
                         <h3 class="theory-sec-title"><span class="theory-num">4</span> Từ khóa tín hiệu thường xuất hiện trong bài nghe</h3>
-                        <div class="theory-signals-container">
+                        <div class="theory-signal-groups-list">
                             ${signalsHtml}
                         </div>
                     </div>

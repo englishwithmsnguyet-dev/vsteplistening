@@ -16,32 +16,44 @@ window.VSTEP_DATA = {
           "definition": "Câu hỏi dạng <mark class=\"hl-keyword\">PURPOSE (mục đích giao tiếp)</mark> yêu cầu thí sinh xác định <mark class=\"hl-primary\">mục đích giao tiếp chính</mark> của đoạn hội thoại hoặc bài nói ngắn. Nói cách khác, thí sinh cần nhận diện <mark class=\"hl-accent\">lý do tại sao</mark> người nói <mark class=\"hl-highlight\">thực hiện cuộc gọi, bắt đầu cuộc trò chuyện hoặc xuất hiện tại một địa điểm cụ thể</mark>.",
           "question_patterns": [
             "What is the <mark class=\"hl-keyword\">main purpose</mark> of the conversation/talk?",
-            "<mark class=\"hl-keyword\">Why does the woman call</mark> the man? / <mark class=\"hl-keyword\">Why does the man call</mark> the woman?",
-            "<mark class=\"hl-keyword\">Why is the woman talking to</mark> the man? / <mark class=\"hl-keyword\">Why is the man talking to</mark> the woman?",
+            "<mark class=\"hl-keyword\">Why</mark> does the woman <mark class=\"hl-keyword\">call</mark> the man? / <mark class=\"hl-keyword\">Why</mark> does the man <mark class=\"hl-keyword\">call</mark> the woman?",
+            "<mark class=\"hl-keyword\">Why</mark> is the woman <mark class=\"hl-keyword\">talking to</mark> the man? / <mark class=\"hl-keyword\">Why</mark> is the man <mark class=\"hl-keyword\">talking to</mark> the woman?",
             "What is the man <mark class=\"hl-keyword\">trying to do</mark>? / What is the woman <mark class=\"hl-keyword\">trying to do</mark>?",
             "What is the <mark class=\"hl-keyword\">reason for the call</mark>?",
-            "<mark class=\"hl-keyword\">Why has the man come to</mark> the office/store?"
+            "<mark class=\"hl-keyword\">Why</mark> has the man <mark class=\"hl-keyword\">come to</mark> the office/store?"
           ],
           "strategies": [
             {
               "step": "Bước 1: Đọc trước câu hỏi & Xác định từ khóa",
               "badge": "01",
-              "detail": "Tập trung gạch chân các từ khóa định hướng: <mark class=\"hl-keyword\">purpose</mark>, <mark class=\"hl-keyword\">reason</mark>, <mark class=\"hl-keyword\">why</mark>, <mark class=\"hl-keyword\">trying to</mark>... để định hình mục tiêu cần nghe."
+              "points": [
+                "Tập trung gạch chân các từ khóa định hướng: <mark class=\"hl-keyword\">purpose</mark>, <mark class=\"hl-keyword\">reason</mark>, <mark class=\"hl-keyword\">why</mark>, <mark class=\"hl-keyword\">trying to</mark>.",
+                "Định hình trước ngữ cảnh và mục tiêu cần nghe trước khi audio bắt đầu phát."
+              ]
             },
             {
               "step": "Bước 2: Tập trung cao độ 1–2 câu mở đầu",
               "badge": "02",
-              "detail": "Trong đa số trường hợp, người nói sẽ nêu <mark class=\"hl-primary\">mục đích cốt lõi ngay từ 1–2 câu đầu tiên</mark> của bài nói hoặc cuộc điện thoại."
+              "points": [
+                "Trong đa số trường hợp, người nói sẽ nêu <mark class=\"hl-primary\">mục đích cốt lõi ngay từ những câu đầu tiên</mark>.",
+                "Đặc biệt chú ý câu chào hỏi và lý do bắt đầu cuộc gọi hoặc hội thoại."
+              ]
             },
             {
-              "step": "Bước 3: Bắt hành động chính, né bẫy gây nhiễu",
+              "step": "Bước 3: Xác định hành động chính, né bẫy gây nhiễu",
               "badge": "03",
-              "detail": "Cảnh giác bẫy: Các phương án gây nhiễu thường nhắc lại từ ngữ trong bài nhưng <mark class=\"hl-danger\">không phải lý do chính</mark>. Hãy ưu tiên chọn đáp án có <mark class=\"hl-success\">động từ hành động rõ ràng</mark> (e.g. <em>To complain, To confirm, To inquire...</em>)."
+              "points": [
+                "Cảnh giác bẫy: Các phương án gây nhiễu thường nhắc lại từ ngữ trong bài nhưng <mark class=\"hl-danger\">không phải lý do chính</mark>.",
+                "Ưu tiên chọn đáp án có <mark class=\"hl-success\">động từ hành động rõ ràng</mark> (e.g. <em>To complain, To confirm, To inquire, To cancel...</em>)."
+              ]
             },
             {
               "step": "Bước 4: Kiểm tra tính nhất quán & Logic toàn bài",
               "badge": "04",
-              "detail": "Mục đích giao tiếp được chọn phải <mark class=\"hl-primary\">phù hợp với toàn bộ ngữ cảnh</mark> và không mâu thuẫn với các diễn biến, quyết định sau đó."
+              "points": [
+                "Mục đích giao tiếp được chọn phải <mark class=\"hl-primary\">phù hợp với toàn bộ ngữ cảnh</mark> bài nghe.",
+                "Đảm bảo không mâu thuẫn với các diễn biến, chi tiết và quyết định sau đó."
+              ]
             }
           ],
           "signal_groups": [
@@ -50,9 +62,9 @@ window.VSTEP_DATA = {
               "icon": "📞",
               "color": "blue",
               "signals": [
-                "I’m calling to…",
-                "I’m calling because…",
-                "The reason I’m calling is..."
+                { "en": "I’m calling to…", "vi": "Tôi gọi điện để…" },
+                { "en": "I’m calling because…", "vi": "Tôi gọi điện vì…" },
+                { "en": "The reason I’m calling is...", "vi": "Lý do tôi gọi điện là…" }
               ]
             },
             {
@@ -60,9 +72,9 @@ window.VSTEP_DATA = {
               "icon": "🛎️",
               "color": "purple",
               "signals": [
-                "I’d like to ask about...",
-                "I'd like to make a reservation...",
-                "I’d like to complain about..."
+                { "en": "I’d like to ask about...", "vi": "Tôi muốn hỏi về…" },
+                { "en": "I’d like to make a reservation...", "vi": "Tôi muốn đặt chỗ…" },
+                { "en": "I’d like to complain about...", "vi": "Tôi muốn phàn nàn về…" }
               ]
             },
             {
@@ -70,9 +82,9 @@ window.VSTEP_DATA = {
               "icon": "🔍",
               "color": "green",
               "signals": [
-                "I need to find out if...",
-                "I want to check whether…",
-                "I’m looking for …"
+                { "en": "I need to find out if...", "vi": "Tôi cần tìm hiểu xem liệu…" },
+                { "en": "I want to check whether…", "vi": "Tôi muốn kiểm tra xem liệu…" },
+                { "en": "I’m looking for …", "vi": "Tôi đang tìm kiếm…" }
               ]
             },
             {
@@ -80,8 +92,8 @@ window.VSTEP_DATA = {
               "icon": "📍",
               "color": "amber",
               "signals": [
-                "I’m here to...",
-                "I came to..."
+                { "en": "I’m here to...", "vi": "Tôi đến đây để…" },
+                { "en": "I came to...", "vi": "Tôi đến để…" }
               ]
             }
           ],
