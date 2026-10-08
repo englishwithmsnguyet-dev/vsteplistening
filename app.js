@@ -1,12 +1,53 @@
-/* ==========================================================================
-   VSTEP LISTENING - WEB APPLICATION CONTROLLER (app.js)
-   ========================================================================== */
+const CLASS_STUDENTS_ROSTER = {
+    "CB219": [
+        "Lưu Thị Vân Anh", "Nguyễn Tuấn Anh", "Trần Thị Huỳnh Duy", "Duy Thị Huỳnh Hân",
+        "Trần Thị Xuân Hoa", "Nguyễn Phạm Khang", "Đặng Văn Khánh", "Chim Nhật Luân",
+        "Lư Vĩnh Phúc", "Nguyễn Chí Thiện", "Trần Thị Ngọc Thơ", "Huỳnh Yến Trang",
+        "Thị Thu Trinh", "Nguyễn Thị Mỹ Xuyên", "Nguyễn Như Ý"
+    ],
+    "CB210": [
+        "Nguyễn Võ Thành Đạt", "Lê Huỳnh Thanh Duy", "Nguyễn Cao Kỳ Duyên", "Đào Ngọc Hân",
+        "Trần Văn Hữu", "Trần Văn Kim Khoa", "Nguyễn Thanh Nâng", "Huỳnh Kỳ Nguyên",
+        "Võ Thị Kim Nguyên", "Võ Hùng Sanh", "Tiền Thị Thanh Thảo", "Đặng Thị Kim Thoa",
+        "Trần Thị Tiên Tiên", "Lê Kim Tuyền"
+    ],
+    "CB211": [
+        "Hồ Anh Quân", "Lê Thành Nghiệp", "Lê Khánh Lâm", "Huỳnh Thị Ngọc Thắm",
+        "Mai Trần Xuân Mai", "Lê Thị Uyển Nhi", "Nguyễn Thụy Thanh Trúc"
+    ],
+    "CB213": [
+        "Nguyễn Quốc Anh", "Hoàng Hợp Minh Châu", "Đặng Châu Gia Huy", "Trần Minh Tuệ Mẩn",
+        "Đặng Thị Trúc Măng", "Trương Thị Kha My", "Ngô Diễm My", "Chiêm Chúc Ngân",
+        "Huỳnh Thị Yến Nhi", "Phạm Nguyễn Tâm Như", "Phạm Nhựt Tiến", "Lê Thị Tú Trinh",
+        "Trần Ngọc Vinh"
+    ],
+    "B212": [
+        "Nguyễn Duy Hồng Anh", "Nguyễn Ngọc Minh Anh", "Nguyễn Lê Mỹ Hân", "Nguyễn Hồng Minh Huy",
+        "Nguyễn Quốc Khải", "Lê Nguyễn Gia Khánh", "Nguyễn Hữu Khánh", "Hồ Thị Ngọc Lan",
+        "Trần Thị Hồng Lỉnh", "Võ Thị Triệu Minh", "Hứa Đình Nghi", "Võ Thị Bảo Ngọc",
+        "Lê Tiến Phát", "Nguyễn Kim Tiền", "Lê Thị Bảo Trân", "Võ Thị Diễm Trinh",
+        "Nguyễn Tấn Trung", "Trần Thị Ánh Tuyết", "Đặng Nguyễn Khánh Uyên", "Nguyễn Thị Chúc Yến"
+    ],
+    "CB206": [
+        "Văn Như Anh", "Nguyễn Thị Vân Anh", "Nguyễn Thị Hồng Duyên", "Nguyễn Thị Thúy Hồng",
+        "Trương Ngọc Nhi", "Nguyễn Phạm Như Quỳnh", "Trần Lê Quỳnh", "Thị Mỹ Tâm", "Ông Lê Thành",
+        "Trần Nguyễn Thanh Thảo", "Phan Nhật Thiện", "Nguyễn Mỹ Tiên", "Trần Thị Cẩm Tiên",
+        "Võ Trần Bảo Tính", "Trương Thanh Toàn", "Phạm Ngọc Trâm", "Nguyễn Võ Bảo Trân"
+    ],
+    "ONB103": [
+        "Nguyễn Thị Duy", "Phạm Trần Mỹ Hân", "Trịnh Thị Thu Hiền", "Nguyễn Hoàng Kha",
+        "Phạm Thị Út Lụa", "Lê Huỳnh Diễm My", "Nguyễn Thị Ngọc Mỹ", "Huỳnh Thị Kim Ngân",
+        "Trần Thị Kim Ngân", "Nguyễn Thị Tiểu Phụng", "Trần Yến Phụng", "Phạm Ngọc Thạch",
+        "Cao Thị Thu Trang", "Nguyễn Thị Thanh Tuyền", "Trần Phạm Phương Uyên", "Trần Ngô Mỹ Vy"
+    ]
+};
 
 class VstepApp {
     constructor() {
         this.data = null;
         this.studentName = sessionStorage.getItem('vstep_student_name') || ""; // Session-based student name (resets when closing tab/browser)
         this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'GV', 'CB219'];
+        this.classStudents = CLASS_STUDENTS_ROSTER;
         this.progress = {
             completedTests: {}, // testId -> score
             completedTheory: {}, // theoryId -> true
@@ -1936,6 +1977,42 @@ class VstepApp {
         return inputName.replace(/\s*[\-\–\—:\/]\s*/g, ' - ').trim();
     }
 
+    normalizeVietnamese(str) {
+        if (!str) return '';
+        return str
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/đ/g, 'd')
+            .replace(/Đ/g, 'D')
+            .toLowerCase()
+            .trim()
+            .replace(/\s+/g, ' ');
+    }
+
+    validateStudentRoster(name, className) {
+        const cleanClass = (className || '').trim().toUpperCase();
+        if (cleanClass === 'GV' || (name || '').trim().toUpperCase() === 'PTMN') {
+            return { valid: true };
+        }
+
+        const roster = this.classStudents && this.classStudents[cleanClass];
+        if (!roster || roster.length === 0) {
+            // Nếu lớp chưa có danh sách thì cho phép
+            return { valid: true };
+        }
+
+        const normalizedInput = this.normalizeVietnamese(name);
+        const match = roster.find(studentName => this.normalizeVietnamese(studentName) === normalizedInput);
+        if (match) {
+            return { valid: true, officialName: match };
+        }
+
+        return { 
+            valid: false, 
+            message: `Họ tên "${name}" không có trong danh sách lớp ${cleanClass}!\nVui lòng nhập đúng Họ và Tên theo danh sách lớp.` 
+        };
+    }
+
     checkStudentName() {
         const studentName = this.studentName;
         // Validate if the stored name contains a hyphen separating Name and Class
@@ -1948,11 +2025,17 @@ class VstepApp {
             const isTeacher = this.isTeacher(sName, sClass);
             
             if (isTeacher || this.allowedClasses.includes(sClass)) {
-                sessionStorage.setItem('vstep_access_code', sClass);
-                if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(sClass)) {
-                    sessionStorage.setItem('vstep_unlocked', 'true');
+                // Kiểm tra tên có trong danh sách lớp không
+                const rosterCheck = this.validateStudentRoster(sName, sClass);
+                if (!rosterCheck.valid) {
+                    hasValidFormat = false;
                 } else {
-                    sessionStorage.removeItem('vstep_unlocked');
+                    sessionStorage.setItem('vstep_access_code', sClass);
+                    if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(sClass)) {
+                        sessionStorage.setItem('vstep_unlocked', 'true');
+                    } else {
+                        sessionStorage.removeItem('vstep_unlocked');
+                    }
                 }
             } else {
                 hasValidFormat = false;
@@ -1989,8 +2072,16 @@ class VstepApp {
             alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: GV, ONB103, CB206, CB210, CB211, CB213, B212, CB219)`);
             return;
         }
-        
-        const combined = `${inputName} - ${inputClass}`;
+
+        // Kiểm tra họ tên có trong danh sách lớp
+        const rosterCheck = this.validateStudentRoster(inputName, inputClass);
+        if (!rosterCheck.valid) {
+            alert(rosterCheck.message);
+            return;
+        }
+
+        const officialName = rosterCheck.officialName || inputName;
+        const combined = `${officialName} - ${inputClass}`;
         this.studentName = combined;
         sessionStorage.setItem('vstep_student_name', combined);
         sessionStorage.setItem('vstep_access_code', inputClass);
@@ -2030,8 +2121,16 @@ class VstepApp {
             alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: GV, ONB103, CB206, CB210, CB211, CB213, B212, CB219)`);
             return;
         }
-        
-        const combined = `${nameVal} - ${classVal}`;
+
+        // Kiểm tra họ tên có trong danh sách lớp
+        const rosterCheck = this.validateStudentRoster(nameVal, classVal);
+        if (!rosterCheck.valid) {
+            alert(rosterCheck.message);
+            return;
+        }
+
+        const officialName = rosterCheck.officialName || nameVal;
+        const combined = `${officialName} - ${classVal}`;
         this.studentName = combined;
         sessionStorage.setItem('vstep_student_name', combined);
         sessionStorage.setItem('vstep_access_code', classVal);
