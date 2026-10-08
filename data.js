@@ -18,7 +18,7 @@ window.VSTEP_DATA = {
             "What is the <mark class=\"hl-keyword\">main purpose</mark> of the conversation/talk?",
             "<mark class=\"hl-keyword\">Why does the woman call</mark> the man? / <mark class=\"hl-keyword\">Why does the man call</mark> the woman?",
             "<mark class=\"hl-keyword\">Why is the woman talking to</mark> the man? / <mark class=\"hl-keyword\">Why is the man talking to</mark> the woman?",
-            "What is the man/woman <mark class=\"hl-keyword\">trying to do</mark>?",
+            "What is the man <mark class=\"hl-keyword\">trying to do</mark>? / What is the woman <mark class=\"hl-keyword\">trying to do</mark>?",
             "What is the <mark class=\"hl-keyword\">reason for the call</mark>?",
             "<mark class=\"hl-keyword\">Why has the man come to</mark> the office/store?"
           ],

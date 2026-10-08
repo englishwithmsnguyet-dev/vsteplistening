@@ -998,13 +998,33 @@ class VstepApp {
                 </div>
             ` : '';
 
-            // Build question patterns grid
-            const questionPatternsHtml = (tc.question_patterns || []).map((q, idx) => `
-                <div class="theory-pattern-card">
-                    <span class="pattern-badge">Mẫu 0${idx + 1}</span>
-                    <span class="pattern-text">${q}</span>
-                </div>
-            `).join('');
+            // Build question patterns list (1-column stacked, xuống hàng từng câu)
+            const questionPatternsHtml = (tc.question_patterns || []).map((item, idx) => {
+                let lines = [];
+                if (Array.isArray(item)) {
+                    lines = item;
+                } else if (typeof item === 'string') {
+                    if (item.includes('<br>')) {
+                        lines = item.split('<br>');
+                    } else if (item.includes(' / ')) {
+                        lines = item.split(' / ');
+                    } else {
+                        lines = [item];
+                    }
+                }
+                const linesHtml = lines.map((line) => {
+                    const bullet = lines.length > 1 ? '<span class="pattern-bullet">•</span> ' : '';
+                    return `<div class="pattern-line">${bullet}${line.trim()}</div>`;
+                }).join('');
+                return `
+                    <div class="theory-pattern-card">
+                        <span class="pattern-badge">Mẫu 0${idx + 1}</span>
+                        <div class="pattern-content">
+                            ${linesHtml}
+                        </div>
+                    </div>
+                `;
+            }).join('');
 
             // Build strategy cards
             const strategiesHtml = (tc.strategies || []).map(s => `

@@ -2907,54 +2907,82 @@ mark.hl-highlight {
     flex: 1;
 }
 
-/* Question Patterns Grid */
+/* Question Patterns List (1-column full width, xuống hàng sạch sẽ) */
 .theory-pattern-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }
 
 .theory-pattern-card {
     background: var(--bg-surface);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 12px 16px;
+    border-radius: 12px;
+    padding: 14px 18px;
     display: flex;
-    align-items: center;
-    gap: 12px;
+    align-items: flex-start;
+    gap: 16px;
     transition: all 0.2s ease;
+    width: 100%;
 }
 
 .theory-pattern-card:hover {
-    transform: translateY(-2px);
+    transform: translateX(4px);
     border-color: var(--color-primary);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.12);
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.15);
 }
 
 .pattern-badge {
-    font-size: 0.72rem;
-    font-weight: 700;
+    font-size: 0.76rem;
+    font-weight: 800;
     background: var(--color-secondary-light);
     color: var(--color-secondary);
-    padding: 3px 8px;
-    border-radius: 6px;
+    padding: 4px 10px;
+    border-radius: 8px;
     white-space: nowrap;
     text-transform: uppercase;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    border: 1px solid rgba(14, 165, 233, 0.3);
 }
 
-.pattern-text {
-    font-size: 0.95rem;
+.pattern-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.pattern-line {
+    font-size: 0.98rem;
     font-weight: 500;
     color: var(--text-primary);
-    line-height: 1.45;
+    line-height: 1.55;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
 }
 
-/* Strategy Grid */
+.pattern-bullet {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+/* Strategy Grid: Symmetric 2x2 on desktop, 1-col on mobile */
 .theory-strategy-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .theory-strategy-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .theory-step-item {
