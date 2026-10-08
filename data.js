@@ -5,47 +5,92 @@ window.VSTEP_DATA = {
         "id": "p1_type_01",
         "title": "Dạng 01: CÂU HỎI MỤC ĐÍCH GIAO TIẾP",
         "theory_content": {
-          "title": "DẠNG 01: CÂU HỎI MỤC ĐÍCH GIAO TIẾP",
-          "subtitle": "Tài liệu Nghe Nói VSTEP Tháng 06/2026 - River English Center",
-          "definition": "Câu hỏi dạng PURPOSE (mục đích giao tiếp) yêu cầu thí sinh xác định mục đích giao tiếp chính của đoạn hội thoại hoặc bài nói ngắn. Nói cách khác, thí sinh cần nhận diện lý do tại sao người nói thực hiện cuộc gọi, bắt đầu cuộc trò chuyện hoặc xuất hiện tại một địa điểm cụ thể.",
+          "title": "DẠNG 01: CÂU HỎI MỤC ĐÍCH GIAO TIẾP (PURPOSE QUESTIONS)",
+          "subtitle": "Tài liệu Nghe Nói VSTEP Tháng 06/2026 • River English Center",
+          "quick_summary": [
+            "🎯 Nhận diện: 1-2 câu đầu tiên",
+            "⚡ Chiến lược: 4 Bước chuẩn",
+            "🔑 Tín hiệu: 4 Nhóm từ khóa vàng",
+            "🛡️ Lưu ý: Né bẫy chi tiết gây nhiễu"
+          ],
+          "definition": "Câu hỏi dạng <mark class=\"hl-keyword\">PURPOSE (mục đích giao tiếp)</mark> yêu cầu thí sinh xác định <mark class=\"hl-primary\">mục đích giao tiếp chính</mark> của đoạn hội thoại hoặc bài nói ngắn. Nói cách khác, thí sinh cần nhận diện <mark class=\"hl-accent\">lý do tại sao</mark> người nói <mark class=\"hl-highlight\">thực hiện cuộc gọi, bắt đầu cuộc trò chuyện hoặc xuất hiện tại một địa điểm cụ thể</mark>.",
           "question_patterns": [
-            "What is the (main) purpose of the conversation/talk?",
-            "Why does the woman call the man? / Why does the man call the woman?",
-            "Why is the woman talking to the man? / Why is the man talking to the woman?",
-            "What is the man trying to do? / What is the woman trying to do?",
-            "What is the reason for the call?",
-            "Why has the man come to the office/store?"
+            "What is the <mark class=\"hl-keyword\">main purpose</mark> of the conversation/talk?",
+            "<mark class=\"hl-keyword\">Why does the woman call</mark> the man? / <mark class=\"hl-keyword\">Why does the man call</mark> the woman?",
+            "<mark class=\"hl-keyword\">Why is the woman talking to</mark> the man? / <mark class=\"hl-keyword\">Why is the man talking to</mark> the woman?",
+            "What is the man/woman <mark class=\"hl-keyword\">trying to do</mark>?",
+            "What is the <mark class=\"hl-keyword\">reason for the call</mark>?",
+            "<mark class=\"hl-keyword\">Why has the man come to</mark> the office/store?"
           ],
           "strategies": [
             {
-              "step": "Bước 1: Đọc trước câu hỏi và xác định từ khoá",
-              "detail": "Tập trung vào các từ khóa như purpose, reason, why, trying to, giúp định hướng trước khi nghe."
+              "step": "Bước 1: Đọc trước câu hỏi & Xác định từ khóa",
+              "badge": "01",
+              "detail": "Tập trung gạch chân các từ khóa định hướng: <mark class=\"hl-keyword\">purpose</mark>, <mark class=\"hl-keyword\">reason</mark>, <mark class=\"hl-keyword\">why</mark>, <mark class=\"hl-keyword\">trying to</mark>... để định hình mục tiêu cần nghe."
             },
             {
-              "step": "Bước 2: Tập trung nghe 1-2 câu mở đầu",
-              "detail": "Trong đa số trường hợp, người nói sẽ nêu mục đích ngay từ những câu đầu tiên."
+              "step": "Bước 2: Tập trung cao độ 1–2 câu mở đầu",
+              "badge": "02",
+              "detail": "Trong đa số trường hợp, người nói sẽ nêu <mark class=\"hl-primary\">mục đích cốt lõi ngay từ 1–2 câu đầu tiên</mark> của bài nói hoặc cuộc điện thoại."
             },
             {
-              "step": "Bước 3: Xác định hành động chính, không chọn đáp án chỉ “liên quan”",
-              "detail": "Một số phương án gây nhiễu có thể đề cập tới thông tin xuất hiện trong đoạn nghe nhưng không phải lý do chính của cuộc giao tiếp. Hãy ưu tiên đáp án thể hiện hành động rõ ràng."
+              "step": "Bước 3: Bắt hành động chính, né bẫy gây nhiễu",
+              "badge": "03",
+              "detail": "Cảnh giác bẫy: Các phương án gây nhiễu thường nhắc lại từ ngữ trong bài nhưng <mark class=\"hl-danger\">không phải lý do chính</mark>. Hãy ưu tiên chọn đáp án có <mark class=\"hl-success\">động từ hành động rõ ràng</mark> (e.g. <em>To complain, To confirm, To inquire...</em>)."
             },
             {
-              "step": "Bước 4: Kiểm tra tính nhất quán và logic",
-              "detail": "Mục đích giao tiếp phải phù hợp với toàn bộ nội dung và không mâu thuẫn với các chi tiết sau đó."
+              "step": "Bước 4: Kiểm tra tính nhất quán & Logic toàn bài",
+              "badge": "04",
+              "detail": "Mục đích giao tiếp được chọn phải <mark class=\"hl-primary\">phù hợp với toàn bộ ngữ cảnh</mark> và không mâu thuẫn với các diễn biến, quyết định sau đó."
             }
           ],
-          "key_signals": [
-            "I’m calling to… / I’m calling because… / The reason I’m calling is...",
-            "I’d like to ask about... / I'd like to make a reservation... / I’d like to complain about...",
-            "I need to find out if... / I want to check whether… / I’m looking for …",
-            "I’m here to... / I came to..."
+          "signal_groups": [
+            {
+              "category": "Mục đích cuộc gọi / Mở đầu",
+              "icon": "📞",
+              "color": "blue",
+              "signals": [
+                "I’m calling to…",
+                "I’m calling because…",
+                "The reason I’m calling is..."
+              ]
+            },
+            {
+              "category": "Yêu cầu / Đặt chỗ / Phàn nàn",
+              "icon": "🛎️",
+              "color": "purple",
+              "signals": [
+                "I’d like to ask about...",
+                "I'd like to make a reservation...",
+                "I’d like to complain about..."
+              ]
+            },
+            {
+              "category": "Tra cứu / Kiểm tra thông tin",
+              "icon": "🔍",
+              "color": "green",
+              "signals": [
+                "I need to find out if...",
+                "I want to check whether…",
+                "I’m looking for …"
+              ]
+            },
+            {
+              "category": "Lý do có mặt trực tiếp",
+              "icon": "📍",
+              "color": "amber",
+              "signals": [
+                "I’m here to...",
+                "I came to..."
+              ]
+            }
           ],
           "general_tips": [
-            "Đọc trước câu hỏi và các lựa chọn A–D: Việc xem trước câu hỏi và phương án trả lời giúp xác định từ khóa, đối tượng, hành động hoặc mục đích cần tập trung khi nghe.",
-            "Tập trung vào câu mở đầu và câu kết thúc: Câu mở đầu thường tiết lộ bối cảnh, chủ đề hoặc mục đích; câu kết thúc gợi ý hành động tiếp theo hoặc thái độ.",
-            "Chú ý đến ngữ điệu và từ khóa cảm xúc: fortunate, unfortunately, I’m afraid, disappointed, excited... thể hiện thái độ, đánh giá, hoặc mức độ hài lòng.",
-            "Áp dụng phương pháp loại trừ: Loại bỏ các lựa chọn không xuất hiện, trái ngược nội dung hoặc quá khái quát không liên quan trực tiếp.",
-            "Ghi chú ngắn khi nghe (nếu kịp): Chỉ ghi nhanh từ khóa trọng tâm (thời gian, số liệu, địa điểm, hành động chính), tuyệt đối không chép cả câu."
+            "<strong>1. Đọc trước câu hỏi và các lựa chọn A–D:</strong> Xem trước giúp xác định từ khóa, đối tượng, hành động hoặc <mark class=\"hl-accent\">mục đích giao tiếp cần tập trung</mark> khi nghe.",
+            "<strong>2. Tập trung vào câu mở đầu và câu kết thúc:</strong> <mark class=\"hl-primary\">Câu mở đầu</mark> thường tiết lộ bối cảnh/mục đích; <mark class=\"hl-accent\">câu kết thúc</mark> gợi ý hành động tiếp theo (<em>next step</em>) hoặc thái độ phản hồi.",
+            "<strong>3. Chú ý đến ngữ điệu và từ khóa cảm xúc:</strong> Các từ như <em>fortunately, unfortunately, I’m afraid, finally, disappointed, excited...</em> tiết lộ <mark class=\"hl-warning\">thái độ và mức độ hài lòng</mark>.",
+            "<strong>4. Áp dụng phương pháp loại trừ thông minh:</strong> Loại bỏ ngay các đáp án <mark class=\"hl-danger\">không có trong bài</mark>, <mark class=\"hl-danger\">trái ngược thông tin</mark>, hoặc chi tiết vụn vặt bị bóp méo.",
+            "<strong>5. Ghi chú ngắn khi nghe (nếu kịp):</strong> Chỉ ghi nhanh từ khóa trọng tâm (<mark class=\"hl-keyword\">thời gian, con số, địa điểm, hành động chính</mark>), tuyệt đối <mark class=\"hl-danger\">không cố chép cả câu</mark>."
           ]
         },
         "examples": [

@@ -991,37 +991,87 @@ class VstepApp {
             theoryCard.className = 'theory-guide-card glass-card';
             theoryCard.id = 'theory-guide-card';
 
-            const questionPatternsHtml = (tc.question_patterns || []).map(q => `
-                <li><span>${q}</span></li>
+            // Build quick summary pills
+            const quickSummaryHtml = (tc.quick_summary && tc.quick_summary.length > 0) ? `
+                <div class="theory-quick-strip">
+                    ${tc.quick_summary.map(item => `<span class="theory-quick-pill">${item}</span>`).join('')}
+                </div>
+            ` : '';
+
+            // Build question patterns grid
+            const questionPatternsHtml = (tc.question_patterns || []).map((q, idx) => `
+                <div class="theory-pattern-card">
+                    <span class="pattern-badge">Mẫu 0${idx + 1}</span>
+                    <span class="pattern-text">${q}</span>
+                </div>
             `).join('');
 
+            // Build strategy cards
             const strategiesHtml = (tc.strategies || []).map(s => `
                 <div class="theory-step-item">
-                    <div class="theory-step-title">
-                        <span>${s.step}</span>
+                    <div class="theory-step-header">
+                        <span class="theory-step-number">${s.badge || '📌'}</span>
+                        <h4 class="theory-step-title">${s.step}</h4>
                     </div>
                     <div class="theory-step-desc">${s.detail}</div>
                 </div>
             `).join('');
 
-            const signalsHtml = (tc.key_signals || []).map(sig => `
-                <span class="theory-signal-tag">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="8" cy="8" r="6"/><path d="M18 18l-5.8-5.8"/><path d="M17 13l4 4"/></svg>
-                    ${sig}
-                </span>
-            `).join('');
+            // Build signal groups or individual signals
+            let signalsSectionHtml = '';
+            if (tc.signal_groups && tc.signal_groups.length > 0) {
+                const groupsHtml = tc.signal_groups.map(grp => `
+                    <div class="signal-group-card theme-${grp.color || 'blue'}">
+                        <div class="signal-group-header">
+                            <span class="signal-group-icon">${grp.icon}</span>
+                            <span class="signal-group-title">${grp.category}</span>
+                        </div>
+                        <div class="signal-group-chips">
+                            ${grp.signals.map(s => `<span class="signal-chip">“${s}”</span>`).join('')}
+                        </div>
+                    </div>
+                `).join('');
+                signalsSectionHtml = `
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">4</span> Từ khóa tín hiệu thường xuất hiện trong bài nghe</h3>
+                        <p class="theory-sec-sub">Bắt ngay các mẫu câu mở đầu này để xác định chính xác mục đích:</p>
+                        <div class="theory-signal-groups-grid">
+                            ${groupsHtml}
+                        </div>
+                    </div>
+                `;
+            } else if (tc.key_signals && tc.key_signals.length > 0) {
+                const signalsHtml = tc.key_signals.map(sig => `
+                    <span class="theory-signal-tag">🔑 ${sig}</span>
+                `).join('');
+                signalsSectionHtml = `
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">4</span> Từ khóa tín hiệu thường xuất hiện trong bài nghe</h3>
+                        <div class="theory-signals-container">
+                            ${signalsHtml}
+                        </div>
+                    </div>
+                `;
+            }
 
-            const tipsHtml = (tc.general_tips || []).map(t => `<li>${t}</li>`).join('');
+            // Build tips cards
+            const tipsHtml = (tc.general_tips || []).map(t => `
+                <div class="theory-tip-card">
+                    <div class="tip-marker">⚡</div>
+                    <div class="tip-body">${t}</div>
+                </div>
+            `).join('');
 
             theoryCard.innerHTML = `
                 <div class="theory-guide-header">
                     <div class="theory-guide-title-box">
                         <div class="theory-badge">
                             <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-                            LÝ THUYẾT TRỌNG TÂM
+                            LÝ THUYẾT TRỌNG TÂM VSTEP
                         </div>
                         <h2 class="theory-main-title">${tc.title || dataObj.title}</h2>
                         ${tc.subtitle ? `<div class="theory-source-tag"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> ${tc.subtitle}</div>` : ''}
+                        ${quickSummaryHtml}
                     </div>
                     <button type="button" class="btn-toggle-theory" onclick="app.toggleTheoryCard()" title="Thu gọn / Mở rộng lý thuyết">
                         <span id="theory-toggle-text">Thu gọn lý thuyết</span>
@@ -1034,16 +1084,18 @@ class VstepApp {
                     <div class="theory-section">
                         <h3 class="theory-sec-title"><span class="theory-num">1</span> Định nghĩa & Bản chất câu hỏi</h3>
                         <div class="theory-callout-info">
-                            <p style="margin: 0;">${tc.definition}</p>
+                            <div class="theory-callout-icon">💡</div>
+                            <div class="theory-callout-text">${tc.definition}</div>
                         </div>
                     </div>
                     
                     <!-- 2. Dấu hiệu nhận biết -->
                     <div class="theory-section">
                         <h3 class="theory-sec-title"><span class="theory-num">2</span> Dấu hiệu nhận biết trong đề thi</h3>
-                        <ul class="theory-pattern-list">
+                        <p class="theory-sec-sub">Các mẫu câu hỏi thường xuyên xuất hiện nhất trong đề thi VSTEP:</p>
+                        <div class="theory-pattern-grid">
                             ${questionPatternsHtml}
-                        </ul>
+                        </div>
                     </div>
                     
                     <!-- 3. Chiến lược làm bài -->
@@ -1055,20 +1107,15 @@ class VstepApp {
                     </div>
                     
                     <!-- 4. Từ khóa thường gặp -->
-                    <div class="theory-section">
-                        <h3 class="theory-sec-title"><span class="theory-num">4</span> Từ khóa tín hiệu thường xuất hiện trong bài nghe</h3>
-                        <div class="theory-signals-container">
-                            ${signalsHtml}
-                        </div>
-                    </div>
+                    ${signalsSectionHtml}
                     
                     <!-- 5. Mẹo làm bài Part 1 hữu ích -->
                     ${tc.general_tips && tc.general_tips.length > 0 ? `
                     <div class="theory-section">
                         <h3 class="theory-sec-title"><span class="theory-num">5</span> Mẹo làm bài Part 1 hiệu quả</h3>
-                        <ul class="theory-tips-list">
+                        <div class="theory-tips-grid">
                             ${tipsHtml}
-                        </ul>
+                        </div>
                     </div>
                     ` : ''}
                 </div>
