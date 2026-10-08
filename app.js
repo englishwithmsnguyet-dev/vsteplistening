@@ -978,6 +978,112 @@ class VstepApp {
         const listContainer = this.elements.questionsList;
         listContainer.innerHTML = '';
         
+        // If this is theory practice and theory_content is present, render the official Theory Card first
+        if (this.activeSession.isTheory && dataObj.theory_content) {
+            const tc = dataObj.theory_content;
+            const theoryCard = document.createElement('div');
+            theoryCard.className = 'theory-guide-card glass-card';
+            theoryCard.id = 'theory-guide-card';
+
+            const questionPatternsHtml = (tc.question_patterns || []).map(q => `
+                <li><span>${q}</span></li>
+            `).join('');
+
+            const strategiesHtml = (tc.strategies || []).map(s => `
+                <div class="theory-step-item">
+                    <div class="theory-step-title">
+                        <span>${s.step}</span>
+                    </div>
+                    <div class="theory-step-desc">${s.detail}</div>
+                </div>
+            `).join('');
+
+            const signalsHtml = (tc.key_signals || []).map(sig => `
+                <span class="theory-signal-tag">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="8" cy="8" r="6"/><path d="M18 18l-5.8-5.8"/><path d="M17 13l4 4"/></svg>
+                    ${sig}
+                </span>
+            `).join('');
+
+            const tipsHtml = (tc.general_tips || []).map(t => `<li>${t}</li>`).join('');
+
+            theoryCard.innerHTML = `
+                <div class="theory-guide-header">
+                    <div class="theory-guide-title-box">
+                        <div class="theory-badge">
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            LÝ THUYẾT TRỌNG TÂM
+                        </div>
+                        <h2 class="theory-main-title">${tc.title || dataObj.title}</h2>
+                        ${tc.subtitle ? `<div class="theory-source-tag"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> ${tc.subtitle}</div>` : ''}
+                    </div>
+                    <button type="button" class="btn-toggle-theory" onclick="app.toggleTheoryCard()" title="Thu gọn / Mở rộng lý thuyết">
+                        <span id="theory-toggle-text">Thu gọn lý thuyết</span>
+                        <svg class="theory-toggle-icon" id="theory-toggle-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+                    </button>
+                </div>
+                
+                <div class="theory-guide-body" id="theory-guide-body">
+                    <!-- 1. Định nghĩa -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">1</span> Định nghĩa & Bản chất câu hỏi</h3>
+                        <div class="theory-callout-info">
+                            <p style="margin: 0;">${tc.definition}</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 2. Dấu hiệu nhận biết -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">2</span> Dấu hiệu nhận biết trong đề thi</h3>
+                        <ul class="theory-pattern-list">
+                            ${questionPatternsHtml}
+                        </ul>
+                    </div>
+                    
+                    <!-- 3. Chiến lược làm bài -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">3</span> Chiến lược làm bài (4 Bước chuẩn)</h3>
+                        <div class="theory-strategy-grid">
+                            ${strategiesHtml}
+                        </div>
+                    </div>
+                    
+                    <!-- 4. Từ khóa thường gặp -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">4</span> Từ khóa tín hiệu thường xuất hiện trong bài nghe</h3>
+                        <div class="theory-signals-container">
+                            ${signalsHtml}
+                        </div>
+                    </div>
+                    
+                    <!-- 5. Mẹo làm bài Part 1 hữu ích -->
+                    ${tc.general_tips && tc.general_tips.length > 0 ? `
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">5</span> Mẹo làm bài Part 1 hiệu quả</h3>
+                        <ul class="theory-tips-list">
+                            ${tipsHtml}
+                        </ul>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+            
+            listContainer.appendChild(theoryCard);
+
+            // Divider between theory and example questions
+            const divider = document.createElement('div');
+            divider.className = 'theory-examples-divider';
+            divider.innerHTML = `
+                <div class="divider-line"></div>
+                <div class="divider-label">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    BÀI TẬP VÍ DỤ MINH HỌA (${dataObj.examples ? dataObj.examples.length : 0} CÂU)
+                </div>
+                <div class="divider-line"></div>
+            `;
+            listContainer.appendChild(divider);
+        }
+        
         const items = this.activeSession.isTheory ? dataObj.examples : dataObj.questions;
         
         items.forEach((item, index) => {
@@ -1499,6 +1605,23 @@ class VstepApp {
         // Switch back to calling part panel
         const part = this.activeSession.part || 1;
         window.location.hash = `part${part}`;
+    }
+
+    toggleTheoryCard() {
+        const body = document.getElementById('theory-guide-body');
+        const text = document.getElementById('theory-toggle-text');
+        const icon = document.getElementById('theory-toggle-icon');
+        if (!body) return;
+        
+        if (body.style.display === 'none') {
+            body.style.display = 'flex';
+            if (text) text.textContent = 'Thu gọn lý thuyết';
+            if (icon) icon.style.transform = 'rotate(0deg)';
+        } else {
+            body.style.display = 'none';
+            if (text) text.textContent = 'Mở rộng lý thuyết';
+            if (icon) icon.style.transform = 'rotate(180deg)';
+        }
     }
 
     /* --- AUDIO PLAYER HELPER METHODS --- */
@@ -2947,6 +3070,7 @@ String.prototype.strip = function() {
 };
 
 const app = new VstepApp();
+window.app = app;
 
 window.speakWord = (word) => {
     if ('speechSynthesis' in window) {

@@ -4,6 +4,50 @@ window.VSTEP_DATA = {
       {
         "id": "p1_type_01",
         "title": "Dạng 01: CÂU HỎI MỤC ĐÍCH GIAO TIẾP",
+        "theory_content": {
+          "title": "DẠNG 01: CÂU HỎI MỤC ĐÍCH GIAO TIẾP",
+          "subtitle": "Tài liệu Nghe Nói VSTEP Tháng 06/2026 - River English Center",
+          "definition": "Câu hỏi dạng PURPOSE (mục đích giao tiếp) yêu cầu thí sinh xác định mục đích giao tiếp chính của đoạn hội thoại hoặc bài nói ngắn. Nói cách khác, thí sinh cần nhận diện lý do tại sao người nói thực hiện cuộc gọi, bắt đầu cuộc trò chuyện hoặc xuất hiện tại một địa điểm cụ thể.",
+          "question_patterns": [
+            "What is the (main) purpose of the conversation/talk?",
+            "Why does the woman call the man? / Why does the man call the woman?",
+            "Why is the woman talking to the man? / Why is the man talking to the woman?",
+            "What is the man trying to do? / What is the woman trying to do?",
+            "What is the reason for the call?",
+            "Why has the man come to the office/store?"
+          ],
+          "strategies": [
+            {
+              "step": "Bước 1: Đọc trước câu hỏi và xác định từ khoá",
+              "detail": "Tập trung vào các từ khóa như purpose, reason, why, trying to, giúp định hướng trước khi nghe."
+            },
+            {
+              "step": "Bước 2: Tập trung nghe 1-2 câu mở đầu",
+              "detail": "Trong đa số trường hợp, người nói sẽ nêu mục đích ngay từ những câu đầu tiên."
+            },
+            {
+              "step": "Bước 3: Xác định hành động chính, không chọn đáp án chỉ “liên quan”",
+              "detail": "Một số phương án gây nhiễu có thể đề cập tới thông tin xuất hiện trong đoạn nghe nhưng không phải lý do chính của cuộc giao tiếp. Hãy ưu tiên đáp án thể hiện hành động rõ ràng."
+            },
+            {
+              "step": "Bước 4: Kiểm tra tính nhất quán và logic",
+              "detail": "Mục đích giao tiếp phải phù hợp với toàn bộ nội dung và không mâu thuẫn với các chi tiết sau đó."
+            }
+          ],
+          "key_signals": [
+            "I’m calling to… / I’m calling because… / The reason I’m calling is...",
+            "I’d like to ask about... / I'd like to make a reservation... / I’d like to complain about...",
+            "I need to find out if... / I want to check whether… / I’m looking for …",
+            "I’m here to... / I came to..."
+          ],
+          "general_tips": [
+            "Đọc trước câu hỏi và các lựa chọn A–D: Việc xem trước câu hỏi và phương án trả lời giúp xác định từ khóa, đối tượng, hành động hoặc mục đích cần tập trung khi nghe.",
+            "Tập trung vào câu mở đầu và câu kết thúc: Câu mở đầu thường tiết lộ bối cảnh, chủ đề hoặc mục đích; câu kết thúc gợi ý hành động tiếp theo hoặc thái độ.",
+            "Chú ý đến ngữ điệu và từ khóa cảm xúc: fortunate, unfortunately, I’m afraid, disappointed, excited... thể hiện thái độ, đánh giá, hoặc mức độ hài lòng.",
+            "Áp dụng phương pháp loại trừ: Loại bỏ các lựa chọn không xuất hiện, trái ngược nội dung hoặc quá khái quát không liên quan trực tiếp.",
+            "Ghi chú ngắn khi nghe (nếu kịp): Chỉ ghi nhanh từ khóa trọng tâm (thời gian, số liệu, địa điểm, hành động chính), tuyệt đối không chép cả câu."
+          ]
+        },
         "examples": [
           {
             "id": "p1_type_01_ex_01",

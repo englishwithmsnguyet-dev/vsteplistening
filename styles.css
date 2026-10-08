@@ -2625,6 +2625,271 @@ h1, h2, h3, h4, h5, h6 {
     animation: examPulseDot 1.2s infinite ease-in-out;
 }
 
+/* ==========================================================================
+   THEORY GUIDE CARD (LÝ THUYẾT TRỌNG TÂM)
+   ========================================================================== */
+.theory-guide-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--color-primary);
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.theory-guide-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.theory-guide-title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.theory-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.theory-main-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.theory-source-tag {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-toggle-theory {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-toggle-theory:hover {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.theory-toggle-icon {
+    transition: transform 0.25s ease;
+}
+
+.theory-guide-body {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.theory-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.theory-sec-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.theory-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.theory-callout-info {
+    background: rgba(99, 102, 241, 0.08);
+    border-left: 4px solid var(--color-primary);
+    padding: 12px 18px;
+    border-radius: 0 10px 10px 0;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.theory-pattern-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.theory-pattern-list li {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.92rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theory-pattern-list li::before {
+    content: "•";
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.theory-strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+}
+
+.theory-step-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.theory-step-title {
+    font-weight: 700;
+    font-size: 0.94rem;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.theory-step-desc {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+.theory-signals-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.theory-signal-tag {
+    background: var(--color-success-light);
+    color: var(--color-success);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.theory-tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.theory-tips-list li {
+    font-size: 0.92rem;
+    color: var(--text-primary);
+    line-height: 1.55;
+    padding: 10px 14px;
+    background: var(--color-warning-light);
+    border-left: 3px solid var(--color-warning);
+    border-radius: 0 8px 8px 0;
+}
+
+.theory-examples-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 32px 0 20px 0;
+}
+
+.theory-examples-divider .divider-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.theory-examples-divider .divider-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    background: var(--bg-card);
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+
 
 
 
