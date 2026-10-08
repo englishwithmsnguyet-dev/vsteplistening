@@ -6,13 +6,6 @@ window.VSTEP_DATA = {
         "title": "Dạng 01: CÂU HỎI MỤC ĐÍCH GIAO TIẾP",
         "theory_content": {
           "title": "DẠNG 01: CÂU HỎI MỤC ĐÍCH GIAO TIẾP (PURPOSE QUESTIONS)",
-          "subtitle": "Tài liệu Nghe Nói VSTEP Tháng 06/2026 • River English Center",
-          "quick_summary": [
-            "🎯 Nhận diện: 1-2 câu đầu tiên",
-            "⚡ Chiến lược: 4 Bước chuẩn",
-            "🔑 Tín hiệu: 4 Nhóm từ khóa vàng",
-            "🛡️ Lưu ý: Né bẫy chi tiết gây nhiễu"
-          ],
           "definition": "Câu hỏi dạng <mark class=\"hl-keyword\">PURPOSE (mục đích giao tiếp)</mark> yêu cầu thí sinh xác định <mark class=\"hl-primary\">mục đích giao tiếp chính</mark> của đoạn hội thoại hoặc bài nói ngắn. Nói cách khác, thí sinh cần nhận diện <mark class=\"hl-accent\">lý do tại sao</mark> người nói <mark class=\"hl-highlight\">thực hiện cuộc gọi, bắt đầu cuộc trò chuyện hoặc xuất hiện tại một địa điểm cụ thể</mark>.",
           "question_patterns": [
             "What is the <mark class=\"hl-keyword\">main purpose</mark> of the conversation/talk?",
