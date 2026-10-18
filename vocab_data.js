@@ -5692,3 +5692,2317 @@ window.VSTEP_VOCAB_PART2_DATA = [
     ]
   }
 ];
+
+
+window.VSTEP_VOCAB_PART3_DATA = [
+  {
+    "name": "🎓 Higher Education & Admissions",
+    "topics": [
+      {
+        "name": "Admissions & Prerequisites (Tuyển sinh & Điều kiện đầu vào)",
+        "words": [
+          {
+            "word": "prerequisite",
+            "ipa": "/ˌpriːˈrekwəzɪt/",
+            "pos": "(n)",
+            "meaning": "điều kiện tiên quyết"
+          },
+          {
+            "word": "administration",
+            "ipa": "/ədˌmɪnɪˈstreɪʃn/",
+            "pos": "(n)",
+            "meaning": "sự quản lý, tuyển sinh"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspektɪv/",
+            "pos": "(adj)",
+            "meaning": "tiềm năng, triển vọng"
+          },
+          {
+            "word": "applicant",
+            "ipa": "/ˈæplɪkənt/",
+            "pos": "(n)",
+            "meaning": "người nộp đơn, thí sinh"
+          },
+          {
+            "word": "criteria",
+            "ipa": "/kraɪˈtɪriə/",
+            "pos": "(n)",
+            "meaning": "tiêu chuẩn, tiêu chí"
+          },
+          {
+            "word": "admission requirements",
+            "ipa": "/ədˈmɪʃn rɪˈkwaɪərmənts/",
+            "pos": "(n phr)",
+            "meaning": "yêu cầu nhập học"
+          },
+          {
+            "word": "eligible",
+            "ipa": "/ˈelɪdʒəbl/",
+            "pos": "(adj)",
+            "meaning": "đủ điều kiện, đủ tiêu chuẩn"
+          },
+          {
+            "word": "entrance examination",
+            "ipa": "/ˈentrəns ɪɡˌzæmɪˈneɪʃn/",
+            "pos": "(n phr)",
+            "meaning": "kỳ thi tuyển sinh đầu vào"
+          },
+          {
+            "word": "qualification",
+            "ipa": "/ˌkwɑːlɪfɪˈkeɪʃn/",
+            "pos": "(n)",
+            "meaning": "chứng chỉ, năng lực chuyên môn"
+          },
+          {
+            "word": "application form",
+            "ipa": "/ˌæplɪˈkeɪʃn fɔːrm/",
+            "pos": "(n phr)",
+            "meaning": "đơn xin nhập học"
+          },
+          {
+            "word": "deadline",
+            "ipa": "/ˈdedlaɪn/",
+            "pos": "(n)",
+            "meaning": "hạn chót nộp hồ sơ"
+          },
+          {
+            "word": "recommendation letter",
+            "ipa": "/ˌrekəmenˈdeɪʃn ˈletər/",
+            "pos": "(n phr)",
+            "meaning": "thư giới thiệu"
+          },
+          {
+            "word": "personal statement",
+            "ipa": "/ˈpɜːrsənl ˈsteɪtmənt/",
+            "pos": "(n phr)",
+            "meaning": "bài luận cá nhân"
+          },
+          {
+            "word": "transcript",
+            "ipa": "/ˈtrænskrɪpt/",
+            "pos": "(n)",
+            "meaning": "bảng điểm học tập"
+          },
+          {
+            "word": "candidate",
+            "ipa": "/ˈkændɪdət/",
+            "pos": "(n)",
+            "meaning": "ứng viên tuyển sinh"
+          }
+        ]
+      },
+      {
+        "name": "Academic Life & Degree Programs (Chương trình đào tạo & Bằng cấp)",
+        "words": [
+          {
+            "word": "undergraduate",
+            "ipa": "/ˌʌndərˈɡrædʒuət/",
+            "pos": "(n/adj)",
+            "meaning": "sinh viên chưa tốt nghiệp, bậc đại học"
+          },
+          {
+            "word": "postgraduate",
+            "ipa": "/ˌpoʊstˈɡrædʒuət/",
+            "pos": "(n/adj)",
+            "meaning": "học viên sau đại học (thạc sĩ, tiến sĩ)"
+          },
+          {
+            "word": "curriculum",
+            "ipa": "/kəˈrɪkjələm/",
+            "pos": "(n)",
+            "meaning": "chương trình giảng dạy"
+          },
+          {
+            "word": "syllabus",
+            "ipa": "/ˈsɪləbəs/",
+            "pos": "(n)",
+            "meaning": "đề cương chi tiết môn học"
+          },
+          {
+            "word": "academic advisor",
+            "ipa": "/ˌækəˈdemɪk ədˈvaɪzər/",
+            "pos": "(n phr)",
+            "meaning": "cố vấn học tập"
+          },
+          {
+            "word": "lecture hall",
+            "ipa": "/ˈlektʃər hɔːl/",
+            "pos": "(n phr)",
+            "meaning": "giảng đường đại học"
+          },
+          {
+            "word": "seminar",
+            "ipa": "/ˈsemɪnɑːr/",
+            "pos": "(n)",
+            "meaning": "hội thảo chuyên đề"
+          },
+          {
+            "word": "dissertation",
+            "ipa": "/ˌdɪsərˈteɪʃn/",
+            "pos": "(n)",
+            "meaning": "luận văn tốt nghiệp"
+          },
+          {
+            "word": "credit system",
+            "ipa": "/ˈkredɪt ˈsɪstəm/",
+            "pos": "(n phr)",
+            "meaning": "hệ thống tích lũy tín chỉ"
+          },
+          {
+            "word": "major in",
+            "ipa": "/ˈmeɪdʒər ɪn/",
+            "pos": "(v phr)",
+            "meaning": "học chuyên ngành về"
+          },
+          {
+            "word": "faculty",
+            "ipa": "/ˈfæklti/",
+            "pos": "(n)",
+            "meaning": "khoa đào tạo, tập thể giảng viên"
+          },
+          {
+            "word": "elective course",
+            "ipa": "/ɪˈlektɪv kɔːrs/",
+            "pos": "(n phr)",
+            "meaning": "môn học tự chọn"
+          },
+          {
+            "word": "compulsory",
+            "ipa": "/kəmˈpʌlsəri/",
+            "pos": "(adj)",
+            "meaning": "bắt buộc"
+          },
+          {
+            "word": "assess",
+            "ipa": "/əˈses/",
+            "pos": "(v)",
+            "meaning": "đánh giá, thẩm định kết quả"
+          },
+          {
+            "word": "continuous assessment",
+            "ipa": "/kənˈtɪnjuəs əˈsesmənt/",
+            "pos": "(n phr)",
+            "meaning": "đánh giá quá trình liên tục"
+          }
+        ]
+      },
+      {
+        "name": "Campus Facilities & Student Services (Cơ sở vật chất & Dịch vụ sinh viên)",
+        "words": [
+          {
+            "word": "dormitory",
+            "ipa": "/ˈdɔːrmətɔːri/",
+            "pos": "(n)",
+            "meaning": "ký túc xá sinh viên"
+          },
+          {
+            "word": "campus",
+            "ipa": "/ˈkæmpəs/",
+            "pos": "(n)",
+            "meaning": "khuôn viên trường đại học"
+          },
+          {
+            "word": "recreation center",
+            "ipa": "/ˌrekriˈeɪʃn ˈsentər/",
+            "pos": "(n phr)",
+            "meaning": "trung tâm rèn luyện & giải trí"
+          },
+          {
+            "word": "student union",
+            "ipa": "/ˈstuːdnt ˈjuːniən/",
+            "pos": "(n phr)",
+            "meaning": "hội sinh viên"
+          },
+          {
+            "word": "sports complex",
+            "ipa": "/spɔːrts ˈkɑːmpleks/",
+            "pos": "(n phr)",
+            "meaning": "khu phức hợp thể thao"
+          },
+          {
+            "word": "library catalog",
+            "ipa": "/ˈlaɪbreri ˈkætəlɔːɡ/",
+            "pos": "(n phr)",
+            "meaning": "danh mục tra cứu thư viện"
+          },
+          {
+            "word": "reserved section",
+            "ipa": "/rɪˈzɜːrvd ˈsekʃn/",
+            "pos": "(n phr)",
+            "meaning": "khu vực sách nội bộ không mượn ngoài"
+          },
+          {
+            "word": "photocopy",
+            "ipa": "/ˈfoʊtoʊkɑːpi/",
+            "pos": "(n/v)",
+            "meaning": "bản sao chép tài liệu, sao chụp"
+          },
+          {
+            "word": "cafeteria",
+            "ipa": "/ˌkæfəˈtɪriə/",
+            "pos": "(n)",
+            "meaning": "nhà ăn tự phục vụ"
+          },
+          {
+            "word": "student counseling",
+            "ipa": "/ˈstuːdnt ˈkaʊnsəlɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "tư vấn tâm lý học đường"
+          },
+          {
+            "word": "career guidance",
+            "ipa": "/kəˈrɪr ˈɡaɪdns/",
+            "pos": "(n phr)",
+            "meaning": "định hướng việc làm"
+          },
+          {
+            "word": "annual membership",
+            "ipa": "/ˈænjuəl ˈmembərʃɪp/",
+            "pos": "(n phr)",
+            "meaning": "thẻ thành viên hàng năm"
+          },
+          {
+            "word": "student discount",
+            "ipa": "/ˈstuːdnt ˈdɪskaʊnt/",
+            "pos": "(n phr)",
+            "meaning": "ưu đãi giảm giá cho sinh viên"
+          },
+          {
+            "word": "identification card",
+            "ipa": "/aɪˌdentɪfɪˈkeɪʃn kɑːrd/",
+            "pos": "(n phr)",
+            "meaning": "thẻ sinh viên"
+          },
+          {
+            "word": "valid",
+            "ipa": "/ˈvælɪd/",
+            "pos": "(adj)",
+            "meaning": "còn thời hạn sử dụng, hợp lệ"
+          }
+        ]
+      },
+      {
+        "name": "Tuition, Grants & Financial Aid (Học phí, Học bổng & Tài chính)",
+        "words": [
+          {
+            "word": "tuition fee",
+            "ipa": "/tuˈɪʃn fiː/",
+            "pos": "(n phr)",
+            "meaning": "học phí"
+          },
+          {
+            "word": "scholarship",
+            "ipa": "/ˈskɑːlərʃɪp/",
+            "pos": "(n)",
+            "meaning": "học bổng khuyến khích"
+          },
+          {
+            "word": "fellowship",
+            "ipa": "/ˈfeloʊʃɪp/",
+            "pos": "(n)",
+            "meaning": "học bổng nghiên cứu sinh"
+          },
+          {
+            "word": "grant",
+            "ipa": "/ɡrænt/",
+            "pos": "(n)",
+            "meaning": "tiền trợ cấp nghiên cứu"
+          },
+          {
+            "word": "financial aid",
+            "ipa": "/faɪˈnænʃl eɪd/",
+            "pos": "(n phr)",
+            "meaning": "gói hỗ trợ tài chính"
+          },
+          {
+            "word": "student loan",
+            "ipa": "/ˈstuːdnt loʊn/",
+            "pos": "(n phr)",
+            "meaning": "khoản vay vốn học tập"
+          },
+          {
+            "word": "living expenses",
+            "ipa": "/ˈlɪvɪŋ ɪkˈspensɪz/",
+            "pos": "(n phr)",
+            "meaning": "chi phí sinh hoạt hàng ngày"
+          },
+          {
+            "word": "installment",
+            "ipa": "/ɪnˈstɔːlmənt/",
+            "pos": "(n)",
+            "meaning": "khoản thanh toán trả góp theo kỳ"
+          },
+          {
+            "word": "exempt",
+            "ipa": "/ɪɡˈzempt/",
+            "pos": "(adj/v)",
+            "meaning": "được miễn giảm học phí"
+          },
+          {
+            "word": "refund policy",
+            "ipa": "/ˈriːfʌnd ˈpɑːləsi/",
+            "pos": "(n phr)",
+            "meaning": "chính sách hoàn trả học phí"
+          },
+          {
+            "word": "subsidize",
+            "ipa": "/ˈsʌbsɪdaɪz/",
+            "pos": "(v)",
+            "meaning": "trợ giá, bao cấp một phần"
+          },
+          {
+            "word": "afford",
+            "ipa": "/əˈfɔːrd/",
+            "pos": "(v)",
+            "meaning": "có đủ khả năng chi trả"
+          },
+          {
+            "word": "budget",
+            "ipa": "/ˈbʌdʒɪt/",
+            "pos": "(n)",
+            "meaning": "ngân sách dự toán"
+          },
+          {
+            "word": "accommodation fee",
+            "ipa": "/əˌkɑːməˈdeɪʃn fiː/",
+            "pos": "(n phr)",
+            "meaning": "phí ăn ở, tiền trọ"
+          },
+          {
+            "word": "maintenance grant",
+            "ipa": "/ˈmeɪntənəns ɡrænt/",
+            "pos": "(n phr)",
+            "meaning": "trợ cấp duy trì sinh hoạt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "🏛️ Museums, Art & Heritage",
+    "topics": [
+      {
+        "name": "Museums, Galleries & Displays (Bảo tàng & Khu trưng bày)",
+        "words": [
+          {
+            "word": "exhibition",
+            "ipa": "/ˌeksɪˈbɪʃn/",
+            "pos": "(n)",
+            "meaning": "cuộc triển lãm"
+          },
+          {
+            "word": "art gallery",
+            "ipa": "/ˈɑːrt ˈɡæləri/",
+            "pos": "(n phr)",
+            "meaning": "phòng tranh nghệ thuật"
+          },
+          {
+            "word": "curator",
+            "ipa": "/kjʊˈreɪtər/",
+            "pos": "(n)",
+            "meaning": "người giám tuyển triển lãm"
+          },
+          {
+            "word": "guided tour",
+            "ipa": "/ˈɡaɪdɪd tʊr/",
+            "pos": "(n phr)",
+            "meaning": "tour tham quan có người hướng dẫn"
+          },
+          {
+            "word": "audio guide",
+            "ipa": "/ˈɔːdioʊ ɡaɪd/",
+            "pos": "(n phr)",
+            "meaning": "thiết bị tai nghe thuyết minh"
+          },
+          {
+            "word": "admission fee",
+            "ipa": "/ədˈmɪʃn fiː/",
+            "pos": "(n phr)",
+            "meaning": "vé vào cửa"
+          },
+          {
+            "word": "permanent collection",
+            "ipa": "/ˈpɜːrmənənt kəˈlekʃn/",
+            "pos": "(n phr)",
+            "meaning": "bộ sưu tập trưng bày dài hạn"
+          },
+          {
+            "word": "temporary exhibit",
+            "ipa": "/ˈtempəreri ɪɡˈzɪbɪt/",
+            "pos": "(n phr)",
+            "meaning": "triển lãm chuyên đề ngắn hạn"
+          },
+          {
+            "word": "display cabinet",
+            "ipa": "/dɪˈspleɪ ˈkæbɪnət/",
+            "pos": "(n phr)",
+            "meaning": "tủ kính trưng bày hiện vật"
+          },
+          {
+            "word": "interactive exhibit",
+            "ipa": "/ˌɪntərˈæktɪv ɪɡˈzɪbɪt/",
+            "pos": "(n phr)",
+            "meaning": "khu trưng bày tương tác chạm"
+          },
+          {
+            "word": "souvenir shop",
+            "ipa": "/ˌsuːvəˈnɪr ʃɑːp/",
+            "pos": "(n phr)",
+            "meaning": "cửa hàng bán đồ lưu niệm"
+          },
+          {
+            "word": "visitor regulations",
+            "ipa": "/ˈvɪzɪtər ˌreɡjuˈleɪʃnz/",
+            "pos": "(n phr)",
+            "meaning": "quy định cho khách tham quan"
+          },
+          {
+            "word": "cloakroom",
+            "ipa": "/ˈkloʊkruːm/",
+            "pos": "(n)",
+            "meaning": "phòng gửi áo khoác, đồ đạc"
+          },
+          {
+            "word": "pamphlet",
+            "ipa": "/ˈpæmflət/",
+            "pos": "(n)",
+            "meaning": "tờ gấp hướng dẫn thông tin"
+          },
+          {
+            "word": "admission ticket",
+            "ipa": "/ədˈmɪʃn ˈtɪkɪt/",
+            "pos": "(n phr)",
+            "meaning": "vé tham quan"
+          }
+        ]
+      },
+      {
+        "name": "Fine Arts & Artistic Styles (Mỹ thuật, Điêu khắc & Phong cách nghệ thuật)",
+        "words": [
+          {
+            "word": "masterpiece",
+            "ipa": "/ˈmæstərpiːs/",
+            "pos": "(n)",
+            "meaning": "kiệt tác nghệ thuật"
+          },
+          {
+            "word": "portrait",
+            "ipa": "/ˈpɔːrtrət/",
+            "pos": "(n)",
+            "meaning": "tranh vẽ chân dung"
+          },
+          {
+            "word": "landscape",
+            "ipa": "/ˈlændskeɪp/",
+            "pos": "(n)",
+            "meaning": "tranh phong cảnh thiên nhiên"
+          },
+          {
+            "word": "still life",
+            "ipa": "/ˌstɪl ˈlaɪf/",
+            "pos": "(n phr)",
+            "meaning": "tranh vẽ tĩnh vật"
+          },
+          {
+            "word": "sculpture",
+            "ipa": "/ˈskʌlptʃər/",
+            "pos": "(n)",
+            "meaning": "tác phẩm điêu khắc"
+          },
+          {
+            "word": "sculptor",
+            "ipa": "/ˈskʌlptər/",
+            "pos": "(n)",
+            "meaning": "nhà điêu khắc"
+          },
+          {
+            "word": "watercolour",
+            "ipa": "/ˈwɔːtərkʌlər/",
+            "pos": "(n)",
+            "meaning": "tranh màu nước"
+          },
+          {
+            "word": "oil painting",
+            "ipa": "/ˈɔɪl ˈpeɪntɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "tranh sơn dầu"
+          },
+          {
+            "word": "canvas",
+            "ipa": "/ˈkænvəs/",
+            "pos": "(n)",
+            "meaning": "vải toan chuyên vẽ tranh"
+          },
+          {
+            "word": "brushstroke",
+            "ipa": "/ˈbrʌʃstroʊk/",
+            "pos": "(n)",
+            "meaning": "nét cọ vẽ"
+          },
+          {
+            "word": "abstract art",
+            "ipa": "/ˈæbstrækt ɑːrt/",
+            "pos": "(n phr)",
+            "meaning": "nghệ thuật tranh trừu tượng"
+          },
+          {
+            "word": "realism",
+            "ipa": "/ˈriːəlɪzəm/",
+            "pos": "(n)",
+            "meaning": "trường phái hiện thực"
+          },
+          {
+            "word": "impressionism",
+            "ipa": "/ɪmˈpreʃənɪzəm/",
+            "pos": "(n)",
+            "meaning": "trường phái ấn tượng"
+          },
+          {
+            "word": "aesthetic",
+            "ipa": "/esˈθetɪk/",
+            "pos": "(adj/n)",
+            "meaning": "mang tính thẩm mỹ cao"
+          },
+          {
+            "word": "visual arts",
+            "ipa": "/ˈvɪʒuəl ɑːrts/",
+            "pos": "(n phr)",
+            "meaning": "nghệ thuật thị giác"
+          }
+        ]
+      },
+      {
+        "name": "Cultural Heritage & Archaeology (Di sản văn hóa & Khảo cổ học)",
+        "words": [
+          {
+            "word": "cultural heritage",
+            "ipa": "/ˈkʌltʃərəl ˈherɪtɪdʒ/",
+            "pos": "(n phr)",
+            "meaning": "di sản văn hóa truyền thống"
+          },
+          {
+            "word": "artifact",
+            "ipa": "/ˈɑːrtɪfækt/",
+            "pos": "(n)",
+            "meaning": "cổ vật, di vật khảo cổ"
+          },
+          {
+            "word": "antique",
+            "ipa": "/ænˈtiːk/",
+            "pos": "(adj/n)",
+            "meaning": "đồ cổ, có niên đại lâu đời"
+          },
+          {
+            "word": "ancient civilization",
+            "ipa": "/ˈeɪnʃənt ˌsɪvələˈzeɪʃn/",
+            "pos": "(n phr)",
+            "meaning": "nền văn minh cổ đại"
+          },
+          {
+            "word": "excavation",
+            "ipa": "/ˌekskəˈveɪʃn/",
+            "pos": "(n)",
+            "meaning": "cuộc khai quật khảo cổ"
+          },
+          {
+            "word": "preserve",
+            "ipa": "/prɪˈzɜːrv/",
+            "pos": "(v)",
+            "meaning": "bảo tồn, giữ gìn nguyên trạng"
+          },
+          {
+            "word": "restoration",
+            "ipa": "/ˌrestəˈreɪʃn/",
+            "pos": "(n)",
+            "meaning": "công tác phục chế di tích"
+          },
+          {
+            "word": "monument",
+            "ipa": "/ˈmɑːnjumənt/",
+            "pos": "(n)",
+            "meaning": "đài tưởng niệm, tượng đài"
+          },
+          {
+            "word": "archaeological site",
+            "ipa": "/ˌɑːrkiəˈlɑːdʒɪkl saɪt/",
+            "pos": "(n phr)",
+            "meaning": "khu di chỉ khảo cổ học"
+          },
+          {
+            "word": "prehistoric",
+            "ipa": "/ˌpriːhɪˈstɔːrɪk/",
+            "pos": "(adj)",
+            "meaning": "thuộc thời tiền sử"
+          },
+          {
+            "word": "fossil",
+            "ipa": "/ˈfɑːsl/",
+            "pos": "(n)",
+            "meaning": "mẫu hóa thạch động thực vật"
+          },
+          {
+            "word": "manuscript",
+            "ipa": "/ˈmænjuskrɪpt/",
+            "pos": "(n)",
+            "meaning": "bản thảo cổ viết bằng tay"
+          },
+          {
+            "word": "folklore",
+            "ipa": "/ˈfoʊklɔːr/",
+            "pos": "(n)",
+            "meaning": "truyền thống văn hóa dân gian"
+          },
+          {
+            "word": "ritual",
+            "ipa": "/ˈrɪtʃuəl/",
+            "pos": "(n)",
+            "meaning": "nghi thức tôn giáo/tập tục"
+          },
+          {
+            "word": "UNESCO World Heritage",
+            "ipa": "/juːˈneskoʊ wɜːrld ˈherɪtɪdʒ/",
+            "pos": "(n phr)",
+            "meaning": "di sản thế giới được UNESCO công nhận"
+          }
+        ]
+      },
+      {
+        "name": "Fashion History & Cultural Design (Lịch sử thời trang & Thiết kế)",
+        "words": [
+          {
+            "word": "fashionable",
+            "ipa": "/ˈfæʃnəbl/",
+            "pos": "(adj)",
+            "meaning": "thời thượng, hợp mốt"
+          },
+          {
+            "word": "trendsetter",
+            "ipa": "/ˈtrendsetər/",
+            "pos": "(n)",
+            "meaning": "người đi đầu tạo dựng xu hướng"
+          },
+          {
+            "word": "elegance",
+            "ipa": "/ˈelɪɡəns/",
+            "pos": "(n)",
+            "meaning": "nét thanh lịch, trang nhã"
+          },
+          {
+            "word": "haute couture",
+            "ipa": "/ˌoʊt kuːˈtʊr/",
+            "pos": "(n phr)",
+            "meaning": "thời trang may đo cao cấp"
+          },
+          {
+            "word": "textile industry",
+            "ipa": "/ˈtekstaɪl ˈɪndəstri/",
+            "pos": "(n phr)",
+            "meaning": "ngành công nghiệp dệt sợi"
+          },
+          {
+            "word": "garment",
+            "ipa": "/ˈɡɑːrmənt/",
+            "pos": "(n)",
+            "meaning": "y phục, trang phục may sẵn"
+          },
+          {
+            "word": "revolution",
+            "ipa": "/ˌrevəˈluːʃn/",
+            "pos": "(n)",
+            "meaning": "cuộc cách mạng biến đổi lớn"
+          },
+          {
+            "word": "synthetic fabric",
+            "ipa": "/sɪnˈθetɪk ˈfæbrɪk/",
+            "pos": "(n phr)",
+            "meaning": "chất liệu sợi tổng hợp"
+          },
+          {
+            "word": "tailored",
+            "ipa": "/ˈteɪlərd/",
+            "pos": "(adj)",
+            "meaning": "được cắt may đo vừa khít người"
+          },
+          {
+            "word": "accessories",
+            "ipa": "/əkˈsesəriz/",
+            "pos": "(n)",
+            "meaning": "phụ kiện thời trang kèm theo"
+          },
+          {
+            "word": "silhouette",
+            "ipa": "/ˌsɪluˈet/",
+            "pos": "(n)",
+            "meaning": "đường nét phom dáng y phục"
+          },
+          {
+            "word": "vintage",
+            "ipa": "/ˈvɪntɪdʒ/",
+            "pos": "(adj/n)",
+            "meaning": "phong cách cổ điển thập niên cũ"
+          },
+          {
+            "word": "fashion runway",
+            "ipa": "/ˈfæʃn ˈrʌnweɪ/",
+            "pos": "(n phr)",
+            "meaning": "sàn diễn catwalk thời trang"
+          },
+          {
+            "word": "mass production",
+            "ipa": "/mæs prəˈdʌkʃn/",
+            "pos": "(n phr)",
+            "meaning": "dây chuyền sản xuất hàng loạt"
+          },
+          {
+            "word": "wardrobe",
+            "ipa": "/ˈwɔːrdroʊb/",
+            "pos": "(n)",
+            "meaning": "tủ quần áo, bộ sưu tập y phục"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "🌱 Environment & Nature",
+    "topics": [
+      {
+        "name": "Climate Change & Weather Extremes (Biến đổi khí hậu & Thời tiết cực đoan)",
+        "words": [
+          {
+            "word": "global warming",
+            "ipa": "/ˈɡloʊbl ˈwɔːrmɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "hiện tượng nóng lên toàn cầu"
+          },
+          {
+            "word": "greenhouse effect",
+            "ipa": "/ˈɡriːnhaʊs ɪˌfekt/",
+            "pos": "(n phr)",
+            "meaning": "hiệu ứng nhà kính"
+          },
+          {
+            "word": "carbon emission",
+            "ipa": "/ˈkɑːrbən ɪˈmɪʃn/",
+            "pos": "(n phr)",
+            "meaning": "khí thải các-bon ra môi trường"
+          },
+          {
+            "word": "carbon footprint",
+            "ipa": "/ˈkɑːrbən ˈfʊtprɪnt/",
+            "pos": "(n phr)",
+            "meaning": "vết dấu các-bon thải ra"
+          },
+          {
+            "word": "sea level rise",
+            "ipa": "/siː ˈlevl raɪz/",
+            "pos": "(n phr)",
+            "meaning": "mực nước biển dâng cao"
+          },
+          {
+            "word": "glacier melting",
+            "ipa": "/ˈɡleɪʃər ˈmeltɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "sự tan chảy các dòng sông băng"
+          },
+          {
+            "word": "extreme weather",
+            "ipa": "/ɪkˈstriːm ˈweðər/",
+            "pos": "(n phr)",
+            "meaning": "hình thái thời tiết cực đoan"
+          },
+          {
+            "word": "drought",
+            "ipa": "/draʊt/",
+            "pos": "(n)",
+            "meaning": "hạn hán kéo dài"
+          },
+          {
+            "word": "torrential rain",
+            "ipa": "/təˈrenʃl reɪn/",
+            "pos": "(n phr)",
+            "meaning": "mưa xối xả, mưa lũ lớn"
+          },
+          {
+            "word": "deforestation",
+            "ipa": "/diːˌfɔːrɪˈsteɪʃn/",
+            "pos": "(n)",
+            "meaning": "nạn tàn phá rừng bừa bãi"
+          },
+          {
+            "word": "natural disaster",
+            "ipa": "/ˈnætʃrəl dɪˈzæstər/",
+            "pos": "(n phr)",
+            "meaning": "thảm họa thiên tai tự nhiên"
+          },
+          {
+            "word": "mitigation",
+            "ipa": "/ˌmɪtɪˈɡeɪʃn/",
+            "pos": "(n)",
+            "meaning": "biện pháp giảm nhẹ thiệt hại"
+          },
+          {
+            "word": "adaptation",
+            "ipa": "/ˌædæpˈteɪʃn/",
+            "pos": "(n)",
+            "meaning": "sự thích ứng với biến đổi"
+          },
+          {
+            "word": "fossil fuels",
+            "ipa": "/ˈfɑːsl fjuːəlz/",
+            "pos": "(n phr)",
+            "meaning": "nhiên liệu hóa thạch (than, dầu)"
+          },
+          {
+            "word": "ozone layer",
+            "ipa": "/ˈoʊzoʊn ˈleɪər/",
+            "pos": "(n phr)",
+            "meaning": "tầng ô-zôn bảo vệ khí quyển"
+          }
+        ]
+      },
+      {
+        "name": "Ecosystems & Biodiversity (Hệ sinh thái & Đa dạng sinh học)",
+        "words": [
+          {
+            "word": "biodiversity",
+            "ipa": "/ˌbaɪoʊdaɪˈvɜːrsəti/",
+            "pos": "(n)",
+            "meaning": "tính đa dạng sinh học"
+          },
+          {
+            "word": "ecosystem",
+            "ipa": "/ˈiːkoʊsɪstəm/",
+            "pos": "(n)",
+            "meaning": "hệ sinh thái tự nhiên"
+          },
+          {
+            "word": "habitat",
+            "ipa": "/ˈhæbɪtæt/",
+            "pos": "(n)",
+            "meaning": "môi trường sinh sống tự nhiên"
+          },
+          {
+            "word": "natural reserve",
+            "ipa": "/ˈnætʃrəl rɪˈzɜːrv/",
+            "pos": "(n phr)",
+            "meaning": "khu dự trữ sinh quyển"
+          },
+          {
+            "word": "rainforest",
+            "ipa": "/ˈreɪnfɔːrɪst/",
+            "pos": "(n)",
+            "meaning": "rừng mưa nhiệt đới gió mùa"
+          },
+          {
+            "word": "marine life",
+            "ipa": "/məˈriːn laɪf/",
+            "pos": "(n phr)",
+            "meaning": "hệ sinh vật biển và đại dương"
+          },
+          {
+            "word": "coral reef",
+            "ipa": "/ˈkɔːrəl riːf/",
+            "pos": "(n phr)",
+            "meaning": "rạn san hô biển"
+          },
+          {
+            "word": "food chain",
+            "ipa": "/ˈfuːd tʃeɪn/",
+            "pos": "(n phr)",
+            "meaning": "chuỗi thức ăn sinh học"
+          },
+          {
+            "word": "predator",
+            "ipa": "/ˈpredətər/",
+            "pos": "(n)",
+            "meaning": "động vật ăn thịt, săn mồi"
+          },
+          {
+            "word": "prey",
+            "ipa": "/preɪ/",
+            "pos": "(n)",
+            "meaning": "con mồi của loài ăn thịt"
+          },
+          {
+            "word": "flora and fauna",
+            "ipa": "/ˈflɔːrə ənd ˈfɔːnə/",
+            "pos": "(n phr)",
+            "meaning": "quần thể thực vật và động vật"
+          },
+          {
+            "word": "native species",
+            "ipa": "/ˈneɪtɪv ˈspiːʃiːz/",
+            "pos": "(n phr)",
+            "meaning": "loài sinh vật bản địa"
+          },
+          {
+            "word": "invasive species",
+            "ipa": "/ɪnˈveɪsɪv ˈspiːʃiːz/",
+            "pos": "(n phr)",
+            "meaning": "loài ngoại lai xâm lấn"
+          },
+          {
+            "word": "photosynthesis",
+            "ipa": "/ˌfoʊtoʊˈsɪnθəsɪs/",
+            "pos": "(n)",
+            "meaning": "quá trình quang hợp của cây xanh"
+          },
+          {
+            "word": "balance of nature",
+            "ipa": "/ˈbæləns əv ˈneɪtʃər/",
+            "pos": "(n phr)",
+            "meaning": "sự cân bằng tự nhiên"
+          }
+        ]
+      },
+      {
+        "name": "Wildlife & Conservation (Động vật hoang dã & Bảo tồn)",
+        "words": [
+          {
+            "word": "endangered species",
+            "ipa": "/ɪnˈdeɪndʒərd ˈspiːʃiːz/",
+            "pos": "(n phr)",
+            "meaning": "các loài có nguy cơ tuyệt chủng"
+          },
+          {
+            "word": "extinction",
+            "ipa": "/ɪkˈstɪŋkʃn/",
+            "pos": "(n)",
+            "meaning": "sự tuyệt chủng hoàn toàn"
+          },
+          {
+            "word": "wildlife sanctuary",
+            "ipa": "/ˈwaɪldlaɪf ˈsæŋktʃuəri/",
+            "pos": "(n phr)",
+            "meaning": "khu bảo tồn động vật hoang dã"
+          },
+          {
+            "word": "poaching",
+            "ipa": "/ˈpoʊtʃɪŋ/",
+            "pos": "(n)",
+            "meaning": "nạn săn trộm động vật quý hiếm"
+          },
+          {
+            "word": "illegal trade",
+            "ipa": "/ɪˈliːɡl treɪd/",
+            "pos": "(n phr)",
+            "meaning": "buôn bán phi pháp động vật"
+          },
+          {
+            "word": "breeding program",
+            "ipa": "/ˈbriːdɪŋ ˈproʊɡræm/",
+            "pos": "(n phr)",
+            "meaning": "chương trình nhân giống bảo tồn"
+          },
+          {
+            "word": "captivity",
+            "ipa": "/kæpˈtɪvəti/",
+            "pos": "(n)",
+            "meaning": "tình trạng nuôi nhốt bán hoang dã"
+          },
+          {
+            "word": "rehabilitate",
+            "ipa": "/ˌriːhəˈbɪlɪteɪt/",
+            "pos": "(v)",
+            "meaning": "phục hồi thể trạng trước khi thả"
+          },
+          {
+            "word": "release into the wild",
+            "ipa": "/rɪˈliːs ˈɪntu ðə waɪld/",
+            "pos": "(v phr)",
+            "meaning": "thả động vật về với tự nhiên"
+          },
+          {
+            "word": "national park",
+            "ipa": "/ˈnæʃnəl pɑːrk/",
+            "pos": "(n phr)",
+            "meaning": "vườn quốc gia bảo tồn"
+          },
+          {
+            "word": "wildlife ranger",
+            "ipa": "/ˈwaɪldlaɪf ˈreɪndʒər/",
+            "pos": "(n phr)",
+            "meaning": "kiểm lâm viên bảo vệ rừng"
+          },
+          {
+            "word": "vulnerable",
+            "ipa": "/ˈvʌlnərəbl/",
+            "pos": "(adj)",
+            "meaning": "dễ bị tổn thương trước săn bắt"
+          },
+          {
+            "word": "conservationist",
+            "ipa": "/ˌkɑːnsərˈveɪʃənɪst/",
+            "pos": "(n)",
+            "meaning": "nhà hoạt động bảo tồn thiên nhiên"
+          },
+          {
+            "word": "species survival",
+            "ipa": "/ˈspiːʃiːz sərˈvaɪvl/",
+            "pos": "(n phr)",
+            "meaning": "sự tồn vong của loài giống"
+          },
+          {
+            "word": "protect",
+            "ipa": "/prəˈtekt/",
+            "pos": "(v)",
+            "meaning": "bảo vệ, che chở"
+          }
+        ]
+      },
+      {
+        "name": "Pollution, Recycling & Renewable Energy (Ô nhiễm & Năng lượng sạch)",
+        "words": [
+          {
+            "word": "contamination",
+            "ipa": "/kənˌtæmɪˈneɪʃn/",
+            "pos": "(n)",
+            "meaning": "sự nhiễm bẩn nguồn nước/không khí"
+          },
+          {
+            "word": "air pollution",
+            "ipa": "/ˈer pəˈluːʃn/",
+            "pos": "(n phr)",
+            "meaning": "ô nhiễm bầu không khí"
+          },
+          {
+            "word": "plastic waste",
+            "ipa": "/ˈplæstɪk weɪst/",
+            "pos": "(n phr)",
+            "meaning": "rác thải nhựa khó phân hủy"
+          },
+          {
+            "word": "landfill",
+            "ipa": "/ˈlændfɪl/",
+            "pos": "(n)",
+            "meaning": "bãi tập kết chôn lấp rác"
+          },
+          {
+            "word": "biodegradable",
+            "ipa": "/ˌbaɪoʊdɪˈɡreɪdəbl/",
+            "pos": "(adj)",
+            "meaning": "có thể tự phân hủy sinh học"
+          },
+          {
+            "word": "recyclable",
+            "ipa": "/ˌriːˈsaɪkləbl/",
+            "pos": "(adj)",
+            "meaning": "có thể đưa vào tái chế"
+          },
+          {
+            "word": "waste sorting",
+            "ipa": "/ˈweɪst sɔːrtɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "phân loại rác tại nguồn"
+          },
+          {
+            "word": "solar energy",
+            "ipa": "/ˈsoʊlər ˈenərdʒi/",
+            "pos": "(n phr)",
+            "meaning": "năng lượng bức xạ mặt trời"
+          },
+          {
+            "word": "wind turbine",
+            "ipa": "/ˈwɪnd tɜːrbaɪn/",
+            "pos": "(n phr)",
+            "meaning": "tuabin máy phát điện gió"
+          },
+          {
+            "word": "renewable energy",
+            "ipa": "/rɪˈnuːəbl ˈenərdʒi/",
+            "pos": "(n phr)",
+            "meaning": "nguồn năng lượng tái tạo sạch"
+          },
+          {
+            "word": "energy efficiency",
+            "ipa": "/ˈenərdʒi ɪˈfɪʃnsi/",
+            "pos": "(n phr)",
+            "meaning": "hiệu suất sử dụng năng lượng"
+          },
+          {
+            "word": "sustainable",
+            "ipa": "/səˈsteɪnəbl/",
+            "pos": "(adj)",
+            "meaning": "phát triển bền vững, lâu dài"
+          },
+          {
+            "word": "eco-friendly",
+            "ipa": "/ˌiːkoʊ ˈfrendli/",
+            "pos": "(adj)",
+            "meaning": "thân thiện với môi trường tự nhiên"
+          },
+          {
+            "word": "zero waste",
+            "ipa": "/ˌzɪroʊ ˈweɪst/",
+            "pos": "(n phr)",
+            "meaning": "lối sống không tạo rác thải"
+          },
+          {
+            "word": "emission reduction",
+            "ipa": "/ɪˈmɪʃn rɪˈdʌkʃn/",
+            "pos": "(n phr)",
+            "meaning": "cắt giảm mức khí thải xả ra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "🔬 Science & Technology",
+    "topics": [
+      {
+        "name": "Inventions & Breakthroughs (Phát minh & Đột phá công nghệ)",
+        "words": [
+          {
+            "word": "breakthrough",
+            "ipa": "/ˈbreɪkθruː/",
+            "pos": "(n)",
+            "meaning": "bước tiến đột phá ngoạn mục"
+          },
+          {
+            "word": "invention",
+            "ipa": "/ɪnˈvenʃn/",
+            "pos": "(n)",
+            "meaning": "phát minh khoa học kỹ thuật"
+          },
+          {
+            "word": "inventor",
+            "ipa": "/ɪnˈventər/",
+            "pos": "(n)",
+            "meaning": "nhà sáng chế, nhà phát minh"
+          },
+          {
+            "word": "patent",
+            "ipa": "/ˈpætnt/",
+            "pos": "(n/v)",
+            "meaning": "bằng độc quyền sáng chế, cấp bằng"
+          },
+          {
+            "word": "prototype",
+            "ipa": "/ˈproʊtətaɪp/",
+            "pos": "(n)",
+            "meaning": "mẫu thiết kế thử nghiệm đầu tiên"
+          },
+          {
+            "word": "state-of-the-art",
+            "ipa": "/ˌsteɪt əv ði ˈɑːrt/",
+            "pos": "(adj)",
+            "meaning": "hiện đại nhất, tối tân nhất"
+          },
+          {
+            "word": "cutting-edge",
+            "ipa": "/ˌkʌtɪŋ ˈedʒ/",
+            "pos": "(adj)",
+            "meaning": "tiên tiến đi đầu xu thế"
+          },
+          {
+            "word": "laboratory",
+            "ipa": "/ləˈbɔːrətɔːri/",
+            "pos": "(n)",
+            "meaning": "phòng thí nghiệm khoa học"
+          },
+          {
+            "word": "innovate",
+            "ipa": "/ˈɪnəveɪt/",
+            "pos": "(v)",
+            "meaning": "đổi mới, sáng tạo cách thức mới"
+          },
+          {
+            "word": "commercially viable",
+            "ipa": "/kəˈmɜːrʃəli ˈvaɪəbl/",
+            "pos": "(adj phr)",
+            "meaning": "khả thi đưa ra thương mại hóa"
+          },
+          {
+            "word": "revolutionise",
+            "ipa": "/ˌrevəˈluːʃənaɪz/",
+            "pos": "(v)",
+            "meaning": "cách mạng hóa một lĩnh vực"
+          },
+          {
+            "word": "trial and error",
+            "ipa": "/ˈtraɪəl ənd ˈerər/",
+            "pos": "(n phr)",
+            "meaning": "thử nghiệm và sửa sai lặp lại"
+          },
+          {
+            "word": "proof of concept",
+            "ipa": "/pruːf əv ˈkɑːnsept/",
+            "pos": "(n phr)",
+            "meaning": "bằng chứng thực chứng ý tưởng"
+          },
+          {
+            "word": "mass production",
+            "ipa": "/mæs prəˈdʌkʃn/",
+            "pos": "(n phr)",
+            "meaning": "quy trình sản xuất hàng loạt"
+          },
+          {
+            "word": "high-tech",
+            "ipa": "/ˌhaɪ ˈtek/",
+            "pos": "(adj)",
+            "meaning": "hàm lượng công nghệ cao"
+          }
+        ]
+      },
+      {
+        "name": "AI, Computing & Digital Systems (Trí tuệ nhân tạo & Kỹ thuật số)",
+        "words": [
+          {
+            "word": "artificial intelligence",
+            "ipa": "/ˌɑːrtɪˈfɪʃl ɪnˈtelɪdʒəns/",
+            "pos": "(n phr)",
+            "meaning": "trí tuệ nhân tạo (AI)"
+          },
+          {
+            "word": "machine learning",
+            "ipa": "/məˈʃiːn ˈlɜːrnɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "học máy tự động"
+          },
+          {
+            "word": "algorithm",
+            "ipa": "/ˈælɡərɪðəm/",
+            "pos": "(n)",
+            "meaning": "thuật toán xử lý"
+          },
+          {
+            "word": "automation",
+            "ipa": "/ˌɔːtəˈmeɪʃn/",
+            "pos": "(n)",
+            "meaning": "hệ thống tự động hóa"
+          },
+          {
+            "word": "robotics",
+            "ipa": "/roʊˈbɑːtɪks/",
+            "pos": "(n)",
+            "meaning": "kỹ thuật robot người máy"
+          },
+          {
+            "word": "virtual reality",
+            "ipa": "/ˈvɜːrtʃuəl riˈæləti/",
+            "pos": "(n phr)",
+            "meaning": "thực tế ảo (VR)"
+          },
+          {
+            "word": "cloud computing",
+            "ipa": "/ˈklaʊd kəmˈpjuːtɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "công nghệ điện toán đám mây"
+          },
+          {
+            "word": "cybersecurity",
+            "ipa": "/ˌsaɪbərsɪˈkjʊrəti/",
+            "pos": "(n)",
+            "meaning": "an toàn bảo mật mạng"
+          },
+          {
+            "word": "big data",
+            "ipa": "/ˌbɪɡ ˈdeɪtə/",
+            "pos": "(n phr)",
+            "meaning": "dữ liệu lớn phức hợp"
+          },
+          {
+            "word": "sensor",
+            "ipa": "/ˈsensər/",
+            "pos": "(n)",
+            "meaning": "cảm biến thông minh"
+          },
+          {
+            "word": "database",
+            "ipa": "/ˈdeɪtəbeɪs/",
+            "pos": "(n)",
+            "meaning": "hệ thống cơ sở dữ liệu"
+          },
+          {
+            "word": "smart device",
+            "ipa": "/ˈsmɑːrt dɪˈvaɪs/",
+            "pos": "(n phr)",
+            "meaning": "thiết bị thông minh kết nối"
+          },
+          {
+            "word": "user interface",
+            "ipa": "/ˈjuːzər ˈɪntərfeɪs/",
+            "pos": "(n phr)",
+            "meaning": "giao diện người dùng tương tác"
+          },
+          {
+            "word": "autonomous vehicle",
+            "ipa": "/ɔːˈtɑːnəməs ˈviːəkl/",
+            "pos": "(n phr)",
+            "meaning": "xe tự hành không người lái"
+          },
+          {
+            "word": "network connectivity",
+            "ipa": "/ˈnetwɜːrk ˌkɑːnekˈtɪvəti/",
+            "pos": "(n phr)",
+            "meaning": "khả năng kết nối mạng không dây"
+          }
+        ]
+      },
+      {
+        "name": "Space, Astronomy & Earth Sciences (Không gian & Trái đất)",
+        "words": [
+          {
+            "word": "astronomy",
+            "ipa": "/əˈstrɑːnəmi/",
+            "pos": "(n)",
+            "meaning": "thiên văn học nghiên cứu vũ trụ"
+          },
+          {
+            "word": "astronomer",
+            "ipa": "/əˈstrɑːnəmər/",
+            "pos": "(n)",
+            "meaning": "nhà thiên văn học"
+          },
+          {
+            "word": "telescope",
+            "ipa": "/ˈtelɪskoʊp/",
+            "pos": "(n)",
+            "meaning": "kính viễn vọng thiên văn"
+          },
+          {
+            "word": "solar system",
+            "ipa": "/ˈsoʊlər ˈsɪstəm/",
+            "pos": "(n phr)",
+            "meaning": "hệ mặt trời, thái dương hệ"
+          },
+          {
+            "word": "orbit",
+            "ipa": "/ˈɔːrbɪt/",
+            "pos": "(n/v)",
+            "meaning": "quỹ đạo quay, bay quanh quỹ đạo"
+          },
+          {
+            "word": "satellite",
+            "ipa": "/ˈsætəlaɪt/",
+            "pos": "(n)",
+            "meaning": "vệ tinh quan sát nhân tạo"
+          },
+          {
+            "word": "spacecraft",
+            "ipa": "/ˈspeɪskræft/",
+            "pos": "(n)",
+            "meaning": "tàu du hành không gian vũ trụ"
+          },
+          {
+            "word": "gravitational force",
+            "ipa": "/ˌɡrævɪˈteɪʃnəl fɔːrs/",
+            "pos": "(n phr)",
+            "meaning": "trọng lực, lực hút vạn vật"
+          },
+          {
+            "word": "extraterrestrial",
+            "ipa": "/ˌekstrətəˈrestriəl/",
+            "pos": "(adj)",
+            "meaning": "bên ngoài trái đất"
+          },
+          {
+            "word": "meteor",
+            "ipa": "/ˈmiːtiər/",
+            "pos": "(n)",
+            "meaning": "sao băng, mảnh thiên thạch"
+          },
+          {
+            "word": "planet",
+            "ipa": "/ˈplænɪt/",
+            "pos": "(n)",
+            "meaning": "hành tinh quay quanh sao mẹ"
+          },
+          {
+            "word": "galaxy",
+            "ipa": "/ˈɡæləksi/",
+            "pos": "(n)",
+            "meaning": "thiên hà, dải ngân hà"
+          },
+          {
+            "word": "atmosphere",
+            "ipa": "/ˈætməsfɪr/",
+            "pos": "(n)",
+            "meaning": "bầu khí quyển bao quanh"
+          },
+          {
+            "word": "geological formation",
+            "ipa": "/ˌdʒiːəˈlɑːdʒɪkl fɔːrˈmeɪʃn/",
+            "pos": "(n phr)",
+            "meaning": "kiến tạo địa tầng địa chất"
+          },
+          {
+            "word": "earthquake",
+            "ipa": "/ˈɜːrθkweɪk/",
+            "pos": "(n)",
+            "meaning": "trận động đất địa chấn"
+          }
+        ]
+      },
+      {
+        "name": "Scientific Research & Experimentation (Nghiên cứu khoa học & Thực nghiệm)",
+        "words": [
+          {
+            "word": "hypothesis",
+            "ipa": "/haɪˈpɑːθəsɪs/",
+            "pos": "(n)",
+            "meaning": "giả thuyết khoa học cần chứng minh"
+          },
+          {
+            "word": "experiment",
+            "ipa": "/ɪkˈsperɪmənt/",
+            "pos": "(n/v)",
+            "meaning": "thí nghiệm thực nghiệm, làm thí nghiệm"
+          },
+          {
+            "word": "empirical data",
+            "ipa": "/ɪmˈpɪrɪkl ˈdeɪtə/",
+            "pos": "(n phr)",
+            "meaning": "dữ liệu thu thập từ thực nghiệm"
+          },
+          {
+            "word": "methodology",
+            "ipa": "/ˌmeθəˈdɑːlədʒi/",
+            "pos": "(n)",
+            "meaning": "phương pháp luận nghiên cứu"
+          },
+          {
+            "word": "conduct research",
+            "ipa": "/kənˈdʌkt rɪˈsɜːrtʃ/",
+            "pos": "(v phr)",
+            "meaning": "tiến hành công trình nghiên cứu"
+          },
+          {
+            "word": "observation",
+            "ipa": "/ˌɑːbzərˈveɪʃn/",
+            "pos": "(n)",
+            "meaning": "quan sát ghi nhận hiện tượng"
+          },
+          {
+            "word": "variable",
+            "ipa": "/ˈveriəbl/",
+            "pos": "(n)",
+            "meaning": "biến số đo lường trong nghiên cứu"
+          },
+          {
+            "word": "peer review",
+            "ipa": "/ˈpɪr rɪˌvjuː/",
+            "pos": "(n phr)",
+            "meaning": "bình duyệt bởi chuyên gia cùng ngành"
+          },
+          {
+            "word": "analyze",
+            "ipa": "/ˈænəlaɪz/",
+            "pos": "(v)",
+            "meaning": "phân tích số liệu chặt chẽ"
+          },
+          {
+            "word": "conclusion",
+            "ipa": "/kənˈkluːʒn/",
+            "pos": "(n)",
+            "meaning": "kết luận sau nghiên cứu"
+          },
+          {
+            "word": "sample",
+            "ipa": "/ˈsæmpl/",
+            "pos": "(n)",
+            "meaning": "mẫu thử nghiệm kiểm tra"
+          },
+          {
+            "word": "findings",
+            "ipa": "/ˈfaɪndɪŋz/",
+            "pos": "(n)",
+            "meaning": "những kết quả phát hiện mới"
+          },
+          {
+            "word": "verify",
+            "ipa": "/ˈverɪfaɪ/",
+            "pos": "(v)",
+            "meaning": "xác minh độ chính xác dữ liệu"
+          },
+          {
+            "word": "control group",
+            "ipa": "/kənˈtroʊl ɡruːp/",
+            "pos": "(n phr)",
+            "meaning": "nhóm đối chứng trong thí nghiệm"
+          },
+          {
+            "word": "academic journal",
+            "ipa": "/ˌækəˈdemɪk ˈdʒɜːrnl/",
+            "pos": "(n phr)",
+            "meaning": "tạp chí công bố nghiên cứu học thuật"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "👥 Society, Community & Lifestyle",
+    "topics": [
+      {
+        "name": "Urban Living & Infrastructure (Đời sống đô thị & Hạ tầng)",
+        "words": [
+          {
+            "word": "urbanization",
+            "ipa": "/ˌɜːrbənəˈzeɪʃn/",
+            "pos": "(n)",
+            "meaning": "quá trình đô thị hóa"
+          },
+          {
+            "word": "metropolitan",
+            "ipa": "/ˌmetrəˈpɑːlɪtən/",
+            "pos": "(adj)",
+            "meaning": "thuộc khu vực đại đô thị"
+          },
+          {
+            "word": "infrastructure",
+            "ipa": "/ˈɪnfrəstrʌktʃər/",
+            "pos": "(n)",
+            "meaning": "hệ thống cơ sở hạ tầng"
+          },
+          {
+            "word": "public transit",
+            "ipa": "/ˈpʌblɪk ˈtrænzɪt/",
+            "pos": "(n phr)",
+            "meaning": "phương tiện giao thông công cộng"
+          },
+          {
+            "word": "traffic congestion",
+            "ipa": "/ˈtræfɪk kənˈdʒestʃən/",
+            "pos": "(n phr)",
+            "meaning": "tình trạng tắc nghẽn giao thông"
+          },
+          {
+            "word": "residential area",
+            "ipa": "/ˌrezɪˈdenʃl ˈeriə/",
+            "pos": "(n phr)",
+            "meaning": "khu vực tập trung dân cư"
+          },
+          {
+            "word": "municipal",
+            "ipa": "/mjuːˈnɪsɪpl/",
+            "pos": "(adj)",
+            "meaning": "thuộc về chính quyền đô thị"
+          },
+          {
+            "word": "pedestrian zone",
+            "ipa": "/pəˈdestriən zoʊn/",
+            "pos": "(n phr)",
+            "meaning": "tuyến phố dành cho người đi bộ"
+          },
+          {
+            "word": "suburban",
+            "ipa": "/səˈbɜːrbən/",
+            "pos": "(adj)",
+            "meaning": "vùng ngoại thành ven đô"
+          },
+          {
+            "word": "community center",
+            "ipa": "/kəˈmjuːnəti ˈsentər/",
+            "pos": "(n phr)",
+            "meaning": "nhà sinh hoạt văn hóa cộng đồng"
+          },
+          {
+            "word": "green space",
+            "ipa": "/ˈɡriːn speɪs/",
+            "pos": "(n phr)",
+            "meaning": "không gian công viên cây xanh"
+          },
+          {
+            "word": "skyscraper",
+            "ipa": "/ˈskaɪskreɪpər/",
+            "pos": "(n)",
+            "meaning": "tòa cao ốc chọc trời"
+          },
+          {
+            "word": "population density",
+            "ipa": "/ˌpɑːpjuˈleɪʃn ˈdensəti/",
+            "pos": "(n phr)",
+            "meaning": "mật độ phân bố dân số"
+          },
+          {
+            "word": "living standard",
+            "ipa": "/ˈlɪvɪŋ ˈstændərd/",
+            "pos": "(n phr)",
+            "meaning": "tiêu chuẩn chất lượng cuộc sống"
+          },
+          {
+            "word": "sanitation",
+            "ipa": "/ˌsænɪˈteɪʃn/",
+            "pos": "(n)",
+            "meaning": "hệ thống vệ sinh xử lý rác/nước"
+          }
+        ]
+      },
+      {
+        "name": "Festivals, Public Events & Entertainment (Lễ hội & Hoạt động giải trí)",
+        "words": [
+          {
+            "word": "annual festival",
+            "ipa": "/ˈænjuəl ˈfestɪvl/",
+            "pos": "(n phr)",
+            "meaning": "lễ hội tổ chức định kỳ hàng năm"
+          },
+          {
+            "word": "carnival",
+            "ipa": "/ˈkɑːrnɪvl/",
+            "pos": "(n)",
+            "meaning": "ngày hội hóa trang náo nhiệt"
+          },
+          {
+            "word": "performance",
+            "ipa": "/pərˈfɔːrməns/",
+            "pos": "(n)",
+            "meaning": "buổi biểu diễn nghệ thuật"
+          },
+          {
+            "word": "live concert",
+            "ipa": "/laɪv ˈkɑːnsərt/",
+            "pos": "(n phr)",
+            "meaning": "đêm nhạc biểu diễn trực tiếp"
+          },
+          {
+            "word": "spectator",
+            "ipa": "/spekˈteɪtər/",
+            "pos": "(n)",
+            "meaning": "khán giả xem trực tiếp tại sân"
+          },
+          {
+            "word": "parade",
+            "ipa": "/pəˈreɪd/",
+            "pos": "(n)",
+            "meaning": "đoàn diễu hành trên phố"
+          },
+          {
+            "word": "venue",
+            "ipa": "/ˈvenjuː/",
+            "pos": "(n)",
+            "meaning": "địa điểm diễn ra sự kiện"
+          },
+          {
+            "word": "open-air market",
+            "ipa": "/ˌoʊpən ˈer ˈmɑːrkɪt/",
+            "pos": "(n phr)",
+            "meaning": "khu chợ buôn bán ngoài trời"
+          },
+          {
+            "word": "admission ticket",
+            "ipa": "/ədˈmɪʃn ˈtɪkɪt/",
+            "pos": "(n phr)",
+            "meaning": "vé vào cửa sự kiện"
+          },
+          {
+            "word": "comedy show",
+            "ipa": "/ˈkɑːmədi ʃoʊ/",
+            "pos": "(n phr)",
+            "meaning": "chương trình hài kịch"
+          },
+          {
+            "word": "fireworks display",
+            "ipa": "/ˈfaɪərwɜːrks dɪˈspleɪ/",
+            "pos": "(n phr)",
+            "meaning": "màn trình diễn pháo hoa"
+          },
+          {
+            "word": "organizer",
+            "ipa": "/ˈɔːrɡənaɪzər/",
+            "pos": "(n)",
+            "meaning": "ban tổ chức điều phối sự kiện"
+          },
+          {
+            "word": "participant",
+            "ipa": "/pɑːrˈtɪsɪpənt/",
+            "pos": "(n)",
+            "meaning": "người tham gia hoạt động"
+          },
+          {
+            "word": "ceremony",
+            "ipa": "/ˈserəmoʊni/",
+            "pos": "(n)",
+            "meaning": "buổi lễ nghi thức trang trọng"
+          },
+          {
+            "word": "cultural exchange",
+            "ipa": "/ˈkʌltʃərəl ɪksˈtʃeɪndʒ/",
+            "pos": "(n phr)",
+            "meaning": "giao lưu tiếp biến văn hóa"
+          }
+        ]
+      },
+      {
+        "name": "Public Health, Nutrition & Sports (Sức khỏe, Dinh dưỡng & Thể thao)",
+        "words": [
+          {
+            "word": "healthcare system",
+            "ipa": "/ˈhelθker ˈsɪstəm/",
+            "pos": "(n phr)",
+            "meaning": "hệ thống chăm sóc y tế sức khỏe"
+          },
+          {
+            "word": "sedentary lifestyle",
+            "ipa": "/ˈsednteri ˈlaɪfstaɪl/",
+            "pos": "(n phr)",
+            "meaning": "lối sống lười vận động, ngồi nhiều"
+          },
+          {
+            "word": "balanced diet",
+            "ipa": "/ˌbælənst ˈdaɪət/",
+            "pos": "(n phr)",
+            "meaning": "chế độ dinh dưỡng cân đối"
+          },
+          {
+            "word": "physical fitness",
+            "ipa": "/ˈfɪzɪkl ˈfɪtnəs/",
+            "pos": "(n phr)",
+            "meaning": "nền tảng thể lực khỏe mạnh"
+          },
+          {
+            "word": "mental wellbeing",
+            "ipa": "/ˈmentl ˈwelbiːɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "sức khỏe tâm thần, tinh thần sảng khoái"
+          },
+          {
+            "word": "obesity",
+            "ipa": "/oʊˈbiːsəti/",
+            "pos": "(n)",
+            "meaning": "tình trạng bệnh thừa cân béo phì"
+          },
+          {
+            "word": "chronic disease",
+            "ipa": "/ˈkrɑːnɪk dɪˈziːz/",
+            "pos": "(n phr)",
+            "meaning": "bệnh mãn tính kéo dài"
+          },
+          {
+            "word": "preventive medicine",
+            "ipa": "/prɪˈventɪv ˈmedsn/",
+            "pos": "(n phr)",
+            "meaning": "y học dự phòng phòng ngừa bệnh"
+          },
+          {
+            "word": "hydration",
+            "ipa": "/haɪˈdreɪʃn/",
+            "pos": "(n)",
+            "meaning": "cung cấp đủ nước cho cơ thể"
+          },
+          {
+            "word": "fitness instructor",
+            "ipa": "/ˈfɪtnəs ɪnˈstrʌktər/",
+            "pos": "(n phr)",
+            "meaning": "huấn luyện viên thể dục thể hình"
+          },
+          {
+            "word": "organic food",
+            "ipa": "/ɔːrˈɡænɪk fuːd/",
+            "pos": "(n phr)",
+            "meaning": "thực phẩm canh tác hữu cơ sạch"
+          },
+          {
+            "word": "longevity",
+            "ipa": "/lɔːnˈdʒevəti/",
+            "pos": "(n)",
+            "meaning": "tuổi thọ và sự sống lâu"
+          },
+          {
+            "word": "stress management",
+            "ipa": "/ˈstres ˌmænɪdʒmənt/",
+            "pos": "(n phr)",
+            "meaning": "kỹ năng kiểm soát áp lực cuộc sống"
+          },
+          {
+            "word": "immune system",
+            "ipa": "/ɪˈmjuːn ˈsɪstəm/",
+            "pos": "(n phr)",
+            "meaning": "hệ thống miễn dịch tự nhiên"
+          },
+          {
+            "word": "regular exercise",
+            "ipa": "/ˈreɡjələr ˈeksərsaɪz/",
+            "pos": "(n phr)",
+            "meaning": "thói quen rèn luyện thể thao đều đặn"
+          }
+        ]
+      },
+      {
+        "name": "Psychology & Human Behavior (Tâm lý học & Hành vi)",
+        "words": [
+          {
+            "word": "cognition",
+            "ipa": "/kɑːɡˈnɪʃn/",
+            "pos": "(n)",
+            "meaning": "quá trình nhận thức của não bộ"
+          },
+          {
+            "word": "perception",
+            "ipa": "/pərˈsepʃn/",
+            "pos": "(n)",
+            "meaning": "khả năng tri giác và cảm thụ"
+          },
+          {
+            "word": "motivation",
+            "ipa": "/ˌmoʊtɪˈveɪʃn/",
+            "pos": "(n)",
+            "meaning": "động lực thôi thúc hành động"
+          },
+          {
+            "word": "interpersonal skills",
+            "ipa": "/ˌɪntərˈpɜːrsənl skɪlz/",
+            "pos": "(n phr)",
+            "meaning": "kỹ năng tương tác xã hội"
+          },
+          {
+            "word": "body language",
+            "ipa": "/ˈbɑːdi ˈlæŋɡwɪdʒ/",
+            "pos": "(n phr)",
+            "meaning": "ngôn ngữ hình thể cử chỉ"
+          },
+          {
+            "word": "social interaction",
+            "ipa": "/ˈsoʊʃl ˌɪntərˈækʃn/",
+            "pos": "(n phr)",
+            "meaning": "sự tương tác và giao tiếp cộng đồng"
+          },
+          {
+            "word": "emotional intelligence",
+            "ipa": "/ɪˈmoʊʃənl ɪnˈtelɪdʒəns/",
+            "pos": "(n phr)",
+            "meaning": "trí thông minh cảm xúc (EQ)"
+          },
+          {
+            "word": "behavioral pattern",
+            "ipa": "/bɪˈheɪvjərəl ˈpætərn/",
+            "pos": "(n phr)",
+            "meaning": "mô thức thói quen hành vi lặp lại"
+          },
+          {
+            "word": "self-esteem",
+            "ipa": "/ˌself ɪˈstiːm/",
+            "pos": "(n)",
+            "meaning": "lòng tự tôn, sự tin tưởng bản thân"
+          },
+          {
+            "word": "peer pressure",
+            "ipa": "/ˈpɪr ˌpreʃər/",
+            "pos": "(n phr)",
+            "meaning": "áp lực từ bạn bè cùng lứa"
+          },
+          {
+            "word": "anxiety",
+            "ipa": "/æŋˈzaɪəti/",
+            "pos": "(n)",
+            "meaning": "trạng thái tâm lý bồn chồn lo âu"
+          },
+          {
+            "word": "subconscious",
+            "ipa": "/ˌsʌbˈkɑːnʃəs/",
+            "pos": "(adj/n)",
+            "meaning": "tiềm thức sâu trong tâm trí"
+          },
+          {
+            "word": "empathy",
+            "ipa": "/ˈempəθi/",
+            "pos": "(n)",
+            "meaning": "sự thấu cảm và sẻ chia cảm xúc"
+          },
+          {
+            "word": "habit formation",
+            "ipa": "/ˈhæbɪt fɔːrˈmeɪʃn/",
+            "pos": "(n phr)",
+            "meaning": "sự hình thành và duy trì thói quen"
+          },
+          {
+            "word": "stimulus",
+            "ipa": "/ˈstɪmjələs/",
+            "pos": "(n)",
+            "meaning": "tác nhân kích thích phản ứng"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "💼 Business, Economy & Career",
+    "topics": [
+      {
+        "name": "Economy, Finance & Investment (Kinh tế & Tài chính)",
+        "words": [
+          {
+            "word": "economic growth",
+            "ipa": "/ˌiːkəˈnɑːmɪk ɡroʊθ/",
+            "pos": "(n phr)",
+            "meaning": "sự tăng trưởng kinh tế vĩ mô"
+          },
+          {
+            "word": "inflation rate",
+            "ipa": "/ɪnˈfleɪʃn reɪt/",
+            "pos": "(n phr)",
+            "meaning": "tỷ lệ lạm phát giá cả"
+          },
+          {
+            "word": "interest rate",
+            "ipa": "/ˈɪntrəst reɪt/",
+            "pos": "(n phr)",
+            "meaning": "lãi suất vay ngân hàng"
+          },
+          {
+            "word": "gross domestic product",
+            "ipa": "/ɡroʊs dəˌmestɪk ˈprɑːdʌkt/",
+            "pos": "(n phr)",
+            "meaning": "tổng sản phẩm quốc nội (GDP)"
+          },
+          {
+            "word": "recession",
+            "ipa": "/rɪˈseʃn/",
+            "pos": "(n)",
+            "meaning": "thời kỳ suy thoái kinh tế"
+          },
+          {
+            "word": "investment portfolio",
+            "ipa": "/ɪnˈvestmənt pɔːrtˈfoʊlioʊ/",
+            "pos": "(n phr)",
+            "meaning": "danh mục đầu tư tài sản"
+          },
+          {
+            "word": "stock market",
+            "ipa": "/ˈstɑːk mɑːrkɪt/",
+            "pos": "(n phr)",
+            "meaning": "thị trường chứng khoán"
+          },
+          {
+            "word": "fiscal policy",
+            "ipa": "/ˈfɪskl ˈpɑːləsi/",
+            "pos": "(n phr)",
+            "meaning": "chính sách tài khóa chính phủ"
+          },
+          {
+            "word": "revenue",
+            "ipa": "/ˈrevənuː/",
+            "pos": "(n)",
+            "meaning": "tổng doanh thu đạt được"
+          },
+          {
+            "word": "expenditure",
+            "ipa": "/ɪkˈspendɪtʃər/",
+            "pos": "(n)",
+            "meaning": "tổng chi tiêu giải ngân"
+          },
+          {
+            "word": "monetary",
+            "ipa": "/ˈmʌnɪteri/",
+            "pos": "(adj)",
+            "meaning": "thuộc lĩnh vực tiền tệ lưu thông"
+          },
+          {
+            "word": "dividend",
+            "ipa": "/ˈdɪvɪdend/",
+            "pos": "(n)",
+            "meaning": "cổ tức chi trả cho cổ đông"
+          },
+          {
+            "word": "purchasing power",
+            "ipa": "/ˈpɜːrtʃəsɪŋ ˌpaʊər/",
+            "pos": "(n phr)",
+            "meaning": "sức mua của người tiêu dùng"
+          },
+          {
+            "word": "real estate",
+            "ipa": "/ˈriːəl ɪsteɪt/",
+            "pos": "(n phr)",
+            "meaning": "thị trường nhà đất, bất động sản"
+          },
+          {
+            "word": "capital",
+            "ipa": "/ˈkæpɪtl/",
+            "pos": "(n)",
+            "meaning": "nguồn vốn tài chính để đầu tư"
+          }
+        ]
+      },
+      {
+        "name": "Enterprise, Startups & Management (Doanh nghiệp & Quản trị)",
+        "words": [
+          {
+            "word": "entrepreneur",
+            "ipa": "/ˌɑːntrəprəˈnɜːr/",
+            "pos": "(n)",
+            "meaning": "doanh nhân khởi nghiệp dấn thân"
+          },
+          {
+            "word": "startup",
+            "ipa": "/ˈstɑːrtʌp/",
+            "pos": "(n)",
+            "meaning": "công ty khởi nghiệp sáng tạo"
+          },
+          {
+            "word": "venture capital",
+            "ipa": "/ˈventʃər ˈkæpɪtl/",
+            "pos": "(n phr)",
+            "meaning": "nguồn quỹ đầu tư mạo hiểm"
+          },
+          {
+            "word": "corporate governance",
+            "ipa": "/ˈkɔːrpərət ˈɡʌvərnəns/",
+            "pos": "(n phr)",
+            "meaning": "quản trị điều hành doanh nghiệp"
+          },
+          {
+            "word": "executive officer",
+            "ipa": "/ɪɡˈzekjətɪv ˈɔːfɪsər/",
+            "pos": "(n phr)",
+            "meaning": "giám đốc điều hành cấp cao"
+          },
+          {
+            "word": "merger and acquisition",
+            "ipa": "/ˈmɜːrdʒər ənd ˌækwɪˈzɪʃn/",
+            "pos": "(n phr)",
+            "meaning": "mua bán và sáp nhập (M&A)"
+          },
+          {
+            "word": "business strategy",
+            "ipa": "/ˈbɪznəs ˈstrætədʒi/",
+            "pos": "(n phr)",
+            "meaning": "chiến lược phát triển kinh doanh"
+          },
+          {
+            "word": "supply chain",
+            "ipa": "/səˈplaɪ tʃeɪn/",
+            "pos": "(n phr)",
+            "meaning": "chuỗi cung ứng hàng hóa"
+          },
+          {
+            "word": "logistics",
+            "ipa": "/ləˈdʒɪstɪks/",
+            "pos": "(n)",
+            "meaning": "dịch vụ hậu cần và kho vận"
+          },
+          {
+            "word": "competitive advantage",
+            "ipa": "/kəmˈpetətɪv ədˈvæntɪdʒ/",
+            "pos": "(n phr)",
+            "meaning": "lợi thế cạnh tranh vượt trội"
+          },
+          {
+            "word": "quality assurance",
+            "ipa": "/ˈkwɑːləti əˈʃʊrəns/",
+            "pos": "(n phr)",
+            "meaning": "bảo đảm tiêu chuẩn chất lượng (QA)"
+          },
+          {
+            "word": "shareholder",
+            "ipa": "/ˈʃerhoʊldər/",
+            "pos": "(n)",
+            "meaning": "cổ đông góp vốn công ty"
+          },
+          {
+            "word": "profit margin",
+            "ipa": "/ˈprɑːfɪt ˈmɑːrdʒɪn/",
+            "pos": "(n phr)",
+            "meaning": "biên độ tỷ suất lợi nhuận"
+          },
+          {
+            "word": "annual report",
+            "ipa": "/ˈænjuəl rɪˈpɔːrt/",
+            "pos": "(n phr)",
+            "meaning": "báo cáo tài chính thường niên"
+          },
+          {
+            "word": "organizational structure",
+            "ipa": "/ˌɔːrɡənəˈzeɪʃənl ˈstrʌktʃər/",
+            "pos": "(n phr)",
+            "meaning": "sơ đồ cơ cấu tổ chức bộ máy"
+          }
+        ]
+      },
+      {
+        "name": "Marketing, Consumer Trends & E-commerce (Tiếp thị & Xu hướng tiêu dùng)",
+        "words": [
+          {
+            "word": "target audience",
+            "ipa": "/ˈtɑːrɡɪt ˈɔːdiəns/",
+            "pos": "(n phr)",
+            "meaning": "nhóm khách hàng mục tiêu hướng đến"
+          },
+          {
+            "word": "brand identity",
+            "ipa": "/ˈbrænd aɪˈdentəti/",
+            "pos": "(n phr)",
+            "meaning": "bộ nhận diện thương hiệu"
+          },
+          {
+            "word": "consumer behavior",
+            "ipa": "/kənˈsuːmər bɪˈheɪvjər/",
+            "pos": "(n phr)",
+            "meaning": "hành vi thói quen mua sắm"
+          },
+          {
+            "word": "market research",
+            "ipa": "/ˈmɑːrkɪt rɪˈsɜːrtʃ/",
+            "pos": "(n phr)",
+            "meaning": "hoạt động khảo sát nghiên cứu thị trường"
+          },
+          {
+            "word": "digital advertising",
+            "ipa": "/ˈdɪdʒɪtl ˈædvərtaɪzɪŋ/",
+            "pos": "(n phr)",
+            "meaning": "quảng cáo trên nền tảng số"
+          },
+          {
+            "word": "customer loyalty",
+            "ipa": "/ˈkʌstəmər ˈlɔɪəlti/",
+            "pos": "(n phr)",
+            "meaning": "lòng trung thành gắn bó của khách hàng"
+          },
+          {
+            "word": "e-commerce platform",
+            "ipa": "/ˌiː ˈkɑːmɜːrs ˈplætfɔːrm/",
+            "pos": "(n phr)",
+            "meaning": "sàn thương mại điện tử trực tuyến"
+          },
+          {
+            "word": "promotion campaign",
+            "ipa": "/prəˈmoʊʃn kæmˈpeɪn/",
+            "pos": "(n phr)",
+            "meaning": "chiến dịch xúc tiến khuyến mãi"
+          },
+          {
+            "word": "product launch",
+            "ipa": "/ˈprɑːdʌkt lɔːntʃ/",
+            "pos": "(n phr)",
+            "meaning": "sự kiện ra mắt sản phẩm mới"
+          },
+          {
+            "word": "market share",
+            "ipa": "/ˈmɑːrkɪt ʃer/",
+            "pos": "(n phr)",
+            "meaning": "thị phần chiếm lĩnh thị trường"
+          },
+          {
+            "word": "endorsement",
+            "ipa": "/ɪnˈdɔːrsmənt/",
+            "pos": "(n)",
+            "meaning": "sự chứng thực từ người nổi tiếng"
+          },
+          {
+            "word": "public relations",
+            "ipa": "/ˌpʌblɪk rɪˈleɪʃnz/",
+            "pos": "(n phr)",
+            "meaning": "hoạt động quan hệ công chúng (PR)"
+          },
+          {
+            "word": "feedback loop",
+            "ipa": "/ˈfiːdbæk luːp/",
+            "pos": "(n phr)",
+            "meaning": "chu trình tiếp nhận phản hồi từ khách"
+          },
+          {
+            "word": "retail outlet",
+            "ipa": "/ˈriːteɪl ˈaʊtlet/",
+            "pos": "(n phr)",
+            "meaning": "cửa hàng đại lý bán lẻ"
+          },
+          {
+            "word": "wholesale",
+            "ipa": "/ˈhoʊlseɪl/",
+            "pos": "(adj/n)",
+            "meaning": "bán buôn sỉ số lượng lớn"
+          }
+        ]
+      },
+      {
+        "name": "Human Resources & Career Development (Nhân sự & Phát triển nghề nghiệp)",
+        "words": [
+          {
+            "word": "human resources",
+            "ipa": "/ˌhjuːmən ˈriːsɔːrsɪz/",
+            "pos": "(n phr)",
+            "meaning": "bộ phận quản trị nhân sự (HR)"
+          },
+          {
+            "word": "recruitment",
+            "ipa": "/rɪˈkruːtmənt/",
+            "pos": "(n)",
+            "meaning": "quy trình tuyển dụng nhân tài"
+          },
+          {
+            "word": "prospective employee",
+            "ipa": "/prəˈspektɪv ɪmˈplɔɪiː/",
+            "pos": "(n phr)",
+            "meaning": "ứng viên nhân viên tiềm năng"
+          },
+          {
+            "word": "job interview",
+            "ipa": "/ˈdʒɑːb ˈɪntərvjuː/",
+            "pos": "(n phr)",
+            "meaning": "buổi phỏng vấn xin việc"
+          },
+          {
+            "word": "resume",
+            "ipa": "/ˈrezəmeɪ/",
+            "pos": "(n)",
+            "meaning": "bản sơ yếu lý lịch cá nhân"
+          },
+          {
+            "word": "promotion",
+            "ipa": "/prəˈmoʊʃn/",
+            "pos": "(n)",
+            "meaning": "sự thăng tiến lên chức vụ cao hơn"
+          },
+          {
+            "word": "career progression",
+            "ipa": "/kəˈrɪr prəˈɡreʃn/",
+            "pos": "(n phr)",
+            "meaning": "lộ trình thăng tiến sự nghiệp"
+          },
+          {
+            "word": "performance appraisal",
+            "ipa": "/pərˈfɔːrməns əˈpreɪzl/",
+            "pos": "(n phr)",
+            "meaning": "đánh giá kết quả hiệu suất công việc"
+          },
+          {
+            "word": "compensation and benefits",
+            "ipa": "/ˌkɑːmpenˈseɪʃn ənd ˈbenɪfɪts/",
+            "pos": "(n phr)",
+            "meaning": "chế độ đãi ngộ lương và phúc lợi"
+          },
+          {
+            "word": "professional development",
+            "ipa": "/prəˈfeʃənl dɪˈveləpmənt/",
+            "pos": "(n phr)",
+            "meaning": "đào tạo nâng cao kỹ năng nghề nghiệp"
+          },
+          {
+            "word": "internship",
+            "ipa": "/ˈɪntɜːrnʃɪp/",
+            "pos": "(n)",
+            "meaning": "kỳ thực tập sinh viên"
+          },
+          {
+            "word": "probation period",
+            "ipa": "/proʊˈbeɪʃn ˈpɪriəd/",
+            "pos": "(n phr)",
+            "meaning": "khoảng thời gian thử việc"
+          },
+          {
+            "word": "workplace culture",
+            "ipa": "/ˈwɜːrkpleɪs ˈkʌltʃər/",
+            "pos": "(n phr)",
+            "meaning": "văn hóa môi trường làm việc"
+          },
+          {
+            "word": "staff turnover",
+            "ipa": "/stæf ˈtɜːrnoʊvər/",
+            "pos": "(n phr)",
+            "meaning": "tỷ lệ thay thế luân chuyển nhân sự"
+          },
+          {
+            "word": "resignation",
+            "ipa": "/ˌrezɪɡˈneɪʃn/",
+            "pos": "(n)",
+            "meaning": "đơn xin thôi việc tự nguyện"
+          }
+        ]
+      }
+    ]
+  }
+];

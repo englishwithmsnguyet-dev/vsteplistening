@@ -221,6 +221,18 @@ class VstepApp {
                     const gc = document.getElementById('game-content-p2');
                     if (ph) ph.style.display = 'block';
                     if (gc) { gc.style.display = 'none'; gc.innerHTML = ''; }
+                } else if (tabId.startsWith('vocab3-cat-')) {
+                    const searchInput = document.getElementById('vocab3-search');
+                    if (searchInput) {
+                        searchInput.value = '';
+                        document.querySelectorAll('#view-part3-vocab .vocab-topic-block, #view-part3-vocab .vocab-card').forEach(el => {
+                            el.style.display = '';
+                        });
+                    }
+                    const ph = document.getElementById('game-placeholder-p3');
+                    const gc = document.getElementById('game-content-p3');
+                    if (ph) ph.style.display = 'block';
+                    if (gc) { gc.style.display = 'none'; gc.innerHTML = ''; }
                 }
             });
         });
@@ -708,6 +720,61 @@ class VstepApp {
                             ${strategiesHtml}
                         </div>
                     </div>
+
+                    <!-- 4. Nhóm chủ đề từ vựng học thuật -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">4</span> 6 Nhóm chủ đề từ vựng học thuật cốt lõi của Part 03</h3>
+                        <p class="theory-sec-sub">Học và ôn tập toàn diện 360+ từ vựng học thuật chuyên sâu được phân loại khoa học:</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-bottom: 16px;">
+                            <div class="theory-pattern-card" style="padding: 12px 16px; align-items: center;">
+                                <span style="font-size: 1.5rem; flex-shrink: 0;">🎓</span>
+                                <div>
+                                    <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px;">Higher Education & Admissions</h4>
+                                    <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">Tuyển sinh, tín chỉ, giảng đường, học bổng & đời sống sinh viên</p>
+                                </div>
+                            </div>
+                            <div class="theory-pattern-card" style="padding: 12px 16px; align-items: center;">
+                                <span style="font-size: 1.5rem; flex-shrink: 0;">🏛️</span>
+                                <div>
+                                    <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px;">Museums, Art & Heritage</h4>
+                                    <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">Triển lãm, hội họa, di sản văn hóa, khảo cổ & lịch sử thời trang</p>
+                                </div>
+                            </div>
+                            <div class="theory-pattern-card" style="padding: 12px 16px; align-items: center;">
+                                <span style="font-size: 1.5rem; flex-shrink: 0;">🌱</span>
+                                <div>
+                                    <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px;">Environment & Nature</h4>
+                                    <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">Biến đổi khí hậu, hệ sinh thái, bảo tồn động thực vật & năng lượng xanh</p>
+                                </div>
+                            </div>
+                            <div class="theory-pattern-card" style="padding: 12px 16px; align-items: center;">
+                                <span style="font-size: 1.5rem; flex-shrink: 0;">🔬</span>
+                                <div>
+                                    <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px;">Science & Technology</h4>
+                                    <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">Phát minh, đột phá khoa học, trí tuệ nhân tạo & nghiên cứu thực nghiệm</p>
+                                </div>
+                            </div>
+                            <div class="theory-pattern-card" style="padding: 12px 16px; align-items: center;">
+                                <span style="font-size: 1.5rem; flex-shrink: 0;">👥</span>
+                                <div>
+                                    <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px;">Society & Community</h4>
+                                    <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">Đô thị hóa, lễ hội cộng đồng, sức khỏe thể chất & tâm lý học hành vi</p>
+                                </div>
+                            </div>
+                            <div class="theory-pattern-card" style="padding: 12px 16px; align-items: center;">
+                                <span style="font-size: 1.5rem; flex-shrink: 0;">💼</span>
+                                <div>
+                                    <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px;">Business & Economy</h4>
+                                    <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">Tài chính vĩ mô, quản trị doanh nghiệp, marketing & thị trường lao động</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: center; margin-top: 14px;">
+                            <button type="button" class="btn btn-secondary" onclick="window.location.hash='#part3-vocab'" style="padding: 10px 22px; font-weight: 700; border-radius: 8px;">
+                                📚 Mở Tab Tra Cứu & Ôn Tập Từ Vựng Part 03 ➔
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -723,9 +790,9 @@ class VstepApp {
     /* --- APPLICATION ROUTING --- */
     handleRouting() {
         const hash = window.location.hash.replace('#', '') || 'dashboard';
-        const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part2-vocab', 'part3', 'statistics', 'practice-run', 'mocktest'];
+        const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part2-vocab', 'part3', 'part3-vocab', 'statistics', 'practice-run', 'mocktest'];
         
-        if ((hash === 'part2' || hash === 'part2-vocab' || hash === 'part3') && !this.isItemUnlocked(hash.startsWith('part2') ? 2 : 3, '', false)) {
+        if ((hash === 'part2' || hash === 'part2-vocab' || hash === 'part3' || hash === 'part3-vocab') && !this.isItemUnlocked(hash.startsWith('part2') ? 2 : 3, '', false)) {
             this.promptUnlock(hash.startsWith('part2') ? 2 : 3, '', false, () => {
                 window.location.hash = '#' + hash;
             });
@@ -857,6 +924,7 @@ class VstepApp {
         const p2MenuItem = document.querySelector('.menu-item[data-view="part2"]');
         const p2VocabMenuItem = document.querySelector('.menu-item[data-view="part2-vocab"]');
         const p3MenuItem = document.querySelector('.menu-item[data-view="part3"]');
+        const p3VocabMenuItem = document.querySelector('.menu-item[data-view="part3-vocab"]');
         const mockMenuItem = document.querySelector('.menu-item[data-view="mocktest"]');
         
         if (!unlockedP2) {
@@ -888,26 +956,31 @@ class VstepApp {
         }
         
         if (!unlockedP3) {
-            if (p3MenuItem) {
-                p3MenuItem.classList.add('locked');
-                p3MenuItem.onclick = (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    this.promptUnlock(3, '', false, () => {
-                        this.switchView('part3');
-                        const menuBtn = document.querySelector('.menu-item[data-view="part3"]');
-                        if (menuBtn) {
-                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
-                            menuBtn.classList.add('active');
-                        }
-                    });
-                };
-            }
+            [p3MenuItem, p3VocabMenuItem].forEach(item => {
+                if (item) {
+                    item.classList.add('locked');
+                    item.onclick = (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        this.promptUnlock(3, '', false, () => {
+                            const viewTarget = item.getAttribute('data-view');
+                            this.switchView(viewTarget);
+                            const menuBtn = document.querySelector(`.menu-item[data-view="${viewTarget}"]`);
+                            if (menuBtn) {
+                                document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                                menuBtn.classList.add('active');
+                            }
+                        });
+                    };
+                }
+            });
         } else {
-            if (p3MenuItem) {
-                p3MenuItem.classList.remove('locked');
-                p3MenuItem.onclick = null;
-            }
+            [p3MenuItem, p3VocabMenuItem].forEach(item => {
+                if (item) {
+                    item.classList.remove('locked');
+                    item.onclick = null;
+                }
+            });
         }
 
         if (!unlockedMock) {
@@ -1100,6 +1173,7 @@ class VstepApp {
             'part2': { parent: 'Luyện tập', current: 'PART 02: LONG CONVERSATIONS' },
             'part2-vocab': { parent: 'Từ vựng', current: 'Từ vựng PART 02' },
             'part3': { parent: 'Luyện tập', current: 'PART 03: LONG TALKS' },
+            'part3-vocab': { parent: 'Từ vựng', current: 'Từ vựng PART 03' },
             'statistics': { parent: 'Tiện ích', current: 'Tiến độ học tập' },
             'practice-run': { parent: 'Phòng thi', current: 'Đang làm bài nghe' },
             'mocktest': { parent: 'Thi thử', current: 'LISTENING MOCK TEST 01' }
@@ -1197,6 +1271,13 @@ class VstepApp {
                 if (container) container.innerHTML = renderCategoryBlock(cat);
             });
         }
+
+        if (window.VSTEP_VOCAB_PART3_DATA) {
+            window.VSTEP_VOCAB_PART3_DATA.forEach((cat, cIdx) => {
+                const container = document.getElementById(`tab-vocab3-cat-${cIdx}`);
+                if (container) container.innerHTML = renderCategoryBlock(cat);
+            });
+        }
         
         // Set up search filter listeners
         const setupSearch = (inputId, tabBodySelector) => {
@@ -1235,6 +1316,7 @@ class VstepApp {
 
         setupSearch('vocab-search', '#vocab-tab-body');
         setupSearch('vocab2-search', '#vocab2-tab-body');
+        setupSearch('vocab3-search', '#vocab3-tab-body');
     }
 
     /* --- PRACTICE RUN ENGINE --- */
@@ -3715,21 +3797,24 @@ function shootConfetti() {
 window.startReviewGame = (type, part = null) => {
     let targetPart = part;
     if (!targetPart) {
+        const p3View = document.getElementById('view-part3-vocab');
         const p2View = document.getElementById('view-part2-vocab');
-        if (p2View && p2View.classList.contains('active')) {
+        if (p3View && p3View.classList.contains('active')) {
+            targetPart = 3;
+        } else if (p2View && p2View.classList.contains('active')) {
             targetPart = 2;
         } else {
             targetPart = 1;
         }
     }
 
-    const headerSelector = targetPart === 2 ? '#vocab2-tab-header' : '#vocab-tab-header';
+    const headerSelector = targetPart === 3 ? '#vocab3-tab-header' : (targetPart === 2 ? '#vocab2-tab-header' : '#vocab-tab-header');
     const activeBtn = document.querySelector(`${headerSelector} .tab-btn.active`);
     if (!activeBtn) return;
     const tabId = activeBtn.getAttribute('data-tab');
-    const catIdx = parseInt(tabId.replace('vocab2-cat-', '').replace('vocab-cat-', ''));
+    const catIdx = parseInt(tabId.replace('vocab3-cat-', '').replace('vocab2-cat-', '').replace('vocab-cat-', ''));
     
-    const vocabSource = targetPart === 2 ? window.VSTEP_VOCAB_PART2_DATA : window.VSTEP_VOCAB_DATA;
+    const vocabSource = targetPart === 3 ? window.VSTEP_VOCAB_PART3_DATA : (targetPart === 2 ? window.VSTEP_VOCAB_PART2_DATA : window.VSTEP_VOCAB_DATA);
     if (!vocabSource || !vocabSource[catIdx]) {
         alert("Không tìm thấy dữ liệu từ vựng cho phần này!");
         return;
@@ -3751,8 +3836,8 @@ window.startReviewGame = (type, part = null) => {
         return;
     }
     
-    const placeholderId = targetPart === 2 ? 'game-placeholder-p2' : 'game-placeholder';
-    const contentId = targetPart === 2 ? 'game-content-p2' : 'game-content';
+    const placeholderId = targetPart === 3 ? 'game-placeholder-p3' : (targetPart === 2 ? 'game-placeholder-p2' : 'game-placeholder');
+    const contentId = targetPart === 3 ? 'game-content-p3' : (targetPart === 2 ? 'game-content-p2' : 'game-content');
     const placeholder = document.getElementById(placeholderId);
     const content = document.getElementById(contentId);
     
