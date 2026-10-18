@@ -358,9 +358,25 @@
 
                 <!-- 3. PART 02 VIEW -->
                 <section class="view-panel" id="view-part2">
-                    <p class="section-description">Mỗi đề luyện tập Part 2 gồm 1 cuộc hội thoại dài giữa 2 người (thường là sinh viên và giáo viên, hoặc các đồng nghiệp) kèm theo 4 câu hỏi trắc nghiệm.</p>
-                    <div class="list-grid" id="p2-practice-list">
-                        <!-- Dynamic loading of Part 2 Practices -->
+                    <div class="tab-container">
+                        <div class="tab-header">
+                            <button class="tab-btn active" data-tab="p2-theory">Chiến lược & Lý thuyết (PART 02)</button>
+                            <button class="tab-btn" data-tab="p2-practice">Đề luyện tập (PART 02)</button>
+                        </div>
+                        
+                        <div class="tab-body">
+                            <!-- Tab: Theory -->
+                            <div class="tab-pane active" id="tab-p2-theory">
+                                <!-- Dynamic loading of Part 2 Theory -->
+                            </div>
+                            <!-- Tab: Practice -->
+                            <div class="tab-pane" id="tab-p2-practice">
+                                <p class="tab-description">Mỗi đề luyện tập Part 2 gồm 1 cuộc hội thoại dài giữa 2 người (thường là sinh viên và giáo viên, hoặc các đồng nghiệp) kèm theo 4 câu hỏi trắc nghiệm.</p>
+                                <div class="list-grid" id="p2-practice-list">
+                                    <!-- Dynamic loading of Part 2 Practices -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -425,9 +441,25 @@
 
                 <!-- 4. PART 03 VIEW -->
                 <section class="view-panel" id="view-part3">
-                    <p class="section-description">Mỗi đề luyện tập Part 3 gồm 1 bài nói/bài giảng học thuật đơn thoại dài kèm theo 5 câu hỏi trắc nghiệm học thuật sâu rộng.</p>
-                    <div class="list-grid" id="p3-practice-list">
-                        <!-- Dynamic loading of Part 3 Practices -->
+                    <div class="tab-container">
+                        <div class="tab-header">
+                            <button class="tab-btn active" data-tab="p3-theory">Chiến lược & Lý thuyết (PART 03)</button>
+                            <button class="tab-btn" data-tab="p3-practice">Đề luyện tập (PART 03)</button>
+                        </div>
+                        
+                        <div class="tab-body">
+                            <!-- Tab: Theory -->
+                            <div class="tab-pane active" id="tab-p3-theory">
+                                <!-- Dynamic loading of Part 3 Theory -->
+                            </div>
+                            <!-- Tab: Practice -->
+                            <div class="tab-pane" id="tab-p3-practice">
+                                <p class="tab-description">Mỗi đề luyện tập Part 3 gồm 1 bài nói/bài giảng học thuật đơn thoại dài kèm theo 5 câu hỏi trắc nghiệm học thuật sâu rộng.</p>
+                                <div class="list-grid" id="p3-practice-list">
+                                    <!-- Dynamic loading of Part 3 Practices -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -717,9 +749,9 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script src="data.js?v=13"></script>
+    <script src="data.js?v=14"></script>
     <script src="mock_test_data.js?v=11"></script>
     <script src="vocab_data.js?v=4"></script>
-    <script src="app.js?v=63"></script>
+    <script src="app.js?v=64"></script>
 </body>
 </html>

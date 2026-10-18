@@ -124,6 +124,8 @@ class VstepApp {
         this.elements.p1PracticeList = document.getElementById('p1-practice-list');
         this.elements.p2PracticeList = document.getElementById('p2-practice-list');
         this.elements.p3PracticeList = document.getElementById('p3-practice-list');
+        this.elements.p2TheoryContainer = document.getElementById('tab-p2-theory');
+        this.elements.p3TheoryContainer = document.getElementById('tab-p3-theory');
         
         // Custom Audio Player
         this.elements.audio = document.getElementById('native-audio');
@@ -431,6 +433,291 @@ class VstepApp {
                 </div>
             `;
         }).join('');
+
+        // Render Part 2 & Part 3 Theory Guides
+        this.renderPart2Theory();
+        this.renderPart3Theory();
+    }
+
+    switchToTab(viewId, tabDataId) {
+        const view = document.getElementById(viewId);
+        if (!view) return;
+        const tabBtn = view.querySelector(`.tab-btn[data-tab="${tabDataId}"]`);
+        if (tabBtn) {
+            tabBtn.click();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+
+    renderPart2Theory() {
+        if (!this.elements.p2TheoryContainer || !this.data || !this.data.part2 || !this.data.part2.theory_guide) return;
+        const tg = this.data.part2.theory_guide;
+
+        const skillsHtml = (tg.overview.core_skills || []).map(skill => `
+            <div class="theory-step-point" style="margin-bottom: 6px;">
+                <span class="point-bullet">🎯</span>
+                <span class="point-text">${skill}</span>
+            </div>
+        `).join('');
+
+        const contextsHtml = (tg.overview.contexts || []).map(c => `
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 14px; display: flex; gap: 12px; align-items: flex-start;">
+                <span style="font-size: 1.4rem; line-height: 1;">${c.icon}</span>
+                <div>
+                    <h5 style="font-size: 0.92rem; font-weight: 700; color: var(--color-primary); margin-bottom: 4px;">${c.title}</h5>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">${c.detail}</p>
+                </div>
+            </div>
+        `).join('');
+
+        const patternsHtml = (tg.question_types.patterns || []).map(p => `
+            <div class="pattern-line"><span class="pattern-bullet">•</span> ${p}</div>
+        `).join('');
+
+        const strategiesHtml = (tg.strategies || []).map(s => {
+            const pointsHtml = (s.points || []).map(pt => `
+                <div class="theory-step-point">
+                    <span class="point-bullet">🔹</span>
+                    <span class="point-text">${pt}</span>
+                </div>
+            `).join('');
+            return `
+                <div class="theory-step-item">
+                    <div class="theory-step-header">
+                        <span class="theory-step-number">${s.badge || '📌'}</span>
+                        <h4 class="theory-step-title">${s.step}</h4>
+                    </div>
+                    <div class="theory-step-body">
+                        ${pointsHtml}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        const mistakesHtml = (tg.common_mistakes || []).map((m, idx) => `
+            <div class="theory-tip-card" style="border-left-color: #ef4444; background: rgba(239, 68, 68, 0.04);">
+                <div class="tip-marker" style="color: #ef4444; font-weight: 800;">0${idx + 1}</div>
+                <div class="tip-body">
+                    <strong style="color: #dc2626; font-size: 0.95rem;">${m.title}</strong>
+                    <p style="margin: 4px 0 0; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">${m.impact}</p>
+                </div>
+            </div>
+        `).join('');
+
+        const vocabTopicsHtml = (tg.vocabulary_topics || []).map(t => `
+            <div class="theory-pattern-card" style="padding: 12px 16px; align-items: center;">
+                <span style="font-size: 1.5rem; flex-shrink: 0;">${t.icon}</span>
+                <div>
+                    <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px;">${t.name}</h4>
+                    <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">${t.desc}</p>
+                </div>
+            </div>
+        `).join('');
+
+        this.elements.p2TheoryContainer.innerHTML = `
+            <div class="theory-guide-card glass-card" style="margin-bottom: 24px;">
+                <div class="theory-guide-header">
+                    <div class="theory-guide-title-box">
+                        <div class="theory-badge">
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            CHIẾN LƯỢC & LÝ THUYẾT TRỌNG TÂM
+                        </div>
+                        <h2 class="theory-main-title">${tg.title}</h2>
+                    </div>
+                </div>
+                
+                <div class="theory-guide-body">
+                    <!-- 1. Tổng quan -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">1</span> Tổng quan & Cấu trúc bài thi Part 02</h3>
+                        <div class="theory-callout-info">
+                            <div class="theory-callout-icon">💡</div>
+                            <div class="theory-callout-text">${tg.overview.desc}</div>
+                        </div>
+                        <div style="margin-top: 14px;">
+                            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary);">4 Năng lực cốt lõi được đánh giá:</h4>
+                            <div style="display: flex; flex-direction: column; gap: 6px;">
+                                ${skillsHtml}
+                            </div>
+                        </div>
+                        <div style="margin-top: 16px;">
+                            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: var(--text-primary);">4 Bối cảnh hội thoại thường gặp nhất:</h4>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+                                ${contextsHtml}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2. Dạng câu hỏi -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">2</span> Đặc trưng dạng câu hỏi trong Part 02</h3>
+                        <p class="theory-sec-sub">${tg.question_types.desc}</p>
+                        <div class="theory-callout-info" style="border-left-color: #10b981; background: rgba(16, 185, 129, 0.08); margin-bottom: 14px;">
+                            <div class="theory-callout-icon">⭐</div>
+                            <div class="theory-callout-text">${tg.question_types.highlight}</div>
+                        </div>
+                        <div class="theory-pattern-card">
+                            <span class="pattern-badge">Mẫu câu hỏi</span>
+                            <div class="pattern-content">
+                                ${patternsHtml}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 3. Chiến lược làm bài -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">3</span> Chiến lược & Mẹo làm bài Part 02 hiệu quả</h3>
+                        <div class="theory-strategy-grid">
+                            ${strategiesHtml}
+                        </div>
+                    </div>
+                    
+                    <!-- 4. Lỗi thường gặp cần tránh -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">4</span> 5 Lỗi thường gặp cần tránh (Né bẫy)</h3>
+                        <p class="theory-sec-sub">Khắc phục ngay những thói quen sai lầm này để nâng điểm số:</p>
+                        <div class="theory-tips-grid">
+                            ${mistakesHtml}
+                        </div>
+                    </div>
+
+                    <!-- 5. Chủ đề từ vựng -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">5</span> 8 Chủ đề từ vựng quen thuộc của Part 02</h3>
+                        <p class="theory-sec-sub">Học và ôn tập từ vựng trọng điểm giúp nghe hiểu nhanh chóng:</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-bottom: 16px;">
+                            ${vocabTopicsHtml}
+                        </div>
+                        <div style="text-align: center; margin-top: 14px;">
+                            <button type="button" class="btn btn-secondary" onclick="window.location.hash='#part2-vocab'" style="padding: 10px 22px; font-weight: 700; border-radius: 8px;">
+                                📚 Mở Tab Tra Cứu & Ôn Tập Từ Vựng Part 02 ➔
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: center; margin: 30px 0 20px;">
+                <button type="button" class="btn btn-primary" onclick="app.switchToTab('view-part2', 'p2-practice')" style="padding: 14px 28px; font-weight: 700; font-size: 1rem; border-radius: 10px; display: inline-flex; align-items: center; gap: 8px;">
+                    <span>BẮT ĐẦU LUYỆN TẬP PART 02 (PRACTICE 01 - 08)</span>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+        `;
+    }
+
+    renderPart3Theory() {
+        if (!this.elements.p3TheoryContainer || !this.data || !this.data.part3 || !this.data.part3.theory_guide) return;
+        const tg = this.data.part3.theory_guide;
+
+        const skillsHtml = (tg.overview.core_skills || []).map(skill => `
+            <div class="theory-step-point" style="margin-bottom: 6px;">
+                <span class="point-bullet">🎯</span>
+                <span class="point-text">${skill}</span>
+            </div>
+        `).join('');
+
+        const contextsHtml = (tg.overview.contexts || []).map(c => `
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 14px; display: flex; gap: 12px; align-items: flex-start;">
+                <span style="font-size: 1.4rem; line-height: 1;">${c.icon}</span>
+                <div>
+                    <h5 style="font-size: 0.92rem; font-weight: 700; color: var(--color-primary); margin-bottom: 4px;">${c.title}</h5>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">${c.detail}</p>
+                </div>
+            </div>
+        `).join('');
+
+        const charHtml = (tg.question_types.characteristics || []).map(ch => `
+            <div class="theory-step-point" style="margin-bottom: 6px;">
+                <span class="point-bullet">🔹</span>
+                <span class="point-text">${ch}</span>
+            </div>
+        `).join('');
+
+        const strategiesHtml = (tg.strategies || []).map(s => {
+            const pointsHtml = (s.points || []).map(pt => `
+                <div class="theory-step-point">
+                    <span class="point-bullet">🔹</span>
+                    <span class="point-text">${pt}</span>
+                </div>
+            `).join('');
+            return `
+                <div class="theory-step-item">
+                    <div class="theory-step-header">
+                        <span class="theory-step-number">${s.badge || '📌'}</span>
+                        <h4 class="theory-step-title">${s.step}</h4>
+                    </div>
+                    <div class="theory-step-body">
+                        ${pointsHtml}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        this.elements.p3TheoryContainer.innerHTML = `
+            <div class="theory-guide-card glass-card" style="margin-bottom: 24px;">
+                <div class="theory-guide-header">
+                    <div class="theory-guide-title-box">
+                        <div class="theory-badge">
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                            CHIẾN LƯỢC & LÝ THUYẾT TRỌNG TÂM
+                        </div>
+                        <h2 class="theory-main-title">${tg.title}</h2>
+                    </div>
+                </div>
+                
+                <div class="theory-guide-body">
+                    <!-- 1. Tổng quan -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">1</span> Tổng quan bài nghe Part 03 (Long Talks)</h3>
+                        <div class="theory-callout-info">
+                            <div class="theory-callout-icon">💡</div>
+                            <div class="theory-callout-text">${tg.overview.desc}</div>
+                        </div>
+                        <div style="margin-top: 14px;">
+                            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary);">5 Yêu cầu cốt lõi để hoàn thành tốt:</h4>
+                            <div style="display: flex; flex-direction: column; gap: 6px;">
+                                ${skillsHtml}
+                            </div>
+                        </div>
+                        <div style="margin-top: 16px;">
+                            <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: var(--text-primary);">5 Bối cảnh chủ đề học thuật & đời sống thường gặp:</h4>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+                                ${contextsHtml}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2. Dạng câu hỏi -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">2</span> Đặc trưng dạng câu hỏi trong Part 03</h3>
+                        <p class="theory-sec-sub">${tg.question_types.desc}</p>
+                        <div class="theory-callout-info" style="border-left-color: #8b5cf6; background: rgba(139, 92, 246, 0.08); margin-bottom: 14px;">
+                            <div class="theory-callout-icon">⭐</div>
+                            <div class="theory-callout-text">${tg.question_types.highlight}</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 6px;">
+                            ${charHtml}
+                        </div>
+                    </div>
+                    
+                    <!-- 3. Chiến lược làm bài -->
+                    <div class="theory-section">
+                        <h3 class="theory-sec-title"><span class="theory-num">3</span> Chiến lược 6 Bước làm bài Part 03 đạt điểm cao</h3>
+                        <div class="theory-strategy-grid">
+                            ${strategiesHtml}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: center; margin: 30px 0 20px;">
+                <button type="button" class="btn btn-primary" onclick="app.switchToTab('view-part3', 'p3-practice')" style="padding: 14px 28px; font-weight: 700; font-size: 1rem; border-radius: 10px; display: inline-flex; align-items: center; gap: 8px;">
+                    <span>BẮT ĐẦU LUYỆN TẬP PART 03 (PRACTICE 01 - 05)</span>
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+        `;
     }
 
     /* --- APPLICATION ROUTING --- */
