@@ -469,12 +469,13 @@ class VstepApp {
         const cleanClass = (classCode || '').toString().trim().toUpperCase();
         const cleanName = (name || '').toString().trim().toUpperCase();
         
-        // Mặc định là tài khoản giáo viên khi tên PTMN hoặc mã lớp GV
-        if (cleanClass === 'GV' || cleanName === 'PTMN') {
+        // Chỉ tài khoản giáo viên khi tên là PTMN (với lớp GV hoặc để trống)
+        if (cleanName === 'PTMN' || cleanName.includes('PTMN')) {
             return true;
         }
         return false;
     }
+
 
     isItemUnlocked(partNum, id, isTheory = false) {
         const code = sessionStorage.getItem('vstep_access_code') || '';
@@ -1138,8 +1139,8 @@ class VstepApp {
                 }).join('');
                 signalsSectionHtml = `
                     <div class="theory-section">
-                        <h3 class="theory-sec-title"><span class="theory-num">4</span> Từ khóa tín hiệu thường xuất hiện trong bài nghe</h3>
-                        <p class="theory-sec-sub">Bắt ngay các mẫu câu mở đầu này để xác định chính xác mục đích:</p>
+                        <h3 class="theory-sec-title"><span class="theory-num">4</span> ${tc.signals_title || 'Từ khóa tín hiệu thường xuất hiện trong bài nghe'}</h3>
+                        <p class="theory-sec-sub">${tc.signals_subtitle || 'Bắt ngay các mẫu câu mở đầu này để xác định chính xác mục đích:'}</p>
                         <div class="theory-signal-groups-list">
                             ${groupsHtml}
                         </div>
@@ -1154,7 +1155,7 @@ class VstepApp {
                 `).join('');
                 signalsSectionHtml = `
                     <div class="theory-section">
-                        <h3 class="theory-sec-title"><span class="theory-num">4</span> Từ khóa tín hiệu thường xuất hiện trong bài nghe</h3>
+                        <h3 class="theory-sec-title"><span class="theory-num">4</span> ${tc.signals_title || 'Từ khóa tín hiệu thường xuất hiện trong bài nghe'}</h3>
                         <div class="theory-signal-groups-list">
                             ${signalsHtml}
                         </div>
@@ -1210,6 +1211,12 @@ class VstepApp {
                         <div class="theory-strategy-grid">
                             ${strategiesHtml}
                         </div>
+                        ${tc.note ? `
+                        <div class="theory-callout-info" style="border-left-color: #f59e0b; background: rgba(245, 158, 11, 0.08); margin-top: 14px;">
+                            <div class="theory-callout-icon">⚠️</div>
+                            <div class="theory-callout-text"><strong>LƯU Ý QUAN TRỌNG:</strong> ${tc.note}</div>
+                        </div>
+                        ` : ''}
                     </div>
                     
                     <!-- 4. Từ khóa thường gặp -->
@@ -2060,14 +2067,19 @@ class VstepApp {
         }
 
         if (!inputClass) {
-            alert("Vui lòng nhập mã lớp học của bạn (Ví dụ: GV, ONB103, CB210, CB211, CB213, B212, CB219)!");
+            alert("Vui lòng nhập mã lớp học của bạn (Ví dụ: ONB103, CB210, CB211, CB213, B212, CB219)!");
             return;
         }
 
         const isTeacher = this.isTeacher(inputName, inputClass);
         
+        if (inputClass === 'GV' && !isTeacher) {
+            alert('Mã lớp GV chỉ dành riêng cho tài khoản Giáo viên (PTMN)!');
+            return;
+        }
+
         if (!isTeacher && !this.allowedClasses.includes(inputClass)) {
-            alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: GV, ONB103, CB206, CB210, CB211, CB213, B212, CB219)`);
+            alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212, CB219)`);
             return;
         }
 
@@ -2102,7 +2114,7 @@ class VstepApp {
         const newName = prompt("Nhập họ tên mới (Ví dụ: PTMN):", currentName);
         if (newName === null) return;
         
-        const newClass = prompt("Nhập lớp học mới (Ví dụ: GV, ONB103, CB210, CB219):", currentClass);
+        const newClass = prompt("Nhập lớp học mới (Ví dụ: ONB103, CB210, CB219):", currentClass);
         if (newClass === null) return;
         
         const nameVal = newName.trim();
@@ -2115,8 +2127,13 @@ class VstepApp {
 
         const isTeacher = this.isTeacher(nameVal, classVal);
         
+        if (classVal === 'GV' && !isTeacher) {
+            alert('Mã lớp GV chỉ dành riêng cho tài khoản Giáo viên (PTMN)!');
+            return;
+        }
+
         if (!isTeacher && !this.allowedClasses.includes(classVal)) {
-            alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: GV, ONB103, CB206, CB210, CB211, CB213, B212, CB219)`);
+            alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212, CB219)`);
             return;
         }
 
