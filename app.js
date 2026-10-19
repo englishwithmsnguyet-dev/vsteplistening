@@ -856,10 +856,10 @@ class VstepApp {
         if (masterCodes.includes(code)) return true;
 
         if (code === 'CB219') {
-            // Lớp CB219: CHỈ mở khóa DẠNG 01 của PART 01, còn lại tất cả đều khóa
+            // Lớp CB219: Mở khóa DẠNG 01 và DẠNG 02 của PART 01, còn lại tất cả đều khóa
             if (partNum === 1) {
                 if (!id) return true; // Cho phép xem giao diện Part 01
-                if (isTheory && id === 'p1_type_01') return true; // Mở Dạng 01
+                if (isTheory && (id === 'p1_type_01' || id === 'p1_type_02')) return true; // Mở Dạng 01 & Dạng 02
             }
             return false;
         }
