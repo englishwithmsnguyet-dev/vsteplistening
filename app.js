@@ -1,4 +1,10 @@
 const CLASS_STUDENTS_ROSTER = {
+    "CB220": [
+        "Lý Quốc Dũng", "Phan Minh Khôi", "Huỳnh Văn My", "Mai Thúy Ngân",
+        "Võ Huỳnh Thảo Nguyên", "Đặng Dũ Nguyên", "Nguyễn Gia Nguyễn", "Trương Thị Thảo Như",
+        "Huỳnh Nhật Phát", "Nguyễn Huỳnh Thanh Sơn", "Thái Nhựt Thịnh", "Trần Nguyễn Huỳnh Trâm",
+        "Nguyễn Thị Tường Vi", "Lê Tường Vy", "Bùi Ngọc Như Ý"
+    ],
     "CB219": [
         "Lưu Thị Vân Anh", "Nguyễn Tuấn Anh", "Trần Thị Huỳnh Duy", "Duy Thị Huỳnh Hân",
         "Trần Thị Xuân Hoa", "Nguyễn Phạm Khang", "Đặng Văn Khánh", "Chim Nhật Luân",
@@ -46,7 +52,7 @@ class VstepApp {
     constructor() {
         this.data = null;
         this.studentName = sessionStorage.getItem('vstep_student_name') || ""; // Session-based student name (resets when closing tab/browser)
-        this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'GV', 'CB219'];
+        this.allowedClasses = ['ONB103', 'CB206', 'CB210', 'CB211', 'CB213', 'B212', 'GV', 'CB219', 'CB220'];
         this.classStudents = CLASS_STUDENTS_ROSTER;
         this.progress = {
             completedTests: {}, // testId -> score
@@ -864,6 +870,15 @@ class VstepApp {
             return false;
         }
 
+        if (code === 'CB220') {
+            // Lớp CB220: CHỈ mở khóa DẠNG 01 của PART 01, còn lại tất cả đều khóa
+            if (partNum === 1) {
+                if (!id) return true; // Cho phép xem giao diện Part 01
+                if (isTheory && id === 'p1_type_01') return true; // Mở Dạng 01
+            }
+            return false;
+        }
+
         if (code === 'ONB103' || code === 'B212') {
             if (partNum === 1) return true;
             if (partNum === 2) return true; // B212, ONB103 mở hết Part 02
@@ -885,7 +900,7 @@ class VstepApp {
         if (pwd) {
             const cleanPwd = pwd.trim().toUpperCase();
             const isTeacher = this.isTeacher('', cleanPwd);
-            const validCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211', 'ONB103', 'CB213', 'B212', 'GV', 'CB219'];
+            const validCodes = ['CB206', 'CB210', 'MISSNGUYET2026', 'CB211', 'ONB103', 'CB213', 'B212', 'GV', 'CB219', 'CB220'];
             
             if (validCodes.includes(cleanPwd) || isTeacher) {
                 // Lưu mã lớp vào hệ thống
@@ -2436,7 +2451,7 @@ class VstepApp {
         }
 
         if (!inputClass) {
-            alert("Vui lòng nhập mã lớp học của bạn (Ví dụ: ONB103, CB210, CB211, CB213, B212, CB219)!");
+            alert("Vui lòng nhập mã lớp học của bạn (Ví dụ: ONB103, CB210, CB211, CB213, B212, CB219, CB220)!");
             return;
         }
 
@@ -2448,7 +2463,7 @@ class VstepApp {
         }
 
         if (!isTeacher && !this.allowedClasses.includes(inputClass)) {
-            alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212, CB219)`);
+            alert(`Lớp học "${inputClass}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212, CB219, CB220)`);
             return;
         }
 
@@ -2483,7 +2498,7 @@ class VstepApp {
         const newName = prompt("Nhập họ tên mới (Ví dụ: PTMN):", currentName);
         if (newName === null) return;
         
-        const newClass = prompt("Nhập lớp học mới (Ví dụ: ONB103, CB210, CB219):", currentClass);
+        const newClass = prompt("Nhập lớp học mới (Ví dụ: ONB103, CB210, CB219, CB220):", currentClass);
         if (newClass === null) return;
         
         const nameVal = newName.trim();
@@ -2502,7 +2517,7 @@ class VstepApp {
         }
 
         if (!isTeacher && !this.allowedClasses.includes(classVal)) {
-            alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212, CB219)`);
+            alert(`Lớp học "${classVal}" không hợp lệ!\nVui lòng nhập đúng tên lớp được cấp (Ví dụ: ONB103, CB206, CB210, CB211, CB213, B212, CB219, CB220)`);
             return;
         }
 
