@@ -2420,6 +2420,10 @@ class VstepApp {
                     hasValidFormat = false;
                 } else {
                     sessionStorage.setItem('vstep_access_code', sClass);
+                    if (isTeacher) {
+                        localStorage.setItem('vstep_student_name', 'PTMN - GV');
+                        localStorage.setItem('vstep_access_code', 'GV');
+                    }
                     if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(sClass)) {
                         sessionStorage.setItem('vstep_unlocked', 'true');
                     } else {
@@ -2479,6 +2483,13 @@ class VstepApp {
         this.studentName = combined;
         sessionStorage.setItem('vstep_student_name', combined);
         sessionStorage.setItem('vstep_access_code', inputClass);
+        if (isTeacher) {
+            localStorage.setItem('vstep_student_name', 'PTMN - GV');
+            localStorage.setItem('vstep_access_code', 'GV');
+        } else {
+            localStorage.setItem('vstep_student_name', officialName);
+            localStorage.setItem('vstep_access_code', inputClass);
+        }
         if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(inputClass)) {
             sessionStorage.setItem('vstep_unlocked', 'true');
         } else {
@@ -2533,6 +2544,13 @@ class VstepApp {
         this.studentName = combined;
         sessionStorage.setItem('vstep_student_name', combined);
         sessionStorage.setItem('vstep_access_code', classVal);
+        if (isTeacher) {
+            localStorage.setItem('vstep_student_name', 'PTMN - GV');
+            localStorage.setItem('vstep_access_code', 'GV');
+        } else {
+            localStorage.setItem('vstep_student_name', officialName);
+            localStorage.setItem('vstep_access_code', classVal);
+        }
         if (isTeacher || ['CB206', 'CB210', 'CB211', 'CB213', 'MISSNGUYET2026', 'GV'].includes(classVal)) {
             sessionStorage.setItem('vstep_unlocked', 'true');
         } else {
