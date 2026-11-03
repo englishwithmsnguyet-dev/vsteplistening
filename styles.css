@@ -3218,3 +3218,232 @@ mark.hl-highlight {
 
 
 
+
+
+/* ==========================================================================
+   MISS NGUYET SIGNATURE BRANDING & LOGIN CARD ENHANCEMENTS
+   ========================================================================== */
+.login-card-custom {
+    background: var(--bg-surface) !important;
+    color: var(--text-primary) !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    border-radius: 28px !important;
+    padding: 2.4rem 2.2rem 2rem 2.2rem !important;
+    text-align: center !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 45px rgba(99, 102, 241, 0.25) !important;
+    border: 1px solid var(--border-color) !important;
+    box-sizing: border-box !important;
+    animation: modalPopIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    position: relative !important;
+}
+
+[data-theme="light"] .login-card-custom {
+    background: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12), 0 0 40px rgba(99, 102, 241, 0.15) !important;
+}
+
+@keyframes modalPopIn {
+    0% { transform: scale(0.92) translateY(12px); opacity: 0; }
+    100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.login-teacher-avatar-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 0.9rem !important;
+    position: relative !important;
+}
+
+.login-teacher-halo {
+    position: relative !important;
+    width: 104px !important;
+    height: 104px !important;
+    border-radius: 50% !important;
+    padding: 3.5px !important;
+    background: linear-gradient(135deg, #6366f1 0%, #ec4899 50%, #38bdf8 100%) !important;
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.45), 0 0 40px rgba(236, 72, 153, 0.25) !important;
+    animation: haloPulse 3.5s ease-in-out infinite alternate !important;
+}
+
+@keyframes haloPulse {
+    0% {
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.35), 0 0 35px rgba(236, 72, 153, 0.2);
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(99, 102, 241, 0.6), 0 0 50px rgba(236, 72, 153, 0.4);
+        transform: scale(1.025);
+    }
+}
+
+.login-teacher-avatar {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+    border: 3px solid #ffffff !important;
+    display: block !important;
+}
+
+.login-teacher-badge {
+    margin-top: 0.6rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    font-size: 0.72rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    padding: 0.24rem 0.75rem !important;
+    border-radius: 9999px !important;
+    background: rgba(99, 102, 241, 0.15) !important;
+    border: 1px solid rgba(99, 102, 241, 0.35) !important;
+    color: #6366f1 !important;
+}
+
+.login-brand-tag {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #7c3aed !important;
+    margin-bottom: 0.3rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.4rem !important;
+}
+
+.login-course-title {
+    font-size: 1.15rem !important;
+    font-weight: 800 !important;
+    color: #4f46e5 !important;
+    margin-bottom: 0.9rem !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+}
+
+.login-title-custom {
+    font-size: 1.65rem !important;
+    font-weight: 900 !important;
+    color: var(--text-primary) !important;
+    margin-top: 0 !important;
+    margin-bottom: 1.4rem !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.01em !important;
+    text-transform: uppercase !important;
+}
+
+.input-group-custom {
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: left !important;
+    margin-bottom: 1.15rem !important;
+}
+
+.input-group-custom label {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.45rem !important;
+    font-weight: 800 !important;
+    font-size: 0.86rem !important;
+    margin-bottom: 0.45rem !important;
+    color: var(--text-primary) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+}
+
+.input-group-custom input {
+    width: 100% !important;
+    padding: 0.85rem 1.15rem !important;
+    border-radius: 12px !important;
+    border: 1.5px solid var(--border-color) !important;
+    background: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    outline: none !important;
+    transition: all 0.2s ease !important;
+    box-sizing: border-box !important;
+    font-family: inherit !important;
+}
+
+.input-group-custom input::placeholder {
+    color: var(--text-secondary) !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+}
+
+.input-group-custom input:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2) !important;
+}
+
+.btn-login-custom {
+    width: 100% !important;
+    padding: 0.95rem !important;
+    border-radius: 14px !important;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+    color: #ffffff !important;
+    font-size: 1.05rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.6rem !important;
+    margin-top: 0.4rem !important;
+    font-family: inherit !important;
+    text-transform: uppercase !important;
+}
+
+.btn-login-custom:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5) !important;
+    filter: brightness(1.06) !important;
+}
+
+.btn-login-custom:active {
+    transform: translateY(0) !important;
+}
+
+.login-footer-signature {
+    margin-top: 1.25rem !important;
+    font-size: 0.78rem !important;
+    font-weight: 800 !important;
+    color: var(--text-secondary) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+}
+
+.login-footer-signature a {
+    color: inherit !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+}
+
+@media (max-width: 520px) {
+    .login-card-custom {
+        padding: 1.8rem 1.3rem 1.5rem 1.3rem !important;
+        border-radius: 22px !important;
+    }
+    .login-teacher-halo {
+        width: 86px !important;
+        height: 86px !important;
+    }
+    .login-title-custom {
+        font-size: 1.35rem !important;
+    }
+}
