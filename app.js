@@ -2615,12 +2615,12 @@ Kết quả: ${correctCount} / ${totalQuestions} câu đúng (${accuracy}%)
 Thời gian nộp: ${new Date().toLocaleString('vi-VN')}`;
         
         navigator.clipboard.writeText(reportText).then(() => {
-            alert("Đã sao chép báo cáo vào khay nhớ tạm!\nHệ thống sẽ chuyển bạn sang trang Facebook River English Center để gửi báo cáo.");
-            window.open("https://www.facebook.com/anhnguRiverCT", "_blank");
+            alert("Đã sao chép báo cáo vào khay nhớ tạm!\nHệ thống sẽ chuyển bạn sang trang Facebook English with Miss Nguyet để gửi báo cáo.");
+            window.open("https://www.facebook.com/nguyetpham28", "_blank");
         }).catch(err => {
             console.error("Could not copy text: ", err);
             alert("Không thể tự động sao chép báo cáo. Vui lòng sao chép thủ công:\n\n" + reportText);
-            window.open("https://www.facebook.com/anhnguRiverCT", "_blank");
+            window.open("https://www.facebook.com/nguyetpham28", "_blank");
         });
     }
 
@@ -2645,12 +2645,12 @@ Danh sách bài đã làm:
         reportText += `\n\n---------------------------------------------\nTổng cộng đã làm: ${this.progress.history.length} bài.`;
         
         navigator.clipboard.writeText(reportText).then(() => {
-            alert("Đã sao chép báo cáo tổng hợp vào khay nhớ tạm!\nHệ thống sẽ chuyển bạn sang trang Facebook River English Center để gửi báo cáo.");
-            window.open("https://www.facebook.com/anhnguRiverCT", "_blank");
+            alert("Đã sao chép báo cáo tổng hợp vào khay nhớ tạm!\nHệ thống sẽ chuyển bạn sang trang Facebook English with Miss Nguyet để gửi báo cáo.");
+            window.open("https://www.facebook.com/nguyetpham28", "_blank");
         }).catch(err => {
             console.error("Could not copy text: ", err);
             alert("Không thể tự động sao chép báo cáo tổng hợp. Vui lòng sao chép thủ công:\n\n" + reportText);
-            window.open("https://www.facebook.com/anhnguRiverCT", "_blank");
+            window.open("https://www.facebook.com/nguyetpham28", "_blank");
         });
     }
 
