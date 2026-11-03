@@ -1,0 +1,14 @@
+import docx
+
+doc = docx.Document('PART 02/SCRIPTS/SCRIPTS B2 - PART 02.docx')
+printing = False
+for p in doc.paragraphs:
+    text = p.text.strip()
+    if not text: continue
+    if text.upper() == "PRACTICE 01":
+        printing = True
+    elif text.upper() == "PRACTICE 02":
+        break
+        
+    if printing:
+        print(text)
