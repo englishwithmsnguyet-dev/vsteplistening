@@ -1170,6 +1170,9 @@ class VstepApp {
         const activePanel = document.getElementById(`view-${viewName}`);
         if (activePanel) {
             activePanel.classList.add('active');
+            if (viewName === 'flower-garden' && window.FlowerGarden) {
+                window.FlowerGarden.render();
+            }
         }
         
         // Update Sidebar menu
@@ -1182,6 +1185,7 @@ class VstepApp {
         
         // Map Sidebar section labels for Part 1/2/3 to breadcrumbs
         const viewTitles = {
+            'flower-garden': { parent: 'Học nghe VSTEP', current: 'CHĂM HOA CHĂM HỌC' },
             'dashboard': { parent: 'Học nghe VSTEP', current: 'HOME PAGE' },
             'part1': { parent: 'Luyện tập', current: 'PART 01: SHORT TALKS/CONVERSATIONS' },
             'part1-vocab': { parent: 'Từ vựng', current: 'Từ vựng PART 01' },
