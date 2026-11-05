@@ -796,7 +796,7 @@ class VstepApp {
     /* --- APPLICATION ROUTING --- */
     handleRouting() {
         const hash = window.location.hash.replace('#', '') || 'dashboard';
-        const validViews = ['dashboard', 'part1', 'part1-vocab', 'part2', 'part2-vocab', 'part3', 'part3-vocab', 'statistics', 'practice-run', 'mocktest'];
+        const validViews = ['flower-garden', 'dashboard', 'part1', 'part1-vocab', 'part2', 'part2-vocab', 'part3', 'part3-vocab', 'statistics', 'practice-run', 'mocktest'];
         
         if ((hash === 'part2' || hash === 'part2-vocab' || hash === 'part3' || hash === 'part3-vocab') && !this.isItemUnlocked(hash.startsWith('part2') ? 2 : 3, '', false)) {
             this.promptUnlock(hash.startsWith('part2') ? 2 : 3, '', false, () => {
