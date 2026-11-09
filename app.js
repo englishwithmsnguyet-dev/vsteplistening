@@ -798,6 +798,14 @@ class VstepApp {
         const hash = window.location.hash.replace('#', '') || 'dashboard';
         const validViews = ['flower-garden', 'dashboard', 'part1', 'part1-vocab', 'part2', 'part2-vocab', 'part3', 'part3-vocab', 'statistics', 'practice-run', 'mocktest'];
         
+        if (hash === 'part1-vocab' && !this.isItemUnlocked('part1-vocab', '', false)) {
+            this.promptUnlock('part1-vocab', '', false, () => {
+                window.location.hash = '#part1-vocab';
+            });
+            window.location.hash = '#dashboard';
+            return;
+        }
+
         if ((hash === 'part2' || hash === 'part2-vocab' || hash === 'part3' || hash === 'part3-vocab') && !this.isItemUnlocked(hash.startsWith('part2') ? 2 : 3, '', false)) {
             this.promptUnlock(hash.startsWith('part2') ? 2 : 3, '', false, () => {
                 window.location.hash = '#' + hash;
@@ -862,16 +870,17 @@ class VstepApp {
         if (masterCodes.includes(code)) return true;
 
         if (code === 'CB219') {
-            // Lớp CB219: Mở khóa DẠNG 01, DẠNG 02 và DẠNG 03 của PART 01, còn lại tất cả đều khóa
+            // Lớp CB219: Mở khóa DẠNG 01, DẠNG 02, DẠNG 03, DẠNG 04 của PART 01 và TỪ VỰNG PART 01
+            if (partNum === 'part1-vocab' || (partNum === 1 && id === 'vocab')) return true;
             if (partNum === 1) {
                 if (!id) return true; // Cho phép xem giao diện Part 01
-                if (isTheory && (id === 'p1_type_01' || id === 'p1_type_02' || id === 'p1_type_03')) return true; // Mở Dạng 01, Dạng 02 & Dạng 03
+                if (isTheory && (id === 'p1_type_01' || id === 'p1_type_02' || id === 'p1_type_03' || id === 'p1_type_04')) return true; // Mở Dạng 01 - Dạng 04
             }
             return false;
         }
 
         if (code === 'CB220') {
-            // Lớp CB220: CHỈ mở khóa DẠNG 01 của PART 01, còn lại tất cả đều khóa
+            // Lớp CB220: CHỈ mở khóa DẠNG 01 của PART 01, còn lại tất cả đều khóa (bao gồm Từ vựng Part 01)
             if (partNum === 1) {
                 if (!id) return true; // Cho phép xem giao diện Part 01
                 if (isTheory && id === 'p1_type_01') return true; // Mở Dạng 01
@@ -880,7 +889,7 @@ class VstepApp {
         }
 
         if (code === 'ONB103' || code === 'B212') {
-            if (partNum === 1) return true;
+            if (partNum === 1 || partNum === 'part1-vocab') return true;
             if (partNum === 2) return true; // B212, ONB103 mở hết Part 02
             if (partNum === 3) {
                 if (!id) return true; // Mở khóa giao diện Part 3
@@ -931,16 +940,41 @@ class VstepApp {
     }
 
     applyLocks() {
+        const unlockedP1Vocab = this.isItemUnlocked('part1-vocab', '', false);
         const unlockedP2 = this.isItemUnlocked(2, '', false);
         const unlockedP3 = this.isItemUnlocked(3, '', false);
         const unlockedMock = this.isItemUnlocked('mocktest', '', false);
         
         // Update Sidebar menu items
+        const p1VocabMenuItem = document.querySelector('.menu-item[data-view="part1-vocab"]');
         const p2MenuItem = document.querySelector('.menu-item[data-view="part2"]');
         const p2VocabMenuItem = document.querySelector('.menu-item[data-view="part2-vocab"]');
         const p3MenuItem = document.querySelector('.menu-item[data-view="part3"]');
         const p3VocabMenuItem = document.querySelector('.menu-item[data-view="part3-vocab"]');
         const mockMenuItem = document.querySelector('.menu-item[data-view="mocktest"]');
+
+        if (!unlockedP1Vocab) {
+            if (p1VocabMenuItem) {
+                p1VocabMenuItem.classList.add('locked');
+                p1VocabMenuItem.onclick = (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.promptUnlock('part1-vocab', '', false, () => {
+                        this.switchView('part1-vocab');
+                        const menuBtn = document.querySelector('.menu-item[data-view="part1-vocab"]');
+                        if (menuBtn) {
+                            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+                            menuBtn.classList.add('active');
+                        }
+                    });
+                };
+            }
+        } else {
+            if (p1VocabMenuItem) {
+                p1VocabMenuItem.classList.remove('locked');
+                p1VocabMenuItem.onclick = null;
+            }
+        }
         
         if (!unlockedP2) {
             [p2MenuItem, p2VocabMenuItem].forEach(item => {
@@ -1139,8 +1173,15 @@ class VstepApp {
     }
 
     switchView(viewName) {
-        if ((viewName === 'part2' || viewName === 'part3') && !this.isItemUnlocked(viewName === 'part2' ? 2 : 3, '', false)) {
-            this.promptUnlock(viewName === 'part2' ? 2 : 3, '', false, () => {
+        if (viewName === 'part1-vocab' && !this.isItemUnlocked('part1-vocab', '', false)) {
+            this.promptUnlock('part1-vocab', '', false, () => {
+                this.switchView('part1-vocab');
+            });
+            return;
+        }
+
+        if ((viewName === 'part2' || viewName === 'part2-vocab' || viewName === 'part3' || viewName === 'part3-vocab') && !this.isItemUnlocked(viewName.startsWith('part2') ? 2 : 3, '', false)) {
+            this.promptUnlock(viewName.startsWith('part2') ? 2 : 3, '', false, () => {
                 this.switchView(viewName);
             });
             return;
