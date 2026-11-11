@@ -880,10 +880,10 @@ class VstepApp {
         }
 
         if (code === 'CB220') {
-            // Lớp CB220: CHỈ mở khóa DẠNG 01 của PART 01, còn lại tất cả đều khóa (bao gồm Từ vựng Part 01)
+            // Lớp CB220: Mở khóa DẠNG 01 và DẠNG 02 của PART 01, còn lại tất cả đều khóa (bao gồm Từ vựng Part 01)
             if (partNum === 1) {
                 if (!id) return true; // Cho phép xem giao diện Part 01
-                if (isTheory && id === 'p1_type_01') return true; // Mở Dạng 01
+                if (isTheory && (id === 'p1_type_01' || id === 'p1_type_02')) return true; // Mở Dạng 01 & Dạng 02
             }
             return false;
         }
