@@ -870,11 +870,11 @@ class VstepApp {
         if (masterCodes.includes(code)) return true;
 
         if (code === 'CB219') {
-            // Lớp CB219: Mở khóa DẠNG 01, DẠNG 02, DẠNG 03, DẠNG 04 của PART 01 và TỪ VỰNG PART 01
+            // Lớp CB219: Mở tất cả dạng câu hỏi PART 01 (trừ phần luyện tập) và mở TỪ VỰNG PART 01
             if (partNum === 'part1-vocab' || (partNum === 1 && id === 'vocab')) return true;
             if (partNum === 1) {
                 if (!id) return true; // Cho phép xem giao diện Part 01
-                if (isTheory && (id === 'p1_type_01' || id === 'p1_type_02' || id === 'p1_type_03' || id === 'p1_type_04')) return true; // Mở Dạng 01 - Dạng 04
+                if (isTheory) return true; // Mở hết tất cả dạng bài lý thuyết (Dạng 01 - Dạng 06)
             }
             return false;
         }
